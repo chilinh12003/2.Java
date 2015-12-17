@@ -1,0 +1,78 @@
+2014-09-11 09:39:30:050 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911093927628</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-09-11 09:39:30:113 || RESPONSE CHARGE -->  || Save Chargelog Satus: OK
+2014-09-11 09:51:27:477 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911095125167</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-09-11 09:51:27:482 || RESPONSE CHARGE -->  || Save Chargelog Satus: OK
+2014-09-11 09:52:32:084 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911095218028</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-09-11 09:52:32:089 || RESPONSE CHARGE --> <html>
+    <head>
+        <title>The resource cannot be found.</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/MTraffic_DataSync_V2' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>The resource cannot be found.</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable. &nbsp;Please review the following URL and make sure that it is spelled correctly.
+            <br><br>
+
+            <b> Requested URL: </b>/MTraffic_DataSync_V2/XML_Charge_Result.ashx<br><br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:2.0.50727.5483; ASP.NET Version:2.0.50727.5483
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[HttpException]: The file '/MTraffic_DataSync_V2/XML_Charge_Result.ashx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--> || Save Chargelog Satus: OK
+2014-09-11 09:55:14:763 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911095513680</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-09-11 09:55:14:769 || RESPONSE CHARGE --> <?xml version="1.0" encoding="utf-8" ?>
+<REQUEST>
+  <requestid>21656</requestid>
+  <msisdn>84915168505</msisdn>
+  <packagename>GTHN</packagename>
+  <fromdate>20130801000000</fromdate>
+  <todate>20131022164530</todate>
+  <application>TEST</application>
+  <channel>API</channel>
+  <username>namnt</username>
+  <userip>10.149.57.140</userip>
+</REQUEST> || Save Chargelog Satus: OK
+2014-09-11 09:59:15:041 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911095914640</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-09-11 09:59:15:046 || RESPONSE CHARGE --> <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+ || Save Chargelog Satus: OK

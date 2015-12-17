@@ -1,0 +1,12 @@
+2014-10-27 09:50:32,856 | ERROR | [Thread-1] | org.logicalcobwebs.proxool.ProxoolDriver:connect(108) ----> Problem 
+org.logicalcobwebs.proxool.ProxoolException: Attempt to register duplicate pool called 'MySQL'
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:99)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:77)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at db.connect.MyConnection.getConnection(MyConnection.java:42)
+	at db.connect.MyGetData.getConnection(MyGetData.java:36)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:74)
+	at dat.gateway.Keyword.SelectActive(Keyword.java:57)
+	at MyProcessServer.Keyword.retrieveKeyword(Keyword.java:79)
+	at MyProcessServer.ProcessLoadKeyword.run(ProcessLoadKeyword.java:120)

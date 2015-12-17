@@ -1,0 +1,109 @@
+2014-11-21 14:27:36,476 | ERROR | [main] | class pro.server.Program:<init>(86) ----> org.logicalcobwebs.proxool.ProxoolException: Parsing failed. 
+2014-11-21 14:27:36,483 | DEBUG | [Thread-0] | class pro.server.Program:run(362) ----> Listen MO............................................................... 
+2014-11-21 14:27:36,487 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(178) ----> 
+Waiting ..... 
+2014-11-21 14:27:36,987 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(data.dat 
+2014-11-21 14:27:36,987 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving data.dat . . . 
+2014-11-21 14:27:37,037 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:27:37,039 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(209) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 14:27:37,040 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving receivelog.dat . . . 
+2014-11-21 14:27:37,040 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:27:37,041 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(213) ----> Shutdown 
+2014-11-21 14:28:15,518 | ERROR | [main] | class pro.server.Program:<init>(86) ----> org.logicalcobwebs.proxool.ProxoolException: Parsing failed. 
+2014-11-21 14:28:15,527 | DEBUG | [Thread-0] | class pro.server.Program:run(362) ----> Listen MO............................................................... 
+2014-11-21 14:28:15,533 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(178) ----> 
+Waiting ..... 
+2014-11-21 14:28:16,033 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(data.dat 
+2014-11-21 14:28:16,033 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving data.dat . . . 
+2014-11-21 14:28:16,037 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:28:16,039 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(209) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 14:28:16,039 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving receivelog.dat . . . 
+2014-11-21 14:28:16,040 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:28:16,040 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(213) ----> Shutdown 
+2014-11-21 14:28:49,403 | ERROR | [main] | class pro.server.Program:<init>(86) ----> org.logicalcobwebs.proxool.ProxoolException: Parsing failed. 
+2014-11-21 14:28:49,408 | DEBUG | [Thread-0] | class pro.server.Program:run(362) ----> Listen MO............................................................... 
+2014-11-21 14:28:49,414 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(178) ----> 
+Waiting ..... 
+2014-11-21 14:28:49,917 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(data.dat 
+2014-11-21 14:28:49,917 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving data.dat . . . 
+2014-11-21 14:28:49,921 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:28:49,923 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(209) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 14:28:49,924 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving receivelog.dat . . . 
+2014-11-21 14:28:49,924 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:28:49,925 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(213) ----> Shutdown 
+2014-11-21 14:30:01,549 | ERROR | [main] | class pro.server.Program:<init>(86) ----> com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.10.0.70, port 1433 has failed. Error: Connection timed out: connect. Please verify the connection properties and check that a SQL Server instance is running on the host and accepting TCP/IP connections at the port, and that no firewall is blocking TCP connections to the port. 
+2014-11-21 14:30:01,556 | DEBUG | [Thread-0] | class pro.server.Program:run(362) ----> Listen MO............................................................... 
+2014-11-21 14:30:01,576 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(178) ----> 
+Waiting ..... 
+2014-11-21 14:30:02,077 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(data.dat 
+2014-11-21 14:30:02,077 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving data.dat . . . 
+2014-11-21 14:30:02,082 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:30:02,083 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(209) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 14:30:02,084 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving receivelog.dat . . . 
+2014-11-21 14:30:02,084 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:30:02,085 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(213) ----> Shutdown 
+2014-11-21 14:42:01,058 | ERROR | [main] | class pro.server.Program:<init>(86) ----> com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.10.0.70, port 1433 has failed. Error: Connection timed out: connect. Please verify the connection properties and check that a SQL Server instance is running on the host and accepting TCP/IP connections at the port, and that no firewall is blocking TCP connections to the port. 
+2014-11-21 14:42:01,066 | DEBUG | [Thread-0] | class pro.server.Program:run(362) ----> Listen MO............................................................... 
+2014-11-21 14:42:01,079 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(178) ----> 
+Waiting ..... 
+2014-11-21 14:42:01,582 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(data.dat 
+2014-11-21 14:42:01,582 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving data.dat . . . 
+2014-11-21 14:42:01,586 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:42:01,588 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(209) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 14:42:01,588 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(301) ----> Saving receivelog.dat . . . 
+2014-11-21 14:42:01,589 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(318) ----> complete:0 
+2014-11-21 14:42:01,589 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(213) ----> Shutdown 
+2014-11-21 14:57:52,025 | ERROR | [main] | org.logicalcobwebs.proxool.ProxoolDriver:connect(108) ----> Problem 
+org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MySQL1'
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.doChange(ConnectionPoolDefinition.java:246)
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.<init>(ConnectionPoolDefinition.java:143)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:96)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:77)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at db.connect.MyConnection.getConnection(MyConnection.java:42)
+	at db.connect.MyGetData.getConnection(MyGetData.java:36)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:73)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:94)
+	at db.define.DBConfig.FisrtTestConnection(DBConfig.java:127)
+	at pro.server.Program.<init>(Program.java:63)
+	at pro.server.Program.main(Program.java:343)
+2014-11-21 14:57:52,036 | ERROR | [main] | class pro.server.Program:<init>(88) ----> java.lang.NullPointerException 
+2014-11-21 14:57:52,036 | DEBUG | [Thread-0] | class pro.server.Program:run(363) ----> Listen MO............................................................... 
+2014-11-21 14:57:52,039 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(179) ----> 
+Waiting ..... 
+2014-11-21 14:57:52,539 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(206) ----> saveSMSDataTable(data.dat 
+2014-11-21 14:57:52,539 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(302) ----> Saving data.dat . . . 
+2014-11-21 14:57:52,543 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(319) ----> complete:0 
+2014-11-21 14:57:52,546 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(210) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 14:57:52,546 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(302) ----> Saving receivelog.dat . . . 
+2014-11-21 14:57:52,547 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(319) ----> complete:0 
+2014-11-21 14:57:52,548 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(214) ----> Shutdown 
+2014-11-21 14:59:19,361 | ERROR | [main] | org.logicalcobwebs.proxool.ProxoolDriver:connect(108) ----> Problem 
+org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MySQL1'
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.doChange(ConnectionPoolDefinition.java:246)
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.<init>(ConnectionPoolDefinition.java:143)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:96)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:77)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at db.connect.MyConnection.getConnection(MyConnection.java:42)
+	at db.connect.MyGetData.getConnection(MyGetData.java:36)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:73)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:94)
+	at db.define.DBConfig.FisrtTestConnection(DBConfig.java:127)
+	at pro.server.Program.<init>(Program.java:63)
+	at pro.server.Program.main(Program.java:343)
+2014-11-21 15:01:56,015 |  WARN | [main] | org.logicalcobwebs.proxool.MSSQL1:registerClosedStatement(180) ----> 000001 (00/01/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice. 
+2014-11-21 15:02:00,559 |  WARN | [main] | org.logicalcobwebs.proxool.MSSQL1:registerClosedStatement(180) ----> 000001 (00/01/00) - #1 registered a statement as closed which wasn't known to be open. This could happen if you close a statement twice. 
+2014-11-21 15:03:38,178 | ERROR | [main] | class pro.server.Program:<init>(88) ----> com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.10.0.70, port 1433 has failed. Error: Connection timed out: connect. Please verify the connection properties and check that a SQL Server instance is running on the host and accepting TCP/IP connections at the port, and that no firewall is blocking TCP connections to the port. 
+2014-11-21 15:03:38,186 | DEBUG | [Thread-0] | class pro.server.Program:run(363) ----> Listen MO............................................................... 
+2014-11-21 15:03:38,195 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(179) ----> 
+Waiting ..... 
+2014-11-21 15:03:38,695 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(206) ----> saveSMSDataTable(data.dat 
+2014-11-21 15:03:38,695 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(302) ----> Saving data.dat . . . 
+2014-11-21 15:03:38,699 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(319) ----> complete:0 
+2014-11-21 15:03:38,701 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(210) ----> saveSMSDataTable(receivelog.dat 
+2014-11-21 15:03:38,701 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(302) ----> Saving receivelog.dat . . . 
+2014-11-21 15:03:38,702 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(319) ----> complete:0 
+2014-11-21 15:03:38,702 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(214) ----> Shutdown 

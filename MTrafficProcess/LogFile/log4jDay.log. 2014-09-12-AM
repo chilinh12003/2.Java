@@ -1,0 +1,11 @@
+2014-09-12 01:32:46,788 | ERROR | [main] | class pro.server.Program:<init>(91) ----> com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.10.0.50, port 1433 has failed. Error: Connection timed out: connect. Please verify the connection properties and check that a SQL Server instance is running on the host and accepting TCP/IP connections at the port, and that no firewall is blocking TCP connections to the port. 
+2014-09-12 01:32:46,798 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-12 01:32:46,835 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(171) ----> 
+Waiting ..... 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(198) ----> saveSMSDataTable(data.dat 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(295) ----> Saving data.dat . . . 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(312) ----> complete:0 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(202) ----> saveSMSDataTable(receivelog.dat 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(295) ----> Saving receivelog.dat . . . 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(312) ----> complete:0 
+2014-09-12 01:32:47,342 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(206) ----> Shutdown 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<listener>
+		<listener-class>web.initWeb</listener-class>
+	</listener>
+
+	<display-name>FMWeb</display-name>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>home</servlet-name>
+		<servlet-class>web.home</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>contact</servlet-name>
+		<servlet-class>web.contact</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>faq</servlet-name>
+		<servlet-class>web.faq</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>guide</servlet-name>
+		<servlet-class>web.guide</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>rule</servlet-name>
+		<servlet-class>web.rule</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>service</servlet-name>
+		<servlet-class>web.service</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>winner</servlet-name>
+		<servlet-class>web.winner</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>winner</servlet-name>
+		<url-pattern>/winner</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>service</servlet-name>
+		<url-pattern>/service</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>rule</servlet-name>
+		<url-pattern>/rule</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>guide</servlet-name>
+		<url-pattern>/guide</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>faq</servlet-name>
+		<url-pattern>/faq</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>contact</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>home</welcome-file>
+	</welcome-file-list>
+	<context-param>
+      <param-name>Domain</param-name>
+      <param-value>http://nguoinoitiengvn.vn</param-value>     
+  </context-param>  
+</web-app>

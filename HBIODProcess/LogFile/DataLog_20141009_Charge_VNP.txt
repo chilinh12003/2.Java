@@ -1,0 +1,24 @@
+2014-10-09 14:37:36:683 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20141009143711203</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>CONTENT</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>BUY CONTENT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="CONTENT" subcontenttype="VI" contentid="3" contentname="CONTENT" cpname="MTRAFFIC" note="" playtype="DOWNLOAD" contentprice="1000"/></Content></CCGWRequest>
+2014-10-09 14:37:36:721 || RESPONSE CHARGE --> <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+ || Save Chargelog Satus: OK
+2014-10-09 14:40:13:820 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20141009144013695</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>CONTENT</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>BUY CONTENT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="CONTENT" subcontenttype="VI" contentid="3" contentname="CONTENT" cpname="MTRAFFIC" note="" playtype="DOWNLOAD" contentprice="1000"/></Content></CCGWRequest>
+2014-10-09 14:40:13:824 || RESPONSE CHARGE --> <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+ || Save Chargelog Satus: OK

@@ -1,0 +1,135 @@
+2014-09-11 09:18:09,488 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:18:11,305 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-11 09:18:11,305 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-11 09:18:11,306 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-11 09:18:11,307 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-11 09:18:11,307 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-11 09:18:11,307 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-11 09:18:11,308 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-11 09:18:11,308 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-11 09:18:11,383 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-11 09:18:11,551 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-11 09:18:11,776 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-11 09:18:11,777 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-11 09:18:11,777 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-11 09:18:11,777 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-11 09:24:14,565 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:24:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:INV 
+2014-09-11 09:24:14,565 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:24:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:1] 
+2014-09-11 09:24:14,567 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:INV || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:24:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.InvalidProcess 
+2014-09-11 09:24:14,955 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:INV || Info:Tin nhan sai cu phap. De duoc huong dan su dung dich vu, soan tin HELP gui 6083, hoac truy cap wapsite http://hbcom.vn. || MessageType:2 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:24:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:24:14,956 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 
+2014-09-11 09:37:06,386 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:37:07,588 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-11 09:37:07,588 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-11 09:37:07,589 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-11 09:37:07,590 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-11 09:37:07,590 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-11 09:37:07,590 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-11 09:37:07,591 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-11 09:37:07,591 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-11 09:37:07,661 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-11 09:37:07,732 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-11 09:37:07,756 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-11 09:37:07,757 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-11 09:37:07,757 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-11 09:37:07,758 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-11 09:37:17,227 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:37:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:0] 
+2014-09-11 09:37:17,228 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:37:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:INV 
+2014-09-11 09:37:17,231 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:INV || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:37:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.InvalidProcess 
+2014-09-11 09:37:17,256 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:INV || Info:Tin nhan sai cu phap. De duoc huong dan su dung dich vu, soan tin HELP gui 6083, hoac truy cap wapsite http://hbcom.vn. || MessageType:2 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:37:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:37:17,257 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 
+2014-09-11 09:39:19,335 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:39:20,532 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-11 09:39:20,532 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-11 09:39:20,532 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-11 09:39:20,533 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-11 09:39:20,534 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-11 09:39:20,534 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-11 09:39:20,534 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-11 09:39:20,534 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-11 09:39:20,600 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-11 09:39:20,674 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-11 09:39:20,704 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-11 09:39:20,704 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-11 09:39:20,705 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-11 09:39:20,705 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-11 09:39:25,754 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:39:25.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:0] 
+2014-09-11 09:39:25,754 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:39:25.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-09-11 09:39:25,763 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:39:25.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-09-11 09:39:30,049 | ERROR | [Thread-9] | class pro.charge.Charge:ChargeVNP(325) ----> org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8080 refused 
+2014-09-11 09:39:30,425 | DEBUG | [Thread-9] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-09-11 09:39:25.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-09-11 09:39:30,431 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:39:25.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:39:30,431 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 
+2014-09-11 09:50:55,811 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:51:02,250 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:51:03,716 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-11 09:51:03,717 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-11 09:51:03,717 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-11 09:51:03,718 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-11 09:51:03,718 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-11 09:51:03,719 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-11 09:51:03,719 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-11 09:51:03,719 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-11 09:51:03,768 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-11 09:51:03,851 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-11 09:51:03,881 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-11 09:51:03,881 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-11 09:51:03,882 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-11 09:51:03,883 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-11 09:51:24,150 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:51:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:1] 
+2014-09-11 09:51:24,150 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:51:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-09-11 09:51:24,155 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:51:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-09-11 09:51:27,476 | ERROR | [Thread-9] | class pro.charge.Charge:ChargeVNP(325) ----> org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8080 refused 
+2014-09-11 09:51:27,584 | DEBUG | [Thread-9] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-09-11 09:51:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-09-11 09:51:27,591 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:51:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:51:27,591 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 
+2014-09-11 09:52:11,144 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:52:12,539 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-11 09:52:12,539 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-11 09:52:12,539 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-11 09:52:12,540 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-11 09:52:12,541 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-11 09:52:12,541 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-11 09:52:12,542 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-11 09:52:12,542 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-11 09:52:12,602 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-11 09:52:12,701 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-11 09:52:12,734 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-11 09:52:12,736 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-11 09:52:12,736 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-11 09:52:12,735 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-11 09:52:17,546 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:52:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-09-11 09:52:17,546 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:52:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:0] 
+2014-09-11 09:52:17,550 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:52:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-09-11 09:52:31,701 | ERROR | [Thread-9] | class pro.charge.Charge:GetErrorCode(207) ----> org.xml.sax.SAXParseException: Open quote is expected for attribute "{1}" associated with an  element type  "width". 
+2014-09-11 09:52:32,184 | DEBUG | [Thread-9] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-09-11 09:52:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-09-11 09:52:32,190 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:52:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:52:32,191 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 
+2014-09-11 09:53:17,273 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-11 09:53:18,600 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-11 09:53:18,600 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-11 09:53:18,600 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-11 09:53:18,601 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-11 09:53:18,602 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-11 09:53:18,602 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-11 09:53:18,602 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-11 09:53:18,602 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-11 09:53:18,649 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-11 09:53:18,735 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-11 09:53:18,768 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-11 09:53:18,771 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-11 09:53:18,771 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-11 09:53:18,770 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-11 09:55:13,186 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:55:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-09-11 09:55:13,187 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:55:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:1] 
+2014-09-11 09:55:13,190 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:55:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-09-11 09:55:14,350 | ERROR | [Thread-9] | class pro.charge.Charge:GetErrorCode(207) ----> java.lang.NullPointerException 
+2014-09-11 09:55:14,868 | DEBUG | [Thread-9] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-09-11 09:55:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-09-11 09:55:14,876 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:55:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:55:14,877 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 
+2014-09-11 09:59:14,208 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:59:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:1] 
+2014-09-11 09:59:14,209 |  INFO | [Thread-10] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:59:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-09-11 09:59:14,209 |  INFO | [Thread-10] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:59:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-09-11 09:59:15,466 | DEBUG | [Thread-10] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Chuc mung Quy Khach da dang ky thanh cong goi Giao thong tong hop dich vu mTraffic cua VinaPhone. De huy dich vu, Quy Khach vui long soan HUY_ ma goi gui 1546. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-09-11 09:59:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-09-11 09:59:15,469 | DEBUG | [Thread-10] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84917248888 || Keyword:DK || Info:Chuc mung Quy Khach da dang ky thanh cong goi Giao thong tong hop dich vu mTraffic cua VinaPhone. De huy dich vu, Quy Khach vui long soan HUY_ ma goi gui 1546. || MessageType:1 || ContentType:0 || RequestID:123 || RequestTime:2014-09-11 09:59:14.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-09-11 09:59:15,470 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917248888@DK 

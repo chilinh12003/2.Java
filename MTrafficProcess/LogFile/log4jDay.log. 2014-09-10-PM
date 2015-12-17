@@ -1,0 +1,942 @@
+2014-09-10 17:40:36,690 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-10 17:40:38,402 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-10 17:40:38,403 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-10 17:40:38,403 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-10 17:40:38,404 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-10 17:40:38,405 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-10 17:40:38,405 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-10 17:40:38,405 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-10 17:40:38,406 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-10 17:40:38,459 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-10 17:40:38,537 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-10 17:40:38,577 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-10 17:40:38,577 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-09-10 17:40:38,577 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-10 17:40:38,579 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-10 17:40:38,636 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84945015033 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:1] 
+2014-09-10 17:40:38,638 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917446745 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:4] 
+2014-09-10 17:40:38,639 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84949823577 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:5] 
+2014-09-10 17:40:38,640 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84912233159 || Keyword:HUY HS || Info:HUY HS || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY HS ||  Note:Q:1546[Size:2] 
+2014-09-10 17:40:38,641 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84916316944 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:6] 
+2014-09-10 17:40:38,642 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84943417386 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:7] 
+2014-09-10 17:40:38,684 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84914675560 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:10] 
+2014-09-10 17:40:38,685 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84943932877 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:11] 
+2014-09-10 17:40:38,686 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84914913931 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:12] 
+2014-09-10 17:40:38,640 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84947599451 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:3] 
+2014-09-10 17:40:38,686 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841238230462 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:13] 
+2014-09-10 17:40:38,683 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84947533075 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:9] 
+2014-09-10 17:40:38,642 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841239866457 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:8] 
+2014-09-10 17:40:38,687 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84942381172 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:16] 
+2014-09-10 17:40:38,687 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84946064421 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:15] 
+2014-09-10 17:40:38,688 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841233571978 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:18] 
+2014-09-10 17:40:38,688 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84943995007 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:19] 
+2014-09-10 17:40:38,689 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917785922 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:20] 
+2014-09-10 17:40:38,689 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84918263534 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:21] 
+2014-09-10 17:40:38,690 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841279312288 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:22] 
+2014-09-10 17:40:38,687 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84942998196 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:14] 
+2014-09-10 17:40:38,690 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84947921956 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:24] 
+2014-09-10 17:40:38,697 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84945032332 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:26] 
+2014-09-10 17:40:38,697 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84919833686 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:27] 
+2014-09-10 17:40:38,698 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917785922 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:28] 
+2014-09-10 17:40:38,699 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84913326354 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:29] 
+2014-09-10 17:40:38,690 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84916442011 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:23] 
+2014-09-10 17:40:38,701 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84912078386 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:31] 
+2014-09-10 17:40:38,701 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84949249783 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:32] 
+2014-09-10 17:40:38,688 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84947909556 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:17] 
+2014-09-10 17:40:38,702 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84942099643 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:33] 
+2014-09-10 17:40:38,700 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841236876094 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:30] 
+2014-09-10 17:40:38,703 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84914675560 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:35] 
+2014-09-10 17:40:38,691 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841299214596 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Q:1546[Size:25] 
+2014-09-10 17:40:38,704 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841238249662 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:37] 
+2014-09-10 17:40:38,704 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84942998196 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:38] 
+2014-09-10 17:40:38,705 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84946638688 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:36] 
+2014-09-10 17:40:38,702 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84944612359 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:34] 
+2014-09-10 17:40:38,705 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84915726953 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:40] 
+2014-09-10 17:40:38,706 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84919114470 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:41] 
+2014-09-10 17:40:38,706 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84913882990 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:42] 
+2014-09-10 17:40:38,706 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917416700 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:43] 
+2014-09-10 17:40:38,707 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84912233159 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:44] 
+2014-09-10 17:40:38,708 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84949823577 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:45] 
+2014-09-10 17:40:38,716 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84943162377 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:46] 
+2014-09-10 17:40:38,717 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84914810097 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:47] 
+2014-09-10 17:40:38,718 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841239866457 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:48] 
+2014-09-10 17:40:38,705 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84912044352 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Q:1546[Size:39] 
+2014-09-10 17:40:38,720 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84949823577 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:49] 
+2014-09-10 17:40:38,720 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84945304760 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:50] 
+2014-09-10 17:40:38,723 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84943232137 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:51] 
+2014-09-10 17:40:38,724 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84917893544 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:52] 
+2014-09-10 17:40:38,731 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84916125300 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:53] 
+2014-09-10 17:40:38,731 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:841259385761 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Q:1546[Size:54] 
+2014-09-10 17:40:38,732 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84947862409 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:55] 
+2014-09-10 17:40:38,733 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84919114470 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:56] 
+2014-09-10 17:40:38,734 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84914402566 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Q:1546[Size:57] 
+2014-09-10 17:40:39,971 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84945015033 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:39,972 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84945015033 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,974 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84945015033 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,977 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84947599451 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:39,978 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84947599451 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,979 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84947599451 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,983 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84949823577 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:39,984 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84949823577 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,985 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84949823577 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,986 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84916316944 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:39,987 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84916316944 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,988 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84916316944 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,990 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84943417386 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:39,990 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84943417386 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,991 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84943417386 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,992 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841239866457 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:39,993 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841239866457 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,994 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841239866457 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,995 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84947533075 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:39,996 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84947533075 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,997 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84947533075 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,999 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84943932877 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:39,999 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84943932877 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,001 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84943932877 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,002 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84914913931 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:40,002 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84914913931 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,003 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84914913931 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,005 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841238230462 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:40,005 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841238230462 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,006 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841238230462 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,007 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84942998196 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:40,008 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84942998196 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,009 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84942998196 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,010 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84946064421 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,011 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84946064421 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,013 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84946064421 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,014 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84947909556 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,014 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84947909556 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,015 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84947909556 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,016 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841233571978 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:40,017 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841233571978 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,018 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841233571978 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,019 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84943995007 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,020 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84943995007 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,021 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84943995007 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,022 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917785922 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:40,023 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917785922 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,024 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84917785922 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,026 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84918263534 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,026 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84918263534 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,027 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84918263534 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,029 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84916442011 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,030 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84916442011 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,031 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84916442011 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,032 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84947921956 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,032 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84947921956 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,034 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84947921956 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,035 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841299214596 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:40,036 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841299214596 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,038 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841299214596 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,039 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84945032332 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,040 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84945032332 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:39,976 |  INFO | [Thread-10] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84912233159 || Keyword:HUY HS || Info:HUY HS || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY HS ||  Note:Keyword:INV 
+2014-09-10 17:40:40,041 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84945032332 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,042 |  INFO | [Thread-12] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84919833686 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,042 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917785922 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,043 |  INFO | [Thread-14] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84913326354 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,044 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917785922 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,045 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84917785922 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,047 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841236876094 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,047 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841236876094 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,049 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841236876094 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,050 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84912078386 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,050 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84912078386 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,052 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84912078386 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,053 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84949249783 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,054 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84949249783 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,056 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84949249783 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,057 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84942099643 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,058 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84942099643 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,059 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84942099643 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,061 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84944612359 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,061 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84944612359 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,063 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84944612359 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,065 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84914675560 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,065 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84914675560 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,067 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84914675560 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,069 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84946638688 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,069 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84946638688 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,071 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84946638688 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,072 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841238249662 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,073 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841238249662 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,074 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841238249662 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,075 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84942998196 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:40,076 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84942998196 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,078 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84942998196 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,079 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84912044352 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:40,080 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84912044352 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,080 |  INFO | [Thread-16] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84915726953 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,028 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841279312288 || Keyword:HUY LGT || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:Keyword:INV 
+2014-09-10 17:40:40,082 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841279312288 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,083 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841279312288 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,087 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84919114470 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,087 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84919114470 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,089 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84919114470 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,090 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84913882990 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,090 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84913882990 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,092 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84913882990 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,093 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917416700 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,094 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917416700 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,095 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84917416700 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,096 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84912233159 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,097 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84912233159 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,098 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84912233159 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,100 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84949823577 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,101 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84949823577 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,102 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84949823577 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,103 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84943162377 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,104 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84943162377 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,105 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84943162377 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,106 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84914810097 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,107 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84914810097 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,109 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84914810097 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,110 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841239866457 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,110 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841239866457 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,112 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841239866457 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,113 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84949823577 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,114 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84949823577 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,115 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84949823577 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,124 |  INFO | [Thread-18] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84943232137 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,125 |  INFO | [Thread-18] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84943232137 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,012 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84942381172 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:40,146 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84942381172 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,147 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84942381172 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,148 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917893544 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,150 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917893544 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,152 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84917893544 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,153 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84916125300 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,154 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84916125300 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,155 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84916125300 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,157 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:841259385761 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,157 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:841259385761 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,171 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:841259385761 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,172 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84947862409 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,173 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84947862409 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,174 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84947862409 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,176 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84919114470 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,176 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84919114470 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,178 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84919114470 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,179 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84914402566 || Keyword:HUY || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:Keyword:INV 
+2014-09-10 17:40:40,179 |  INFO | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84914402566 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,181 | ERROR | [Thread-15] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84914402566 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,998 |  INFO | [Thread-13] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84914675560 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:40,182 |  INFO | [Thread-13] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84914675560 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,183 | ERROR | [Thread-13] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84914675560 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:39,982 |  INFO | [Thread-11] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84917446745 || Keyword:HUY TV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:Keyword:INV 
+2014-09-10 17:40:40,146 | ERROR | [Thread-18] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84943232137 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,137 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84945304760 || Keyword:HUY KP || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:Keyword:INV 
+2014-09-10 17:40:40,185 |  INFO | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84945304760 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,187 | ERROR | [Thread-17] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84945304760 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,081 | ERROR | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84912044352 || Keyword:INV || Info:HUY LGT || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY LGT ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,081 |  INFO | [Thread-16] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84915726953 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,044 |  INFO | [Thread-14] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84913326354 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,190 | ERROR | [Thread-16] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84915726953 || Keyword:INV || Info:HUY || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,043 |  INFO | [Thread-12] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84919833686 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,193 | ERROR | [Thread-12] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84919833686 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,041 |  INFO | [Thread-10] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84912233159 || Keyword:INV || Info:HUY HS || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY HS ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,201 | ERROR | [Thread-10] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84912233159 || Keyword:INV || Info:HUY HS || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY HS ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,191 | ERROR | [Thread-14] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84913326354 || Keyword:INV || Info:HUY KP || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:45.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY KP ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,189 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84945015033@HUY TV 
+2014-09-10 17:40:40,185 |  INFO | [Thread-11] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84917446745 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note:ClassName:MyProcessMO.InvalidProcess 
+2014-09-10 17:40:40,217 | ERROR | [Thread-11] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:1546 || MSISDN:84917446745 || Keyword:INV || Info:HUY TV || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-09-08 16:06:46.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUY TV ||  Note: 
+java.lang.ClassNotFoundException: MyProcessMO.InvalidProcess
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-09-10 17:40:40,365 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84947599451@HUY TV 
+2014-09-10 17:40:40,418 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84949823577@HUY LGT 
+2014-09-10 17:40:40,471 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84916316944@HUY LGT 
+2014-09-10 17:40:40,524 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84943417386@HUY TV 
+2014-09-10 17:40:40,577 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841239866457@HUY LGT 
+2014-09-10 17:40:40,644 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84947533075@HUY TV 
+2014-09-10 17:40:40,746 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84943932877@HUY LGT 
+2014-09-10 17:40:40,804 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84914913931@HUY LGT 
+2014-09-10 17:40:40,861 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841238230462@HUY LGT 
+2014-09-10 17:40:40,925 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84942998196@HUY TV 
+2014-09-10 17:40:40,980 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84946064421@HUY KP 
+2014-09-10 17:40:41,034 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84947909556@HUY KP 
+2014-09-10 17:40:41,087 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841233571978@HUY TV 
+2014-09-10 17:40:41,139 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84943995007@HUY KP 
+2014-09-10 17:40:41,192 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917785922@HUY LGT 
+2014-09-10 17:40:41,245 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84918263534@HUY KP 
+2014-09-10 17:40:41,335 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84916442011@HUY KP 
+2014-09-10 17:40:41,388 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84947921956@HUY KP 
+2014-09-10 17:40:41,442 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841299214596@HUY TV 
+2014-09-10 17:40:41,496 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84945032332@HUY KP 
+2014-09-10 17:40:41,549 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917785922@HUY KP 
+2014-09-10 17:40:41,602 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841236876094@HUY KP 
+2014-09-10 17:40:41,654 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84912078386@HUY KP 
+2014-09-10 17:40:41,707 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84949249783@HUY 
+2014-09-10 17:40:41,760 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84942099643@HUY 
+2014-09-10 17:40:41,813 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84944612359@HUY KP 
+2014-09-10 17:40:41,866 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84914675560@HUY 
+2014-09-10 17:40:41,919 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84946638688@HUY 
+2014-09-10 17:40:41,972 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841238249662@HUY 
+2014-09-10 17:40:42,025 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84942998196@HUY LGT 
+2014-09-10 17:40:42,078 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841279312288@HUY LGT 
+2014-09-10 17:40:42,131 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919114470@HUY KP 
+2014-09-10 17:40:42,184 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84913882990@HUY 
+2014-09-10 17:40:42,237 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917416700@HUY KP 
+2014-09-10 17:40:42,289 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84912233159@HUY KP 
+2014-09-10 17:40:42,344 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84949823577@HUY 
+2014-09-10 17:40:42,397 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84943162377@HUY 
+2014-09-10 17:40:42,450 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84914810097@HUY 
+2014-09-10 17:40:42,503 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841239866457@HUY 
+2014-09-10 17:40:42,555 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84949823577@HUY KP 
+2014-09-10 17:40:42,607 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84942381172@HUY TV 
+2014-09-10 17:40:42,661 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917893544@HUY KP 
+2014-09-10 17:40:42,714 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84916125300@HUY KP 
+2014-09-10 17:40:42,767 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841259385761@HUY KP 
+2014-09-10 17:40:42,819 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84947862409@HUY 
+2014-09-10 17:40:42,872 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919114470@HUY 
+2014-09-10 17:40:42,924 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84914402566@HUY 
+2014-09-10 17:40:42,977 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84914675560@HUY TV 
+2014-09-10 17:40:43,029 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84943232137@HUY KP 
+2014-09-10 17:40:43,082 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84945304760@HUY KP 
+2014-09-10 17:40:43,134 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84912044352@HUY LGT 
+2014-09-10 17:40:43,187 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84915726953@HUY 
+2014-09-10 17:40:43,240 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919833686@HUY KP 
+2014-09-10 17:40:43,299 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84912233159@HUY HS 
+2014-09-10 17:40:43,465 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84913326354@HUY KP 
+2014-09-10 17:40:43,519 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84917446745@HUY TV 
+2014-09-10 17:41:48,762 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-09-10 17:41:50,135 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-09-10 17:41:50,135 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-09-10 17:41:50,136 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> data.dat is empty 
+2014-09-10 17:41:50,136 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-09-10 17:41:50,137 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-09-10 17:41:50,137 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(234) ----> receivelog.dat is empty 
+2014-09-10 17:41:50,137 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-09-10 17:41:50,138 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-09-10 17:41:50,185 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-09-10 17:41:50,266 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-09-10 17:41:50,345 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-09-10 17:41:50,346 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-09-10 17:41:50,346 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-09-10 17:41:50,347 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 

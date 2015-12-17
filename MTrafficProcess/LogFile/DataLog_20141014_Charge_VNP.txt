@@ -1,0 +1,24 @@
+2014-10-14 17:08:17:235 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20141014170800545</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>CSKH</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-10-14 17:08:17:284 || RESPONSE CHARGE --> <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+ || Save Chargelog Satus: OK
+2014-10-14 17:08:17:305 || REQUEST CHARGE --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20141014170800545</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>CSKH</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+2014-10-14 17:08:17:310 || RESPONSE CHARGE --> <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+ || Save Chargelog Satus: OK

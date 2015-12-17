@@ -1,0 +1,1487 @@
+2014-10-29 15:27:32,191 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 15:27:32,296 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 15:27:32,296 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 15:27:32,297 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 15:27:32,298 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 15:27:32,298 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 15:27:32,299 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 15:27:32,299 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 15:27:32,299 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 15:27:32,417 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 15:27:32,491 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 15:27:32,535 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 15:27:32,548 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 15:29:13,076 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 15:29:13,131 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 15:29:13,131 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 15:29:13,132 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 15:29:13,133 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 15:29:13,134 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 15:29:13,134 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 15:29:13,135 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 15:29:13,135 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 15:29:13,200 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 15:29:13,254 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 15:29:13,270 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 15:29:13,280 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 15:29:43,568 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 15:29:43,594 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 15:29:43,594 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 15:29:43,594 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 15:29:43,596 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 15:29:43,596 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 15:29:43,596 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 15:29:43,597 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 15:29:43,597 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 15:29:43,749 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 15:29:44,093 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 15:29:44,110 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 15:29:44,122 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 15:29:49,258 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(101) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84935278386 || Keyword:Alao 12#%2''''' || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note:Keyword:ALAO 
+2014-10-29 15:29:49,259 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(180) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note:ClassName:MyProcess.GoldSwordProcess 
+2014-10-29 15:29:49,263 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(126) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note:Q:6083[Size:0] 
+2014-10-29 15:30:19,952 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(264) ----> getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...) 
+2014-10-29 15:30:20,013 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:loadBundle(423) ----> loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US 
+2014-10-29 15:30:20,014 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(318) ----> Created org.apache.axis.i18n.resource, linked to parent null 
+2014-10-29 15:30:20,018 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(264) ----> getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...) 
+2014-10-29 15:30:20,029 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:loadBundle(423) ----> loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale en_US 
+2014-10-29 15:30:20,030 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:loadBundle(423) ----> loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US 
+2014-10-29 15:30:20,031 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(328) ----> Root package not found, cross link to org.apache.axis.i18n.resource 
+2014-10-29 15:30:20,032 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(328) ----> Root package not found, cross link to org.apache.axis.i18n.resource 
+2014-10-29 15:30:20,032 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(engineFactory) 
+2014-10-29 15:30:20,033 | DEBUG | [Thread-10] | org.apache.axis.configuration.EngineConfigurationFactoryFinder:run(141) ----> Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault 
+2014-10-29 15:30:20,044 | DEBUG | [Thread-10] | org.apache.axis.AxisEngine:init(165) ----> Enter: AxisEngine::init 
+2014-10-29 15:30:20,472 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(attachEnabled) 
+2014-10-29 15:30:20,473 | DEBUG | [Thread-10] | org.apache.axis.utils.JavaUtils:isAttachmentSupported(1305) ----> Attachment support is enabled?  true 
+2014-10-29 15:30:20,561 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class java.lang.String, {http://xml.apache.org/xml-soap}PlainText) 
+2014-10-29 15:30:20,567 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(oddDigits00) 
+2014-10-29 15:30:20,568 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(badChars01) 
+2014-10-29 15:30:20,762 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class java.awt.Image, {http://xml.apache.org/xml-soap}Image) 
+2014-10-29 15:30:20,768 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class javax.mail.internet.MimeMultipart, {http://xml.apache.org/xml-soap}Multipart) 
+2014-10-29 15:30:20,775 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(interface javax.xml.transform.Source, {http://xml.apache.org/xml-soap}Source) 
+2014-10-29 15:30:20,783 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class org.apache.axis.attachments.OctetStream, {http://xml.apache.org/xml-soap}octet-stream) 
+2014-10-29 15:30:20,784 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(44) ----> Enter/Exit: JAFDataHandlerDeserializerFactory() 
+2014-10-29 15:30:20,966 | DEBUG | [Thread-10] | org.apache.axis.AxisEngine:init(195) ----> Exit: AxisEngine::init 
+2014-10-29 15:30:21,181 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @c566b3e added parameter >name:       {http://server.sync.soap.alao.goldsword.com}syncChargeResultReq
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://req.sync.soap.alao.goldsword.com}SyncChargeResultReq
+javaType:   class com.goldsword.alao.soap.sync.req.SyncChargeResultReq
+inHeader:   false
+outHeader:  false
+@7d9ab9c5<total parameters:1 
+2014-10-29 15:30:21,182 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:setReturnType(173) ----> @c566b3esetReturnType({http://rsp.sync.soap.alao.goldsword.com}SyncChargeResultRsp) 
+2014-10-29 15:30:21,231 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}userId
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@15357784<total parameters:1 
+2014-10-29 15:30:21,232 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}serviceId
+typeEntry:  null
+mode:       IN
+position:   1
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@693985fc<total parameters:2 
+2014-10-29 15:30:21,232 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}commandCode
+typeEntry:  null
+mode:       IN
+position:   2
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@3f8b995c<total parameters:3 
+2014-10-29 15:30:21,233 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}info
+typeEntry:  null
+mode:       IN
+position:   3
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@6601879b<total parameters:4 
+2014-10-29 15:30:21,234 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}requestId
+typeEntry:  null
+mode:       IN
+position:   4
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@6e6e056e<total parameters:5 
+2014-10-29 15:30:21,235 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}receiveDate
+typeEntry:  null
+mode:       IN
+position:   5
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@7926b165<total parameters:6 
+2014-10-29 15:30:21,236 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}operator
+typeEntry:  null
+mode:       IN
+position:   6
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@5b489c06<total parameters:7 
+2014-10-29 15:30:21,237 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}userName
+typeEntry:  null
+mode:       IN
+position:   7
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@7bfb7cbb<total parameters:8 
+2014-10-29 15:30:21,238 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @78456a0c added parameter >name:       {http://server.sync.soap.alao.goldsword.com}password
+typeEntry:  null
+mode:       IN
+position:   8
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@3bba1894<total parameters:9 
+2014-10-29 15:30:21,238 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:setReturnType(173) ----> @78456a0csetReturnType({http://www.w3.org/2001/XMLSchema}string) 
+2014-10-29 15:30:21,451 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(transport00) 
+2014-10-29 15:30:21,452 | DEBUG | [Thread-10] | org.apache.axis.client.Call:setTransport(2119) ----> Transport is org.apache.axis.transport.http.HTTPTransport@17046822 
+2014-10-29 15:30:21,485 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2351) ----> Enter: Call::invoke(ns, meth, args) 
+2014-10-29 15:30:21,503 | DEBUG | [Thread-10] | org.apache.axis.client.Call:getParamList(2043) ----> operation=name:        syncCharge
+returnQName: {http://server.sync.soap.alao.goldsword.com}syncChargeReturn
+returnType:  {http://www.w3.org/2001/XMLSchema}string
+returnClass: class java.lang.String
+elementQName:null
+soapAction:  null
+style:       wrapped
+use:         literal
+numInParams: 9
+method:null
+ ParameterDesc[0]:
+  name:       {http://server.sync.soap.alao.goldsword.com}userId
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[1]:
+  name:       {http://server.sync.soap.alao.goldsword.com}serviceId
+  typeEntry:  null
+  mode:       IN
+  position:   1
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[2]:
+  name:       {http://server.sync.soap.alao.goldsword.com}commandCode
+  typeEntry:  null
+  mode:       IN
+  position:   2
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[3]:
+  name:       {http://server.sync.soap.alao.goldsword.com}info
+  typeEntry:  null
+  mode:       IN
+  position:   3
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[4]:
+  name:       {http://server.sync.soap.alao.goldsword.com}requestId
+  typeEntry:  null
+  mode:       IN
+  position:   4
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[5]:
+  name:       {http://server.sync.soap.alao.goldsword.com}receiveDate
+  typeEntry:  null
+  mode:       IN
+  position:   5
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[6]:
+  name:       {http://server.sync.soap.alao.goldsword.com}operator
+  typeEntry:  null
+  mode:       IN
+  position:   6
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[7]:
+  name:       {http://server.sync.soap.alao.goldsword.com}userName
+  typeEntry:  null
+  mode:       IN
+  position:   7
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[8]:
+  name:       {http://server.sync.soap.alao.goldsword.com}password
+  typeEntry:  null
+  mode:       IN
+  position:   8
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ 
+2014-10-29 15:30:21,504 | DEBUG | [Thread-10] | org.apache.axis.client.Call:getParamList(2045) ----> operation.getNumParams()=9 
+2014-10-29 15:30:21,504 | DEBUG | [Thread-10] | org.apache.axis.client.Call:getParamList(2068) ----> getParamList number of params: 9 
+2014-10-29 15:30:21,530 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2405) ----> Enter: Call::invoke(RPCElement) 
+2014-10-29 15:30:21,565 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(attachEnabled) 
+2014-10-29 15:30:21,566 | DEBUG | [Thread-10] | org.apache.axis.Message:isAttachmentSupportEnabled(289) ----> Attachment support is enabled?  true 
+2014-10-29 15:30:21,577 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(182) ----> Enter: SOAPPart ctor(FORM_SOAPENVELOPE) 
+2014-10-29 15:30:21,578 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 15:30:21,579 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope) 
+2014-10-29 15:30:21,579 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(188) ----> Exit: SOAPPart ctor() 
+2014-10-29 15:30:21,580 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(addBody00) 
+2014-10-29 15:30:21,581 | DEBUG | [Thread-10] | org.apache.axis.message.SOAPBody:addBodyElement(168) ----> Adding body element to message... 
+2014-10-29 15:30:21,582 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2638) ----> Enter: Call::invoke() 
+2014-10-29 15:30:21,582 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setTargetService(749) ----> MessageContext: setTargetService(GoldSwordService) 
+2014-10-29 15:30:21,583 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(noService10) 
+2014-10-29 15:30:21,587 | DEBUG | [Thread-10] | org.apache.axis.ConfigurationException:logException(110) ----> Exception:  
+org.apache.axis.ConfigurationException: No service named GoldSwordService is available
+org.apache.axis.ConfigurationException: No service named GoldSwordService is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2690)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2690)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+2014-10-29 15:30:21,596 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setService(793) ----> MessageContext: setServiceHandler(null) 
+2014-10-29 15:30:21,596 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(targetService) 
+2014-10-29 15:30:21,597 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2715) ----> Target service:  GoldSwordService 
+2014-10-29 15:30:21,598 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setTargetService(749) ----> MessageContext: setTargetService() 
+2014-10-29 15:30:21,598 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(noService10) 
+2014-10-29 15:30:21,600 | DEBUG | [Thread-10] | org.apache.axis.ConfigurationException:logException(110) ----> Exception:  
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+2014-10-29 15:30:21,605 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setService(793) ----> MessageContext: setServiceHandler(null) 
+2014-10-29 15:30:21,613 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 15:30:21,613 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 15:30:21,614 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 15:30:21,614 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,616 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 15:30:21,617 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,618 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 15:30:21,618 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,619 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 15:30:21,619 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,620 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 15:30:21,621 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,621 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 15:30:21,632 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,633 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 15:30:21,634 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,634 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 15:30:21,635 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,636 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncCharge 
+2014-10-29 15:30:21,642 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,643 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userId 
+2014-10-29 15:30:21,659 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,660 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userId 
+2014-10-29 15:30:21,661 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,662 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:serviceId 
+2014-10-29 15:30:21,662 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,664 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element serviceId 
+2014-10-29 15:30:21,664 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,665 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:commandCode 
+2014-10-29 15:30:21,666 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,672 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element commandCode 
+2014-10-29 15:30:21,673 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,673 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:info 
+2014-10-29 15:30:21,674 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,675 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element info 
+2014-10-29 15:30:21,676 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,676 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:requestId 
+2014-10-29 15:30:21,677 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,678 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element requestId 
+2014-10-29 15:30:21,679 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,679 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:receiveDate 
+2014-10-29 15:30:21,680 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,681 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element receiveDate 
+2014-10-29 15:30:21,682 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,683 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:operator 
+2014-10-29 15:30:21,683 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,684 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element operator 
+2014-10-29 15:30:21,685 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,686 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userName 
+2014-10-29 15:30:21,687 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,688 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userName 
+2014-10-29 15:30:21,688 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,689 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:password 
+2014-10-29 15:30:21,690 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,691 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element password 
+2014-10-29 15:30:21,691 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,692 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncCharge 
+2014-10-29 15:30:21,692 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,693 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 15:30:21,694 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,694 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 15:30:21,695 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2762) ----> <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><syncCharge xmlns="http://server.sync.soap.alao.goldsword.com"><userId>84935278386</userId><serviceId>6083</serviceId><commandCode>ALAO</commandCode><info>Alao 12#%2'''''</info><requestId>27831029152457137</requestId><receiveDate>20141029152456</receiveDate><operator>VMS</operator><userName>PartnerFRQWE</userName><password>977CE426A4FABE0AC6F0FC39044831F3</password></syncCharge></soapenv:Body></soapenv:Envelope> 
+2014-10-29 15:30:21,695 | DEBUG | [Thread-10] | org.apache.axis.client.AxisClient:invoke(77) ----> Enter: AxisClient::invoke 
+2014-10-29 15:30:21,696 | DEBUG | [Thread-10] | org.apache.axis.client.AxisClient:invoke(90) ----> EngineHandler: null 
+2014-10-29 15:30:21,708 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(axisUserAgent) 
+2014-10-29 15:30:21,730 | DEBUG | [Thread-10] | org.apache.axis.SimpleChain:invoke(79) ----> Enter: SimpleChain::invoke 
+2014-10-29 15:30:21,731 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(enter00) 
+2014-10-29 15:30:21,732 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:invoke(125) ----> Enter:  HTTPSender::invoke 
+2014-10-29 15:30:21,737 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 15:30:21,742 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,743 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 15:30:21,743 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,744 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 15:30:21,745 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,745 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 15:30:21,746 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,747 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 15:30:21,747 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,748 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 15:30:21,749 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,750 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 15:30:21,750 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:21,751 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 15:30:21,752 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,752 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncCharge 
+2014-10-29 15:30:21,753 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,754 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userId 
+2014-10-29 15:30:21,755 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,756 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userId 
+2014-10-29 15:30:21,756 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,757 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:serviceId 
+2014-10-29 15:30:21,758 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,759 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element serviceId 
+2014-10-29 15:30:21,760 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,760 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:commandCode 
+2014-10-29 15:30:21,761 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,762 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element commandCode 
+2014-10-29 15:30:21,763 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,764 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:info 
+2014-10-29 15:30:21,764 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,765 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element info 
+2014-10-29 15:30:21,766 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,767 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:requestId 
+2014-10-29 15:30:21,768 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,769 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element requestId 
+2014-10-29 15:30:21,770 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,770 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:receiveDate 
+2014-10-29 15:30:21,771 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,772 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element receiveDate 
+2014-10-29 15:30:21,773 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,774 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:operator 
+2014-10-29 15:30:21,775 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,776 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element operator 
+2014-10-29 15:30:21,777 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,778 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userName 
+2014-10-29 15:30:21,778 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,779 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userName 
+2014-10-29 15:30:21,780 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:21,781 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:password 
+2014-10-29 15:30:21,782 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,783 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element password 
+2014-10-29 15:30:21,783 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,784 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncCharge 
+2014-10-29 15:30:21,785 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,786 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 15:30:21,790 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:21,790 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 15:30:21,791 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 15:30:21,792 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray) 
+2014-10-29 15:30:21,793 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(537) ----> Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@2cccbab7 
+2014-10-29 15:30:21,794 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 15:30:21,795 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 15:30:22,624 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(createdHTTP00) 
+2014-10-29 15:30:22,626 | DEBUG | [Thread-10] | org.apache.axis.components.net.DefaultSocketFactory:create(122) ----> Created an insecure HTTP connection 
+2014-10-29 15:30:22,627 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(xmlSent00) 
+2014-10-29 15:30:22,628 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:writeToSocket(484) ----> XML sent: 
+2014-10-29 15:30:22,629 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:writeToSocket(485) ----> --------------------------------------------------- 
+2014-10-29 15:30:22,632 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 15:30:22,634 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:writeToSocket(519) ----> POST /services/GoldSwordService HTTP/1.0
+Content-Type: text/xml; charset=utf-8
+Accept: application/soap+xml, application/dime, multipart/related, text/*
+User-Agent: Axis/1.4
+Host: interface.alaogame.com
+Cache-Control: no-cache
+Pragma: no-cache
+SOAPAction: ""
+Content-Length: 642
+
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><syncCharge xmlns="http://server.sync.soap.alao.goldsword.com"><userId>84935278386</userId><serviceId>6083</serviceId><commandCode>ALAO</commandCode><info>Alao 12#%2'''''</info><requestId>27831029152457137</requestId><receiveDate>20141029152456</receiveDate><operator>VMS</operator><userName>PartnerFRQWE</userName><password>977CE426A4FABE0AC6F0FC39044831F3</password></syncCharge></soapenv:Body></soapenv:Envelope> 
+2014-10-29 15:30:22,720 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> HTTP/1.1 200 OK 
+2014-10-29 15:30:22,721 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Server nginx/1.5.13 
+2014-10-29 15:30:22,722 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Date Wed, 29 Oct 2014 08:30:27 GMT 
+2014-10-29 15:30:22,724 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Content-Type text/xml;charset=utf-8 
+2014-10-29 15:30:22,725 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Connection close 
+2014-10-29 15:30:22,731 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(182) ----> Enter: SOAPPart ctor(FORM_INPUTSTREAM) 
+2014-10-29 15:30:22,732 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 15:30:22,733 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_INPUTSTREAM (currentMessage is now org.apache.axis.transport.http.SocketInputStream) 
+2014-10-29 15:30:22,734 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(188) ----> Exit: SOAPPart ctor() 
+2014-10-29 15:30:22,742 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(no00) 
+2014-10-29 15:30:22,743 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(791) ----> 
+no Content-Length 
+2014-10-29 15:30:22,744 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(xmlRecd00) 
+2014-10-29 15:30:22,746 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(794) ----> 
+XML received: 
+2014-10-29 15:30:22,746 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(795) ----> ----------------------------------------------- 
+2014-10-29 15:30:22,747 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 15:30:22,747 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 15:30:22,748 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_INPUTSTREAM 
+2014-10-29 15:30:22,774 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,775 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.EnvelopeHandler@2d74e4b3 
+2014-10-29 15:30:22,780 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(soapenv, http://schemas.xmlsoap.org/soap/envelope/) 
+2014-10-29 15:30:22,781 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 15:30:22,782 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(xsd, http://www.w3.org/2001/XMLSchema) 
+2014-10-29 15:30:22,782 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 15:30:22,783 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(xsi, http://www.w3.org/2001/XMLSchema-instance) 
+2014-10-29 15:30:22,784 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 15:30:22,784 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope) 
+2014-10-29 15:30:22,785 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,786 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.EnvelopeBuilder@5552bb15 
+2014-10-29 15:30:22,787 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element Envelope 
+2014-10-29 15:30:22,788 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 15:30:22,789 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Body) 
+2014-10-29 15:30:22,793 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,794 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.BodyBuilder@8391b0c 
+2014-10-29 15:30:22,795 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(newElem00) 
+2014-10-29 15:30:22,795 | DEBUG | [Thread-10] | org.apache.axis.message.MessageElement:<init>(239) ----> New MessageElement (org.apache.axis.message.SOAPBody@5d1eb50b) named {soapenv}Body 
+2014-10-29 15:30:22,796 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element Body 
+2014-10-29 15:30:22,797 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 15:30:22,798 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(, http://server.sync.soap.alao.goldsword.com) 
+2014-10-29 15:30:22,798 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 15:30:22,799 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 15:30:22,800 | DEBUG | [Thread-10] | org.apache.axis.message.BodyBuilder:onStartChild(109) ----> Enter: BodyBuilder::onStartChild() 
+2014-10-29 15:30:22,801 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(newElem00) 
+2014-10-29 15:30:22,802 | DEBUG | [Thread-10] | org.apache.axis.message.MessageElement:<init>(239) ----> New MessageElement (org.apache.axis.message.RPCElement@b0014f0) named {}syncChargeResponse 
+2014-10-29 15:30:22,802 | DEBUG | [Thread-10] | org.apache.axis.message.BodyBuilder:onStartChild(222) ----> Exit: BodyBuilder::onStartChild() 
+2014-10-29 15:30:22,803 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,804 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.SOAPHandler@325e9e34 
+2014-10-29 15:30:22,805 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element syncChargeResponse 
+2014-10-29 15:30:22,806 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 15:30:22,806 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 15:30:22,810 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,811 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.SOAPHandler@1ba4806 
+2014-10-29 15:30:22,812 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(newElem00) 
+2014-10-29 15:30:22,813 | DEBUG | [Thread-10] | org.apache.axis.message.MessageElement:<init>(239) ----> New MessageElement (org.apache.axis.message.MessageElement@6cce82cc) named {}syncChargeReturn 
+2014-10-29 15:30:22,813 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element syncChargeReturn 
+2014-10-29 15:30:22,814 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 15:30:22,815 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 15:30:22,816 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 15:30:22,817 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.SOAPHandler@1ba4806 
+2014-10-29 15:30:22,817 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.RPCElement:syncChargeResponse 
+2014-10-29 15:30:22,818 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 15:30:22,819 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 15:30:22,820 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 15:30:22,820 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.SOAPHandler@325e9e34 
+2014-10-29 15:30:22,821 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.SOAPBody:Body 
+2014-10-29 15:30:22,822 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 15:30:22,823 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping() 
+2014-10-29 15:30:22,823 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 15:30:22,824 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Body) 
+2014-10-29 15:30:22,825 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 15:30:22,825 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.BodyBuilder@8391b0c 
+2014-10-29 15:30:22,826 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope 
+2014-10-29 15:30:22,827 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 15:30:22,827 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope) 
+2014-10-29 15:30:22,828 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 15:30:22,829 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.EnvelopeBuilder@5552bb15 
+2014-10-29 15:30:22,830 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to null 
+2014-10-29 15:30:22,831 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 15:30:22,831 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping(soapenv) 
+2014-10-29 15:30:22,832 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 15:30:22,833 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping(xsd) 
+2014-10-29 15:30:22,833 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 15:30:22,834 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping(xsi) 
+2014-10-29 15:30:22,834 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 15:30:22,836 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endDocument(858) ----> Enter: DeserializationContext::endDocument() 
+2014-10-29 15:30:22,836 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endDocument(866) ----> Exit: DeserializationContext::endDocument() 
+2014-10-29 15:30:22,837 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 15:30:22,838 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope) 
+2014-10-29 15:30:22,842 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(724) ----> Exit: SOAPPart::getAsSOAPEnvelope 
+2014-10-29 15:30:22,843 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,844 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 15:30:22,845 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,847 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 15:30:22,847 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,848 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 15:30:22,849 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,850 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 15:30:22,851 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,851 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 15:30:22,855 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,858 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 15:30:22,859 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 15:30:22,860 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,861 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeResponse 
+2014-10-29 15:30:22,863 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+   '] 
+2014-10-29 15:30:22,864 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 15:30:22,864 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,865 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeReturn 
+2014-10-29 15:30:22,866 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['1'] 
+2014-10-29 15:30:22,866 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 15:30:22,867 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,868 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeReturn 
+2014-10-29 15:30:22,868 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+  '] 
+2014-10-29 15:30:22,869 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 15:30:22,870 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,870 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeResponse 
+2014-10-29 15:30:22,871 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,872 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 15:30:22,872 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,873 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 15:30:22,874 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(796) ----> <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><syncChargeResponse xmlns="http://server.sync.soap.alao.goldsword.com">
+   <syncChargeReturn>1</syncChargeReturn>
+  </syncChargeResponse></soapenv:Body></soapenv:Envelope> 
+2014-10-29 15:30:22,875 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(exit00) 
+2014-10-29 15:30:22,876 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:invoke(157) ----> Exit:  HTTPDispatchHandler::invoke 
+2014-10-29 15:30:22,877 | DEBUG | [Thread-10] | org.apache.axis.SimpleChain:invoke(86) ----> Exit: SimpleChain::invoke 
+2014-10-29 15:30:22,877 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(semanticCheck00) 
+2014-10-29 15:30:22,878 | DEBUG | [Thread-10] | org.apache.axis.handlers.soap.MustUnderstandChecker:invoke(55) ----> Doing SOAP semantic checks... 
+2014-10-29 15:30:22,879 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 15:30:22,880 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 15:30:22,880 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 15:30:22,881 | DEBUG | [Thread-10] | org.apache.axis.client.AxisClient:invoke(226) ----> Exit: AxisClient::invoke 
+2014-10-29 15:30:22,882 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 15:30:22,882 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 15:30:22,883 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 15:30:22,883 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2773) ----> Exit: Call::invoke() 
+2014-10-29 15:30:22,884 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 15:30:22,884 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 15:30:22,885 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 15:30:22,886 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,887 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.EnvelopeHandler@328d5485 
+2014-10-29 15:30:22,887 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(, http://server.sync.soap.alao.goldsword.com) 
+2014-10-29 15:30:22,888 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 15:30:22,889 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 15:30:22,889 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,890 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.RPCHandler@5ca801b0 
+2014-10-29 15:30:22,890 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 15:30:22,891 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 15:30:22,891 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:onStartChild(125) ----> Enter: RPCHandler.onStartChild() 
+2014-10-29 15:30:22,892 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(typeFromAttr00) 
+2014-10-29 15:30:22,893 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:onStartChild(169) ----> Type from attributes is:  null 
+2014-10-29 15:30:22,909 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:onStartChild(303) ----> Exit: RPCHandler.onStartChild() 
+2014-10-29 15:30:22,910 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 15:30:22,910 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.encoding.ser.SimpleDeserializer@1148ab5c 
+2014-10-29 15:30:22,911 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 15:30:22,912 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 15:30:22,912 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 15:30:22,913 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.encoding.ser.SimpleDeserializer@1148ab5c 
+2014-10-29 15:30:22,914 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00) 
+2014-10-29 15:30:22,914 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializerImpl:valueComplete(251) ----> Set value 1 in target org.apache.axis.message.RPCParamTarget@39ea2de1 
+2014-10-29 15:30:22,915 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.RPCElement:syncChargeResponse 
+2014-10-29 15:30:22,916 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 15:30:22,916 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 15:30:22,917 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 15:30:22,917 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.RPCHandler@5ca801b0 
+2014-10-29 15:30:22,918 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setProp00) 
+2014-10-29 15:30:22,919 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:endElement(317) ----> Setting MessageContext property in RPCHandler.endElement(). 
+2014-10-29 15:30:22,919 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.SOAPBody:Body 
+2014-10-29 15:30:22,920 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 15:30:22,920 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2594) ----> Exit: Call::invoke(RPCElement) 
+2014-10-29 15:30:22,921 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2369) ----> Exit: Call::invoke(ns, meth, args) 
+2014-10-29 15:30:22,921 | DEBUG | [Thread-10] | org.apache.axis.TIME:invoke(1816) ----> axis.Call.invoke: 1436 {http://server.sync.soap.alao.goldsword.com}syncCharge 
+2014-10-29 15:30:22,922 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 15:30:22,923 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,923 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 15:30:22,924 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,925 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 15:30:22,925 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,926 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 15:30:22,927 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,927 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 15:30:22,928 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(headers00) 
+2014-10-29 15:30:22,929 | DEBUG | [Thread-10] | org.apache.axis.message.SOAPHeader:outputImpl(318) ----> 0 headers 
+2014-10-29 15:30:22,929 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,930 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 15:30:22,931 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 15:30:22,931 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 15:30:22,932 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 15:30:22,933 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,933 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeResponse 
+2014-10-29 15:30:22,934 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+   '] 
+2014-10-29 15:30:22,934 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 15:30:22,935 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 15:30:22,936 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeReturn 
+2014-10-29 15:30:22,936 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['1'] 
+2014-10-29 15:30:22,937 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 15:30:22,937 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,938 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeReturn 
+2014-10-29 15:30:22,939 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+  '] 
+2014-10-29 15:30:22,939 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 15:30:22,940 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,941 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeResponse 
+2014-10-29 15:30:22,941 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,942 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 15:30:22,943 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 15:30:22,943 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 15:30:22,944 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 15:30:22,946 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray) 
+2014-10-29 15:30:22,946 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(537) ----> Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@45edcd24 
+2014-10-29 15:30:22,948 |  INFO | [Thread-10] | MyCallWebservice.GoldSword:CallWebservice(53) ----> Request GoldSword --> User_ID:84935278386|Service_ID:6083|Command_Code:ALAO|Info:Alao 12#%2'''''|Request_ID:27831029152457137|Receive_Date:20141029152456|Operator:VMS|UserName:PartnerFRQWE|Password:977CE426A4FABE0AC6F0FC39044831F3|Result:1 
+2014-10-29 15:30:25,654 | DEBUG | [Finalizer] | org.apache.axis.MessageContext:dispose(1349) ----> disposing of message context 
+2014-10-29 15:31:09,136 |  INFO | [Thread-10] | class MyProcess.GoldSwordProcess:getMessages(86) ----> -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 15:31:09,137 |  INFO | [Thread-10] | class MyProcessServer.ContentAbstract:start(54) ----> ContentAbstract-->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note:MT TRA VE LA NULL 
+2014-10-29 15:31:09,138 |  INFO | [Thread-20] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(105) ----> add2SMSReceiveLog:84935278386@Alao 12#%2''''' 
+2014-10-29 15:39:44,142 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 16:03:52,762 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 16:03:52,868 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 16:03:52,868 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 16:03:52,870 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 16:03:52,871 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 16:03:52,872 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 16:03:52,872 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 16:03:52,873 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 16:03:52,873 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 16:03:52,939 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 16:03:53,017 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 16:03:53,055 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 16:03:53,106 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 16:03:53,151 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 16:03:58,875 |  INFO | [Thread-9] | class MyProcessServer.LoadMO:run(126) ----> LoadMO AddToQueue-->ServiceID:6283 || MSISDN:84936692337 || Keyword:MCN UFCV AE07 CP810PU888H05V5 || Info:MCN UFCV AE07 CP810PU888H05V5 || MessageType:0 || ContentType:0 || RequestID:69231029152443135 || RequestTime:2014-10-29 15:24:42.0 || ChannelType:1 || TenDV: || MaDV: || MO:MCN UFCV AE07 CP810PU888H05V5 ||  Note:Q:6283[Size:1] 
+2014-10-29 16:03:58,886 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(101) ----> Check Exist Keyword-->ServiceID:6283 || MSISDN:84936692337 || Keyword:MCN UFCV AE07 CP810PU888H05V5 || Info:MCN UFCV AE07 CP810PU888H05V5 || MessageType:0 || ContentType:0 || RequestID:69231029152443135 || RequestTime:2014-10-29 15:24:42.0 || ChannelType:1 || TenDV: || MaDV: || MO:MCN UFCV AE07 CP810PU888H05V5 ||  Note:Keyword:INV 
+2014-10-29 16:03:58,888 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(180) ----> Call Class Process Keyword-->ServiceID:6283 || MSISDN:84936692337 || Keyword:INV || Info:MCN UFCV AE07 CP810PU888H05V5 || MessageType:0 || ContentType:0 || RequestID:69231029152443135 || RequestTime:2014-10-29 15:24:42.0 || ChannelType:1 || TenDV: || MaDV: || MO:MCN UFCV AE07 CP810PU888H05V5 ||  Note:ClassName:MyProcess.InvalidProcess 
+2014-10-29 16:03:58,965 | DEBUG | [Thread-10] | class MyProcessServer.ContentAbstract:sendMT(237) ----> ContentAbstract_SEND_MT-->ServiceID:6283 || MSISDN:84936692337 || Keyword:INV || Info:Xin loi ban, tin nhan cua ban da sai cu phap, cam on ban da su dung dich vu cua 6X83. || MessageType:2 || ContentType:21 || RequestID:69231029152443135 || RequestTime:2014-10-29 15:24:42.0 || ChannelType:1 || TenDV: || MaDV: || MO:MCN UFCV AE07 CP810PU888H05V5 ||  Note:SEND MT THANH CONG 
+2014-10-29 16:03:58,974 |  INFO | [Thread-20] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(105) ----> add2SMSReceiveLog:84936692337@MCN UFCV AE07 CP810PU888H05V5 
+2014-10-29 16:13:53,157 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 16:19:53,983 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 16:19:54,062 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 16:19:54,062 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 16:19:54,063 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 16:19:54,064 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 16:19:54,064 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 16:19:54,064 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 16:19:54,065 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 16:19:54,065 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 16:19:54,180 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 16:19:54,346 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 16:19:54,619 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 16:19:55,585 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 16:19:55,756 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 16:19:55,765 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 16:19:55,970 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 16:19:55,971 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 16:19:55,972 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 16:19:55,973 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 16:19:55,973 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 16:19:55,974 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 16:19:55,974 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 16:19:55,974 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 16:19:56,033 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 16:19:56,111 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 16:19:56,232 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 16:19:56,299 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 16:20:11,062 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-29 16:20:11,111 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-29 16:20:11,112 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-29 16:20:11,112 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-29 16:20:11,113 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-29 16:20:11,114 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-29 16:20:11,114 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-29 16:20:11,115 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-29 16:20:11,115 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-29 16:20:11,192 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-29 16:20:11,294 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-29 16:20:11,343 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-29 16:20:11,436 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-29 16:20:11,480 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 16:21:24,106 |  INFO | [Thread-7] | class MyProcessServer.LoadMO:run(126) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84935278386 || Keyword:alao 1410281633030021 || Info:alao 1410281633030021 || MessageType:0 || ContentType:0 || RequestID:16511029161529161 || RequestTime:2014-10-29 16:21:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:alao 1410281633030021 ||  Note:Q:6083[Size:0] 
+2014-10-29 16:21:24,106 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(101) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84935278386 || Keyword:alao 1410281633030021 || Info:alao 1410281633030021 || MessageType:0 || ContentType:0 || RequestID:16511029161529161 || RequestTime:2014-10-29 16:21:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:alao 1410281633030021 ||  Note:Keyword:ALAO 
+2014-10-29 16:21:24,110 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(180) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:alao 1410281633030021 || MessageType:0 || ContentType:0 || RequestID:16511029161529161 || RequestTime:2014-10-29 16:21:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:alao 1410281633030021 ||  Note:ClassName:MyProcess.GoldSwordProcess 
+2014-10-29 16:21:36,487 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(264) ----> getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...) 
+2014-10-29 16:21:36,646 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:loadBundle(423) ----> loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US 
+2014-10-29 16:21:36,647 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(318) ----> Created org.apache.axis.i18n.resource, linked to parent null 
+2014-10-29 16:21:36,651 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(264) ----> getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...) 
+2014-10-29 16:21:36,666 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:loadBundle(423) ----> loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale en_US 
+2014-10-29 16:21:36,678 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:loadBundle(423) ----> loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US 
+2014-10-29 16:21:36,690 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(328) ----> Root package not found, cross link to org.apache.axis.i18n.resource 
+2014-10-29 16:21:36,691 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:getBundle(328) ----> Root package not found, cross link to org.apache.axis.i18n.resource 
+2014-10-29 16:21:36,708 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(engineFactory) 
+2014-10-29 16:21:36,709 | DEBUG | [Thread-10] | org.apache.axis.configuration.EngineConfigurationFactoryFinder:run(141) ----> Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault 
+2014-10-29 16:21:36,724 | DEBUG | [Thread-10] | org.apache.axis.AxisEngine:init(165) ----> Enter: AxisEngine::init 
+2014-10-29 16:21:37,413 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(attachEnabled) 
+2014-10-29 16:21:37,414 | DEBUG | [Thread-10] | org.apache.axis.utils.JavaUtils:isAttachmentSupported(1305) ----> Attachment support is enabled?  true 
+2014-10-29 16:21:37,511 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class java.lang.String, {http://xml.apache.org/xml-soap}PlainText) 
+2014-10-29 16:21:37,520 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(oddDigits00) 
+2014-10-29 16:21:37,522 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(badChars01) 
+2014-10-29 16:21:37,791 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class java.awt.Image, {http://xml.apache.org/xml-soap}Image) 
+2014-10-29 16:21:37,800 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class javax.mail.internet.MimeMultipart, {http://xml.apache.org/xml-soap}Multipart) 
+2014-10-29 16:21:37,808 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(interface javax.xml.transform.Source, {http://xml.apache.org/xml-soap}Source) 
+2014-10-29 16:21:37,819 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(39) ----> Enter/Exit: JAFDataHandlerDeserializerFactory(class org.apache.axis.attachments.OctetStream, {http://xml.apache.org/xml-soap}octet-stream) 
+2014-10-29 16:21:37,820 | DEBUG | [Thread-10] | org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory:<init>(44) ----> Enter/Exit: JAFDataHandlerDeserializerFactory() 
+2014-10-29 16:21:37,986 | DEBUG | [Thread-10] | org.apache.axis.AxisEngine:init(195) ----> Exit: AxisEngine::init 
+2014-10-29 16:21:38,211 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @49164555 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}syncChargeResultReq
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://req.sync.soap.alao.goldsword.com}SyncChargeResultReq
+javaType:   class com.goldsword.alao.soap.sync.req.SyncChargeResultReq
+inHeader:   false
+outHeader:  false
+@5521f4ef<total parameters:1 
+2014-10-29 16:21:38,212 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:setReturnType(173) ----> @49164555setReturnType({http://rsp.sync.soap.alao.goldsword.com}SyncChargeResultRsp) 
+2014-10-29 16:21:38,239 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}userId
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@425138a4<total parameters:1 
+2014-10-29 16:21:38,240 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}serviceId
+typeEntry:  null
+mode:       IN
+position:   1
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@625db8ff<total parameters:2 
+2014-10-29 16:21:38,241 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}commandCode
+typeEntry:  null
+mode:       IN
+position:   2
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@771c9fcc<total parameters:3 
+2014-10-29 16:21:38,243 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}info
+typeEntry:  null
+mode:       IN
+position:   3
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@783f472b<total parameters:4 
+2014-10-29 16:21:38,244 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}requestId
+typeEntry:  null
+mode:       IN
+position:   4
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@25995ba<total parameters:5 
+2014-10-29 16:21:38,245 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}receiveDate
+typeEntry:  null
+mode:       IN
+position:   5
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@4774e78a<total parameters:6 
+2014-10-29 16:21:38,246 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}operator
+typeEntry:  null
+mode:       IN
+position:   6
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@4c0d39ac<total parameters:7 
+2014-10-29 16:21:38,247 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}userName
+typeEntry:  null
+mode:       IN
+position:   7
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@78457235<total parameters:8 
+2014-10-29 16:21:38,248 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:addParameter(265) ----> @45858aa4 added parameter >name:       {http://server.sync.soap.alao.goldsword.com}password
+typeEntry:  null
+mode:       IN
+position:   8
+isReturn:   false
+typeQName:  {http://www.w3.org/2001/XMLSchema}string
+javaType:   class java.lang.String
+inHeader:   false
+outHeader:  false
+@174d3343<total parameters:9 
+2014-10-29 16:21:38,249 | DEBUG | [Thread-10] | org.apache.axis.description.OperationDesc:setReturnType(173) ----> @45858aa4setReturnType({http://www.w3.org/2001/XMLSchema}string) 
+2014-10-29 16:21:38,375 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(transport00) 
+2014-10-29 16:21:38,376 | DEBUG | [Thread-10] | org.apache.axis.client.Call:setTransport(2119) ----> Transport is org.apache.axis.transport.http.HTTPTransport@5035135a 
+2014-10-29 16:21:38,427 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2351) ----> Enter: Call::invoke(ns, meth, args) 
+2014-10-29 16:21:38,452 | DEBUG | [Thread-10] | org.apache.axis.client.Call:getParamList(2043) ----> operation=name:        syncCharge
+returnQName: {http://server.sync.soap.alao.goldsword.com}syncChargeReturn
+returnType:  {http://www.w3.org/2001/XMLSchema}string
+returnClass: class java.lang.String
+elementQName:null
+soapAction:  null
+style:       wrapped
+use:         literal
+numInParams: 9
+method:null
+ ParameterDesc[0]:
+  name:       {http://server.sync.soap.alao.goldsword.com}userId
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[1]:
+  name:       {http://server.sync.soap.alao.goldsword.com}serviceId
+  typeEntry:  null
+  mode:       IN
+  position:   1
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[2]:
+  name:       {http://server.sync.soap.alao.goldsword.com}commandCode
+  typeEntry:  null
+  mode:       IN
+  position:   2
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[3]:
+  name:       {http://server.sync.soap.alao.goldsword.com}info
+  typeEntry:  null
+  mode:       IN
+  position:   3
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[4]:
+  name:       {http://server.sync.soap.alao.goldsword.com}requestId
+  typeEntry:  null
+  mode:       IN
+  position:   4
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[5]:
+  name:       {http://server.sync.soap.alao.goldsword.com}receiveDate
+  typeEntry:  null
+  mode:       IN
+  position:   5
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[6]:
+  name:       {http://server.sync.soap.alao.goldsword.com}operator
+  typeEntry:  null
+  mode:       IN
+  position:   6
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[7]:
+  name:       {http://server.sync.soap.alao.goldsword.com}userName
+  typeEntry:  null
+  mode:       IN
+  position:   7
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ ParameterDesc[8]:
+  name:       {http://server.sync.soap.alao.goldsword.com}password
+  typeEntry:  null
+  mode:       IN
+  position:   8
+  isReturn:   false
+  typeQName:  {http://www.w3.org/2001/XMLSchema}string
+  javaType:   class java.lang.String
+  inHeader:   false
+  outHeader:  false
+
+ 
+2014-10-29 16:21:38,453 | DEBUG | [Thread-10] | org.apache.axis.client.Call:getParamList(2045) ----> operation.getNumParams()=9 
+2014-10-29 16:21:38,454 | DEBUG | [Thread-10] | org.apache.axis.client.Call:getParamList(2068) ----> getParamList number of params: 9 
+2014-10-29 16:21:38,488 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2405) ----> Enter: Call::invoke(RPCElement) 
+2014-10-29 16:21:38,542 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(attachEnabled) 
+2014-10-29 16:21:38,543 | DEBUG | [Thread-10] | org.apache.axis.Message:isAttachmentSupportEnabled(289) ----> Attachment support is enabled?  true 
+2014-10-29 16:21:38,560 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(182) ----> Enter: SOAPPart ctor(FORM_SOAPENVELOPE) 
+2014-10-29 16:21:38,561 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 16:21:38,562 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope) 
+2014-10-29 16:21:38,563 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(188) ----> Exit: SOAPPart ctor() 
+2014-10-29 16:21:38,564 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(addBody00) 
+2014-10-29 16:21:38,565 | DEBUG | [Thread-10] | org.apache.axis.message.SOAPBody:addBodyElement(168) ----> Adding body element to message... 
+2014-10-29 16:21:38,566 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2638) ----> Enter: Call::invoke() 
+2014-10-29 16:21:38,567 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setTargetService(749) ----> MessageContext: setTargetService(GoldSwordService) 
+2014-10-29 16:21:38,568 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(noService10) 
+2014-10-29 16:21:38,574 | DEBUG | [Thread-10] | org.apache.axis.ConfigurationException:logException(110) ----> Exception:  
+org.apache.axis.ConfigurationException: No service named GoldSwordService is available
+org.apache.axis.ConfigurationException: No service named GoldSwordService is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2690)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2690)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+2014-10-29 16:21:38,585 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setService(793) ----> MessageContext: setServiceHandler(null) 
+2014-10-29 16:21:38,586 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(targetService) 
+2014-10-29 16:21:38,587 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2715) ----> Target service:  GoldSwordService 
+2014-10-29 16:21:38,587 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setTargetService(749) ----> MessageContext: setTargetService() 
+2014-10-29 16:21:38,588 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(noService10) 
+2014-10-29 16:21:38,590 | DEBUG | [Thread-10] | org.apache.axis.ConfigurationException:logException(110) ----> Exception:  
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.goldsword.alao.soap.sync.server.GoldSwordServiceSoapBindingStub.syncCharge(GoldSwordServiceSoapBindingStub.java:248)
+	at MyCallWebservice.GoldSword.CallWebservice(GoldSword.java:31)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:45)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:200)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:105)
+2014-10-29 16:21:38,598 | DEBUG | [Thread-10] | org.apache.axis.MessageContext:setService(793) ----> MessageContext: setServiceHandler(null) 
+2014-10-29 16:21:38,609 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 16:21:38,610 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 16:21:38,613 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 16:21:38,614 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,615 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 16:21:38,616 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,617 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 16:21:38,617 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,619 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 16:21:38,620 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,621 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 16:21:38,622 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,623 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 16:21:38,640 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,642 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 16:21:38,643 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,644 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 16:21:38,645 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,646 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncCharge 
+2014-10-29 16:21:38,654 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,655 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userId 
+2014-10-29 16:21:38,678 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,680 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userId 
+2014-10-29 16:21:38,681 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,681 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:serviceId 
+2014-10-29 16:21:38,682 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,683 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element serviceId 
+2014-10-29 16:21:38,684 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,686 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:commandCode 
+2014-10-29 16:21:38,686 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,687 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element commandCode 
+2014-10-29 16:21:38,688 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,689 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:info 
+2014-10-29 16:21:38,690 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,691 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element info 
+2014-10-29 16:21:38,692 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,693 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:requestId 
+2014-10-29 16:21:38,696 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,698 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element requestId 
+2014-10-29 16:21:38,699 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,701 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:receiveDate 
+2014-10-29 16:21:38,702 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,703 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element receiveDate 
+2014-10-29 16:21:38,704 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,705 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:operator 
+2014-10-29 16:21:38,706 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,707 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element operator 
+2014-10-29 16:21:38,708 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,709 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userName 
+2014-10-29 16:21:38,710 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,710 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userName 
+2014-10-29 16:21:38,712 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,713 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:password 
+2014-10-29 16:21:38,714 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,715 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element password 
+2014-10-29 16:21:38,716 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,717 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncCharge 
+2014-10-29 16:21:38,718 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,719 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 16:21:38,719 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,720 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 16:21:38,721 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2762) ----> <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><syncCharge xmlns="http://server.sync.soap.alao.goldsword.com"><userId>84935278386</userId><serviceId>6083</serviceId><commandCode>ALAO</commandCode><info>alao 1410281633030021</info><requestId>16511029161529161</requestId><receiveDate>20141029162124</receiveDate><operator>VMS</operator><userName>PartnerFRQWE</userName><password>977CE426A4FABE0AC6F0FC39044831F3</password></syncCharge></soapenv:Body></soapenv:Envelope> 
+2014-10-29 16:21:38,722 | DEBUG | [Thread-10] | org.apache.axis.client.AxisClient:invoke(77) ----> Enter: AxisClient::invoke 
+2014-10-29 16:21:38,723 | DEBUG | [Thread-10] | org.apache.axis.client.AxisClient:invoke(90) ----> EngineHandler: null 
+2014-10-29 16:21:38,740 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(axisUserAgent) 
+2014-10-29 16:21:38,781 | DEBUG | [Thread-10] | org.apache.axis.SimpleChain:invoke(79) ----> Enter: SimpleChain::invoke 
+2014-10-29 16:21:38,782 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(enter00) 
+2014-10-29 16:21:38,783 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:invoke(125) ----> Enter:  HTTPSender::invoke 
+2014-10-29 16:21:38,789 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 16:21:38,799 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,800 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 16:21:38,801 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,802 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 16:21:38,803 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,804 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 16:21:38,805 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,806 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 16:21:38,807 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,807 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 16:21:38,809 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,810 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 16:21:38,811 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:38,812 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 16:21:38,813 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,814 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncCharge 
+2014-10-29 16:21:38,816 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,817 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userId 
+2014-10-29 16:21:38,818 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,819 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userId 
+2014-10-29 16:21:38,820 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,821 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:serviceId 
+2014-10-29 16:21:38,822 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,823 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element serviceId 
+2014-10-29 16:21:38,825 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,826 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:commandCode 
+2014-10-29 16:21:38,827 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,828 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element commandCode 
+2014-10-29 16:21:38,829 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,830 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:info 
+2014-10-29 16:21:38,832 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,833 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element info 
+2014-10-29 16:21:38,834 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,835 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:requestId 
+2014-10-29 16:21:38,836 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,837 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element requestId 
+2014-10-29 16:21:38,838 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,839 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:receiveDate 
+2014-10-29 16:21:38,840 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,842 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element receiveDate 
+2014-10-29 16:21:38,843 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,844 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:operator 
+2014-10-29 16:21:38,845 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,846 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element operator 
+2014-10-29 16:21:38,847 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,849 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:userName 
+2014-10-29 16:21:38,849 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,853 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element userName 
+2014-10-29 16:21:38,854 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:38,855 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:password 
+2014-10-29 16:21:38,856 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,858 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element password 
+2014-10-29 16:21:38,859 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,860 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncCharge 
+2014-10-29 16:21:38,861 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,862 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 16:21:38,863 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:38,864 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 16:21:38,865 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 16:21:38,866 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray) 
+2014-10-29 16:21:38,867 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(537) ----> Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@4f025f9f 
+2014-10-29 16:21:38,868 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 16:21:38,868 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 16:21:39,322 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(createdHTTP00) 
+2014-10-29 16:21:39,323 | DEBUG | [Thread-10] | org.apache.axis.components.net.DefaultSocketFactory:create(122) ----> Created an insecure HTTP connection 
+2014-10-29 16:21:39,324 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(xmlSent00) 
+2014-10-29 16:21:39,325 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:writeToSocket(484) ----> XML sent: 
+2014-10-29 16:21:39,326 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:writeToSocket(485) ----> --------------------------------------------------- 
+2014-10-29 16:21:39,330 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 16:21:39,331 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:writeToSocket(519) ----> POST /services/GoldSwordService HTTP/1.0
+Content-Type: text/xml; charset=utf-8
+Accept: application/soap+xml, application/dime, multipart/related, text/*
+User-Agent: Axis/1.4
+Host: interface.alaogame.com
+Cache-Control: no-cache
+Pragma: no-cache
+SOAPAction: ""
+Content-Length: 648
+
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><syncCharge xmlns="http://server.sync.soap.alao.goldsword.com"><userId>84935278386</userId><serviceId>6083</serviceId><commandCode>ALAO</commandCode><info>alao 1410281633030021</info><requestId>16511029161529161</requestId><receiveDate>20141029162124</receiveDate><operator>VMS</operator><userName>PartnerFRQWE</userName><password>977CE426A4FABE0AC6F0FC39044831F3</password></syncCharge></soapenv:Body></soapenv:Envelope> 
+2014-10-29 16:21:39,461 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> HTTP/1.1 200 OK 
+2014-10-29 16:21:39,462 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Server nginx/1.5.13 
+2014-10-29 16:21:39,464 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Date Wed, 29 Oct 2014 09:21:44 GMT 
+2014-10-29 16:21:39,464 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Content-Type text/xml;charset=utf-8 
+2014-10-29 16:21:39,465 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readHeadersFromSocket(627) ----> Connection close 
+2014-10-29 16:21:39,470 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(182) ----> Enter: SOAPPart ctor(FORM_INPUTSTREAM) 
+2014-10-29 16:21:39,471 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 16:21:39,472 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_INPUTSTREAM (currentMessage is now org.apache.axis.transport.http.SocketInputStream) 
+2014-10-29 16:21:39,473 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:<init>(188) ----> Exit: SOAPPart ctor() 
+2014-10-29 16:21:39,474 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(no00) 
+2014-10-29 16:21:39,474 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(791) ----> 
+no Content-Length 
+2014-10-29 16:21:39,475 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(xmlRecd00) 
+2014-10-29 16:21:39,476 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(794) ----> 
+XML received: 
+2014-10-29 16:21:39,477 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(795) ----> ----------------------------------------------- 
+2014-10-29 16:21:39,477 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 16:21:39,478 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 16:21:39,479 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_INPUTSTREAM 
+2014-10-29 16:21:39,516 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,517 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.EnvelopeHandler@634c0cb0 
+2014-10-29 16:21:39,524 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(soapenv, http://schemas.xmlsoap.org/soap/envelope/) 
+2014-10-29 16:21:39,526 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 16:21:39,527 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(xsd, http://www.w3.org/2001/XMLSchema) 
+2014-10-29 16:21:39,528 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 16:21:39,529 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(xsi, http://www.w3.org/2001/XMLSchema-instance) 
+2014-10-29 16:21:39,530 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 16:21:39,530 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope) 
+2014-10-29 16:21:39,532 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,533 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.EnvelopeBuilder@2c473996 
+2014-10-29 16:21:39,534 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element Envelope 
+2014-10-29 16:21:39,535 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 16:21:39,537 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Body) 
+2014-10-29 16:21:39,544 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,546 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.BodyBuilder@5ba28182 
+2014-10-29 16:21:39,547 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(newElem00) 
+2014-10-29 16:21:39,548 | DEBUG | [Thread-10] | org.apache.axis.message.MessageElement:<init>(239) ----> New MessageElement (org.apache.axis.message.SOAPBody@9e4acce) named {soapenv}Body 
+2014-10-29 16:21:39,550 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element Body 
+2014-10-29 16:21:39,551 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 16:21:39,552 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(, http://server.sync.soap.alao.goldsword.com) 
+2014-10-29 16:21:39,553 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 16:21:39,554 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 16:21:39,555 | DEBUG | [Thread-10] | org.apache.axis.message.BodyBuilder:onStartChild(109) ----> Enter: BodyBuilder::onStartChild() 
+2014-10-29 16:21:39,556 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(newElem00) 
+2014-10-29 16:21:39,557 | DEBUG | [Thread-10] | org.apache.axis.message.MessageElement:<init>(239) ----> New MessageElement (org.apache.axis.message.RPCElement@40d0d75) named {}syncChargeResponse 
+2014-10-29 16:21:39,559 | DEBUG | [Thread-10] | org.apache.axis.message.BodyBuilder:onStartChild(222) ----> Exit: BodyBuilder::onStartChild() 
+2014-10-29 16:21:39,559 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,561 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.SOAPHandler@74ee7e66 
+2014-10-29 16:21:39,562 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element syncChargeResponse 
+2014-10-29 16:21:39,563 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 16:21:39,564 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 16:21:39,569 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,570 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.SOAPHandler@4e5a5622 
+2014-10-29 16:21:39,571 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(newElem00) 
+2014-10-29 16:21:39,572 | DEBUG | [Thread-10] | org.apache.axis.message.MessageElement:<init>(239) ----> New MessageElement (org.apache.axis.message.MessageElement@cccfa5e) named {}syncChargeReturn 
+2014-10-29 16:21:39,573 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushNewElement(765) ----> Pushing element syncChargeReturn 
+2014-10-29 16:21:39,574 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 16:21:39,575 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 16:21:39,577 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 16:21:39,578 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.SOAPHandler@4e5a5622 
+2014-10-29 16:21:39,579 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.RPCElement:syncChargeResponse 
+2014-10-29 16:21:39,580 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 16:21:39,581 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 16:21:39,582 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 16:21:39,583 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.SOAPHandler@74ee7e66 
+2014-10-29 16:21:39,584 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.SOAPBody:Body 
+2014-10-29 16:21:39,585 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 16:21:39,586 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping() 
+2014-10-29 16:21:39,587 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 16:21:39,588 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Body) 
+2014-10-29 16:21:39,589 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 16:21:39,590 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.BodyBuilder@5ba28182 
+2014-10-29 16:21:39,591 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope 
+2014-10-29 16:21:39,592 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 16:21:39,593 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope) 
+2014-10-29 16:21:39,594 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 16:21:39,595 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.EnvelopeBuilder@2c473996 
+2014-10-29 16:21:39,596 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to null 
+2014-10-29 16:21:39,597 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 16:21:39,598 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping(soapenv) 
+2014-10-29 16:21:39,609 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 16:21:39,610 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping(xsd) 
+2014-10-29 16:21:39,622 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 16:21:39,623 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(933) ----> Enter: DeserializationContext::endPrefixMapping(xsi) 
+2014-10-29 16:21:39,624 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endPrefixMapping(945) ----> Exit: DeserializationContext::endPrefixMapping() 
+2014-10-29 16:21:39,625 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endDocument(858) ----> Enter: DeserializationContext::endDocument() 
+2014-10-29 16:21:39,626 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endDocument(866) ----> Exit: DeserializationContext::endDocument() 
+2014-10-29 16:21:39,627 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 16:21:39,628 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope) 
+2014-10-29 16:21:39,630 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(724) ----> Exit: SOAPPart::getAsSOAPEnvelope 
+2014-10-29 16:21:39,631 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,632 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 16:21:39,633 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,634 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 16:21:39,635 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,636 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 16:21:39,639 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,640 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 16:21:39,641 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,642 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 16:21:39,648 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,650 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 16:21:39,651 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 16:21:39,652 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,654 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeResponse 
+2014-10-29 16:21:39,655 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+   '] 
+2014-10-29 16:21:39,656 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 16:21:39,657 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,658 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeReturn 
+2014-10-29 16:21:39,659 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['0'] 
+2014-10-29 16:21:39,660 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 16:21:39,661 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,662 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeReturn 
+2014-10-29 16:21:39,663 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+  '] 
+2014-10-29 16:21:39,664 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 16:21:39,665 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,666 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeResponse 
+2014-10-29 16:21:39,667 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,668 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 16:21:39,669 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,670 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 16:21:39,671 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:readFromSocket(796) ----> <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><syncChargeResponse xmlns="http://server.sync.soap.alao.goldsword.com">
+   <syncChargeReturn>0</syncChargeReturn>
+  </syncChargeResponse></soapenv:Body></soapenv:Envelope> 
+2014-10-29 16:21:39,672 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(exit00) 
+2014-10-29 16:21:39,673 | DEBUG | [Thread-10] | org.apache.axis.transport.http.HTTPSender:invoke(157) ----> Exit:  HTTPDispatchHandler::invoke 
+2014-10-29 16:21:39,674 | DEBUG | [Thread-10] | org.apache.axis.SimpleChain:invoke(86) ----> Exit: SimpleChain::invoke 
+2014-10-29 16:21:39,675 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(semanticCheck00) 
+2014-10-29 16:21:39,676 | DEBUG | [Thread-10] | org.apache.axis.handlers.soap.MustUnderstandChecker:invoke(55) ----> Doing SOAP semantic checks... 
+2014-10-29 16:21:39,676 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 16:21:39,677 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 16:21:39,678 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 16:21:39,679 | DEBUG | [Thread-10] | org.apache.axis.client.AxisClient:invoke(226) ----> Exit: AxisClient::invoke 
+2014-10-29 16:21:39,680 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 16:21:39,680 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 16:21:39,681 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 16:21:39,682 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2773) ----> Exit: Call::invoke() 
+2014-10-29 16:21:39,683 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(661) ----> Enter: SOAPPart::getAsSOAPEnvelope() 
+2014-10-29 16:21:39,684 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(currForm) 
+2014-10-29 16:21:39,684 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:getAsSOAPEnvelope(662) ----> current form is FORM_SOAPENVELOPE 
+2014-10-29 16:21:39,687 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,688 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.EnvelopeHandler@3f3cbbbf 
+2014-10-29 16:21:39,689 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(886) ----> Enter: DeserializationContext::startPrefixMapping(, http://server.sync.soap.alao.goldsword.com) 
+2014-10-29 16:21:39,690 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startPrefixMapping(925) ----> Exit: DeserializationContext::startPrefixMapping() 
+2014-10-29 16:21:39,690 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 16:21:39,691 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,692 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.message.RPCHandler@2c4a1908 
+2014-10-29 16:21:39,693 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 16:21:39,694 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1003) ----> Enter: DeserializationContext::startElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 16:21:39,695 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:onStartChild(125) ----> Enter: RPCHandler.onStartChild() 
+2014-10-29 16:21:39,696 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(typeFromAttr00) 
+2014-10-29 16:21:39,697 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:onStartChild(169) ----> Type from attributes is:  null 
+2014-10-29 16:21:39,719 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:onStartChild(303) ----> Exit: RPCHandler.onStartChild() 
+2014-10-29 16:21:39,720 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(pushHandler00) 
+2014-10-29 16:21:39,721 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:pushElementHandler(796) ----> Pushing handler org.apache.axis.encoding.ser.SimpleDeserializer@65334b1a 
+2014-10-29 16:21:39,722 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:startElement(1067) ----> Exit: DeserializationContext::startElement() 
+2014-10-29 16:21:39,722 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeReturn) 
+2014-10-29 16:21:39,723 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 16:21:39,724 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.encoding.ser.SimpleDeserializer@65334b1a 
+2014-10-29 16:21:39,725 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00) 
+2014-10-29 16:21:39,726 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializerImpl:valueComplete(251) ----> Set value 0 in target org.apache.axis.message.RPCParamTarget@a87cbde 
+2014-10-29 16:21:39,727 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.RPCElement:syncChargeResponse 
+2014-10-29 16:21:39,728 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 16:21:39,729 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1078) ----> Enter: DeserializationContext::endElement(http://server.sync.soap.alao.goldsword.com, syncChargeResponse) 
+2014-10-29 16:21:39,730 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(popHandler00) 
+2014-10-29 16:21:39,732 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:popElementHandler(829) ----> Popping handler org.apache.axis.message.RPCHandler@2c4a1908 
+2014-10-29 16:21:39,733 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setProp00) 
+2014-10-29 16:21:39,734 | DEBUG | [Thread-10] | org.apache.axis.message.RPCHandler:endElement(317) ----> Setting MessageContext property in RPCHandler.endElement(). 
+2014-10-29 16:21:39,735 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1106) ----> Popped element stack to org.apache.axis.message.SOAPBody:Body 
+2014-10-29 16:21:39,736 | DEBUG | [Thread-10] | org.apache.axis.encoding.DeserializationContext:endElement(1107) ----> Exit: DeserializationContext::endElement() 
+2014-10-29 16:21:39,737 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2594) ----> Exit: Call::invoke(RPCElement) 
+2014-10-29 16:21:39,738 | DEBUG | [Thread-10] | org.apache.axis.client.Call:invoke(2369) ----> Exit: Call::invoke(ns, meth, args) 
+2014-10-29 16:21:39,738 | DEBUG | [Thread-10] | org.apache.axis.TIME:invoke(1816) ----> axis.Call.invoke: 1311 {http://server.sync.soap.alao.goldsword.com}syncCharge 
+2014-10-29 16:21:39,739 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(524) ----> Enter: SOAPPart::saveChanges 
+2014-10-29 16:21:39,740 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,741 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/' 
+2014-10-29 16:21:39,742 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,743 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsd' - 'http://www.w3.org/2001/XMLSchema' 
+2014-10-29 16:21:39,744 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,746 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance' 
+2014-10-29 16:21:39,747 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,748 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope 
+2014-10-29 16:21:39,749 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(headers00) 
+2014-10-29 16:21:39,749 | DEBUG | [Thread-10] | org.apache.axis.message.SOAPHeader:outputImpl(318) ----> 0 headers 
+2014-10-29 16:21:39,750 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,751 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body 
+2014-10-29 16:21:39,752 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(register00) 
+2014-10-29 16:21:39,753 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:registerPrefixForURI(472) ----> register '' - 'http://server.sync.soap.alao.goldsword.com' 
+2014-10-29 16:21:39,753 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 16:21:39,754 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,755 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeResponse 
+2014-10-29 16:21:39,756 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+   '] 
+2014-10-29 16:21:39,757 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:startElement(94) ----> SAXOutputter.startElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 16:21:39,758 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(startElem00) 
+2014-10-29 16:21:39,759 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:startElement(1098) ----> Start element [http://server.sync.soap.alao.goldsword.com]:syncChargeReturn 
+2014-10-29 16:21:39,759 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['0'] 
+2014-10-29 16:21:39,760 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeReturn] 
+2014-10-29 16:21:39,761 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,762 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeReturn 
+2014-10-29 16:21:39,763 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:characters(63) ----> SAXOutputter.characters ['
+  '] 
+2014-10-29 16:21:39,764 | DEBUG | [Thread-10] | org.apache.axis.message.SAXOutputter:endElement(109) ----> SAXOutputter.endElement ['http://server.sync.soap.alao.goldsword.com' syncChargeResponse] 
+2014-10-29 16:21:39,765 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,766 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element syncChargeResponse 
+2014-10-29 16:21:39,766 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,768 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Body 
+2014-10-29 16:21:39,768 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(endElem00) 
+2014-10-29 16:21:39,769 | DEBUG | [Thread-10] | org.apache.axis.encoding.SerializationContext:endElement(1208) ----> End element soapenv:Envelope 
+2014-10-29 16:21:39,770 | DEBUG | [Thread-10] | org.apache.axis.i18n.ProjectResourceBundle:handleGetObject(72) ----> org.apache.axis.i18n.resource::handleGetObject(setMsgForm) 
+2014-10-29 16:21:39,771 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:setCurrentForm(374) ----> Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray) 
+2014-10-29 16:21:39,772 | DEBUG | [Thread-10] | org.apache.axis.SOAPPart:saveChanges(537) ----> Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@31a32902 
+2014-10-29 16:21:39,775 |  INFO | [Thread-10] | MyCallWebservice.GoldSword:CallWebservice(53) ----> Request GoldSword --> User_ID:84935278386|Service_ID:6083|Command_Code:ALAO|Info:alao 1410281633030021|Request_ID:16511029161529161|Receive_Date:20141029162124|Operator:VMS|UserName:PartnerFRQWE|Password:977CE426A4FABE0AC6F0FC39044831F3|Result:0 
+2014-10-29 16:21:42,313 | DEBUG | [Finalizer] | org.apache.axis.MessageContext:dispose(1349) ----> disposing of message context 
+2014-10-29 16:22:00,600 |  INFO | [Thread-10] | class MyProcess.GoldSwordProcess:getMessages(86) ----> -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:alao 1410281633030021 || MessageType:0 || ContentType:0 || RequestID:16511029161529161 || RequestTime:2014-10-29 16:21:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:alao 1410281633030021 ||  Note: 
+2014-10-29 16:22:04,029 |  INFO | [Thread-10] | class MyProcessServer.ContentAbstract:start(54) ----> ContentAbstract-->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:alao 1410281633030021 || MessageType:0 || ContentType:0 || RequestID:16511029161529161 || RequestTime:2014-10-29 16:21:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:alao 1410281633030021 ||  Note:MT TRA VE LA NULL 
+2014-10-29 16:22:04,030 |  INFO | [Thread-20] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(105) ----> add2SMSReceiveLog:84935278386@alao 1410281633030021 
+2014-10-29 16:23:53,161 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 
+2014-10-29 16:29:55,765 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(144) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84935278386 || Keyword:ALAO || Info:Alao 12#%2''''' || MessageType:0 || ContentType:0 || RequestID:27831029152457137 || RequestTime:2014-10-29 15:24:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:Alao 12#%2''''' ||  Note: 

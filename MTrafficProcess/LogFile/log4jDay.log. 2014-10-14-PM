@@ -1,0 +1,96 @@
+2014-10-14 17:04:37,449 | ERROR | [main] | class pro.server.Program:<init>(91) ----> com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.10.0.50, port 1433 has failed. Error: Connection timed out: connect. Please verify the connection properties and check that a SQL Server instance is running on the host and accepting TCP/IP connections at the port, and that no firewall is blocking TCP connections to the port. 
+2014-10-14 17:04:37,457 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-10-14 17:04:37,460 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(171) ----> 
+Waiting ..... 
+2014-10-14 17:04:37,961 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(198) ----> saveSMSDataTable(data.dat 
+2014-10-14 17:04:37,962 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(295) ----> Saving data.dat . . . 
+2014-10-14 17:04:37,981 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(312) ----> complete:0 
+2014-10-14 17:04:37,982 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(202) ----> saveSMSDataTable(receivelog.dat 
+2014-10-14 17:04:37,982 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(295) ----> Saving receivelog.dat . . . 
+2014-10-14 17:04:37,983 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(312) ----> complete:0 
+2014-10-14 17:04:37,983 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(206) ----> Shutdown 
+2014-10-14 17:07:06,931 | ERROR | [main] | class pro.server.Program:<init>(91) ----> com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'linhnc'. 
+2014-10-14 17:07:06,936 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-10-14 17:07:06,944 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(171) ----> 
+Waiting ..... 
+2014-10-14 17:07:07,445 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(198) ----> saveSMSDataTable(data.dat 
+2014-10-14 17:07:07,445 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(295) ----> Saving data.dat . . . 
+2014-10-14 17:07:07,448 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(312) ----> complete:0 
+2014-10-14 17:07:07,449 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(202) ----> saveSMSDataTable(receivelog.dat 
+2014-10-14 17:07:07,450 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(295) ----> Saving receivelog.dat . . . 
+2014-10-14 17:07:07,450 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(312) ----> complete:0 
+2014-10-14 17:07:07,451 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(206) ----> Shutdown 
+2014-10-14 17:07:54,893 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-14 17:07:56,650 | DEBUG | [main] | class pro.server.Program:Init(117) ----> Loaded. 
+2014-10-14 17:07:56,651 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:data.dat 
+2014-10-14 17:07:56,660 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(256) ----> data.dat is empty 
+2014-10-14 17:07:56,662 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: data.dat 
+2014-10-14 17:07:56,662 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(225) ----> loadSMSDataTable:receivelog.dat 
+2014-10-14 17:07:56,662 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(256) ----> receivelog.dat is empty 
+2014-10-14 17:07:56,663 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(277) ----> Deleting.....: receivelog.dat 
+2014-10-14 17:07:56,663 | DEBUG | [main] | class pro.server.Program:Init(124) ----> Start: LoadMO 
+2014-10-14 17:07:56,776 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2014-10-14 17:07:56,824 |  INFO | [Thread-8] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1546 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:839192263 || RequestTime:2014-10-14 13:38:36.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note:Q:1546[Size:1] 
+2014-10-14 17:07:56,830 |  INFO | [Thread-6] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:9696 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:907356401 || RequestTime:2014-10-09 17:00:06.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note:Q:9696[Size:2] 
+2014-10-14 17:07:56,855 |  INFO | [Thread-7] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:9696 || MSISDN:84919438389 || Keyword:HUYFULL || Info:HUYFULL || MessageType:0 || ContentType:0 || RequestID:626396401 || RequestTime:2014-10-13 12:49:24.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUYFULL ||  Note:Q:9696[Size:3] 
+2014-10-14 17:07:56,950 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2014-10-14 17:07:57,031 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(31) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2014-10-14 17:07:57,032 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(61) ----> CHECK CHARGING SE Delay 60 Phut. 
+2014-10-14 17:07:57,034 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(62) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2014-10-14 17:07:57,035 | DEBUG | [Thread-0] | class pro.server.Program:run(356) ----> Listen MO............................................................... 
+2014-10-14 17:07:58,305 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1546 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:839192263 || RequestTime:2014-10-14 13:38:36.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-10-14 17:07:58,306 |  INFO | [Thread-9] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1546 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:839192263 || RequestTime:2014-10-14 13:38:36.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-10-14 17:07:58,377 |  INFO | [Thread-10] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:9696 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:907356401 || RequestTime:2014-10-09 17:00:06.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-10-14 17:07:58,378 |  INFO | [Thread-10] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:9696 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:907356401 || RequestTime:2014-10-09 17:00:06.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-10-14 17:07:58,404 |  INFO | [Thread-11] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:9696 || MSISDN:84919438389 || Keyword:HUYFULL || Info:HUYFULL || MessageType:0 || ContentType:0 || RequestID:626396401 || RequestTime:2014-10-13 12:49:24.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUYFULL ||  Note:Keyword:HUY 
+2014-10-14 17:07:58,406 |  INFO | [Thread-11] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:9696 || MSISDN:84919438389 || Keyword:HUY || Info:HUYFULL || MessageType:0 || ContentType:0 || RequestID:626396401 || RequestTime:2014-10-13 12:49:24.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUYFULL ||  Note:ClassName:pro.mo.ConfirmDeregister 
+2014-10-14 17:07:58,408 | ERROR | [Thread-11] | class pro.server.ExecuteQueue:processQueueMsg(194) ----> -->ServiceID:9696 || MSISDN:84919438389 || Keyword:HUY || Info:HUYFULL || MessageType:0 || ContentType:0 || RequestID:626396401 || RequestTime:2014-10-13 12:49:24.0 || ChannelType:8 || TenDV: || MaDV: || MO:HUYFULL ||  Note: 
+java.lang.ClassNotFoundException: pro.mo.ConfirmDeregister
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:184)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-10-14 17:07:58,411 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919438389@HUYFULL 
+2014-10-14 17:08:17,917 | DEBUG | [Thread-9] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1546 || MSISDN:84919438389 || Keyword:DK || Info:Chuc mung Quy Khach da dang ky thanh cong goi Giao thong tong hop dich vu mTraffic cua VinaPhone. Quy Khach duoc mien phi 7 ngay ngay trai nghiem dich vu mTraffic. Sau khi het thoi han mien cuoc, VinaPhone se tinh cuoc dich vu 1000dong/ngay va dich vu se duoc tu dong gia han. De tim hieu ve dich vu, truy cap wapsite: http://m.mtraffic.vn. De huy dich vu, Quy Khach vui long soan HUY_ma goi gui 1546. || MessageType:1 || ContentType:21 || RequestID:839192263 || RequestTime:2014-10-14 13:38:36.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-10-14 17:08:18,145 | DEBUG | [Thread-9] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1546 || MSISDN:84919438389 || Keyword:DK || Info:Chuc mung Quy Khach da dang ky thanh cong goi Giao thong tong hop dich vu mTraffic cua VinaPhone. Quy Khach duoc mien phi 7 ngay ngay trai nghiem dich vu mTraffic. Sau khi het thoi han mien cuoc, VinaPhone se tinh cuoc dich vu 1000dong/ngay va dich vu se duoc tu dong gia han. De tim hieu ve dich vu, truy cap wapsite: http://m.mtraffic.vn. De huy dich vu, Quy Khach vui long soan HUY_ma goi gui 1546. || MessageType:1 || ContentType:21 || RequestID:839192263 || RequestTime:2014-10-14 13:38:36.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-10-14 17:08:18,146 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919438389@DK 
+2014-10-14 17:08:19,243 | ERROR | [Thread-10] | class pro.mo.Register:getMessages(508) ----> -->ServiceID:9696 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:907356401 || RequestTime:2014-10-09 17:00:06.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note: 
+com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK_Subscriber'. Cannot insert duplicate key in object 'dbo.Subscriber'. The duplicate key value is (3, 84919438389).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:156)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1373)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:371)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:322)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:4003)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1550)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:160)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:133)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:290)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Wrapper$$EnhancerByProxool$$ff9d5a62.executeUpdate(<generated>)
+	at db.connect.MyExecuteData.Execute_Pro(MyExecuteData.java:240)
+	at dat.sub.Subscriber.Insert(Subscriber.java:423)
+	at pro.mo.Register.Insert_Sub(Register.java:194)
+	at pro.mo.Register.getMessages(Register.java:361)
+	at pro.server.ContentAbstract.start(ContentAbstract.java:42)
+	at pro.server.ExecuteQueue.processQueueMsg(ExecuteQueue.java:188)
+	at pro.server.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-10-14 17:08:19,281 | DEBUG | [Thread-10] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:9696 || MSISDN:84919438389 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:21 || RequestID:907356401 || RequestTime:2014-10-09 17:00:06.0 || ChannelType:8 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-10-14 17:08:19,287 | DEBUG | [Thread-10] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:9696 || MSISDN:84919438389 || Keyword:DK || Info:Yeu cau cua Quy Khach chua duoc thuc hien do he thong dang ban. Xin Quy Khach vui long dang ky lai sau. Tran trong cam on. || MessageType:1 || ContentType:0 || RequestID:907356401 || RequestTime:2014-10-09 17:00:06.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-10-14 17:08:19,287 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919438389@DK 
+2014-10-14 17:08:29,770 |  INFO | [Thread-5] | class pro.server.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:1566 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-14 17:08:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Q:1566[Size:1] 
+2014-10-14 17:08:29,771 |  INFO | [Thread-11] | class pro.server.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:1566 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-14 17:08:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:Keyword:DK 
+2014-10-14 17:08:29,771 |  INFO | [Thread-11] | class pro.server.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:1566 || MSISDN:84919438389 || Keyword:DK || Info:DK || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-14 17:08:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:ClassName:pro.mo.Register 
+2014-10-14 17:08:30,598 | DEBUG | [Thread-11] | class pro.mo.Register:getMessages(516) ----> -->ServiceID:1566 || MSISDN:84919438389 || Keyword:DK || Info:Quy Khach hien dang duoc mien phi 7 ngay dau tien trai nghiem goi Giao thong tong hop dich vu mTraffic. De biet them chi tiet, Quy Khach vui long lien he tong dai 9191 hoac truy cap wapsite: http://m.mtraffic.vn || MessageType:1 || ContentType:21 || RequestID:1 || RequestTime:2014-10-14 17:08:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note: 
+2014-10-14 17:08:30,602 | DEBUG | [Thread-11] | class pro.server.ContentAbstract:sendMT(208) ----> ContentAbstract_SEND_MT-->ServiceID:1566 || MSISDN:84919438389 || Keyword:DK || Info:Quy Khach hien dang duoc mien phi 7 ngay dau tien trai nghiem goi Giao thong tong hop dich vu mTraffic. De biet them chi tiet, Quy Khach vui long lien he tong dai 9191 hoac truy cap wapsite: http://m.mtraffic.vn || MessageType:1 || ContentType:21 || RequestID:1 || RequestTime:2014-10-14 17:08:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:DK ||  Note:SEND MT THANH CONG 
+2014-10-14 17:08:30,602 |  INFO | [Thread-19] | class pro.server.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84919438389@DK 

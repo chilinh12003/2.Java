@@ -1,0 +1,935 @@
+﻿@charset "utf-8";
+/* CSS Body */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;	
+	text-align: center;
+	background: #fff;
+}
+
+table {
+	width: 100%;
+}
+
+table,th,td {
+	font-size: 100%;
+}
+
+td {
+	vertical-align: top;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #016ea6;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #016ea6;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	color: #fff;
+	line-height: 25px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: #595959;
+}
+/* ul, li */
+ul,li {
+	list-style: none;
+}
+/* link chữ */
+a {
+	color: #0093dd;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #dd0606;
+	text-decoration: none;
+}
+
+img {
+	border: 0 none;
+}
+
+.top {
+	margin-top: 15px;
+}
+
+.bottom {
+	margin-bottom: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.alignl {
+	text-align: left;
+}
+
+.alignr {
+	text-align: right;
+}
+
+.alignj {
+	text-align: justify;
+}
+
+.alignc {
+	text-align: center;
+}
+
+.imgleft {
+	float: left;
+}
+
+.imgright {
+	float: right;
+}
+
+.morelink {
+	color: #000;
+}
+
+/*container*/
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+/*header*/
+#header,#header_in {
+	width: 100%;
+	float: left;
+}
+
+.banner {
+	width: 100%;
+	float: left;
+	background:
+		url(../images/bg_header.jpg);
+		
+}
+
+.banner_in {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 176px;
+	float: left;
+	margin: 18px 0px 0px 20px;
+}
+
+.logo img {
+	width: 100%;
+	height: 41px;
+}
+
+.top_bar {
+	width: 620px;
+	float: right;
+	height: 29px;
+	margin-top: 20px;
+}
+
+.top_bar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.top_bar li {
+	float: left;
+	padding: 0px 3px;
+	line-height: 29px;
+	color: #0373b1;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.top_bar li a {
+	color: #0373b1;
+}
+
+.top_bar li a:hover {
+	color: #0373b1;
+	text-decoration: underline;
+}
+
+.red {
+	color: #000;
+}
+
+.h_nav {
+	width: 100%;
+	float: left;
+	/*background:url(../images/bg_nav.jpg);*/
+	background: #00a1e4;
+	height: 50px;
+	position: relative;
+}
+
+.navigation {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.nav {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.h_nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.h_nav li {
+	float: left;
+	line-height: 45px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.h_nav li a {
+	color: #fff;
+	padding: 0px 15px;
+}
+
+.h_nav li a:hover {
+	color: #fff000;
+}
+
+.cach_h_nav {
+	width: 3px;
+	height: 30px;
+}
+
+.h_nav li a.select {
+	color: #ff7800;
+	padding: 0px 5px;
+}
+
+.h_nav li a.select:hover {
+	color: #ff7800;
+}
+
+.icon {
+	width: 40px;
+	height: 45px;
+}
+/*home*/
+#home {
+	width: 100%;
+	float: left;
+	background:
+		url(../images/bg_home.jpg);
+	height: 514px;
+}
+
+#home_in {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.songhanh {
+	width: 100%;
+	float: left;
+}
+
+.songhanh img {
+	width: 100%;
+	height: 514px;
+}
+
+/*footer*/
+#footer {
+	width: 100%;
+	float: left;
+	background:
+		url(../images/bg_footer.jpg);
+}
+
+#footer_in {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.add_footer {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.logo_footer {
+	width: 176px;
+	float: left;
+	margin-top: 10px;
+}
+
+.logo_footer img {
+	width: 100%;
+	height: 41px;
+}
+
+.add_cty {
+	width: 100%;
+	float: right;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.nav_footer {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.nav_footer ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+.nav_footer li {
+	float: left;
+	padding: 0px 5px;
+	line-height: 24px;
+	color: #000;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	text-align: center;
+}
+
+.nav_footer li a {
+	color: #000;
+}
+
+.nav_footer li a:hover {
+	color: #024162;
+	text-decoration: underline;
+}
+
+.copyright {
+	width: 100%;
+	float: left;
+}
+
+.copyright li {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	color: #484848;
+	text-align: center;
+	line-height: 18px;
+}
+
+.cattiensa {
+	width: 118px;
+	float: right;
+}
+
+.cattiensa img {
+	width: 100%;
+	height: 61px;
+}
+
+/*Kiểm tra mã dự thưởng*/
+.kiemtra_ma {
+	width: 1000px;
+	float: right;
+	background:
+		url(../images/bg_kiemtramaduthuong.png);
+	height: 510px;
+	margin-top: 5px;
+}
+
+.form_tracuu {
+	width: 495px;
+	float: right;
+	margin: 250px 30px 0px 0px;
+}
+
+.tracuu {
+	width: 120px;
+	height: 45px;
+	float: left;
+	background:
+		url(../images/bg_tracuu.png);
+}
+
+.tracuu li {
+	color: #fff;
+	line-height: 45px;
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.tracuu li a {
+	color: #fff;
+}
+
+.tracuu li a:hover {
+	color: #fff;
+}
+
+.text_tracuu {
+	float: left;
+	background:
+		url(../images/bg_text_tracuu.png);
+	width: 223px;
+	height: 42px;
+	margin: 2px 0px 0px 10px;
+}
+
+.text_tracuu li {
+	text-align: left;
+	color: #0178b4;
+	line-height: 16px;
+}
+
+.maduthuong {
+	width: 210px;
+	height: 32px;
+	margin: 5px 0px 5px 3px;
+	border: 0 none;
+	background: none;
+	font-size: 16px;
+	color: #02476d;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ma_xacthuc {
+	width: 133px;
+	float: right;
+	margin-top: 10px;
+}
+
+.ma_xacthuc img {
+	width: 100%;
+	height: 25px;
+}
+
+.luuy {
+	font-size: 10px;
+	font-size: 10px;
+	padding-top: 20px;
+	text-align: left;
+	color: #fff;
+}
+
+/*Hướng dẫn chơi*/
+.huongdan_choi {
+	width: 1000px;
+	float: right;
+	background:
+		url(../images/bg_huongdancachchoi.png);
+	height: 550px;
+}
+
+.box_huongdan_choi {
+	width: 535px;
+	float: right;
+	margin: 128px 22px 0px 0px;
+}
+
+.title_huongdan_choi {
+	width: 100%;
+	float: left;
+}
+
+.title_huongdan_choi h3 {
+	font-size: 13px;
+	text-align: right;
+	line-height: 20px;
+	padding-top: 10px;
+	padding-right: 5px;
+	color: #333;
+	padding-left: 10px;
+}
+
+.icon_title {
+	width: 22px;
+	height: 22px;
+	float: right;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+.noidung_huongdan_choi {
+	float: right;
+	width: 550px;
+	height: 212px;
+	background:
+		url(../images/bg_content.png);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 10px #ccc;
+}
+
+.noidung_huongdan_choi_in {
+	float: left;
+}
+
+.noidung_huongdan_choi li {
+	text-align: justify;
+	line-height: 23px;
+}
+
+.noidung_huongdan_choi h1 {
+	width: 100%;
+	font-size: 13px;
+	text-align: left;
+	line-height: 20px;
+	color: #034b6d;
+	padding-bottom: 5px;
+}
+
+.tieude_cachchoi {
+	color: #000;
+	font-weight: bold;
+	padding-right: 15px;
+	text-align: justify
+}
+
+.noidung_choi {
+	font-size: 12px;
+	font-style: normal;
+	text-align: justify;
+	line-height: 20px;
+	padding-right: 15px;
+	color: #000;
+}
+
+.reg_note {
+	font-size: 24px;
+	font-style: normal;
+	text-align: justify;
+	line-height: 20px;
+	padding-right: 5px;
+	color: #000;
+}
+
+.noidung_huongdan_choi_2 {
+	float: right;
+	width: 550px;
+	height: 212px;
+	background:
+		url(../images/bg_content.png);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 10px #ccc;
+}
+
+.noidung_huongdan_choi_in_2 {
+	float: left;
+}
+
+.noidung_huongdan_choi_2 ul {
+	list-style: square;
+}
+
+.noidung_huongdan_choi_2 ul li {
+	text-align: justify;
+	line-height: 23px;
+	list-style: square;
+}
+
+.noidung_huongdan_choi_2 h1 {
+	width: 100%;
+	font-size: 13px;
+	text-align: left;
+	line-height: 20px;
+	color: #034b6d;
+	padding-bottom: 5px;
+}
+
+.bg_bar {
+	width: 1px;
+	float: right;
+	position: relative;
+	top: 10px;
+	right: 15px;
+	z-index: 1;
+}
+
+.bg_bar img {
+	width: 1px;
+	height: 200px;
+	position: absolute;
+}
+
+/* Thể lệ giải thưởng*/
+.title_thele_giaithuong {
+	width: 100%;
+	float: left;
+}
+
+.title_thele_giaithuong img {
+	width: 212px;
+	height: 46px;
+}
+
+.tieude_thele_giaithuong {
+	color: #005681;
+	font-weight: normal;
+	padding-right: 15px;
+}
+
+.noidung_giaithuong {
+	color: #141313;
+	font-size: 12px;
+}
+
+/* Liên hệ*/
+.title_lienhe {
+	width: 100%;
+	float: left;
+}
+
+.title_lienhe img {
+	width: 81px;
+	height: 42px;
+}
+
+.box_lienhe {
+	width: 100%;
+	float: left;
+}
+.box_lienhe p {
+
+	text-align: left;
+margin: 10px 0 10px 0;
+font-size: 14px;
+
+	}
+.info_lienhe {
+	width: 100%;
+	float: left;
+	background: #c2e6f1;
+	height: 25px;
+}
+
+.info_lienhe ul {
+	margin: 0;
+	padding: 0;
+}
+
+.info_lienhe  li {
+	float: left;
+	line-height: 25px;
+	color: #015884;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.name {
+	width: 100px;
+	margin-left: 10px;
+}
+
+.address {
+	width: 185px;
+	margin: 0px 10px 0px 10px;
+}
+
+.quan {
+	width: 150px;
+	margin-right: 5px;
+}
+
+.phone {
+	width: 90px;
+}
+
+.member {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+.member ul {
+	margin: 0;
+	padding: 0;
+}
+
+.member li {
+	float: left;
+	line-height: 20px;
+	color: #000;
+	font-size: 11px;
+	text-align: left;
+}
+
+/* Khách hàng trúng thưởng*/
+.title_khachhang_trungthuong {
+	width: 100%;
+	float: left;
+}
+
+.title_khachhang_trungthuong img {
+	width: 289px;
+	height: 44px;
+}
+
+.box_khachhang {
+	width: 100%;
+	float: left;
+}
+
+.info_khachhang {
+	width: 100%;
+	float: left;
+	height: 30px;
+}
+
+.info_khachhang ul {
+	margin: 0;
+	padding: 0;
+}
+
+.info_khachhang li {
+	float: left;
+	line-height: 20px;
+	color: #000;
+	font-size: 12px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.box_khachhang table {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #DADADA;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #DADADA;
+	color: #313131;
+}
+
+.box_khachhang th {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.box_khachhang th,.box_khachhang td {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #DADADA;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #DADADA;
+	padding: 4px;
+}
+
+.stt {
+	width: 30px;
+}
+
+.ngay {
+	width: 50px;
+	margin: 0px 5px;
+}
+
+.hoten {
+	width: 115px;
+	margin: 0px 10px;
+}
+
+.dienthoai {
+	width: 95px;
+}
+
+.diachi {
+	width: 140px;
+	margin: 0px 10px;
+}
+
+.giaithuong {
+	width: 75px;
+	font-weight: bold;
+}
+
+.khachhang {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+.khachhang ul {
+	margin: 0;
+	padding: 0;
+}
+
+.khachhang  li {
+	float: left;
+	line-height: 16px;
+	color: #000;
+	font-size: 12px;
+	text-align: justify;
+}
+
+/* Hỏi đáp */
+.title_hoidap {
+	width: 100%;
+	float: left;
+}
+
+.title_hoidap img {
+	width: 85px;
+	height: 44px;
+}
+
+.box_hoidap {
+	width: 100%;
+	float: left;
+}
+
+.images_hoidap {
+	width: 40px;
+	float: left;
+}
+
+.images_hoidap img {
+	width: 100%;
+	height: 33px;
+}
+
+.noidung_hoidap {
+	width: 450px;
+	float: right;
+}
+
+.tieude_hoidap {
+	text-align: left;
+	font-weight: bold;
+	color: #000;
+	border-bottom: 1px dashed #ccc;
+	margin: 0px 15px 15px 0px;
+}
+
+.chitiet_noidung {
+	color: #000;
+	text-align: justify;
+	line-height: 20px;
+	padding-right: 15px;
+}
+
+/* Danh sách mã dự thưởng*/
+.title_danhsach_duthuong {
+	width: 100%;
+	float: left;
+}
+
+.title_danhsach_duthuong img {
+	width: 274px;
+	height: 43px;
+}
+
+.code_duthuong {
+	width: 113px;
+}
+
+.tongdiem {
+	width: 100px;
+}
+
+.info_maduthuong {
+	width: 100%;
+	float: left;
+	height: 30px;
+}
+
+.info_maduthuong ul {
+	margin: 0;
+	padding: 0;
+}
+
+.info_maduthuong  li {
+	float: left;
+	line-height: 20px;
+	color: #015884;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.list_maduthuong {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+.list_maduthuong ul {
+	margin: 0;
+	padding: 0;
+}
+
+.list_maduthuong  li {
+	float: left;
+	line-height: 16px;
+	color: #015884;
+	font-size: 12px;
+	text-align: center;
+}
+
+.wrapping-link {
+	word-break: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	white-space: pre-line;
+}
+
+.wrapping-link-inline {
+	word-break: normal;
+	word-wrap: normal;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	white-space: nowrap;
+}

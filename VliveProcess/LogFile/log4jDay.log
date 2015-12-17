@@ -1,0 +1,64 @@
+2015-01-26 11:21:44,089 | ERROR | [main] | org.logicalcobwebs.proxool.ProxoolDriver:connect(108) ----> Problem 
+org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MySQL'
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.doChange(ConnectionPoolDefinition.java:246)
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.<init>(ConnectionPoolDefinition.java:143)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:96)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:77)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at db.connect.MyConnection.getConnection(MyConnection.java:42)
+	at db.connect.MyGetData.getConnection(MyGetData.java:36)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:73)
+	at db.define.DBConfig.FisrtTestConnection(DBConfig.java:230)
+	at MyProcessServer.Program.Init(Program.java:95)
+	at MyProcessServer.Program.<init>(Program.java:81)
+	at MyProcessServer.Program.main(Program.java:337)
+2015-01-26 11:21:44,110 | ERROR | [main] | class MyProcessServer.Program:<init>(86) ----> java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MySQL' 
+2015-01-26 11:21:44,114 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(357) ----> Listen MO............................................................... 
+2015-01-26 11:21:44,129 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(172) ----> 
+Waiting ..... 
+2015-01-26 11:21:44,630 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(199) ----> saveSMSDataTable(data.dat 
+2015-01-26 11:21:44,630 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(296) ----> Saving data.dat . . . 
+2015-01-26 11:21:44,635 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(313) ----> complete:0 
+2015-01-26 11:21:44,636 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(203) ----> saveSMSDataTable(receivelog.dat 
+2015-01-26 11:21:44,637 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(296) ----> Saving receivelog.dat . . . 
+2015-01-26 11:21:44,638 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(313) ----> complete:0 
+2015-01-26 11:21:44,639 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(207) ----> Shutdown 
+2015-01-26 11:25:28,010 | ERROR | [main] | org.logicalcobwebs.proxool.ProxoolDriver:connect(108) ----> Problem 
+org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MySQL'
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.doChange(ConnectionPoolDefinition.java:246)
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.<init>(ConnectionPoolDefinition.java:143)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:96)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:77)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at db.connect.MyConnection.getConnection(MyConnection.java:42)
+	at db.connect.MyGetData.getConnection(MyGetData.java:36)
+	at db.connect.MyGetData.GetData_Query(MyGetData.java:73)
+	at db.define.DBConfig.FisrtTestConnection(DBConfig.java:230)
+	at MyProcessServer.Program.Init(Program.java:95)
+	at MyProcessServer.Program.<init>(Program.java:81)
+	at MyProcessServer.Program.main(Program.java:337)
+2015-01-26 11:25:28,019 | ERROR | [main] | class MyProcessServer.Program:<init>(86) ----> java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MySQL' 
+2015-01-26 11:25:28,021 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(357) ----> Listen MO............................................................... 
+2015-01-26 11:25:28,027 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(172) ----> 
+Waiting ..... 
+2015-01-26 11:25:28,528 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(199) ----> saveSMSDataTable(data.dat 
+2015-01-26 11:25:28,528 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(296) ----> Saving data.dat . . . 
+2015-01-26 11:25:28,533 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(313) ----> complete:0 
+2015-01-26 11:25:28,533 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(203) ----> saveSMSDataTable(receivelog.dat 
+2015-01-26 11:25:28,534 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(296) ----> Saving receivelog.dat . . . 
+2015-01-26 11:25:28,534 |  INFO | [Thread-4] | class MyProcessServer.Program:saveSMSDataTable(313) ----> complete:0 
+2015-01-26 11:25:28,535 |  INFO | [Thread-4] | class MyProcessServer.Program:windowClosing(207) ----> Shutdown 
+2015-01-26 11:26:21,958 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2015-01-26 11:26:22,106 | DEBUG | [main] | class MyProcessServer.Program:Init(115) ----> Loaded. 
+2015-01-26 11:26:22,106 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(226) ----> loadSMSDataTable:data.dat 
+2015-01-26 11:26:22,110 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(257) ----> data.dat is empty 
+2015-01-26 11:26:22,111 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(278) ----> Deleting.....: data.dat 
+2015-01-26 11:26:22,112 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(226) ----> loadSMSDataTable:receivelog.dat 
+2015-01-26 11:26:22,112 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(257) ----> receivelog.dat is empty 
+2015-01-26 11:26:22,112 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(278) ----> Deleting.....: receivelog.dat 
+2015-01-26 11:26:22,112 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Start: LoadMO 
+2015-01-26 11:26:22,147 | DEBUG | [main] | class MyProcessServer.Program:Init(136) ----> Start: ExecuteQueue 
+2015-01-26 11:26:22,234 | DEBUG | [main] | class MyProcessServer.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2015-01-26 11:26:22,280 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(357) ----> Listen MO............................................................... 

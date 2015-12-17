@@ -1,0 +1,65 @@
+package uti;
+
+import java.util.Vector;
+
+public class MyQueue
+{
+
+	// Queue for ACK message
+	protected Vector<Object> queue;
+
+	public MyQueue()
+	{
+		queue = new Vector<Object>();
+	}
+
+	public Object remove()
+	{
+		synchronized (queue)
+		{
+			while (queue.isEmpty())
+			{ // Threads are blocked
+				try
+				{ // if the queue is empty.
+					queue.wait(); // wait until other thread call notify().
+				}
+				catch (InterruptedException ex)
+				{
+					ex.printStackTrace();
+				}
+			}
+			Object item = queue.firstElement();
+			queue.removeElement(item);
+			return item;
+		}
+	}
+
+	public void add(Object item)
+	{
+		synchronized (queue)
+		{
+			queue.addElement(item);
+			queue.notify();
+		}
+	}
+
+	public long getSize()
+	{
+		return queue.size();
+	}
+
+	public boolean isEmpty()
+	{
+		return queue.isEmpty();
+	}
+
+	public void setVector(Vector<Object> v)
+	{
+		this.queue = v;
+	}
+
+	public Vector<Object> getVector()
+	{
+		return this.queue;
+	}
+}

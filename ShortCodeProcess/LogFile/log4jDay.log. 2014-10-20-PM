@@ -1,0 +1,29 @@
+2014-10-20 15:26:30,369 |  INFO | [Thread-1] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-20 15:26:32,653 | DEBUG | [main] | class MyProcessServer.Program:Init(119) ----> Loaded. 
+2014-10-20 15:26:32,653 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(228) ----> loadSMSDataTable:data.dat 
+2014-10-20 15:26:32,698 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(237) ----> data.dat is empty 
+2014-10-20 15:26:32,701 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(280) ----> Deleting.....: data.dat 
+2014-10-20 15:26:32,702 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(228) ----> loadSMSDataTable:receivelog.dat 
+2014-10-20 15:26:32,718 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(237) ----> receivelog.dat is empty 
+2014-10-20 15:26:32,718 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(280) ----> Deleting.....: receivelog.dat 
+2014-10-20 15:26:32,718 | DEBUG | [main] | class MyProcessServer.Program:Init(126) ----> Start: LoadMO 
+2014-10-20 15:26:32,771 | DEBUG | [main] | class MyProcessServer.Program:Init(139) ----> Start: ExecuteQueue 
+2014-10-20 15:26:32,857 | DEBUG | [main] | class MyProcessServer.Program:Init(147) ----> Start: ExecuteInsertReceiveLog 
+2014-10-20 15:26:32,904 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(373) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-20 15:26:32,916 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(357) ----> Listen MO............................................................... 
+2014-10-20 15:26:38,771 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(122) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-20 15:26:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Q:6083[Size:0] 
+2014-10-20 15:26:38,771 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:run(100) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-20 15:26:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Keyword:ALAO 
+2014-10-20 15:26:38,777 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:processQueueMsg(178) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-20 15:26:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:ClassName:MyProcess.GoldSwordProcess 
+2014-10-20 15:27:01,864 | ERROR | [Thread-7] | class MyProcess.GoldSwordProcess:getMessages(81) ----> -->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:1 || RequestTime:2014-10-20 15:26:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:417)
+	at java.lang.Integer.parseInt(Integer.java:499)
+	at MyProcess.GoldSwordProcess.getMessages(GoldSwordProcess.java:71)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:42)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:199)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:104)
+2014-10-20 15:27:01,927 | DEBUG | [Thread-7] | class MyProcessServer.ContentAbstract:sendMT(224) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:1 || RequestTime:2014-10-20 15:26:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:SEND MT THANH CONG 
+2014-10-20 15:27:01,928 |  INFO | [Thread-17] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(106) ----> add2SMSReceiveLog:84919438389@ALAO 123 
+2014-10-20 15:28:31,594 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(122) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-20 15:28:31.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Q:6083[Size:0] 
+2014-10-20 15:28:31,594 |  INFO | [Thread-8] | class MyProcessServer.ExecuteQueue:run(100) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-20 15:28:31.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Keyword:ALAO 
+2014-10-20 15:28:31,595 |  INFO | [Thread-8] | class MyProcessServer.ExecuteQueue:processQueueMsg(178) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-20 15:28:31.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:ClassName:MyProcess.GoldSwordProcess 

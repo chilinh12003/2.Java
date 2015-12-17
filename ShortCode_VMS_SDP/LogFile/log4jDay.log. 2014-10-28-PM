@@ -1,0 +1,14 @@
+2014-10-28 14:07:44,556 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-10-28 14:07:45,160 | DEBUG | [main] | class MyProcessServer.Program:Init(122) ----> Loaded. 
+2014-10-28 14:07:45,161 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:data.dat 
+2014-10-28 14:07:45,162 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> data.dat is empty 
+2014-10-28 14:07:45,164 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: data.dat 
+2014-10-28 14:07:45,164 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(232) ----> loadSMSDataTable:receivelog.dat 
+2014-10-28 14:07:45,165 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(241) ----> receivelog.dat is empty 
+2014-10-28 14:07:45,165 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(284) ----> Deleting.....: receivelog.dat 
+2014-10-28 14:07:45,166 | DEBUG | [main] | class MyProcessServer.Program:Init(129) ----> Start: LoadMO 
+2014-10-28 14:07:45,254 | DEBUG | [main] | class MyProcessServer.Program:Init(142) ----> Start: ExecuteQueue 
+2014-10-28 14:07:45,315 | DEBUG | [main] | class MyProcessServer.Program:Init(151) ----> Start: ExecuteInsertReceiveLog 
+2014-10-28 14:07:45,579 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(380) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-10-28 14:07:45,656 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2014-10-28 14:07:45,844 |  INFO | [Thread-22] | class MyProcessServer.Common:sendMT1(160) ----> SendMT-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:Yeu cau cua ban tam thoi chua thuc hien duoc.Vui long quay lai vao lan sau. || MessageType:2 || ContentType:21 || RequestID:1 || RequestTime:2014-10-27 16:50:54.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 

@@ -1,0 +1,59 @@
+2015-01-10 15:31:03,139 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2015-01-10 15:31:03,288 | DEBUG | [main] | class pro.server.Program:Init(114) ----> Loaded. 
+2015-01-10 15:31:03,289 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:data.dat 
+2015-01-10 15:31:03,307 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(258) ----> data.dat is empty 
+2015-01-10 15:31:03,308 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: data.dat 
+2015-01-10 15:31:03,309 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:receivelog.dat 
+2015-01-10 15:31:03,309 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(258) ----> receivelog.dat is empty 
+2015-01-10 15:31:03,310 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: receivelog.dat 
+2015-01-10 15:31:03,310 | DEBUG | [main] | class pro.server.Program:Init(121) ----> Start: LoadMO 
+2015-01-10 15:31:03,393 | DEBUG | [main] | class pro.server.Program:Init(136) ----> Start: ExecuteQueue 
+2015-01-10 15:31:03,471 | DEBUG | [main] | class pro.server.Program:Init(144) ----> Start: ExecuteInsertReceiveLog 
+2015-01-10 15:31:03,532 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2015-01-10 15:31:03,533 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2015-01-10 15:31:03,533 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2015-01-10 15:31:03,601 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2015-01-10 15:31:03,601 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2015-01-10 15:31:03,603 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2015-01-10 15:31:03,635 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
+2015-01-10 15:41:21,333 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2015-01-10 15:41:21,368 | DEBUG | [main] | class pro.server.Program:Init(114) ----> Loaded. 
+2015-01-10 15:41:21,368 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:data.dat 
+2015-01-10 15:41:21,368 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> data.dat is empty 
+2015-01-10 15:41:21,369 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: data.dat 
+2015-01-10 15:41:21,369 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:receivelog.dat 
+2015-01-10 15:41:21,370 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> receivelog.dat is empty 
+2015-01-10 15:41:21,370 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: receivelog.dat 
+2015-01-10 15:41:21,370 | DEBUG | [main] | class pro.server.Program:Init(121) ----> Start: LoadMO 
+2015-01-10 15:41:21,405 | DEBUG | [main] | class pro.server.Program:Init(136) ----> Start: ExecuteQueue 
+2015-01-10 15:41:21,489 | DEBUG | [main] | class pro.server.Program:Init(144) ----> Start: ExecuteInsertReceiveLog 
+2015-01-10 15:41:21,566 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2015-01-10 15:41:21,567 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2015-01-10 15:41:21,567 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2015-01-10 15:41:21,685 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
+2015-01-10 15:41:21,733 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2015-01-10 15:41:21,735 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2015-01-10 15:41:21,735 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2015-01-10 15:42:08,738 |  INFO | [Thread-21] | class pro.check.CheckFinish:SyncWinnerWeek(462) ----> WinnerWeek --> WeekID:0 | MSISDN:841233321678 | WeekOfYear:2 | BeginSession:2015-01-05 00:00:00.000 | EndSession2015-01-11 00:00:00.000 | WinnerCount:5 | TotalTime:522000 
+2015-01-10 15:45:36,289 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2015-01-10 15:45:36,338 | DEBUG | [main] | class pro.server.Program:Init(114) ----> Loaded. 
+2015-01-10 15:45:36,338 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:data.dat 
+2015-01-10 15:45:36,338 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> data.dat is empty 
+2015-01-10 15:45:36,339 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: data.dat 
+2015-01-10 15:45:36,339 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:receivelog.dat 
+2015-01-10 15:45:36,339 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> receivelog.dat is empty 
+2015-01-10 15:45:36,340 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: receivelog.dat 
+2015-01-10 15:45:36,340 | DEBUG | [main] | class pro.server.Program:Init(121) ----> Start: LoadMO 
+2015-01-10 15:45:36,369 | DEBUG | [main] | class pro.server.Program:Init(136) ----> Start: ExecuteQueue 
+2015-01-10 15:45:36,431 | DEBUG | [main] | class pro.server.Program:Init(144) ----> Start: ExecuteInsertReceiveLog 
+2015-01-10 15:45:36,448 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2015-01-10 15:45:36,449 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2015-01-10 15:45:36,449 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2015-01-10 15:45:36,482 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2015-01-10 15:45:36,482 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2015-01-10 15:45:36,484 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2015-01-10 15:45:36,485 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
+2015-01-10 15:45:36,522 |  INFO | [Thread-21] | class pro.check.CheckFinish:SyncWinnerWeek(462) ----> WinnerWeek --> WeekID:0 | MSISDN:841233321678 | WeekOfYear:2 | BeginSession:2015-01-05 00:00:00.000 | EndSession2015-01-11 00:00:00.000 | WinnerCount:5 | TotalTime:522000 
+2015-01-10 15:45:36,663 | DEBUG | [Thread-21] | class pro.check.CheckFinish:run(48) ----> ---------------BAT DAU CHECK FINISH PHIEN -------------------- 
+2015-01-10 15:45:36,663 | DEBUG | [Thread-21] | class pro.check.CheckFinish:Sleep(133) ----> CHECK FINISH SE DELAY 10 {HUT. 
+2015-01-10 15:45:36,664 | DEBUG | [Thread-21] | class pro.check.CheckFinish:Sleep(134) ----> ---------------KET THUC CHECK FINISH -------------------- 

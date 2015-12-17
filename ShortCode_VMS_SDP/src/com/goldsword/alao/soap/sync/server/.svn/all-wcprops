@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/HBMyEclipse/!svn/ver/95/ProcessNew_VMS_SDP/src/com/goldsword/alao/soap/sync/server
+END
+GoldSwordServiceSoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/HBMyEclipse/!svn/ver/95/ProcessNew_VMS_SDP/src/com/goldsword/alao/soap/sync/server/GoldSwordServiceSoapBindingStub.java
+END
+GoldSwordService_Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/HBMyEclipse/!svn/ver/95/ProcessNew_VMS_SDP/src/com/goldsword/alao/soap/sync/server/GoldSwordService_Service.java
+END
+GoldSwordService_ServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/HBMyEclipse/!svn/ver/95/ProcessNew_VMS_SDP/src/com/goldsword/alao/soap/sync/server/GoldSwordService_ServiceLocator.java
+END
+GoldSwordServiceProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/HBMyEclipse/!svn/ver/95/ProcessNew_VMS_SDP/src/com/goldsword/alao/soap/sync/server/GoldSwordServiceProxy.java
+END
+GoldSwordService_PortType.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/HBMyEclipse/!svn/ver/95/ProcessNew_VMS_SDP/src/com/goldsword/alao/soap/sync/server/GoldSwordService_PortType.java
+END
