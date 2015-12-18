@@ -13,8 +13,7 @@ public class DefineMt extends DAOBase implements java.io.Serializable
 	public enum MTType
 	{
 		Default(100), Invalid(101), Help(102), SystemError(103), Fail(104), GetOTPSuccess(105), GetOTPNotReg(106), PushMT(
-				107), Reminder(108),
-				NotifyBeginSession (109),
+				107), Reminder(108), PushNewsDaily(109),
 
 		RequestMarkSuccess(110),
 		RequestMarkNotReg(111),
@@ -229,6 +228,10 @@ public class DefineMt extends DAOBase implements java.io.Serializable
 		 */
 		NotifyRenewSuccessBeforeFail(604),
 
+		/**
+		 * Thông báo gia han không thành công cho lần gia hạn trong ngày
+		 */
+		NotifyRenewFail(605),
 		 ;
 		
 		private int value;

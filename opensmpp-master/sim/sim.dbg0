@@ -1,0 +1,10 @@
+04:56:12 main: main() trace group 3 deactivated
+04:56:12 main: main() trace group 6 deactivated
+04:56:12 main: main() trace group 8 deactivated
+04:56:12 main: main() trace group 18 deactivated
+04:56:12 main: main() simulator started
+04:56:18 main: main() exception reading keyboard java.lang.NumberFormatException: For input string: ""
+04:56:18 main: main() exception reading keyboard java.lang.NumberFormatException: For input string: ""
+04:56:38    main: DeliveryInfoSender.start() entered
+04:56:38    DlvrInfoSender-1: DeliveryInfoSender.run() entered
+04:56:38    main: DeliveryInfoSender.start() exited

@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import uti.MyConfig;
 import uti.MyDate;
 
 /**
@@ -552,6 +553,37 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 			String strSQL = "FROM Subscriber WHERE pid = " + PID.toString() + " AND orderId > " + OrderID.toString()
 					+ " AND statusId =" + mStatus.GetValue().toString() + "  AND (mod(orderId," + threadNumber + ")="
 					+ threadIndex + ")" + " ORDER BY orderId ASC";
+
+			mList = (List<Subscriber>) Get(strSQL, RowCount);
+
+			return mList;
+		}
+		catch (Exception ex)
+		{
+			throw ex;
+		}
+	}
+
+	/**
+	 * Lấy các thuê bao pedding và chưa push notifyRenewFail
+	 * @param PID
+	 * @param OrderID
+	 * @param mStatus
+	 * @param RowCount
+	 * @param calBegin
+	 * @param calEnd
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Subscriber> getSubPending(Short PID, Integer OrderID, Status mStatus, Integer RowCount,
+			Calendar calExpiryDate) throws Exception
+	{
+		List<Subscriber> mList = null;
+		try
+		{
+			String strSQL = "FROM Subscriber WHERE pid = " + PID.toString() + " AND orderId > " + OrderID.toString()
+					+ " AND statusId =" + mStatus.GetValue().toString() + "  AND ExpiryDate = '"
+					+ MyConfig.Get_DateFormat_InsertDB().format(calExpiryDate.getTime()) + "' " + " ORDER BY orderId ASC";
 
 			mList = (List<Subscriber>) Get(strSQL, RowCount);
 

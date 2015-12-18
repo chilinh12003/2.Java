@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-752-. --><xs:schema xmlns:tns="http://paydirect.vn/voucherservice" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://paydirect.vn/voucherservice">
+
+<xs:element name="getTransactionDetail" type="tns:getTransactionDetail"></xs:element>
+
+<xs:element name="getTransactionDetailResponse" type="tns:getTransactionDetailResponse"></xs:element>
+
+<xs:element name="useCard" type="tns:useCard"></xs:element>
+
+<xs:element name="useCardResponse" type="tns:useCardResponse"></xs:element>
+
+<xs:complexType name="useCard">
+<xs:sequence>
+<xs:element name="issuer" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="cardSerial" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="cardCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="transRef" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="partnerCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="signature" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="useCardResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTransactionDetail">
+<xs:sequence>
+<xs:element name="transRef" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="partnerCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="signature" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTransactionDetailResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

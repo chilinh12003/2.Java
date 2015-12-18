@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<link href="/css/define.css" rel="stylesheet" type="text/css" />
+<link href="/css/admin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/angular.min.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+	<div class="admin" ng-app="myApp" >
+	<div ng-controller="mayTinh">
+		<input type="text" ng-model="no1" /><br>
+		<input type="text" ng-model="no2" /><br>
+		<select ng-model="phepTinh">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">x</option>
+			<option value="/">:</option>
+		</select>
+		<button ng-click="tinh()">Tính</button>
+		Kết quả là: {{ketQua}}
+		</div>
+	</div>
+</body>
+</html>

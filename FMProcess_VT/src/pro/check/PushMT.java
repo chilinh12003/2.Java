@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import db.DefineMt;
+import db.DefineMt.MTType;
 import db.Mtqueue;
 import db.News;
 import db.Subscriber;
@@ -64,12 +65,15 @@ public class PushMT extends Thread
 	Subscriber subDB = new Subscriber();
 
 	public Subscriber.Status mStatus = Status.NoThing;
+
+	DefineMt.MTType mMTType = MTType.PushMT;
+
 	public PushMT()
 	{
 	}
 
 	public PushMT(News newsObj, Short currentPID, Integer threadNumber, Integer threadIndex, Integer maxOrderID,
-			Integer rowCount, Date startDate, Integer delaySendMT, Subscriber.Status mStatus)
+			Integer rowCount, Date startDate, Integer delaySendMT, Subscriber.Status mStatus, DefineMt.MTType mMTType)
 	{
 		super();
 		this.newsObj = newsObj;
@@ -81,6 +85,7 @@ public class PushMT extends Thread
 		StartDate = startDate;
 		DelaySendMT = delaySendMT;
 		this.mStatus = mStatus;
+		this.mMTType = mMTType;
 	}
 
 	public void run()
@@ -144,7 +149,7 @@ public class PushMT extends Thread
 				}
 				while (Program.processData && mList != null && mList.size() > 0)
 				{
-					for (Subscriber mSubObj : mList)
+					for (Subscriber subObj : mList)
 					{
 						// Nếu bị dừng đột ngột
 						if (!Program.processData)
@@ -152,9 +157,9 @@ public class PushMT extends Thread
 							mLog.log.debug("Bi dung PushMT: PushMT Info:" + MyLogger.GetLog(this));
 							return;
 						}
-						this.MaxOrderID = mSubObj.getOrderId();
-						this.PhoneNumber = mSubObj.getId().getPhoneNumber();
-						SendMT(mSubObj);
+						this.MaxOrderID = subObj.getOrderId();
+						this.PhoneNumber = subObj.getId().getPhoneNumber();
+						SendMT(subObj);
 						if (this.DelaySendMT > 0)
 						{
 							mLog.log.info("PushMT Delay: " + Integer.toString(this.DelaySendMT));
@@ -185,46 +190,15 @@ public class PushMT extends Thread
 		}
 	}
 
-	private void SendMT(Subscriber mSubObj)
+	private void SendMT(Subscriber subObj)
 	{
-		Mtqueue mtqueueObj = new Mtqueue();
 		try
 		{
-			mtqueueObj.setChannelId(MyConfig.ChannelType.SYSTEM.GetValue().shortValue());
-			mtqueueObj.setContentTypeId(Mtqueue.ContentType.LongMessage.GetValue());
-			mtqueueObj.setMt(this.newsObj.getMt());
-			mtqueueObj.setMtInsertDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			mtqueueObj.setMttypeId(DefineMt.MTType.PushMT.GetValue());
-			mtqueueObj.setPhoneNumber(mSubObj.getId().getPhoneNumber());
-			mtqueueObj.setPid(mSubObj.getId().getPid());
-			mtqueueObj.setRequestId(MySeccurity.GenUniqueueID());
-			mtqueueObj.setRetryCount((short) 0);
-			mtqueueObj.setSendTypeID(Mtqueue.SendType.SendToUser.GetValue());
-			mtqueueObj.setShoreCode(LocalConfig.SHORT_CODE);
-			mtqueueObj.setStatusId(Mtqueue.Status.WaitingSendMT.GetValue());
-			mtqueueObj.setTelcoId(MyConfig.Telco.VIETTEL.GetValue().shortValue());
-
-			Integer TotalSesment = newsObj.getMt().length() / 160;
-			if (newsObj.getMt().length() % 160 > 0)
-				TotalSesment++;
-
-			mtqueueObj.setTotalSegment(TotalSesment.shortValue());
-
-			if (mtqueueObj.Save())
-			{
-				mLog.log.info("Pust MT OK -->" + MyLogger.GetLog(mtqueueObj));
-			}
-			else
-			{
-				mLog.log.info("Pust MT Fail -->" + MyLogger.GetLog(mtqueueObj));
-				MyLogger.WriteDataLog(LocalConfig.LogDataFolder, "_PushMT_NotSend",
-						"PUSH MT FAIL --> " + MyLogger.GetLog(mtqueueObj));
-			}
+			Program.sendMT(mMTType, subObj.getId().getPid(), subObj.getId().getPhoneNumber(), this.newsObj.getMt(),
+					mMTType.toString());
 		}
 		catch (Exception ex)
 		{
-			mLog.log.error("Gui MT khong thanh cong:", ex);
-			mLog.log.info(MyLogger.GetLog(mtqueueObj));
 			mLog.log.info(MyLogger.GetLog(this));
 		}
 	}

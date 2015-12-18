@@ -4,6 +4,7 @@ import java.util.Calendar;
 import java.util.List;
 
 import db.*;
+import db.DefineMt.MTType;
 import db.News.NewsType;
 import pro.server.LocalConfig;
 import pro.server.Program;
@@ -45,7 +46,7 @@ public class CheckPushMT extends Thread
 						continue;
 
 					// Chạy thread Push tin
-					RunThreadPushMT(newsObj, Subscriber.Status.NoThing);
+					RunThreadPushMT(newsObj, Subscriber.Status.NoThing,MTType.PushNewsDaily);
 
 					UpdateNewsStatus(newsObj,News.Status.Sending);
 				}
@@ -64,7 +65,7 @@ public class CheckPushMT extends Thread
 						continue;
 
 					// Chạy thread Push tin
-					RunThreadPushMT(newsObj, Subscriber.Status.Active);
+					RunThreadPushMT(newsObj, Subscriber.Status.Active, MTType.Reminder);
 
 					UpdateNewsStatus(newsObj,News.Status.Sending);
 				}
@@ -104,7 +105,7 @@ public class CheckPushMT extends Thread
 		}
 
 	}
-	void RunThreadPushMT(News newsObj, Subscriber.Status mStatus)
+	void RunThreadPushMT(News newsObj, Subscriber.Status mStatus, DefineMt.MTType mMTType)
 	{
 		try
 		{
@@ -122,7 +123,7 @@ public class CheckPushMT extends Thread
 			for (int j = 0; j < LocalConfig.PUSHMT_PROCESS_NUMBER; j++)
 			{
 				PushMT mPushMT = new PushMT(newsObj, (short) 0, LocalConfig.PUSHMT_PROCESS_NUMBER, j, 0,
-						LocalConfig.PUSHMT_ROWCOUNT, Calendar.getInstance().getTime(), DelaySendMT,mStatus);
+						LocalConfig.PUSHMT_ROWCOUNT, Calendar.getInstance().getTime(), DelaySendMT,mStatus, mMTType);
 				mPushMT.setPriority(Thread.MAX_PRIORITY);
 				mPushMT.start();
 			}
@@ -191,38 +192,8 @@ public class CheckPushMT extends Thread
 			short PID = 0;
 			PID = ((Integer) MyConvert.GetPIDByMSISDN(newsObj.getPhoneNumber(), LocalConfig.MAX_PID)).shortValue();			
 			
-			Mtqueue mtQueueObj = new Mtqueue();
-			mtQueueObj.setPid(PID);
-			mtQueueObj.setPhoneNumber(newsObj.getPhoneNumber());
-			mtQueueObj.setChannelId(MyConfig.ChannelType.SYSTEM.GetValue().shortValue());
-			mtQueueObj.setContentTypeId(Mtqueue.ContentType.LongMessage.GetValue());
-			mtQueueObj.setMt(newsObj.getMt());
-			mtQueueObj.setMttypeId(DefineMt.MTType.NotifyWinner.GetValue());
-			mtQueueObj.setRequestId(MySeccurity.GenUniqueueID());
-			mtQueueObj.setRetryCount((short)0);
-			mtQueueObj.setSendDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			mtQueueObj.setSendTypeID(Mtqueue.SendType.SendToUser.GetValue());
-			mtQueueObj.setShoreCode(LocalConfig.SHORT_CODE);
-			mtQueueObj.setStatusId(Mtqueue.Status.WaitingSendMT.GetValue());
-			mtQueueObj.setTelcoId(MyConfig.Telco.VIETTEL.GetValue().shortValue());
+			Program.sendMT(MTType.NotifyWinner, PID, newsObj.getPhoneNumber(), newsObj.getMt(), "Notify Winner");
 			
-			Integer TotalSesment = newsObj.getMt().length() / 160;
-			if (newsObj.getMt().length() % 160 > 0)
-				TotalSesment++;
-			mtQueueObj.setTotalSegment(TotalSesment.shortValue());
-			
-			mtQueueObj.setTotalSegment(TotalSesment.shortValue());
-
-			if (mtQueueObj.Save())
-			{
-				mLog.log.info("Pust Winner MT OK -->"+ MyLogger.GetLog(mtQueueObj));
-			}
-			else
-			{
-				mLog.log.info("Pust Winner MT Fail -->"+MyLogger.GetLog(mtQueueObj));
-				MyLogger.WriteDataLog(LocalConfig.LogDataFolder, "_PushMT_NotSend",
-						"PUSH MT FAIL --> " + MyLogger.GetLog(mtQueueObj));
-			}
 			UpdateNewsStatus(newsObj,News.Status.Complete);
 		}
 		catch(Exception ex)

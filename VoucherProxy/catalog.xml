@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://125.212.219.11/voucher/VoucherService?wsdl" uri="xml-resources/web-service-references/VoucherService/wsdl/125.212.219.11/voucher/VoucherService.wsdl"/>
+    <system systemId="http://125.212.219.11:80/voucher/VoucherService?xsd=1" uri="xml-resources/web-service-references/VoucherService/wsdl/125.212.219.11_80/voucher/VoucherService.xsd_1.xsd"/>
+</catalog>

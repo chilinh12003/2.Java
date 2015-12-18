@@ -3,6 +3,7 @@ package pro.server;
 //import java.io.BufferedReader;
 
 import java.io.File;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Vector;
 
@@ -10,10 +11,12 @@ import pro.check.BeginSession;
 import pro.check.CheckFinishDay;
 import pro.check.CheckFinishSession;
 import pro.check.CheckPushMT;
+import pro.check.NotifyPending;
 import db.DefineMt;
 import db.HibernateSessionFactory;
 import db.Moqueue;
 import db.Mtqueue;
+import db.Subscriber;
 import uti.*;
 
 public class Program extends Thread
@@ -22,18 +25,18 @@ public class Program extends Thread
 	{
 		String currentPath = System.getProperty("user.dir");
 		File mFile = new File(currentPath + "/log4j.properties");
-		
+
 		LocalConfig.LogConfigPath = mFile.getAbsolutePath();
-		
+
 		LocalConfig.LogDataFolder = currentPath + "/LogFile/";
 		mFile = new File(currentPath + "/config.properties");
 		LocalConfig.ConfigPath = mFile.getAbsolutePath();
-		
+
 		mFile = new File(currentPath + "/hibernate.cfg.xml");
 		HibernateSessionFactory.ConfigPath = mFile.getAbsolutePath();
 		HibernateSessionFactory.init();
 	}
-	
+
 	static MyLogger mLog = null;
 	public static boolean getData = true;
 	public static boolean processData = true;
@@ -158,10 +161,14 @@ public class Program extends Thread
 		RetrySendMT mRetrySendMT = new RetrySendMT(queueMTRetry);
 		mRetrySendMT.setPriority(Thread.MAX_PRIORITY);
 		mRetrySendMT.start();
-		
+
 		BeginSession mBeginSession = new BeginSession();
 		mBeginSession.setPriority(Thread.MAX_PRIORITY);
 		mBeginSession.start();
+		
+		NotifyPending mNotifyPeding = new NotifyPending();
+		mNotifyPeding.setPriority(Thread.MAX_PRIORITY);
+		mNotifyPeding.start();
 	}
 
 	public void windowClosing()
@@ -355,4 +362,52 @@ public class Program extends Thread
 		}
 	}
 
+	/**
+	 * Gửi MT
+	 * @param mSubObj
+	 * @param MT
+	 * @param LogPrefix
+	 */
+	public static void sendMT(DefineMt.MTType mMTType, Short PID, String PhoneNumber, String MT,  String LogPrefix)
+	{
+		Mtqueue mtqueueObj = new Mtqueue();
+		try
+		{
+			mtqueueObj.setChannelId(MyConfig.ChannelType.SYSTEM.GetValue().shortValue());
+			mtqueueObj.setContentTypeId(Mtqueue.ContentType.LongMessage.GetValue());
+			mtqueueObj.setMt(MT);
+			mtqueueObj.setMtInsertDate(MyDate.Date2Timestamp(Calendar.getInstance()));
+			mtqueueObj.setMttypeId(mMTType.GetValue());
+			mtqueueObj.setPhoneNumber(PhoneNumber);
+			mtqueueObj.setPid(PID);
+			mtqueueObj.setRequestId(MySeccurity.GenUniqueueID());
+			mtqueueObj.setRetryCount((short) 0);
+			mtqueueObj.setSendTypeID(Mtqueue.SendType.SendToUser.GetValue());
+			mtqueueObj.setShoreCode(LocalConfig.SHORT_CODE);
+			mtqueueObj.setStatusId(Mtqueue.Status.WaitingSendMT.GetValue());
+			mtqueueObj.setTelcoId(MyConfig.Telco.VIETTEL.GetValue().shortValue());
+
+			Integer TotalSesment = MT.length() / 160;
+			if (MT.length() % 160 > 0)
+				TotalSesment++;
+
+			mtqueueObj.setTotalSegment(TotalSesment.shortValue());
+
+			if (mtqueueObj.Save())
+			{
+				mLog.log.info(LogPrefix + " Pust MT OK -->" + MyLogger.GetLog(mtqueueObj));
+			}
+			else
+			{
+				mLog.log.info(LogPrefix + " Pust MT Fail -->" + MyLogger.GetLog(mtqueueObj));
+				MyLogger.WriteDataLog(LocalConfig.LogDataFolder, "_PushMT_NotSend",
+						"PUSH MT FAIL --> " + MyLogger.GetLog(mtqueueObj));
+			}
+		}
+		catch (Exception ex)
+		{
+			mLog.log.error(LogPrefix + " Gui MT khong thanh cong:", ex);
+			mLog.log.info(MyLogger.GetLog(mtqueueObj));
+		}
+	}
 }

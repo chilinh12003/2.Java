@@ -35,7 +35,7 @@ public class BeginSession extends Thread
 				{
 					isPushing = true;					
 
-					String MT = Program.GetDefineMT_Message(MTType.NotifyBeginSession);
+					String MT = Program.GetDefineMT_Message(MTType.NotifyNewSession);
 					Suggest mSuggestObj = CurrentData.Get_SuggestObj(1);
 
 					if (mSuggestObj != null)
