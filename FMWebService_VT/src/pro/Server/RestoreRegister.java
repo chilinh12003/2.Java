@@ -12,13 +12,13 @@ import uti.MyDate;
 import uti.MyConvert;
 import uti.MyLogger;
 
-public class RestoreRegister 
+public class RestoreRegister
 {
 	MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath(), this.getClass().toString());
 	List<Mtqueue> listMTQueue = new ArrayList<Mtqueue>();
 
 	Moqueue moQueueObj = null;
-	Subscriber mSubObj = new Subscriber();
+	Subscriber subObj = new Subscriber();
 	SubLog mSubLog = new SubLog();
 
 	Calendar mCal_Current = Calendar.getInstance();
@@ -71,6 +71,16 @@ public class RestoreRegister
 				listMTQueue.add(mtQueueObj);
 			}
 
+			if (mMTType == MTType.RestoreSuccess && mSuggestObj != null && mSuggestObj.getMt() != null && !mSuggestObj.getMt().equalsIgnoreCase(""))
+			{
+				String MTSuggest = Program.GetDefineMT_Message(MTType.RestoreSuggestMT);
+
+				MTSuggest = MTSuggest.replace("[SuggestMT]", mSuggestObj.getMt());
+
+				Mtqueue mtQueueObj = new Mtqueue(moQueueObj, PID, MTSuggest, MTType.RegSuggestMT, null);
+				listMTQueue.add(mtQueueObj);
+			}
+
 			return listMTQueue;
 		}
 		catch (Exception ex)
@@ -83,17 +93,17 @@ public class RestoreRegister
 	{
 		try
 		{
-			if(mMode == Mode.Check)
+			if (mMode == Mode.Check)
 				return true;
-			
-			if (!mSubObj.Update())
+
+			if (!subObj.Update())
 			{
-				mLog.log.info("Update vao table Subscriber KHONG THANH CONG: XML Insert-->" + MyLogger.GetLog(mSubObj));
+				mLog.log.info("Update vao table Subscriber KHONG THANH CONG: XML Insert-->" + MyLogger.GetLog(subObj));
 				return false;
 			}
 
-			//1: Đăng ký, 2: Khôi phục,0: Hủy đăng ký
-			SubLog mSubLog_Temp = new SubLog(mSubObj, (short) 2);
+			// 1: Đăng ký, 2: Khôi phục,0: Hủy đăng ký
+			SubLog mSubLog_Temp = new SubLog(subObj, (short) 2);
 			mSubLog_Temp.Save();
 
 			return true;
@@ -111,20 +121,54 @@ public class RestoreRegister
 		{
 			case Restore :
 
-				mSubObj.setEffectiveDate(MyDate.Date2Timestamp(mCal_Current));
-				mSubObj.setExpiryDate(MyDate.Date2Timestamp(mCal_Expire));
+				subObj.setExpiryDate(MyDate.Date2Timestamp(mCal_Expire));
 
-				mSubObj.setChannelId(moQueueObj.getChannelId());
-				mSubObj.setStatusId(Subscriber.Status.Active.GetValue());	
+				subObj.setChannelId(moQueueObj.getChannelId());
+				subObj.setStatusId(Subscriber.Status.Active.GetValue());
+
+				// Nếu là khôi phục lại trong tuần (ngày pedding cùng tuần với
+				// ngày khổi phục)
+				if (subObj.CheckIsWeek(mCal_Current))
+				{
+					
+				}
+				else
+				{
+					//Nếu là khác tuần thì các điểm tuần sẽ bị reset
+					subObj.setWeekMark(0);
+					subObj.setDayMark(0);
+					subObj.setAddMark(0);
+				}
+
+				subObj.setChargeMark(LocalConfig.RegMark);
+				subObj.setBuyMark(0);
+				subObj.setAnswerMark(0);
+
+				// Lấy dữ kiện cho thuê bao
+				mSuggestObj = CurrentData.Get_SuggestObj(1);
+
+				if (mSuggestObj != null)
+				{
+					subObj.setLastSuggestId(mSuggestObj.getSuggestId());
+
+					subObj.setSuggestByDay(1);
+					subObj.setTotalSuggest(mSubLog.getTotalSuggest() + 1);
+					subObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
+				}
+				else
+				{
+					subObj.setSuggestByDay(0);
+					subObj.setLastSuggestId(0);
+				}
 				
-				mSubObj.setChargeMark(LocalConfig.RegMark);
-				mSubObj.setAddMark(0);
-				mSubObj.setBuyMark(0);
-				mSubObj.setAnswerMark(0);
+				subObj.setAnswerForSuggestId(0);
+				subObj.setLastAnswer("");
+				subObj.setAnswerStatusId(Play.Status.Nothing.GetValue());
+				subObj.setAnswerByDay(0);
+				subObj.setLastAnswerDate(null);
 
-				mSubObj.setPartnerId(0);
 
-				break;		
+				break;
 			default :
 
 				break;
@@ -135,17 +179,17 @@ public class RestoreRegister
 	{
 		try
 		{
-			if(this.mMode != Mode.Real || mMTType != MTType.RestoreSuccess)
+			if (this.mMode != Mode.Real || mMTType != MTType.RestoreSuccess)
 			{
 				return;
 			}
-			
+
 			ChargeLog chargeObj = new ChargeLog();
-			
+
 			ChargeLogId mID = new ChargeLogId();
-			mID.setPid(mSubObj.getId().getPid());
-			mID.setPhoneNumber(mSubObj.getId().getPhoneNumber());
-			
+			mID.setPid(subObj.getId().getPid());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
+
 			chargeObj.setId(mID);
 
 			chargeObj.setChannelId(moQueueObj.getChannelId());
@@ -153,47 +197,47 @@ public class RestoreRegister
 			chargeObj.setChargeTypeId(ChargeLog.ChargeType.Restore.GetValue());
 			chargeObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
 			chargeObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			chargeObj.setPartnerId(mSubObj.getPartnerId());
+			chargeObj.setPartnerId(subObj.getPartnerId());
 			chargeObj.setPirce((float) amount);
-			
-			if(!chargeObj.Save())
+
+			if (!chargeObj.Save())
 			{
-				mLog.log.warn("RestoreRegister Save ChargeLog Fail:" +MyLogger.GetLog(chargeObj));
+				mLog.log.warn("RestoreRegister Save ChargeLog Fail:" + MyLogger.GetLog(chargeObj));
 			}
 		}
-		catch(Exception ex)
+		catch (Exception ex)
 		{
 			mLog.log.error(ex);
 		}
 	}
-	
+
 	public MTType getMessages(Moqueue moQueueObj, subscribe.Mode mMode, int amount) throws Exception
 	{
 		try
 		{
 			this.mMode = mMode;
-			this.amount =amount;
+			this.amount = amount;
 			// Khoi tao
 			Init(moQueueObj);
 
 			// Lấy thông tin khách hàng đã đăng ký
-			mSubObj = mSubObj.GetSub(PID, moQueueObj.getPhoneNumber());
+			subObj = subObj.GetSub(PID, moQueueObj.getPhoneNumber());
 
 			// Đang đăng ký nhưng dk lại
-			if (mSubObj == null)
+			if (subObj == null)
 			{
 				mMTType = MTType.RestoreNotReg;
 				return mMTType;
 			}
 
-			if(mSubObj.getStatusId()  == Subscriber.Status.Active.GetValue().shortValue())
+			if (subObj.getStatusId() == Subscriber.Status.Active.GetValue().shortValue())
 			{
 				mMTType = MTType.RestoreWhenActive;
 				return mMTType;
 			}
-			
+
 			CreateSub(Subscriber.InitType.Restore);
-			
+
 			if (Update_Sub())
 			{
 				mMTType = MTType.RestoreSuccess;
@@ -207,7 +251,7 @@ public class RestoreRegister
 		catch (Exception ex)
 		{
 			mLog.log.error(MyLogger.GetLog(moQueueObj));
-			mLog.log.error(MyLogger.GetLog(mSubObj), ex);
+			mLog.log.error(MyLogger.GetLog(subObj), ex);
 			mMTType = MTType.RestoreFail;
 			return mMTType;
 		}

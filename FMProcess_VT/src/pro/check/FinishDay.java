@@ -19,8 +19,9 @@ import db.Suggest;
 
 /**
  * Vào mỗi sáng sớm (khoảng 1h), thread này sẽ chạy để khởi tạo lại các thông số
- * cho các thuê bao, trước khi bắt đầu 1 phiên mới
- * Thread này phải chạy trước thời gian charge của VIettel và sau thread FinishSession
+ * cho các thuê bao, trước khi bắt đầu 1 phiên mới Thread này phải chạy trước
+ * thời gian charge của VIettel và sau thread FinishSession
+ * 
  * @author chili
  * 
  */
@@ -261,23 +262,23 @@ public class FinishDay extends Thread
 		subObj.setAnswerForSuggestId(0);
 		subObj.setLastAnswer(null);
 
+		subObj.setLastSuggestId(0);
+		subObj.setSuggestByDay(0);
+		
 		// Chỉ chuyển thành pedding nếu thuê bao này đang Active.
 		// Nếu charge thành công thì tình trạng sẽ chuyển lại Active
 		if (subObj.getStatusId().shortValue() == Subscriber.Status.Active.GetValue().shortValue())
+		{
 			subObj.setStatusId(Subscriber.Status.Pending.GetValue());
 
-		Suggest mSuggestObj = CurrentData.Get_SuggestObj(1);
-		if (mSuggestObj != null)
-		{
-			subObj.setLastSuggestId(mSuggestObj.getSuggestId());
-			subObj.setSuggestByDay(1);
-			subObj.setLastSuggestDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			subObj.setTotalSuggest(subObj.getTotalSuggest() == null ? 0 : subObj.getTotalSuggest() + 1);
-		}
-		else
-		{
-			subObj.setLastSuggestId(0);
-			subObj.setSuggestByDay(0);
+			Suggest mSuggestObj = CurrentData.Get_SuggestObj(1);
+			if (mSuggestObj != null)
+			{
+				subObj.setLastSuggestId(mSuggestObj.getSuggestId());
+				subObj.setSuggestByDay(1);
+				subObj.setLastSuggestDate(MyDate.Date2Timestamp(Calendar.getInstance()));
+				subObj.setTotalSuggest(subObj.getTotalSuggest() == null ? 0 : subObj.getTotalSuggest() + 1);
+			}
 		}
 	}
 }

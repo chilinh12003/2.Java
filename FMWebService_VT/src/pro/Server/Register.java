@@ -19,7 +19,7 @@ public class Register
 	List<Mtqueue> listMTQueue = new ArrayList<Mtqueue>();
 
 	Moqueue moQueueObj = null;
-	Subscriber mSubObj = new Subscriber();
+	Subscriber subObj = new Subscriber();
 	SubLog mSubLog = new SubLog();
 
 	Calendar mCal_Current = Calendar.getInstance();
@@ -72,15 +72,13 @@ public class Register
 				listMTQueue.add(mtQueueObj);
 			}
 
-			if (mSuggestObj != null && mSuggestObj.getMt() != null && !mSuggestObj.getMt().equalsIgnoreCase(""))
+			if (mMTType == MTType.RegNewSuccess &&  mSuggestObj != null && mSuggestObj.getMt() != null && !mSuggestObj.getMt().equalsIgnoreCase(""))
 			{
 				String MTSuggest = Program.GetDefineMT_Message(MTType.RegSuggestMT);
 
 				MTSuggest = MTSuggest.replace("[SuggestMT]", mSuggestObj.getMt());
-
-				Calendar calPushTime = Calendar.getInstance();
 				
-				Mtqueue mtQueueObj = new Mtqueue(moQueueObj, PID, MTSuggest, MTType.RegSuggestMT, MyDate.Date2Timestamp(calPushTime));
+				Mtqueue mtQueueObj = new Mtqueue(moQueueObj, PID, MTSuggest, MTType.RegSuggestMT, null);
 				listMTQueue.add(mtQueueObj);
 			}
 
@@ -99,13 +97,13 @@ public class Register
 			if(mMode == Mode.Check)
 				return true;
 			
-			if (!mSubObj.Save())
+			if (!subObj.Save())
 			{
-				mLog.log.info("Insert vao table Subscriber KHONG THANH CONG: XML Insert-->" + MyLogger.GetLog(mSubObj));
+				mLog.log.info("Insert vao table Subscriber KHONG THANH CONG: XML Insert-->" + MyLogger.GetLog(subObj));
 				return false;
 			}
 
-			SubLog mSubLog_Temp = new SubLog(mSubObj, (short) 1);
+			SubLog mSubLog_Temp = new SubLog(subObj, (short) 1);
 			mSubLog_Temp.Save();
 
 			return true;
@@ -122,87 +120,93 @@ public class Register
 		switch (mInitType)
 		{
 			case NewReg :
-				mSubObj = new Subscriber();
+				subObj = new Subscriber();
 				SubscriberId mSubID = new SubscriberId();
 				mSubID.setPhoneNumber(moQueueObj.getPhoneNumber());
 				mSubID.setPid(PID);
 
-				mSubObj.setId(mSubID);
-				mSubObj.setFirstDate(MyDate.Date2Timestamp(mCal_Current));
-				mSubObj.setResetDate(MyDate.Date2Timestamp(mCal_Current));
-				mSubObj.setEffectiveDate(MyDate.Date2Timestamp(mCal_Current));
-				mSubObj.setExpiryDate(MyDate.Date2Timestamp(mCal_Expire));
+				subObj.setId(mSubID);
+				subObj.setFirstDate(MyDate.Date2Timestamp(mCal_Current));
+				subObj.setResetDate(MyDate.Date2Timestamp(mCal_Current));
+				subObj.setEffectiveDate(MyDate.Date2Timestamp(mCal_Current));
+				subObj.setExpiryDate(MyDate.Date2Timestamp(mCal_Expire));
 
-				mSubObj.setChannelId(moQueueObj.getChannelId());
-				mSubObj.setStatusId(Subscriber.Status.Active.GetValue());
+				subObj.setChannelId(moQueueObj.getChannelId());
+				subObj.setStatusId(Subscriber.Status.Active.GetValue());
 
-				mSubObj.setSuggestByDay(1);
-				mSubObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
+				subObj.setSuggestByDay(1);
+				subObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
 				
-				mSubObj.setTotalSuggest(mSubObj.getTotalSuggest() + 1);
+				subObj.setTotalSuggest(subObj.getTotalSuggest() + 1);
 
 				// Lấy dữ kiện cho thuê bao
-				mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.getSuggestByDay());
+				mSuggestObj = CurrentData.Get_SuggestObj(subObj.getSuggestByDay());
 
 				if (mSuggestObj != null)
-				mSubObj.setLastSuggestId(mSuggestObj.getSuggestId());
+				subObj.setLastSuggestId(mSuggestObj.getSuggestId());
 				
 				
-				mSubObj.setChargeMark(LocalConfig.RegMark);
+				subObj.setWeekMark(0);
+				subObj.setDayMark(0);
+				subObj.setAddMark(0);
+				subObj.setBuyMark(0);
+				subObj.setAnswerMark(0);
+				subObj.setChargeMark(LocalConfig.RegMark);
 
-				mSubObj.setPartnerId(0);
+				subObj.setPartnerId(0);
 
 				break;
 			case RegAgain :
 
-				mSubObj.setEffectiveDate(MyDate.Date2Timestamp(mCal_Current));
-				mSubObj.setExpiryDate(MyDate.Date2Timestamp(mCal_Expire));
+				subObj.setEffectiveDate(MyDate.Date2Timestamp(mCal_Current));
+				subObj.setExpiryDate(MyDate.Date2Timestamp(mCal_Expire));
 
-				mSubObj.setChannelId(moQueueObj.getChannelId());
-				mSubObj.setStatusId(Subscriber.Status.Active.GetValue());
+				subObj.setChannelId(moQueueObj.getChannelId());
+				subObj.setStatusId(Subscriber.Status.Active.GetValue());
 
 				// Nếu hủy, đăng ký lại trong ngày, thì thông tin này giữ nguyên
-				if (mSubObj.CheckLastSuggestDate(mCal_Current))
+				if (subObj.CheckLastSuggestDate(mCal_Current))
 				{
-					if( (mSubObj.getAnswerByDay().intValue() < LocalConfig.MaxAnswerByDay.intValue()
-							&& mSubObj.getAnswerStatusId().shortValue() != Play.Status.CorrectAnswer.GetValue()
+					if( (subObj.getAnswerByDay().intValue() < LocalConfig.MaxAnswerByDay.intValue()
+							&& subObj.getAnswerStatusId().shortValue() != Play.Status.CorrectAnswer.GetValue()
 							.shortValue()))
 					{
 						
 						// Chỉ lấy dữ kiện cho trường hợp
 						//-Trong ngày ĐK, sau đó hủy và ĐK lại.KH chua dự đoán đúng/còn quyền dự đoán
-						mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.getSuggestByDay());
+						mSuggestObj = CurrentData.Get_SuggestObj(subObj.getSuggestByDay());
 					}
 				}
 				else 
 				{
-					mSubObj.setSuggestByDay(1);
-					mSubObj.setTotalSuggest(mSubObj.getTotalSuggest() + 1);
-					mSubObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
+					subObj.setSuggestByDay(1);
+					subObj.setTotalSuggest(subObj.getTotalSuggest() + 1);
+					subObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
 					
-					mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.getSuggestByDay());
+					mSuggestObj = CurrentData.Get_SuggestObj(subObj.getSuggestByDay());
 					
 					if (mSuggestObj != null)
-					mSubObj.setLastSuggestId(mSuggestObj.getSuggestId());
+					subObj.setLastSuggestId(mSuggestObj.getSuggestId());
 				}
 
-				if (!mSubObj.CheckIsWeek(mCal_Current))
+				if (!subObj.CheckIsWeek(mCal_Current))
 				{
-					mSubObj.setAnswerForSuggestId(0);
-					mSubObj.setLastAnswer("");
-					mSubObj.setAnswerStatusId(Play.Status.Nothing.GetValue());
-					mSubObj.setAnswerByDay(0);
-					mSubObj.setLastAnswerDate(null);
+					subObj.setAnswerForSuggestId(0);
+					subObj.setLastAnswer("");
+					subObj.setAnswerStatusId(Play.Status.Nothing.GetValue());
+					subObj.setAnswerByDay(0);
+					subObj.setLastAnswerDate(null);
 				}
 
 				// Khi hủy tất cả các điểm đều bị mất
-				
-				mSubObj.setChargeMark(LocalConfig.RegMark);
-				mSubObj.setAddMark(0);
-				mSubObj.setBuyMark(0);
-				mSubObj.setAnswerMark(0);
+				subObj.setWeekMark(0);
+				subObj.setDayMark(0);
+				subObj.setChargeMark(LocalConfig.RegMark);
+				subObj.setAddMark(0);
+				subObj.setBuyMark(0);
+				subObj.setAnswerMark(0);
 
-				mSubObj.setPartnerId(0);
+				subObj.setPartnerId(0);
 
 				break;
 			case UndoReg :
@@ -229,8 +233,8 @@ public class Register
 			ChargeLog chargeObj = new ChargeLog();
 			
 			ChargeLogId mID = new ChargeLogId();
-			mID.setPid(mSubObj.getId().getPid());
-			mID.setPhoneNumber(mSubObj.getId().getPhoneNumber());
+			mID.setPid(subObj.getId().getPid());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
 			
 			chargeObj.setId(mID);
 
@@ -239,7 +243,7 @@ public class Register
 			chargeObj.setChargeTypeId(ChargeLog.ChargeType.Register.GetValue());
 			chargeObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
 			chargeObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			chargeObj.setPartnerId(mSubObj.getPartnerId());
+			chargeObj.setPartnerId(subObj.getPartnerId());
 			chargeObj.setPirce((float) amount);
 			
 			if(!chargeObj.Save())
@@ -266,26 +270,26 @@ public class Register
 			//Lấy thông tin khách hàng đã đăng ký
 			
 			Subscriber mSubscriber = new Subscriber();
-			mSubObj = mSubscriber.GetSub(PID, moQueueObj.getPhoneNumber());
+			subObj = mSubscriber.GetSub(PID, moQueueObj.getPhoneNumber());
 
 			// Đang đăng ký nhưng dk lại
-			if (mSubObj != null)
+			if (subObj != null)
 			{
 				mMTType = MTType.RegRepeatFree;
 				return mMTType;
 			}
 
-			if (mSubObj == null)
+			if (subObj == null)
 			{
 				SubLog sublog = new SubLog();
 				// Lấy thông tin thuê bao đã từng đăng ký và đã hủy
 				SubLog mUnsubObj = sublog.GetSub(PID, moQueueObj.getPhoneNumber());
 				if (mUnsubObj != null)
-					mSubObj = new Subscriber(mUnsubObj);
+					subObj = new Subscriber(mUnsubObj);
 			}
 
 			// Đăng ký mới (chưa từng đăng ký trước đây)
-			if (mSubObj == null)
+			if (subObj == null)
 			{
 				// Tạo dữ liệu cho đăng ký mới
 				CreateSub(Subscriber.InitType.NewReg);
@@ -302,7 +306,7 @@ public class Register
 				return mMTType;
 			}
 			// Đã đăng ký trước đó nhưng đang hủy
-			else if (mSubObj != null)
+			else if (subObj != null)
 			{
 				CreateSub(Subscriber.InitType.RegAgain);
 				if (Insert_Sub())
@@ -322,7 +326,7 @@ public class Register
 		catch (Exception ex)
 		{
 			mLog.log.error(MyLogger.GetLog(moQueueObj));
-			mLog.log.error(MyLogger.GetLog(mSubObj), ex);
+			mLog.log.error(MyLogger.GetLog(subObj), ex);
 			mMTType = MTType.RegFail;
 			return mMTType;
 		}

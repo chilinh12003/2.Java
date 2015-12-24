@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="db/SuggestCount.java|db/SuggestCountLog.java|test/Subscriber.java|test/SubscriberId.java|test/SubLog.java" kind="src" path="src"/>
+	<classpathentry excluding="db/SuggestCount.java|db/SuggestCountLog.java|test/Subscriber.java|test/SubscriberId.java|test/SubLog.java|th/" kind="src" path="src"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MyLib"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="D:/3.lib/c30p0/c3p0-0.9.5.1/lib/c3p0-0.9.5.1.jar">

@@ -325,9 +325,23 @@ public class subscribe
 			if (mMTType == MTType.RestoreSuccess)
 			{
 				mResult = Result.Success;
-				if (mMode == Mode.Real)
-					listMTQueue.get(0).Save();
-				return BuildResult(mResult, listMTQueue.get(0).getMt());
+				
+				if (listMTQueue.size() == 1)
+				{
+					if (mMode == Mode.Real)
+						listMTQueue.get(0).Save();
+					return BuildResult(mResult, listMTQueue.get(0).getMt());
+				}
+				else
+				{
+					if (mMode == Mode.Real)
+					{
+						listMTQueue.get(0).Save();
+						if (listMTQueue.size() > 1)
+							listMTQueue.get(1).Save();
+					}
+					return BuildResult(mResult, listMTQueue.get(0).getMt());
+				}
 			}
 			else
 			{

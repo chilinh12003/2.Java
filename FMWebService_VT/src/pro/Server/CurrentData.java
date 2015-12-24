@@ -123,7 +123,7 @@ public class CurrentData
 		try
 		{
 			if (Get_Current_SuggestObj().size() < 1)
-				return new Suggest();
+				return null;
 
 			for (Suggest mObject : Get_Current_SuggestObj())
 			{
@@ -131,7 +131,7 @@ public class CurrentData
 					return mObject;
 			}
 
-			return new Suggest();
+			return null;
 		}
 		catch (Exception ex)
 		{

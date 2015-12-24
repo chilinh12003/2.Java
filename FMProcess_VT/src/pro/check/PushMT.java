@@ -167,8 +167,17 @@ public class PushMT extends Thread
 						}
 					}
 
-					mList = (List<Subscriber>) subDB.GetSub(CurrentPID, this.MaxOrderID, this.RowCount,
-							this.ThreadNumber, this.ThreadIndex);
+					if (mStatus == Status.NoThing)
+					{
+						mList = (List<Subscriber>) subDB.GetSub(CurrentPID, this.MaxOrderID, this.RowCount,
+								this.ThreadNumber, this.ThreadIndex);
+					}
+					else
+					{
+						mList = (List<Subscriber>) subDB.GetSub(CurrentPID, this.MaxOrderID, this.mStatus, this.RowCount,
+								this.ThreadNumber, this.ThreadIndex);
+					}
+					
 				}
 			}
 			// Cập nhật thời gian kết thúc bắn tin

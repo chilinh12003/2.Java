@@ -104,7 +104,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 	private Timestamp effectiveDate;
 	private Timestamp expiryDate;
 	private Timestamp retryChargeDate;
-	private Integer retryChargeCount;
+	private Integer retryChargeCount = 0;
 	private Timestamp renewChargeDate;
 	private Short channelId;
 	private Short statusId;
@@ -135,36 +135,43 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 	{
 	}
 
-	public Subscriber(SubLog mSubLog)
+	public Subscriber(SubLog subLogObj)
 	{
 		SubscriberId mID = new SubscriberId();
 
-		mID.setPhoneNumber(mSubLog.getId().getPhoneNumber());
-		mID.setPid(mSubLog.getId().getPid());
+		mID.setPhoneNumber(subLogObj.getId().getPhoneNumber());
+		mID.setPid(subLogObj.getId().getPid());
 		this.setId(mID);
 
-		this.setFirstDate(mSubLog.getFirstDate());
+		this.setFirstDate(subLogObj.getFirstDate());
 
-		this.setResetDate(mSubLog.getResetDate());
-		this.setEffectiveDate(mSubLog.getEffectiveDate());
-		this.setExpiryDate(mSubLog.getExpiryDate());
-		this.setRetryChargeDate(mSubLog.getRetryChargeDate());
-		this.setRetryChargeCount(mSubLog.getRetryChargeCount());
-		this.setRenewChargeDate(mSubLog.getRenewChargeDate());
-		this.setChannelId(mSubLog.getChannelId());
-		this.setStatusId(mSubLog.getStatusId());
-		this.setOrderId(mSubLog.getOrderId());
-		this.setLastSuggestId(mSubLog.getLastSuggestId());
-		this.setSuggestByDay(mSubLog.getSuggestByDay());
-		this.setTotalSuggest(mSubLog.getTotalSuggest());
-		this.setLastSuggestDate(mSubLog.getLastSuggestDate());
-		this.setAnswerForSuggestId(mSubLog.getAnswerForSuggestId());
-		this.setLastAnswer(mSubLog.getLastAnswer());
-		this.setAnswerStatusId(mSubLog.getAnswerStatusId());
-		this.setAnswerByDay(mSubLog.getAnswerByDay());
-		this.setLastAnswerDate(mSubLog.getLastAnswerDate());
-		this.setDeregDate(mSubLog.getDeregDate());
-		this.setPartnerId(mSubLog.getPartnerId());
+		this.setResetDate(subLogObj.getResetDate());
+		this.setEffectiveDate(subLogObj.getEffectiveDate());
+		this.setExpiryDate(subLogObj.getExpiryDate());
+		this.setRetryChargeDate(subLogObj.getRetryChargeDate());
+		this.setRetryChargeCount(subLogObj.getRetryChargeCount());
+		this.setRenewChargeDate(subLogObj.getRenewChargeDate());
+		this.setChannelId(subLogObj.getChannelId());
+		this.setStatusId(subLogObj.getStatusId());
+		this.setOrderId(subLogObj.getOrderId());
+		this.setLastSuggestId(subLogObj.getLastSuggestId());
+		this.setSuggestByDay(subLogObj.getSuggestByDay());
+		this.setTotalSuggest(subLogObj.getTotalSuggest());
+		this.setLastSuggestDate(subLogObj.getLastSuggestDate());
+		this.setAnswerForSuggestId(subLogObj.getAnswerForSuggestId());
+		this.setLastAnswer(subLogObj.getLastAnswer());
+		this.setAnswerStatusId(subLogObj.getAnswerStatusId());
+		this.setAnswerByDay(subLogObj.getAnswerByDay());
+		this.setLastAnswerDate(subLogObj.getLastAnswerDate());
+		this.setDeregDate(subLogObj.getDeregDate());
+		this.setPartnerId(subLogObj.getPartnerId());
+
+		this.setWeekMark(subLogObj.getWeekMark());
+		this.setDayMark(subLogObj.getDayMark());
+		this.setAddMark(subLogObj.getAddMark());
+		this.setChargeMark(subLogObj.getChargeMark());
+		this.setBuyMark(subLogObj.getBuyMark());
+		this.setAnswerMark(subLogObj.getAnswerMark());
 
 	}
 
@@ -278,7 +285,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getRetryChargeCount()
 	{
-		return this.retryChargeCount;
+		return this.retryChargeCount == null ? 0 : this.retryChargeCount;
 	}
 
 	public void setRetryChargeCount(Integer retryChargeCount)
@@ -348,7 +355,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getTotalSuggest()
 	{
-		return this.totalSuggest;
+		return this.totalSuggest == null ? 0 : this.totalSuggest;
 	}
 
 	public void setTotalSuggest(Integer totalSuggest)
@@ -368,7 +375,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getAnswerForSuggestId()
 	{
-		return this.answerForSuggestId;
+		return this.answerForSuggestId == null ? 0 : this.answerForSuggestId;
 	}
 
 	public void setAnswerForSuggestId(Integer answerForSuggestId)
@@ -388,7 +395,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Short getAnswerStatusId()
 	{
-		return this.answerStatusId;
+		return this.answerStatusId == null ? 0 : this.answerStatusId;
 	}
 
 	public void setAnswerStatusId(Short answerStatusId)
@@ -398,7 +405,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getAnswerByDay()
 	{
-		return this.answerByDay;
+		return this.answerByDay == null ? 0 : this.answerByDay;
 	}
 
 	public void setAnswerByDay(Integer answerByDay)
@@ -428,17 +435,16 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getPartnerId()
 	{
-		return this.partnerId;
+		return this.partnerId == null ? 0 : this.partnerId;
 	}
 
 	public void setPartnerId(Integer partnerId)
 	{
-		this.partnerId = partnerId;
+		this.partnerId= partnerId;
 	}
-
 	public Integer getWeekMark()
 	{
-		return this.weekMark;
+		return this.weekMark == null ? 0 : this.weekMark;
 	}
 
 	public void setWeekMark(Integer weekMark)
@@ -448,7 +454,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getDayMark()
 	{
-		return this.dayMark;
+		return this.dayMark == null ? 0 : this.dayMark;
 	}
 
 	public void setDayMark(Integer dayMark)
@@ -458,7 +464,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getAddMark()
 	{
-		return this.addMark;
+		return this.addMark == null ? 0 : this.addMark;
 	}
 
 	public void setAddMark(Integer addMark)
@@ -468,7 +474,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getChargeMark()
 	{
-		return this.chargeMark;
+		return this.chargeMark == null ? 0 : this.chargeMark;
 	}
 
 	public void setChargeMark(Integer chargeMark)
@@ -478,7 +484,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getBuyMark()
 	{
-		return this.buyMark;
+		return this.buyMark == null ? 0 : this.buyMark;
 	}
 
 	public void setBuyMark(Integer buyMark)
@@ -488,7 +494,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	public Integer getAnswerMark()
 	{
-		return this.answerMark;
+		return this.answerMark == null ? 0 : this.answerMark;
 	}
 
 	public void setAnswerMark(Integer answerMark)
@@ -566,6 +572,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	/**
 	 * Lấy các thuê bao pedding và chưa push notifyRenewFail
+	 * 
 	 * @param PID
 	 * @param OrderID
 	 * @param mStatus
@@ -583,7 +590,8 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 		{
 			String strSQL = "FROM Subscriber WHERE pid = " + PID.toString() + " AND orderId > " + OrderID.toString()
 					+ " AND statusId =" + mStatus.GetValue().toString() + "  AND ExpiryDate = '"
-					+ MyConfig.Get_DateFormat_InsertDB().format(calExpiryDate.getTime()) + "' " + " ORDER BY orderId ASC";
+					+ MyConfig.Get_DateFormat_InsertDB().format(calExpiryDate.getTime()) + "' "
+					+ " ORDER BY orderId ASC";
 
 			mList = (List<Subscriber>) Get(strSQL, RowCount);
 
@@ -655,6 +663,15 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 		{
 			Calendar mCal_CheckDate = Calendar.getInstance();
 			mCal_CheckDate.setTime(new Date(renewChargeDate.getTime()));
+
+			if (MyDate.Compare(mCal_Current, mCal_CheckDate, Calendar.WEEK_OF_YEAR))
+				return true;
+		}
+
+		if (effectiveDate != null)
+		{
+			Calendar mCal_CheckDate = Calendar.getInstance();
+			mCal_CheckDate.setTime(new Date(effectiveDate.getTime()));
 
 			if (MyDate.Compare(mCal_Current, mCal_CheckDate, Calendar.WEEK_OF_YEAR))
 				return true;

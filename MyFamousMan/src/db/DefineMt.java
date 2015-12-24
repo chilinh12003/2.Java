@@ -84,6 +84,10 @@ public class DefineMt extends DAOBase implements java.io.Serializable
 		 * 
 		 */
 		RestoreFail(224),
+		/**
+		 * MT chứa thông tin dữ kiện đầu tiền
+		 */
+		RestoreSuggestMT(225),
 
 		// -----HỦY DỊCH VỤ
 		/**

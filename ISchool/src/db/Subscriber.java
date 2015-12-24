@@ -334,7 +334,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getRetryChargeCount() {
-		return this.retryChargeCount;
+		return this.retryChargeCount == null ? 0 : this.retryChargeCount;
 	}
 
 	public void setRetryChargeCount(Integer retryChargeCount) {
@@ -390,7 +390,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getQuestionCount() {
-		return this.questionCount;
+		return this.questionCount == null ? 0 : this.questionCount;
 	}
 
 	public void setQuestionCount(Integer questionCount) {
@@ -398,7 +398,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getSendCount() {
-		return this.sendCount;
+		return this.sendCount == null ? 0 : this.sendCount;
 	}
 
 	public void setSendCount(Integer sendCount) {
@@ -406,7 +406,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getAnswerCount() {
-		return this.answerCount;
+		return this.answerCount == null ? 0 : this.answerCount;
 	}
 
 	public void setAnswerCount(Integer answerCount) {
@@ -414,7 +414,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getAnswerRight() {
-		return this.answerRight;
+		return this.answerRight == null ? 0 : this.answerRight;
 	}
 
 	public void setAnswerRight(Integer answerRight) {
@@ -423,7 +423,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 
 	public Integer getAnswerRightBuyType()
 	{
-		return answerRightBuyType;
+		return answerRightBuyType == null ? 0 : this.answerRightBuyType;
 	}
 
 	public void setAnswerRightBuyType(Integer answerRightBuyType)
@@ -440,7 +440,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getLastQuestionId() {
-		return this.lastQuestionId;
+		return this.lastQuestionId == null ? 0 : this.lastQuestionId;
 	}
 
 	public void setLastQuestionId(Integer lastQuestionId) {
@@ -482,7 +482,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getWeekMark() {
-		return this.weekMark;
+		return this.weekMark == null ? 0 : this.weekMark;
 	}
 
 	public void setWeekMark(Integer weekMark) {
@@ -490,7 +490,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getDayMark() {
-		return this.dayMark;
+		return this.dayMark == null ? 0 : this.dayMark;
 	}
 
 	public void setDayMark(Integer dayMark) {
@@ -498,7 +498,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getAddMark() {
-		return this.addMark;
+		return this.addMark == null ? 0 : this.addMark;
 	}
 
 	public void setAddMark(Integer addMark) {
@@ -506,7 +506,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getChargeMark() {
-		return this.chargeMark;
+		return this.chargeMark== null ? 0 : this.chargeMark;
 	}
 
 	public void setChargeMark(Integer chargeMark) {
@@ -514,7 +514,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getBuyMark() {
-		return this.buyMark;
+		return this.buyMark== null ? 0 : this.buyMark;
 	}
 
 	public void setBuyMark(Integer buyMark) {
@@ -522,7 +522,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getAnswerMark() {
-		return this.answerMark;
+		return this.answerMark== null ? 0 : this.answerMark;
 	}
 
 	public void setAnswerMark(Integer answerMark) {
@@ -530,7 +530,7 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	}
 
 	public Integer getPromotionMark() {
-		return this.promotionMark;
+		return this.promotionMark== null ? 0 : this.promotionMark;
 	}
 
 	public void setPromotionMark(Integer promotionMark) {
