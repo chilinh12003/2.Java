@@ -336,6 +336,8 @@ public class MyDate
 
 	public static Timestamp Date2Timestamp(Calendar mCal_Current)
 	{
+		if(mCal_Current == null)
+			return null;
 		Timestamp mTime = new Timestamp(mCal_Current.getTime().getTime());
 		return mTime;
 	}

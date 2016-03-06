@@ -28,10 +28,12 @@ public class BuyQuestion
 	Calendar mCal_End = Calendar.getInstance();
 
 	Short PID = 0;
-	DefineMt.MTType mMTType = MTType.BuyQuestionFail;
+	DefineMt.MTType mMTType = MTType.BuyFail;
 
 	Mode mMode = Mode.Nothing;
 	int amount = 0;
+	String LogBeforeSub ="";
+	
 	private void Init(Moqueue moQueueObj) throws Exception
 	{
 		try
@@ -59,8 +61,7 @@ public class BuyQuestion
 		try
 		{
 			listMTQueue.clear();
-			if (mMTType == MTType.BuyQuestionSuccess || mMTType == MTType.BuyQuestionOneSuccess
-					|| mMTType == MTType.BuyQuestionTwoSuccess)
+			if (mMTType == MTType.BuyOneSuccess || mMTType == MTType.BuyTwoSuccess)
 			{
 				String MTContent = Program.GetDefineMT_Message(mMTType);
 
@@ -226,7 +227,9 @@ public class BuyQuestion
 	{
 		try
 		{
-			if (this.mMode != Mode.Real || mMTType != MTType.BuyQuestionSuccess)
+			// Nếu mua không thành công hoặc mode = check thì không lưu xuống
+			// chargelog
+			if (this.mMode != Mode.Real || ((mMTType != MTType.BuyOneSuccess) && (mMTType != MTType.BuyTwoSuccess)))
 			{
 				return;
 			}
@@ -245,7 +248,7 @@ public class BuyQuestion
 			chargeObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
 			chargeObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
 			chargeObj.setPartnerId(subObj.getPartnerId());
-			chargeObj.setPirce((float) amount);
+			chargeObj.setPrice((float) amount);
 
 			if (!chargeObj.Save())
 			{
@@ -272,21 +275,25 @@ public class BuyQuestion
 			// Chưa đăng ký
 			if (subObj == null)
 			{
-				mMTType = MTType.BuyQuestionNotReg;
+				mMTType = MTType.BuyNotReg;
+				return mMTType;
+			}
+
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",subObj);
+			
+			// Phiên chơi chưa bắt đầu
+			if (mCal_Current.before(mCal_Begin) || mCal_Current.after(mCal_End) || !CurrentData.checkSessionValid())
+			{
+				mMTType = MTType.BuyExpire;
 				return mMTType;
 			}
 
 			// Tình trạng không hợp lệ
 			if (subObj.getStatusId().equals(Subscriber.Status.Pending.GetValue()))
 			{
-				mMTType = MTType.BuyQuestionNotExtend;
-				return mMTType;
-			}
-
-			// Phiên chơi chưa bắt đầu
-			if (mCal_Current.before(mCal_Begin) || mCal_Current.after(mCal_End) || !CurrentData.checkSessionValid())
-			{
-				mMTType = MTType.BuyQuestionExpire;
+				if (amount == 1000)
+					mMTType = MTType.BuyOneNotExtend;
+				else mMTType = MTType.BuyTwoNotExtend;
 				return mMTType;
 			}
 
@@ -308,7 +315,7 @@ public class BuyQuestion
 					|| subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoOneQuestion.GetValue()
 							.shortValue())
 			{
-				mMTType = MTType.BuyQuestionLimit;
+				mMTType = MTType.BuyLimit;
 				return mMTType;
 			}
 
@@ -317,7 +324,7 @@ public class BuyQuestion
 					&& subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyOneQuestion.GetValue()
 							.shortValue())
 			{
-				mMTType = MTType.BuyQuestionOneLimit;
+				mMTType = MTType.BuyOneLimit;
 				return mMTType;
 			}
 
@@ -326,7 +333,7 @@ public class BuyQuestion
 					&& subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoQuestion.GetValue()
 							.shortValue())
 			{
-				mMTType = MTType.BuyQuestionTwoLimit;
+				mMTType = MTType.BuyTwoLimit;
 				return mMTType;
 			}
 
@@ -336,7 +343,7 @@ public class BuyQuestion
 				mLog.log.warn("Cau hoi khong lay duoc, kiem tra ngay");
 				mLog.log.warn(MyLogger.GetLog(subObj));
 
-				mMTType = MTType.BuyQuestionFail;
+				mMTType = MTType.BuyFail;
 				return mMTType;
 			}
 
@@ -348,21 +355,23 @@ public class BuyQuestion
 			Insert_Play();
 
 			if (amount == 1000)
-				mMTType = MTType.BuyQuestionOneSuccess;
-			else mMTType = MTType.BuyQuestionTwoSuccess;
+				mMTType = MTType.BuyOneSuccess;
+			else mMTType = MTType.BuyTwoSuccess;
 
 			return mMTType;
 		}
 		catch (Exception ex)
 		{
 			mLog.log.error(MyLogger.GetLog(moQueueObj), ex);
-			mMTType = MTType.BuyQuestionFail;
+			mMTType = MTType.BuyFail;
 			return mMTType;
 		}
 		finally
 		{
 			InsertChargeLog();
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",subObj));
 		}
 	}
 }

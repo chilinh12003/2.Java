@@ -17,7 +17,7 @@ public class Deregister
 	List<Mtqueue> listMTQueue = new ArrayList<Mtqueue>();
 
 	Moqueue moQueueObj = null;
-	Subscriber mSubObj = new Subscriber();
+	Subscriber subObj = new Subscriber();
 	SubLog mSubLog = new SubLog();
 
 	DefineMt.MTType mMTType = MTType.RegFail;
@@ -30,6 +30,7 @@ public class Deregister
 
 	Mode mMode = Mode.Nothing;
 
+	String LogBeforeSub ="";
 	private void Init(Moqueue moQueueObj) throws Exception
 	{
 		try
@@ -69,8 +70,8 @@ public class Deregister
 
 	protected void CreateUnSub() throws Exception
 	{
-		mSubObj.setChannelId(moQueueObj.getChannelId());
-		mSubObj.setDeregDate(MyDate.Date2Timestamp(mCal_Current));
+		subObj.setChannelId(moQueueObj.getChannelId());
+		subObj.setDeregDate(MyDate.Date2Timestamp(mCal_Current));
 
 	}
 
@@ -79,12 +80,12 @@ public class Deregister
 		if (mMode == Mode.Check)
 			return true;
 
-		mSubLog = new SubLog(mSubObj, (short) 0);
+		mSubLog = new SubLog(subObj, (short) 0);
 		mSubLog.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
 		if (mSubLog.Save())
 		{
 			// Xóa trong table sub
-			if (mSubObj.Delete())
+			if (subObj.Delete())
 			{
 				return true;
 			}
@@ -93,6 +94,41 @@ public class Deregister
 		else return false;
 	}
 
+	void InsertChargeLog()
+	{
+		try
+		{
+			if (this.mMode != Mode.Real || mMTType != MTType.DeregSuccess)
+			{
+				return;
+			}
+
+			ChargeLog chargeObj = new ChargeLog();
+
+			ChargeLogId mID = new ChargeLogId();
+			mID.setPid(subObj.getId().getPid());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
+
+			chargeObj.setId(mID);
+
+			chargeObj.setChannelId(moQueueObj.getChannelId());
+			chargeObj.setChargeDate(moQueueObj.getReceiveDate());
+			chargeObj.setChargeTypeId(ChargeLog.ChargeType.Deregister.GetValue());
+			chargeObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
+			chargeObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
+			chargeObj.setPartnerId(subObj.getPartnerId());
+			chargeObj.setPrice((float) 0);
+
+			if (!chargeObj.Save())
+			{
+				mLog.log.warn("Register Save ChargeLog Fail:" + MyLogger.GetLog(chargeObj));
+			}
+		}
+		catch (Exception ex)
+		{
+			mLog.log.error(ex);
+		}
+	}
 	public MTType getMessages(Moqueue moQueueObj, Mode mMode) throws Exception
 	{
 		try
@@ -102,15 +138,17 @@ public class Deregister
 			Init(moQueueObj);
 
 			// Lấy thông tin khách hàng đã đăng ký
-			mSubObj = mSubObj.GetSub(PID, moQueueObj.getPhoneNumber());
+			subObj = subObj.GetSub(PID, moQueueObj.getPhoneNumber());
 
 			// Nếu chưa đăng ký dịch vụ
-			if (mSubObj == null)
+			if (subObj == null)
 			{
 				mMTType = MTType.DeregNotRegister;
 				return mMTType;
 			}
 
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",subObj);
+			
 			CreateUnSub();
 
 			if(InsertSubLog())
@@ -125,13 +163,16 @@ public class Deregister
 		catch (Exception ex)
 		{
 			mLog.log.error(MyLogger.GetLog(moQueueObj));
-			mLog.log.error(MyLogger.GetLog(mSubObj), ex);
+			mLog.log.error(MyLogger.GetLog(subObj), ex);
 			mMTType = MTType.SystemError;
 			return mMTType;
 		}
 		finally
 		{
+			InsertChargeLog();
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",subObj));
 		}
 	}
 

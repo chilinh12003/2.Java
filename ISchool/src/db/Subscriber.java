@@ -607,6 +607,48 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 		}
 	}
 
+/**
+ * Kiểm tra xem có phải vừa mới hủy trong ngày hay không
+ * @param mCal_Current
+ * @return
+ * @throws Exception
+ */
+	public boolean CheckSameDeregDay(Calendar mCal_Current) throws Exception
+	{
+		if (this.deregDate == null)
+			return false;
+		Calendar mCal_CheckDate = Calendar.getInstance();
+
+		mCal_CheckDate.setTime(new Date(this.deregDate .getTime()));
+		if (mCal_Current.get(Calendar.YEAR) == mCal_CheckDate.get(Calendar.YEAR)
+				&& mCal_Current.get(Calendar.MONTH) == mCal_CheckDate.get(Calendar.MONTH)
+				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE))
+			return true;
+		else return false;
+	}
+	
+	/**
+	 * Kiểm tra Ngày truyền vào cùng ngày với ngày hủy hay không
+	 * @param mCal_Current
+	 * @return
+	 * @throws Exception
+	 */
+	
+	public boolean IsSameDayWithDereg(Calendar mCal_Current) throws Exception
+	{
+		if (this.deregDate == null)
+			return false;
+		Calendar mCal_CheckDate = Calendar.getInstance();
+
+		mCal_CheckDate.setTime(new Date(this.deregDate .getTime()));
+		if (mCal_Current.get(Calendar.YEAR) == mCal_CheckDate.get(Calendar.YEAR)
+				&& mCal_Current.get(Calendar.MONTH) == mCal_CheckDate.get(Calendar.MONTH)
+				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE))
+			return true;
+		else return false;
+	}
+
+	
 	public boolean CheckLastBuyDate(Calendar mCal_Current) throws Exception
 	{
 		if (this.lastBuyDate == null)
@@ -644,33 +686,24 @@ public class Subscriber extends DAOBase implements java.io.Serializable {
 	 */
 	public boolean CheckIsWeek(Calendar mCal_Current) throws Exception
 	{
-		if (lastAnswerDate != null)
+		if (deregDate != null)
 		{
 			Calendar mCal_CheckDate = Calendar.getInstance();
-			mCal_CheckDate.setTime(new Date(lastAnswerDate.getTime()));
+			mCal_CheckDate.setTime(new Date(deregDate.getTime()));
 
 			if (MyDate.Compare(mCal_Current, mCal_CheckDate, Calendar.WEEK_OF_YEAR))
 				return true;
 		}
-
-		if (this.lastBuyDate  != null)
+		
+		if (expiryDate != null)
 		{
 			Calendar mCal_CheckDate = Calendar.getInstance();
-			mCal_CheckDate.setTime(new Date(this.lastBuyDate .getTime()));
+			mCal_CheckDate.setTime(new Date(expiryDate.getTime()));
 
 			if (MyDate.Compare(mCal_Current, mCal_CheckDate, Calendar.WEEK_OF_YEAR))
 				return true;
 		}
-
-		if (renewChargeDate != null)
-		{
-			Calendar mCal_CheckDate = Calendar.getInstance();
-			mCal_CheckDate.setTime(new Date(renewChargeDate.getTime()));
-
-			if (MyDate.Compare(mCal_Current, mCal_CheckDate, Calendar.WEEK_OF_YEAR))
-				return true;
-		}
-
+		
 		return false;
 	}
 

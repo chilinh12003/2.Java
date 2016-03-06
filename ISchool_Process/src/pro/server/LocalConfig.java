@@ -116,7 +116,20 @@ public class LocalConfig
 	 * Số lần được phép mua nhiều nhất trong ngày
 	 */
 	public static Integer MaxBuySuggestByDay = 10;
-
+	/**
+	 * Số câu hỏi được free khi đăng ký hoặc gia hạn
+	 */
+	public static Integer FreeQuestionCount = 5;
+	/**
+	 * Số câu hỏi được thêm khi mua 1
+	 */
+	public static Integer BuyOneQuestionCount = 3;
+	/**
+	 * Số câu hỏi được thêm khi mua 2
+	 */
+	public static Integer BuyTwoQuestionCount = 7;
+	
+	
 	public static Properties mProp;
 
 	public static boolean loadProperties(String propFile)

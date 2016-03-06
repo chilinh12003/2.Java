@@ -39,6 +39,9 @@ public class RestoreRegister
 
 	Mode mMode = Mode.Nothing;
 	int amount = 0;
+
+	String LogBeforeSub = "";
+	
 	private void Init(Moqueue moQueueObj) throws Exception
 	{
 		try
@@ -229,7 +232,9 @@ public class RestoreRegister
 				mMTType = MTType.RestoreNotReg;
 				return mMTType;
 			}
-
+			
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:", subObj);
+			
 			if (subObj.getStatusId() == Subscriber.Status.Active.GetValue().shortValue())
 			{
 				mMTType = MTType.RestoreWhenActive;
@@ -259,6 +264,8 @@ public class RestoreRegister
 		{
 			InsertChargeLog();
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug(MyLogger.GetLog("AFTER_SUB:", subObj));
 		}
 	}
 }

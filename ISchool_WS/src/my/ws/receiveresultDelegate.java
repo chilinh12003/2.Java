@@ -27,9 +27,17 @@ public class receiveresultDelegate
 	public String resultRequest(@WebParam(name="username")String username, @WebParam(name="password")String password, 
 			@WebParam(name="serviceid")String serviceid, @WebParam(name="msisdn")String msisdn, 
 			@WebParam(name="chargetime")String chargetime,@WebParam(name="params")String params, 
-			@WebParam(name="mode")String mode, @WebParam(name="amount") int  amount)
+			@WebParam(name="mode")String mode, @WebParam(name="amount") int  amount, 
+			@WebParam(name="detail") String detail,
+			@WebParam(name="Chargecode") String Chargecode,
+			@WebParam(name="nextRenewalTime") String nextRenewalTime,
+			@WebParam(name="transid") String transid)
 	{
-		return receiveresult.resultRequest(username, password, serviceid, msisdn, chargetime, params, mode, amount);
+		return receiveresult.resultRequest(username, password, serviceid, msisdn, chargetime, params, mode, amount, 
+				 detail,
+				 Chargecode,
+				 nextRenewalTime,
+				 transid);
 	}
 
 }

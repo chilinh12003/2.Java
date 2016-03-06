@@ -112,6 +112,7 @@ public class FinishDay extends Thread
 					}
 
 					this.CurrentPID = PID.shortValue();
+					this.MaxOrderID = 0;
 
 					listSub = subDB.GetSub(CurrentPID, this.MaxOrderID, this.RowCount, this.ThreadNumber,
 							this.ThreadIndex);
@@ -127,6 +128,8 @@ public class FinishDay extends Thread
 								return;
 							}
 
+							mLog.log.debug(MyLogger.GetLog("BEFORE_SUB",subObj));
+							
 							this.MaxOrderID = subObj.getOrderId();
 							this.PhoneNumber = subObj.getId().getPhoneNumber();
 
@@ -134,6 +137,8 @@ public class FinishDay extends Thread
 
 							// khởi tạo thông tin của thuê bao cho ngày mới
 							resetSub(subObj, isMonday);
+							
+							mLog.log.debug(MyLogger.GetLog("AFTER_SUB",subObj));
 						}
 
 						if (listPlay.size() >0 && !playDB.Save(listPlay))

@@ -17,7 +17,11 @@ import javax.xml.bind.annotation.XmlType;
     "chargetime",
     "params",
     "mode",
-    "amount"
+    "amount",
+    "detail",
+    "chargecode",
+    "nextRenewalTime",
+    "transid"
 })
 public class ResultRequest {
 
@@ -37,6 +41,14 @@ public class ResultRequest {
     private String mode;
     @XmlElement(name = "amount", namespace = "")
     private int amount;
+    @XmlElement(name = "detail", namespace = "")
+    private String detail;
+    @XmlElement(name = "Chargecode", namespace = "")
+    private String chargecode;
+    @XmlElement(name = "nextRenewalTime", namespace = "")
+    private String nextRenewalTime;
+    @XmlElement(name = "transid", namespace = "")
+    private String transid;
 
     /**
      * 
@@ -180,6 +192,78 @@ public class ResultRequest {
      */
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    /**
+     * 
+     * @return
+     *     returns String
+     */
+    public String getDetail() {
+        return this.detail;
+    }
+
+    /**
+     * 
+     * @param detail
+     *     the value for the detail property
+     */
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    /**
+     * 
+     * @return
+     *     returns String
+     */
+    public String getChargecode() {
+        return this.chargecode;
+    }
+
+    /**
+     * 
+     * @param chargecode
+     *     the value for the chargecode property
+     */
+    public void setChargecode(String chargecode) {
+        this.chargecode = chargecode;
+    }
+
+    /**
+     * 
+     * @return
+     *     returns String
+     */
+    public String getNextRenewalTime() {
+        return this.nextRenewalTime;
+    }
+
+    /**
+     * 
+     * @param nextRenewalTime
+     *     the value for the nextRenewalTime property
+     */
+    public void setNextRenewalTime(String nextRenewalTime) {
+        this.nextRenewalTime = nextRenewalTime;
+    }
+
+    /**
+     * 
+     * @return
+     *     returns String
+     */
+    public String getTransid() {
+        return this.transid;
+    }
+
+    /**
+     * 
+     * @param transid
+     *     the value for the transid property
+     */
+    public void setTransid(String transid) {
+        this.transid = transid;
     }
 
 }

@@ -21,7 +21,7 @@ public class Answer extends ProcessMOAbstract
 	List<Mtqueue> listMTQueue = new ArrayList<Mtqueue>();
 
 	Moqueue moQueueObj = null;
-	Subscriber mSubObj = new Subscriber();
+	Subscriber subObj = new Subscriber();
 
 	Suggest mSuggestObj = new Suggest();
 
@@ -33,7 +33,8 @@ public class Answer extends ProcessMOAbstract
 	DefineMt.MTType mMTType = MTType.AnswerFail;
 
 	String UserAnswer = "";
-
+	String LogBeforeSub = "";
+	
 	private void Init(Moqueue moQueueObj, Keyword mKeyword) throws Exception
 	{
 		try
@@ -93,30 +94,30 @@ public class Answer extends ProcessMOAbstract
 	{
 		int AnswerMark = 0;
 
-		if (mSubObj.CheckLastAnswerDate(mCal_Current))
+		if (subObj.CheckLastAnswerDate(mCal_Current))
 		{
-			mSubObj.setAnswerByDay(mSubObj.getAnswerByDay() + 1);
+			subObj.setAnswerByDay(subObj.getAnswerByDay() + 1);
 		}
 		else
 		{
-			mSubObj.setAnswerByDay(1);
+			subObj.setAnswerByDay(1);
 		}
 
 		if (UserAnswer.equalsIgnoreCase(CurrentData.Get_Current_QuestionObj().getRightAnswer()))
 		{
-			mSubObj.setAnswerStatusId(Play.Status.CorrectAnswer.GetValue());
+			subObj.setAnswerStatusId(Play.Status.CorrectAnswer.GetValue());
 			AnswerMark = LocalConfig.AnswerMark;
 		}
 		else
 		{
-			mSubObj.setAnswerStatusId(Play.Status.IncorrectAnswer.GetValue());
+			subObj.setAnswerStatusId(Play.Status.IncorrectAnswer.GetValue());
 		}
 
-		mSubObj.setLastAnswerDate(MyDate.Date2Timestamp(mCal_Current));
-		mSubObj.setAnswerForSuggestId(mSubObj.getLastSuggestId());
-		mSubObj.setLastAnswer(UserAnswer);
+		subObj.setLastAnswerDate(MyDate.Date2Timestamp(mCal_Current));
+		subObj.setAnswerForSuggestId(subObj.getLastSuggestId());
+		subObj.setLastAnswer(UserAnswer);
 
-		mSubObj.setAnswerMark(mSubObj.getAnswerMark() + AnswerMark);
+		subObj.setAnswerMark(subObj.getAnswerMark() + AnswerMark);
 
 	}
 
@@ -131,12 +132,12 @@ public class Answer extends ProcessMOAbstract
 		{
 			Play playObj = new Play();
 			PlayId mID = new PlayId();
-			mID.setPhoneNumber(mSubObj.getId().getPhoneNumber());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
 			playObj.setId(mID);
-			playObj.setPid(mSubObj.getId().getPid());
+			playObj.setPid(subObj.getId().getPid());
 
 			playObj.setPlayTypeId(PlayType.Answer.GetValue());
-			playObj.setStatusId(mSubObj.getAnswerStatusId());
+			playObj.setStatusId(subObj.getAnswerStatusId());
 			playObj.setOrderNumber(mSuggestObj.getOrderNumber());
 			playObj.setQuestionId(mSuggestObj.getQuestionId());
 			playObj.setPlayDate(CurrentData.Get_Current_QuestionObj().getPlayDate());
@@ -144,12 +145,12 @@ public class Answer extends ProcessMOAbstract
 			playObj.setSuggestId(mSuggestObj.getSuggestId());
 			playObj.setUserAnswer(UserAnswer);
 
-			playObj.setWeekMark(mSubObj.getWeekMark());
-			playObj.setDayMark(mSubObj.getDayMark());
-			playObj.setAddMark(mSubObj.getAddMark());
-			playObj.setChargeMark(mSubObj.getChargeMark());
-			playObj.setBuyMark(mSubObj.getBuyMark());
-			playObj.setAnswerMark(mSubObj.getAnswerMark());
+			playObj.setWeekMark(subObj.getWeekMark());
+			playObj.setDayMark(subObj.getDayMark());
+			playObj.setAddMark(subObj.getAddMark());
+			playObj.setChargeMark(subObj.getChargeMark());
+			playObj.setBuyMark(subObj.getBuyMark());
+			playObj.setAnswerMark(subObj.getAnswerMark());
 
 			playObj.setInsertDate(MyDate.Date2Timestamp(Calendar.getInstance()));
 
@@ -171,7 +172,7 @@ public class Answer extends ProcessMOAbstract
 	{
 		try
 		{
-			mSubObj.Update();
+			subObj.Update();
 
 			return true;
 		}
@@ -199,15 +200,17 @@ public class Answer extends ProcessMOAbstract
 			Init(moQueueObj, mKeyword);
 
 			// Lấy thông tin khách hàng đã đăng ký
-			mSubObj = mSubObj.GetSub(PID, moQueueObj.getPhoneNumber());
+			subObj = subObj.GetSub(PID, moQueueObj.getPhoneNumber());
 
 			// Chưa đăng ký
-			if (mSubObj == null)
+			if (subObj == null)
 			{
 				mMTType = MTType.AnswerNotReg;
 				return AddToList();
 			}
-
+			
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",subObj);
+			
 			// Phiên chơi chưa bắt đầu
 			if (mCal_Current.before(mCal_Begin) || mCal_Current.after(mCal_End)
 					|| CurrentData.Get_Current_QuestionObj() == null)
@@ -217,21 +220,21 @@ public class Answer extends ProcessMOAbstract
 			}
 
 			// Kiểm tra trả lời vượt quá giới hạn
-			if (mSubObj.CheckLastAnswerDate(mCal_Current))
+			if (subObj.CheckLastAnswerDate(mCal_Current))
 			{
-				if (mSubObj.getAnswerByDay().intValue() >= LocalConfig.MaxAnswerByDay.intValue())
+				if (subObj.getAnswerByDay().intValue() >= LocalConfig.MaxAnswerByDay.intValue())
 				{
 					mMTType = MTType.AnswerLimit;
 					return AddToList();
 				}
-				if (mSubObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
+				if (subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
 				{
 					mMTType = MTType.AnswerWhenAnswerRight;
 					return AddToList();
 				}
 			}
 
-			mSuggestObj = CurrentData.Get_SuggestObj_BuyID(mSubObj.getLastSuggestId());
+			mSuggestObj = CurrentData.Get_SuggestObj_BuyID(subObj.getLastSuggestId());
 
 			if (mSuggestObj == null)
 			{
@@ -248,7 +251,7 @@ public class Answer extends ProcessMOAbstract
 
 			Insert_Play();
 
-			if (mSubObj.getAnswerStatusId().equals(Play.Status.CorrectAnswer.GetValue()))
+			if (subObj.getAnswerStatusId().equals(Play.Status.CorrectAnswer.GetValue()))
 			{
 				mMTType = MTType.AnswerSuccess;
 				return AddToList();
@@ -268,6 +271,8 @@ public class Answer extends ProcessMOAbstract
 		finally
 		{
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",subObj));
 		}
 	}
 }

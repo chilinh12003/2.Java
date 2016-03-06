@@ -14,5 +14,8 @@
 	<endpoint name="resultRequest"
 		implementation="my.ws.receiveresultDelegate"
 		url-pattern="/resultRequest">
-	</endpoint>
-</endpoints>
+	</endpoint>	
+
+	<endpoint name="doNotify" implementation="my.ws.apinotifyDelegate"
+		url-pattern="/doNotify">
+	</endpoint></endpoints>

@@ -4,7 +4,8 @@ package db;
  * ChargeLogId entity. @author MyEclipse Persistence Tools
  */
 
-public class ChargeLogId extends DAOBase implements java.io.Serializable {
+public class ChargeLogId extends DAOBase implements java.io.Serializable
+{
 
 	// Fields
 
@@ -15,11 +16,13 @@ public class ChargeLogId extends DAOBase implements java.io.Serializable {
 	// Constructors
 
 	/** default constructor */
-	public ChargeLogId() {
+	public ChargeLogId()
+	{
 	}
 
 	/** full constructor */
-	public ChargeLogId(Integer logId, Short pid, String phoneNumber) {
+	public ChargeLogId(Integer logId, Short pid, String phoneNumber)
+	{
 		this.logId = logId;
 		this.pid = pid;
 		this.phoneNumber = phoneNumber;
@@ -27,31 +30,38 @@ public class ChargeLogId extends DAOBase implements java.io.Serializable {
 
 	// Property accessors
 
-	public Integer getLogId() {
+	public Integer getLogId()
+	{
 		return this.logId;
 	}
 
-	public void setLogId(Integer logId) {
+	public void setLogId(Integer logId)
+	{
 		this.logId = logId;
 	}
 
-	public Short getPid() {
+	public Short getPid()
+	{
 		return this.pid;
 	}
 
-	public void setPid(Short pid) {
+	public void setPid(Short pid)
+	{
 		this.pid = pid;
 	}
 
-	public String getPhoneNumber() {
+	public String getPhoneNumber()
+	{
 		return this.phoneNumber;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
+	public void setPhoneNumber(String phoneNumber)
+	{
 		this.phoneNumber = phoneNumber;
 	}
 
-	public boolean equals(Object other) {
+	public boolean equals(Object other)
+	{
 		if ((this == other))
 			return true;
 		if ((other == null))
@@ -60,29 +70,22 @@ public class ChargeLogId extends DAOBase implements java.io.Serializable {
 			return false;
 		ChargeLogId castOther = (ChargeLogId) other;
 
-		return ((this.getLogId() == castOther.getLogId()) || (this.getLogId() != null
-				&& castOther.getLogId() != null && this.getLogId().equals(
-				castOther.getLogId())))
-				&& ((this.getPid() == castOther.getPid()) || (this.getPid() != null
-						&& castOther.getPid() != null && this.getPid().equals(
-						castOther.getPid())))
-				&& ((this.getPhoneNumber() == castOther.getPhoneNumber()) || (this
-						.getPhoneNumber() != null
-						&& castOther.getPhoneNumber() != null && this
-						.getPhoneNumber().equals(castOther.getPhoneNumber())));
+		return ((this.getLogId() == castOther.getLogId()) || (this.getLogId() != null && castOther.getLogId() != null && this
+				.getLogId().equals(castOther.getLogId())))
+				&& ((this.getPid() == castOther.getPid()) || (this.getPid() != null && castOther.getPid() != null && this
+						.getPid().equals(castOther.getPid())))
+				&& ((this.getPhoneNumber() == castOther.getPhoneNumber()) || (this.getPhoneNumber() != null
+						&& castOther.getPhoneNumber() != null && this.getPhoneNumber().equals(
+						castOther.getPhoneNumber())));
 	}
 
-	public int hashCode() {
+	public int hashCode()
+	{
 		int result = 17;
 
-		result = 37 * result
-				+ (getLogId() == null ? 0 : this.getLogId().hashCode());
-		result = 37 * result
-				+ (getPid() == null ? 0 : this.getPid().hashCode());
-		result = 37
-				* result
-				+ (getPhoneNumber() == null ? 0 : this.getPhoneNumber()
-						.hashCode());
+		result = 37 * result + (getLogId() == null ? 0 : this.getLogId().hashCode());
+		result = 37 * result + (getPid() == null ? 0 : this.getPid().hashCode());
+		result = 37 * result + (getPhoneNumber() == null ? 0 : this.getPhoneNumber().hashCode());
 		return result;
 	}
 

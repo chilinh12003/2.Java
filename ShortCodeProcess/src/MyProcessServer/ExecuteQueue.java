@@ -101,6 +101,7 @@ public class ExecuteQueue extends Thread
 
 				msgObject.setKeyword(keyword.getKeyword());
 				msgObject.setCpid(keyword.getCpid());
+				
 				process_result = processQueueMsg(msgObject, keyword);
 
 				msgObject.setMsgNotes(process_result);

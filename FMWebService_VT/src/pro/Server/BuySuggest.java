@@ -18,7 +18,7 @@ public class BuySuggest
 	List<Mtqueue> listMTQueue = new ArrayList<Mtqueue>();
 
 	Moqueue moQueueObj = null;
-	Subscriber mSubObj = new Subscriber();
+	Subscriber subObj = new Subscriber();
 
 	Suggest mSuggestObj = new Suggest();
 
@@ -31,6 +31,8 @@ public class BuySuggest
 
 	Mode mMode = Mode.Nothing;
 	int amount = 0;
+
+	String LogBeforeSub = "";
 	private void Init(Moqueue moQueueObj) throws Exception
 	{
 		try
@@ -109,14 +111,14 @@ public class BuySuggest
 	 */
 	private void CreateUpdateSub() throws Exception
 	{
-		mSubObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
-		mSubObj.setLastSuggestId(mSuggestObj.getSuggestId());
-		Integer totalSuggest = mSubObj.getTotalSuggest() + 1;
-		mSubObj.setTotalSuggest(totalSuggest);
+		subObj.setLastSuggestDate(MyDate.Date2Timestamp(mCal_Current));
+		subObj.setLastSuggestId(mSuggestObj.getSuggestId());
+		Integer totalSuggest = subObj.getTotalSuggest() + 1;
+		subObj.setTotalSuggest(totalSuggest);
 
-		// mSubObj.setSuggestByDay(); Đã được tăng trước đó
+		// subObj.setSuggestByDay(); Đã được tăng trước đó
 
-		mSubObj.setBuyMark(mSubObj.getBuyMark() + LocalConfig.BuyMark);
+		subObj.setBuyMark(subObj.getBuyMark() + LocalConfig.BuyMark);
 	}
 
 	/**
@@ -133,9 +135,9 @@ public class BuySuggest
 		{
 			Play playObj = new Play();
 			PlayId mID = new PlayId();
-			mID.setPhoneNumber(mSubObj.getId().getPhoneNumber());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
 			playObj.setId(mID);
-			playObj.setPid(mSubObj.getId().getPid());
+			playObj.setPid(subObj.getId().getPid());
 
 			playObj.setPlayTypeId(PlayType.BuySuggest.GetValue());
 			playObj.setStatusId(Play.Status.BuySuggest.GetValue());
@@ -145,12 +147,12 @@ public class BuySuggest
 			playObj.setReceiveDate(moQueueObj.getReceiveDate());
 			playObj.setSuggestId(mSuggestObj.getSuggestId());
 
-			playObj.setWeekMark(mSubObj.getWeekMark());
-			playObj.setDayMark(mSubObj.getDayMark());
-			playObj.setAddMark(mSubObj.getAddMark());
-			playObj.setChargeMark(mSubObj.getChargeMark());
-			playObj.setBuyMark(mSubObj.getBuyMark());
-			playObj.setAnswerMark(mSubObj.getAnswerMark());
+			playObj.setWeekMark(subObj.getWeekMark());
+			playObj.setDayMark(subObj.getDayMark());
+			playObj.setAddMark(subObj.getAddMark());
+			playObj.setChargeMark(subObj.getChargeMark());
+			playObj.setBuyMark(subObj.getBuyMark());
+			playObj.setAnswerMark(subObj.getAnswerMark());
 
 			playObj.setInsertDate(MyDate.Date2Timestamp(Calendar.getInstance()));
 
@@ -175,7 +177,7 @@ public class BuySuggest
 
 		try
 		{
-			mSubObj.Update();
+			subObj.Update();
 			return true;
 		}
 		catch (Exception ex)
@@ -198,8 +200,8 @@ public class BuySuggest
 			ChargeLog chargeObj = new ChargeLog();
 			
 			ChargeLogId mID = new ChargeLogId();
-			mID.setPid(mSubObj.getId().getPid());
-			mID.setPhoneNumber(mSubObj.getId().getPhoneNumber());
+			mID.setPid(subObj.getId().getPid());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
 			
 			chargeObj.setId(mID);
 
@@ -208,7 +210,7 @@ public class BuySuggest
 			chargeObj.setChargeTypeId(ChargeLog.ChargeType.BuyContent.GetValue());
 			chargeObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
 			chargeObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			chargeObj.setPartnerId(mSubObj.getPartnerId());
+			chargeObj.setPartnerId(subObj.getPartnerId());
 			chargeObj.setPirce((float) amount);
 			
 			if(!chargeObj.Save())
@@ -231,17 +233,19 @@ public class BuySuggest
 			Init(moQueueObj);
 
 			// Lấy thông tin khách hàng đã đăng ký
-			mSubObj = mSubObj.GetSub(PID, moQueueObj.getPhoneNumber());
+			subObj = subObj.GetSub(PID, moQueueObj.getPhoneNumber());
 
 			// Chưa đăng ký
-			if (mSubObj == null)
+			if (subObj == null)
 			{
 				mMTType = MTType.BuySugNotReg;
 				return mMTType;
 			}
 
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:", subObj);
+			
 			// Tình trạng không hợp lệ
-			if (mSubObj.getStatusId().equals(Subscriber.Status.Pending.GetValue()))
+			if (subObj.getStatusId().equals(Subscriber.Status.Pending.GetValue()))
 			{
 				mMTType = MTType.BuySugNotExtend;
 				return mMTType;
@@ -257,35 +261,35 @@ public class BuySuggest
 			}
 
 			// Kiểm tra mua vượt quá giới hạn
-			if (mSubObj.CheckLastSuggestDate(mCal_Current)
-					&& mSubObj.getSuggestByDay().intValue() >= LocalConfig.MaxBuySuggestByDay.intValue())
+			if (subObj.CheckLastSuggestDate(mCal_Current)
+					&& subObj.getSuggestByDay().intValue() >= LocalConfig.MaxBuySuggestByDay.intValue())
 			{
 				mMTType = MTType.BuySugLimit;
 				return mMTType;
 			}
 
 			// Đã trả lời đúng trước đó thì không được chơi nữa
-			if (mSubObj.CheckLastAnswerDate(mCal_Current)
-					&& mSubObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
+			if (subObj.CheckLastAnswerDate(mCal_Current)
+					&& subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
 			{
 				mMTType = MTType.BuySugAnswerRight;
 				return mMTType;
 			}
 
-			if (mSubObj.CheckLastSuggestDate(mCal_Current))
+			if (subObj.CheckLastSuggestDate(mCal_Current))
 			{
-				mSubObj.setSuggestByDay(mSubObj.getSuggestByDay() + 1);
+				subObj.setSuggestByDay(subObj.getSuggestByDay() + 1);
 			}
 			else
 			{
-				mSubObj.setSuggestByDay(1);
+				subObj.setSuggestByDay(1);
 			}
 
-			mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.getSuggestByDay());
+			mSuggestObj = CurrentData.Get_SuggestObj(subObj.getSuggestByDay());
 			if (mSuggestObj == null)
 			{
 				mLog.log.warn("Du kien khong lay duoc, kiem tra ngay");
-				mLog.log.warn(MyLogger.GetLog(mSubObj));
+				mLog.log.warn(MyLogger.GetLog(subObj));
 
 				mMTType = MTType.BuySugFail;
 				return mMTType;
@@ -311,6 +315,8 @@ public class BuySuggest
 		{
 			InsertChargeLog();
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug(MyLogger.GetLog("AFTER_SUB:", subObj));
 		}
 	}
 }

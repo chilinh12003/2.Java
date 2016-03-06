@@ -36,6 +36,8 @@ public class Answer extends ProcessMOAbstract
 
 	String UserAnswer = "";
 
+	//Trình trạng của Thuê bao khi bắt đầu xử lý.	
+	String LogBeforeSub = "";
 	private void Init(Moqueue moQueueObj, Keyword mKeyword) throws Exception
 	{
 		try
@@ -65,7 +67,7 @@ public class Answer extends ProcessMOAbstract
 
 			String MTContent = Program.GetDefineMT_Message(mMTType);
 
-			if (mMTType == MTType.AnswerSuccess || mMTType == MTType.AnswerWrong)
+			if (mMTType == MTType.AnswerRight || mMTType == MTType.AnswerWrong)
 			{
 				if (questionObj != null)
 					MTContent = MTContent.replace("[QuestionMT]", questionObj.getMt());
@@ -105,7 +107,7 @@ public class Answer extends ProcessMOAbstract
 
 			subObj.setAnswerRight(subObj.getAnswerRight() == null ? 1 : subObj.getAnswerRight() + 1);
 
-			mMTType = MTType.AnswerSuccess;
+			mMTType = MTType.AnswerRight;
 		}
 		else
 		{
@@ -128,75 +130,120 @@ public class Answer extends ProcessMOAbstract
 				// nếu trả lời đúng cả 5 câu
 				if (subObj.getAnswerRightBuyType().intValue() == 5)
 				{
-					mMTType = MTType.AnswerSuccessCompleteFiveAllRight;
+					mMTType = MTType.AnswerFree_AllRight_Complete;
 					PromotionMark = LocalConfig.AnswerPromotionFiveFree;
 				}
 				// nếu câu trả lời là đúng, nhưng có ít nhất 1 câu sai trong 5
 				// câu
 				else if (subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
 				{
-					mMTType = MTType.AnswerSuccessCompleteFive;
+					mMTType = MTType.AnswerFree_LastRight_Complete;
 				}
 				// Câu trả lời cuối là sai, và có ít nhất 1 câu sai trong 5 câu
 				else
 				{
-					mMTType = MTType.AnswerWrongCompleteFive;
+					mMTType = MTType.AnswerFree_LastWrong_Complete;
 				}
 			}
 
 		}
-		// Nếu đang trả lời bộ 3 câu hỏi
-		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyOneQuestion.GetValue().shortValue()
-				|| subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoOneQuestion.GetValue()
-						.shortValue())
+		// Nếu đang trả lời bộ 3 câu hỏi chưa MUA 2
+		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyOneQuestion.GetValue().shortValue())
 		{
 			// Nếu là câu trả lời cuối của bộ 3 câu hỏi
-			if (subObj.getAnswerCount() == 8 || subObj.getAnswerCount() == 15)
+			if (subObj.getAnswerCount() == 8 )
 			{
 				// trả lời đúng cả 3 câu
 				if (subObj.getAnswerRightBuyType().intValue() == 3)
 				{
-					mMTType = MTType.AnswerSuccessCompleteThreeAllRight;
+					mMTType = MTType.AnswerOne_AllRight_Complete_NotBuyTwo;
 					PromotionMark = LocalConfig.AnswerPromotionThree;
 				}
 				// Câu trả lời cuối là đúng, nhưng có ít nhất 1 câu trả lời sai
 				else if (subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
 				{
-					mMTType = MTType.AnswerSuccessCompleteThree;
+					mMTType = MTType.AnswerOne_LastRight_Complete_NotBuyTwo;
 				}
 				// Câu trả lời cuối là sai, và có ít nhất 1 câu sai
 				else
 				{
-					mMTType = MTType.AnswerWrongCompleteThree;
+					mMTType = MTType.AnswerOne_LastWrong_Complete_NotBuyTwo;
 				}
 			}
 		}
-		// Nếu đang trả lời bộ 7 câu hỏi
-		else
+		// Nếu đang trả lời bộ 3 câu hỏi đã MUA 2
+		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoOneQuestion.GetValue()
+						.shortValue())
 		{
-			if (subObj.getAnswerCount().intValue() == 12 || subObj.getAnswerCount().intValue() == 15)
+			// Nếu là câu trả lời cuối của bộ 3 câu hỏi
+			if ( subObj.getAnswerCount() == 15)
+			{
+				// trả lời đúng cả 3 câu
+				if (subObj.getAnswerRightBuyType().intValue() == 3)
+				{
+					mMTType = MTType.AnswerOne_AllRight_Complete_BuyTwo;
+					PromotionMark = LocalConfig.AnswerPromotionThree;
+				}
+				// Câu trả lời cuối là đúng, nhưng có ít nhất 1 câu trả lời sai
+				else if (subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
+				{
+					mMTType = MTType.AnswerOne_LastRight_Complete_BuyTwo;
+				}
+				// Câu trả lời cuối là sai, và có ít nhất 1 câu sai
+				else
+				{
+					mMTType = MTType.AnswerOne_LastWrong_Complete_BuyTwo;
+				}
+			}
+		}
+		// Nếu đang trả lời bộ 7 câu hỏi chưa MUA 1
+		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoQuestion.GetValue().shortValue())
+		{
+			if (subObj.getAnswerCount().intValue() == 12 )
 			{
 				if (subObj.getAnswerRightBuyType().intValue() == 7)
 				{
-					mMTType = MTType.AnswerSuccessCompleteSevenAllRight;
+					mMTType = MTType.AnswerTwo_AllRight_Complete_NotBuyOne;
 					PromotionMark = LocalConfig.AnswerPromotionSeven;
 				}
 				// Câu trả lời cuối là đúng, nhưng có ít nhất 1 câu trả lời sai
 				else if (subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
 				{
-					mMTType = MTType.AnswerSuccessCompleteSeven;
+					mMTType = MTType.AnswerTwo_LastRight_Complete_NotBuyOne;
 				}
 				// Câu trả lời cuối là sai, và có ít nhất 1 câu sai
 				else
 				{
-					mMTType = MTType.AnswerWrongCompleteSeven;
+					mMTType = MTType.AnswerTwo_LastWrong_Complete_NotBuyOne;
+				}
+			}
+		}
+		 //Tra đang trả lời bộ 7 câu hỏi đã MUA 1
+		else
+		{
+			if (subObj.getAnswerCount().intValue() == 15)
+			{
+				if (subObj.getAnswerRightBuyType().intValue() == 7)
+				{
+					mMTType = MTType.AnswerTwo_AllRight_Complete_BuyOne;
+					PromotionMark = LocalConfig.AnswerPromotionSeven;
+				}
+				// Câu trả lời cuối là đúng, nhưng có ít nhất 1 câu trả lời sai
+				else if (subObj.getAnswerStatusId().shortValue() == Play.Status.CorrectAnswer.GetValue().shortValue())
+				{
+					mMTType = MTType.AnswerTwo_LastRight_Complete_BuyOne;
+				}
+				// Câu trả lời cuối là sai, và có ít nhất 1 câu sai
+				else
+				{
+					mMTType = MTType.AnswerTwo_LastWrong_Complete_BuyOne;
 				}
 			}
 		}
 
 		subObj.setPromotionMark((subObj.getPromotionMark() == null ? 0 : subObj.getPromotionMark()) + PromotionMark);
 
-		if (subObj.getSendCount() < 15 && (mMTType == MTType.AnswerSuccess || mMTType == MTType.AnswerWrong))
+		if (subObj.getSendCount() < 15 && (mMTType == MTType.AnswerRight || mMTType == MTType.AnswerWrong))
 		{
 			questionObj = CurrentData.getNextQuestion(subObj);
 			subObj.setLastQuestionId(questionObj.getQuestionId());
@@ -298,6 +345,7 @@ public class Answer extends ProcessMOAbstract
 				return AddToList();
 			}
 
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",subObj);
 			// Phiên chơi chưa bắt đầu
 			if (mCal_Current.before(mCal_Begin) || mCal_Current.after(mCal_End) || !CurrentData.checkSessionValid())
 			{
@@ -344,6 +392,8 @@ public class Answer extends ProcessMOAbstract
 		finally
 		{
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",subObj));
 		}
 	}
 }

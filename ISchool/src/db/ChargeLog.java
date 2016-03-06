@@ -9,9 +9,10 @@ import java.sql.Timestamp;
 public class ChargeLog extends DAOBase implements java.io.Serializable
 {
 
+
 	public enum ChargeType
 	{
-		Nothing(0), Register(1), Renew(2), BuyContent(3), Restore(4) ;
+		Nothing(0), Register(1), Renew(2), BuyContent(3), Restore(4), Deregister(5) ;
 
 		private int value;
 
@@ -67,16 +68,22 @@ public class ChargeLog extends DAOBase implements java.io.Serializable
 		}
 	}
 	
+	
+	
 	// Fields
 
 	private ChargeLogId id;
 	private Timestamp chargeDate;
-	private Float pirce;
+	private Float price;
 	private Short chargeTypeId;
 	private Short statusId;
 	private Short channelId;
 	private Timestamp logDate;
 	private Integer partnerId;
+	private String detail;
+	private String chargeCode;
+	private Timestamp nextRenewalTime;
+	private String transId;
 
 	// Constructors
 
@@ -92,17 +99,22 @@ public class ChargeLog extends DAOBase implements java.io.Serializable
 	}
 
 	/** full constructor */
-	public ChargeLog(ChargeLogId id, Timestamp chargeDate, Float pirce, Short chargeTypeId, Short statusId,
-			Short channelId, Timestamp logDate, Integer partnerId)
+	public ChargeLog(ChargeLogId id, Timestamp chargeDate, Float price, Short chargeTypeId, Short statusId,
+			Short channelId, Timestamp logDate, Integer partnerId, String detail, String chargeCode,
+			Timestamp nextRenewalTime, String transId)
 	{
 		this.id = id;
 		this.chargeDate = chargeDate;
-		this.pirce = pirce;
+		this.price = price;
 		this.chargeTypeId = chargeTypeId;
 		this.statusId = statusId;
 		this.channelId = channelId;
 		this.logDate = logDate;
 		this.partnerId = partnerId;
+		this.detail = detail;
+		this.chargeCode = chargeCode;
+		this.nextRenewalTime = nextRenewalTime;
+		this.transId = transId;
 	}
 
 	// Property accessors
@@ -127,14 +139,14 @@ public class ChargeLog extends DAOBase implements java.io.Serializable
 		this.chargeDate = chargeDate;
 	}
 
-	public Float getPirce()
+	public Float getPrice()
 	{
-		return this.pirce;
+		return this.price;
 	}
 
-	public void setPirce(Float pirce)
+	public void setPrice(Float price)
 	{
-		this.pirce = pirce;
+		this.price = price;
 	}
 
 	public Short getChargeTypeId()
@@ -185,6 +197,46 @@ public class ChargeLog extends DAOBase implements java.io.Serializable
 	public void setPartnerId(Integer partnerId)
 	{
 		this.partnerId = partnerId;
+	}
+
+	public String getDetail()
+	{
+		return this.detail;
+	}
+
+	public void setDetail(String detail)
+	{
+		this.detail = detail;
+	}
+
+	public String getChargeCode()
+	{
+		return this.chargeCode;
+	}
+
+	public void setChargeCode(String chargeCode)
+	{
+		this.chargeCode = chargeCode;
+	}
+
+	public Timestamp getNextRenewalTime()
+	{
+		return this.nextRenewalTime;
+	}
+
+	public void setNextRenewalTime(Timestamp nextRenewalTime)
+	{
+		this.nextRenewalTime = nextRenewalTime;
+	}
+
+	public String getTransId()
+	{
+		return this.transId;
+	}
+
+	public void setTransId(String transId)
+	{
+		this.transId = transId;
 	}
 
 }

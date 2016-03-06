@@ -76,9 +76,7 @@ public class LoadMT extends Thread
 			{
 				e.printStackTrace();
 			}
-
 		}
-
 	}
 
 	public static void SendMT(MyQueue queueMTRetry, Mtqueue mtqueueObj)

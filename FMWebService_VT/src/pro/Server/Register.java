@@ -40,6 +40,9 @@ public class Register
 
 	Mode mMode = Mode.Nothing;
 	int amount = 0;
+
+	String LogBeforeSub = "";
+	
 	private void Init(Moqueue moQueueObj) throws Exception
 	{
 		try
@@ -285,7 +288,10 @@ public class Register
 				// Lấy thông tin thuê bao đã từng đăng ký và đã hủy
 				SubLog mUnsubObj = sublog.GetSub(PID, moQueueObj.getPhoneNumber());
 				if (mUnsubObj != null)
+				{
 					subObj = new Subscriber(mUnsubObj);
+					LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:", subObj);
+				}
 			}
 
 			// Đăng ký mới (chưa từng đăng ký trước đây)
@@ -334,6 +340,8 @@ public class Register
 		{
 			InsertChargeLog();
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug(MyLogger.GetLog("AFTER_SUB:", subObj));
 		}
 	}
 }

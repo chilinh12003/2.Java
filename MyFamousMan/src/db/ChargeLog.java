@@ -11,7 +11,7 @@ public class ChargeLog extends DAOBase implements java.io.Serializable
 
 	public enum ChargeType
 	{
-		Nothing(0), Register(1), Renew(2), BuyContent(3), Restore(4) ;
+		Nothing(0), Register(1), Renew(2), BuyContent(3), Restore(4), Deregister(5) ;
 
 		private int value;
 

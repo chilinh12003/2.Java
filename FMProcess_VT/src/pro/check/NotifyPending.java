@@ -81,7 +81,9 @@ public class NotifyPending extends Thread
 											+ MyLogger.GetLog(this));
 									return;
 								}
-
+								
+								MaxOrderID =0;
+								
 								mList = subDB.getSubPending(PID, MaxOrderID, Subscriber.Status.Pending, RowCount,
 										calExpiryDate);
 

@@ -136,6 +136,7 @@ public class PushMT extends Thread
 				}
 
 				this.CurrentPID = PID.shortValue();
+				this.MaxOrderID = 0;
 
 				if (mStatus == Status.NoThing)
 				{

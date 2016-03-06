@@ -21,12 +21,12 @@ public class MyLogger
 		log = Logger.getLogger(this.ClassName);
 	}
 
-	public MyLogger( String ClassName)
+	public MyLogger(String ClassName)
 	{
 		this.ClassName = ClassName;
 		log = Logger.getLogger(this.ClassName);
-		
-		if(MyFile.existFile(MyConfig.log4jConfigPath))
+
+		if (MyFile.existFile(MyConfig.log4jConfigPath))
 		{
 			PropertyConfigurator.configure(MyConfig.log4jConfigPath);
 		}
@@ -98,21 +98,25 @@ public class MyLogger
 	public static String GetLog(Object obj)
 	{
 
-		if(obj == null)
+		if (obj == null)
 			return "";
-		
-		StringBuilder mBuilder = new StringBuilder(obj.getClass().toString() +" --> ");
-		
+
+		StringBuilder mBuilder = new StringBuilder(obj.getClass().toString() + " --> ");
+
 		try
 		{
 			for (Field field : obj.getClass().getDeclaredFields())
 			{
-				field.setAccessible(true); // You might want to set modifier to
-											// public first.
-				Object value = field.get(obj);
-				if (value != null)
+				field.setAccessible(true);
+				Object objChild = field.get(obj);
+
+				if (objChild != null)
 				{
-					mBuilder.append(field.getName() + ":" + value +"|");
+					mBuilder.append(field.getName() + ":" + objChild + "|");
+				}
+				else
+				{
+					mBuilder.append(field.getName() + ":" + " null " + "|");
 				}
 			}
 
@@ -128,5 +132,11 @@ public class MyLogger
 	{
 
 		return Prefix + "|--> " + GetLog(obj);
+	}
+
+	public static String GetLog(Object obj, String Suffixes)
+	{
+
+		return GetLog(obj) + "|Note:" + Suffixes;
 	}
 }

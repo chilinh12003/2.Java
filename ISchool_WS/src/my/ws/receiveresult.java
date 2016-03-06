@@ -1,5 +1,6 @@
 package my.ws;
 
+import java.sql.Timestamp;
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
@@ -117,7 +118,7 @@ public class receiveresult
 
 	MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath(), this.getClass().toString());
 
-	String LogFormat = "ChargeLog -->username:%s|password:%s|serviceid:%s|msisdn:%s|chargetime:%s|params:%s|mode:%s|amount:%s|result:%s";
+	String LogFormat = "ChargeLog -->username:%s|password:%s|serviceid:%s|msisdn:%s|chargetime:%s|params:%s|mode:%s|amount:%s|detail:%s|Chargecode:%s|nextRenewalTime:%s|transid:%s|result:%s";
 
 	class ReceiveResultRequest
 	{
@@ -129,6 +130,10 @@ public class receiveresult
 		public String params;
 		public String mode;
 		public int amount;
+		public String detail;
+		public String Chargecode;
+		public String nextRenewalTime;
+		public String transid;
 
 		public String PhoneNumber = "";
 		public ParaType mParaType = ParaType.Nothing;
@@ -141,15 +146,18 @@ public class receiveresult
 		/**
 		 * Chuyển từ chargetime sang
 		 */
-		public Calendar mCal_ChargeTime = Calendar.getInstance();
-		public Calendar mCal_Current = Calendar.getInstance();
-		public Calendar mCal_Expire = Calendar.getInstance();
+		
+		public Calendar calChargeTime = Calendar.getInstance();
+		public Calendar calNextRenewalTime = Calendar.getInstance();
+		public Calendar calCurrent = Calendar.getInstance();
+		public Calendar calExpire = Calendar.getInstance();
 
 		public String MTContent = "";
 
 		public Short PID = 0;
 
-		public Subscriber mSubObj = new Subscriber();
+		public String LogBeforeSub = "";
+		public Subscriber subObj = new Subscriber();
 		public ChargeLog mChargeLogObj = new ChargeLog();
 
 		public Result mResult = Result.Fail;
@@ -201,8 +209,20 @@ public class receiveresult
 				{
 					// Kiểm tra định dạng ngày tháng nhập vào
 					Date TempTime = MyConfig.Get_DateFormat_yyyymmddhhmmss().parse(chargetime);
-					mCal_ChargeTime.setTime(TempTime);
+					calChargeTime.setTime(TempTime);
 
+					if(nextRenewalTime != null)
+					{
+						// Kiểm tra định dạng ngày tháng nhập vào
+						Date TempTime_2 = MyConfig.Get_DateFormat_yyyymmddhhmmss().parse(nextRenewalTime);
+						calNextRenewalTime.setTime(TempTime_2);
+					}
+					else
+					{
+						calNextRenewalTime = null;
+					}
+					
+					
 					// Kiểm tra para
 					int intPara = Integer.parseInt(params.trim());
 					mParaType = ParaType.FromValue(intPara);
@@ -244,27 +264,34 @@ public class receiveresult
 		{
 			PID = ((Integer) MyConvert.GetPIDByMSISDN(PhoneNumber, LocalConfig.MAX_PID)).shortValue();
 			Subscriber mSubscriber = new Subscriber();
-			mSubObj = mSubscriber.GetSub(PID, PhoneNumber);
+			subObj = mSubscriber.GetSub(PID, PhoneNumber);
 
-			mCal_Expire.set(Calendar.MILLISECOND, 0);
-			mCal_Expire.set(mCal_ChargeTime.get(Calendar.YEAR), mCal_ChargeTime.get(Calendar.MONTH),
-					mCal_ChargeTime.get(Calendar.DATE), 23, 59, 59);
+			calCurrent.set(Calendar.MILLISECOND, 0);
+			calCurrent.set(calChargeTime.get(Calendar.YEAR), calChargeTime.get(Calendar.MONTH),
+					calChargeTime.get(Calendar.DATE), 23, 59, 59);
 
 		}
 
 		public void CreateChargeLog()
 		{
 			ChargeLogId mID = new ChargeLogId();
-			mID.setPid(mSubObj.getId().getPid());
-			mID.setPhoneNumber(mSubObj.getId().getPhoneNumber());
+			mID.setPid(subObj.getId().getPid());
+			mID.setPhoneNumber(subObj.getId().getPhoneNumber());
 			mChargeLogObj.setId(mID);
 
 			mChargeLogObj.setChannelId(MyConfig.ChannelType.SMS.GetValue().shortValue());
-			mChargeLogObj.setChargeDate(MyDate.Date2Timestamp(mCal_ChargeTime));
+			mChargeLogObj.setChargeDate(MyDate.Date2Timestamp(calChargeTime));
 			mChargeLogObj.setChargeTypeId(ChargeLog.ChargeType.Renew.GetValue());
 			mChargeLogObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
-			mChargeLogObj.setPartnerId(mSubObj.getPartnerId());
-			mChargeLogObj.setPirce((float) amount);
+			mChargeLogObj.setPartnerId(subObj.getPartnerId());
+			mChargeLogObj.setPrice((float) amount);
+			
+
+			mChargeLogObj.setDetail(detail);
+			mChargeLogObj.setChargeCode(Chargecode);
+			mChargeLogObj.setNextRenewalTime(MyDate.Date2Timestamp(calNextRenewalTime));
+			mChargeLogObj.setTransId(transid);
+			
 			if (mParaType == ParaType.ChargeSuccess)
 			{
 				mChargeLogObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
@@ -279,7 +306,7 @@ public class receiveresult
 		{
 			if (this.mMode == Mode.Check)
 				return true;
-			else return mSubObj.Update();
+			else return subObj.Update();
 		}
 
 		public boolean Insert_ChargeLog() throws Exception
@@ -292,7 +319,11 @@ public class receiveresult
 	}
 
 	public String resultRequest(String username, String password, String serviceid, String msisdn, String chargetime,
-			String params, String mode, int amount)
+			String params, String mode, int amount, 
+			String detail,
+			String Chargecode,
+			String nextRenewalTime,
+			String transid)
 	{
 		
 		ReceiveResultRequest mRequest = new ReceiveResultRequest();
@@ -305,6 +336,11 @@ public class receiveresult
 		mRequest.params = params;
 		mRequest.mode = mode;
 		mRequest.amount = amount;
+		mRequest.detail = detail;
+		mRequest.Chargecode = Chargecode;
+		mRequest.nextRenewalTime = nextRenewalTime;
+		mRequest.transid = transid;
+		
 
 		try
 		{
@@ -316,29 +352,31 @@ public class receiveresult
 			mRequest.mResult = Result.Fail;
 
 			mRequest.GetSub();
-			if (mRequest.mSubObj == null)
+			if (mRequest.subObj == null)
 			{
 				mRequest.mResult = Result.Fail;
 				return mRequest.BuildResult(mRequest.mResult);
 			}
 
+			mRequest.LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",mRequest.subObj);
+			
 			if (mRequest.mParaType == ParaType.ChargeSuccess)
 			{
-				mRequest.mSubObj.setStatusId(Subscriber.Status.Active.GetValue());
+				mRequest.subObj.setStatusId(Subscriber.Status.Active.GetValue());
 
-				mRequest.mSubObj.setExpiryDate(MyDate.Date2Timestamp(mRequest.mCal_Expire));
-				mRequest.mSubObj.setRenewChargeDate(MyDate.Date2Timestamp(mRequest.mCal_ChargeTime));
+				mRequest.subObj.setExpiryDate(MyDate.Date2Timestamp(mRequest.calCurrent));
+				mRequest.subObj.setRenewChargeDate(MyDate.Date2Timestamp(mRequest.calChargeTime));
 
-				mRequest.mSubObj.setRetryChargeCount(0);
+				mRequest.subObj.setRetryChargeCount(0);
 
-				mRequest.mSubObj.setChargeMark(LocalConfig.RenewMark);
+				mRequest.subObj.setChargeMark(LocalConfig.RenewMark);
 			}
 			else
 			{
-				mRequest.mSubObj.setStatusId(Subscriber.Status.Pending.GetValue());
-				mRequest.mSubObj.setRetryChargeDate(MyDate.Date2Timestamp(mRequest.mCal_ChargeTime));
-				mRequest.mSubObj.setRetryChargeCount(mRequest.mSubObj.getRetryChargeCount() + 1);
-				mRequest.mSubObj.setChargeMark(0);
+				mRequest.subObj.setStatusId(Subscriber.Status.Pending.GetValue());
+				mRequest.subObj.setRetryChargeDate(MyDate.Date2Timestamp(mRequest.calChargeTime));
+				mRequest.subObj.setRetryChargeCount(mRequest.subObj.getRetryChargeCount() + 1);
+				mRequest.subObj.setChargeMark(0);
 			}
 
 			if (!mRequest.Update_Sub())
@@ -369,7 +407,9 @@ public class receiveresult
 		finally
 		{
 			mLog.log.info(String.format(LogFormat, username, password, serviceid, msisdn, chargetime, params, mode,
-					amount, mRequest.mResult.GetValue()));
+					amount,detail,Chargecode,nextRenewalTime,transid, mRequest.mResult.GetValue()));
+			mLog.log.debug(mRequest.LogBeforeSub);
+			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",mRequest.subObj));
 		}
 	}
 }

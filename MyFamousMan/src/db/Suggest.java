@@ -3,8 +3,6 @@ package db;
 import java.sql.Timestamp;
 import java.util.List;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
 
 /**
  * Suggest entity. @author MyEclipse Persistence Tools

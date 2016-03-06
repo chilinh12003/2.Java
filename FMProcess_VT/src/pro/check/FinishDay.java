@@ -112,7 +112,8 @@ public class FinishDay extends Thread
 					}
 
 					this.CurrentPID = PID.shortValue();
-
+					this.MaxOrderID = 0;
+					
 					listSub = subDB.GetSub(CurrentPID, this.MaxOrderID, this.RowCount, this.ThreadNumber,
 							this.ThreadIndex);
 
@@ -264,7 +265,7 @@ public class FinishDay extends Thread
 
 		subObj.setLastSuggestId(0);
 		subObj.setSuggestByDay(0);
-		
+
 		// Chỉ chuyển thành pedding nếu thuê bao này đang Active.
 		// Nếu charge thành công thì tình trạng sẽ chuyển lại Active
 		if (subObj.getStatusId().shortValue() == Subscriber.Status.Active.GetValue().shortValue())

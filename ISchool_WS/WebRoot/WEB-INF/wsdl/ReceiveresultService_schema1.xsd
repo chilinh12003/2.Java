@@ -12,8 +12,12 @@
       <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
       <xs:element minOccurs="0" name="chargetime" type="xs:string"/>
       <xs:element minOccurs="0" name="params" type="xs:string"/>
-      <xs:element minOccurs="0" name="mode" type="xs:string"/>
+      <xs:element minOccurs="0" name="mode" type="xs:string"/>      
       <xs:element name="amount" type="xs:int"/>
+      <xs:element minOccurs="0" name="detail" type="xs:string"/>
+      <xs:element minOccurs="0" name="Chargecode" type="xs:string"/>
+      <xs:element minOccurs="0" name="nextRenewalTime" type="xs:string"/>
+      <xs:element minOccurs="0" name="transid" type="xs:string"/>   
     </xs:sequence>
   </xs:complexType>
 

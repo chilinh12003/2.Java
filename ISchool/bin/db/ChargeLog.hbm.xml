@@ -22,8 +22,8 @@
                 <comment>Thời gian charge</comment>
             </column>
         </property>
-        <property name="pirce" type="java.lang.Float">
-            <column name="Pirce" precision="12" scale="0" />
+        <property name="price" type="java.lang.Float">
+            <column name="Price" precision="12" scale="0" />
         </property>
         <property name="chargeTypeId" type="java.lang.Short">
             <column name="ChargeTypeID">
@@ -48,6 +48,26 @@
         <property name="partnerId" type="java.lang.Integer">
             <column name="PartnerID">
                 <comment>Phục vụ cho việc quảng cáo của đối tác sau này</comment>
+            </column>
+        </property>
+        <property name="detail" type="java.lang.String">
+            <column name="Detail" length="45">
+                <comment>Thống số do viettel gửi sang</comment>
+            </column>
+        </property>
+        <property name="chargeCode" type="java.lang.String">
+            <column name="ChargeCode" length="45">
+                <comment>Thông số do viettel gửi sang</comment>
+            </column>
+        </property>
+        <property name="nextRenewalTime" type="java.sql.Timestamp">
+            <column name="NextRenewalTime" length="19">
+                <comment>Thông số do viettel gửi sang</comment>
+            </column>
+        </property>
+        <property name="transId" type="java.lang.String">
+            <column name="TransID" length="45">
+                <comment>Thông số do viettel gửi sang</comment>
             </column>
         </property>
     </class>

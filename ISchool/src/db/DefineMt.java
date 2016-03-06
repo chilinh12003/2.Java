@@ -113,68 +113,80 @@ public class DefineMt extends DAOBase implements java.io.Serializable {
 		/**
 		 * Mua bộ câu hỏi khi chưa đăng ký
 		 */
-		BuyQuestionNotReg(400),
-
-		/**
-		 * Mua bộ câu hỏi nhưng không đủ tiền
-		 */
-		BuyQuestionNotEnoughMoney(401),
-
+		BuyNotReg(400),
+		
 		/**
 		 * Mua bộ câu hỏi khi phiên chơi chưa bắt đầu hoặc đã kết thúc
 		 */
-		BuyQuestionExpire(402),
+		BuyExpire(401),
 
 		/**
-		 * Mua bộ câu hỏi khi vượt quá 2 lần trong 1 ngày
+		 * MUA khi đã hết quyền mua (đã mua 1 và mua 2)
 		 */
-		BuyQuestionLimit(403),
-		/**
-		 * Mua bộ 3 câu hỏi khi đã mua trước đó
-		 */
-		BuyQuestionOneLimit(404),
-		/**
-		 * Mua bộ 7 câu hỏi khi đã mua trước đó
-		 */
-		BuyQuestionTwoLimit(405),	
+		BuyLimit(402),
 		
-
 		/**
 		 * Mua bộ câu hỏi không thành công do lỗi hệ thống hoặc một lý do
 		 * nào khác
 		 */
-		BuyQuestionFail(406),
-		
-
-		/**
-		 * Mua thành công và trả về bộ câu hỏi
-		 */
-		BuyQuestionSuccess(407),
-		
-		/*
-		 * Mua thành công bộ 3 câu hỏi
-		 */
-		BuyQuestionOneSuccess(408),
-		/**
-		 * Mua thành công bộ 7 câu hỏi
-		 */
-		BuyQuestionTwoSuccess(409),
-		
+		BuyFail(403),		
 
 		/**
 		 * Bản tin nhắc nhở khi mua bộ câu hỏi (nếu có)
 		 */
-		BuyQuestionNotify(410),
-
-		/**
-		 * Mua bộ câu hỏi khi thuê bao gia hạn không thành công
-		 */
-		BuyQuestionNotExtend(411),
+		BuyNotify(404),
+		
 		
 		/**
 		 * MT chứa nội dung của câu hỏi
 		 */
-		BuyQuestionMT(412),
+		BuyQuestionMT(405),
+		
+		/////////////////////////////////////////////
+		///MUA 1
+		////////////////////////////////////////////
+		/*
+		 * Mua thành công bộ 3 câu hỏi
+		 */
+		BuyOneSuccess(410),
+		
+		/*
+		 * Mua 1 nhưng không đủ tiền
+		 */
+		BuyOneNotEnoughMoney(411),	
+		
+		/**
+		 * Mua bộ câu hỏi khi thuê bao gia hạn không thành công
+		 */
+		BuyOneNotExtend(412),
+		
+		/**
+		 * Mua bộ 3 câu hỏi khi đã mua trước đó (chưa MUA 2)
+		 */
+		BuyOneLimit(413),
+		
+		/////////////////////////////////////////////
+		///MUA 2
+		////////////////////////////////////////////
+		/*
+		 * Mua thành công bộ 7 câu hỏi
+		 */
+		BuyTwoSuccess(420),
+		
+		/*
+		 * Mua 2 nhưng không đủ tiền
+		 */
+		BuyTwoNotEnoughMoney(421),		
+		/**
+		 * Mua bộ câu hỏi khi thuê bao gia hạn không thành công
+		 */
+		BuyTwoNotExtend(422),
+		
+		/**
+		 * Mua bộ 7 câu hỏi khi đã mua trước đó (chưa MUA 1)
+		 */
+		BuyTwoLimit(423),
+		
 		
 		
 
@@ -203,64 +215,88 @@ public class DefineMt extends DAOBase implements java.io.Serializable {
 		/**
 		 * Dự đoán sai
 		 */
-		AnswerWrong(504),
-
-		/**
-		 * Trả lời sai khi hoàn thành 5 câu hỏi free
-		 */
-		AnswerWrongCompleteFive(505),
-		
-		/**
-		 * Trả lời sai khi hoàn thành bộ 3 câu hỏi
-		 */
-		AnswerWrongCompleteThree(506),
-		
-		/**
-		 * Trả lời sai khi hoàn thành bộ 7 câu hỏi
-		 */
-		AnswerWrongCompleteSeven(507),
+		AnswerWrong(504),		
 		
 		/**
 		 * Dự đoán không thành công do phát sinh lỗi hoặc lý do khác...
 		 */
-		AnswerFail(508),
+		AnswerFail(505),
 
 		/**
 		 * Dự đoán chính xác với kết quả
 		 */
-		AnswerSuccess(510),
+		AnswerRight(506),
+		
+		//----TRẢ LỜI CÂU CUỐI CÙNG CHO 5 CÂU HỎI FREE
+		/**
+		 * Trả lời đúng câu cuối cùng nhưng có ít nhất 1 câu sai trong 5 câu
+		 */
+		AnswerFree_LastRight_Complete(510),
+		/**
+		 * Trả lời sai câu cuối cùng
+		 */
+		AnswerFree_LastWrong_Complete(511),
+		/**
+		 * Trả lời câu cuối cùng và 5 câu đều đúng
+		 */
+		AnswerFree_AllRight_Complete(512),
+		
+		//----TRẢ LỜI CÂU CUỐI CÙNG CHO GÓI 3 CÂU HỎI
+		/**
+		 * Trả lời đúng câu cuối cùng nhưng có ít nhất 1 câu sai trong 3 câu chưa mua 2
+		 */
+		AnswerOne_LastRight_Complete_NotBuyTwo(520),
+		/**
+		 * Trả lời sai câu cuối cùng chưa mua 2
+		 */
+		AnswerOne_LastWrong_Complete_NotBuyTwo(521),
+		/**
+		 * Trả lời câu cuối cùng và 3 câu đều đúng chưa mua 2
+		 */
+		AnswerOne_AllRight_Complete_NotBuyTwo(522),
 		
 		/**
-		 * trả lời đúng ở câu hỏi thứ 5, nhưng có ít nhất 1 câu không đúng
+		 * Trả lời đúng câu cuối cùng nhưng có ít nhất 1 câu sai trong 3 câu đã mua 2
 		 */
-		AnswerSuccessCompleteFive(511),
-		
+		AnswerOne_LastRight_Complete_BuyTwo(523),
 		/**
-		 * trả lời đúng ở câu hỏi thứ 3, nhưng có ít nhất 1 câu không đúng
+		 * Trả lời sai câu cuối cùng đã chưa mua 2
 		 */
-		AnswerSuccessCompleteThree(512),
-		
+		AnswerOne_LastWrong_Complete_BuyTwo(524),
 		/**
-		 * trả lời đúng ở câu hỏi thứ 7, nhưng có ít nhất 1 câu không đúng
+		 * Trả lời câu cuối cùng và 3 câu đều đúng đã chưa mua 2
 		 */
-		AnswerSuccessCompleteSeven(513),
+		AnswerOne_AllRight_Complete_BuyTwo(525),
 		
 		
 		/**
-		 * trả lời đúng ở câu hỏi thứ 5 và đúng hết 5 câu
+		 * Trả lời đúng câu cuối cùng nhưng có ít nhất 1 câu sai trong 7 câu chưa mua 1
 		 */
-		AnswerSuccessCompleteFiveAllRight(514),
+		AnswerTwo_LastRight_Complete_NotBuyOne(530),
+		/**
+		 * Trả lời sai câu cuối cùng chưa mua 1
+		 */
+		AnswerTwo_LastWrong_Complete_NotBuyOne(531),
+		/**
+		 * Trả lời câu cuối cùng và 3 câu đều đúng chưa mua 1
+		 */
+		AnswerTwo_AllRight_Complete_NotBuyOne(532),
 		
 		/**
-		 * trả lời đúng ở câu hỏi thứ 3 và đúng hết 3 câu
+		 * Trả lời đúng câu cuối cùng nhưng có ít nhất 1 câu sai trong 7 câu đã mua 1
 		 */
-		AnswerSuccessCompleteThreeAllRight(515),
-		
+		AnswerTwo_LastRight_Complete_BuyOne(533),
 		/**
-		 * trả lời đúng ở câu hỏi thứ 7 và đúng hết 7 câu
+		 * Trả lời sai câu cuối cùng đã chưa mua 1
 		 */
-		AnswerSuccessCompleteSevenAllRight(516),
+		AnswerTwo_LastWrong_Complete_BuyOne(534),
+		/**
+		 * Trả lời câu cuối cùng và 3 câu đều đúng đã chưa mua 1
+		 */
+		AnswerTwo_AllRight_Complete_BuyOne(535),
 		
+		// -----NOTIFY
+				
 
 		/**
 		 * Thông báo về phiên chơi mới

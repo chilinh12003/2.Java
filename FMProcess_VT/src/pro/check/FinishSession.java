@@ -125,6 +125,7 @@ public class FinishSession extends Thread
 			mLog.log.error(ex);
 		}
 	}
+
 	void init() throws Exception
 	{
 		// Lấy thứ 2 của tuần hiện tại.
@@ -139,6 +140,7 @@ public class FinishSession extends Thread
 		calPrevSunday = MyDate.GetSunday(calPrevThursday);
 
 	}
+
 	boolean insertWinnerWeek(Subscriber subObj)
 	{
 		try

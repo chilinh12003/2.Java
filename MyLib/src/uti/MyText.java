@@ -41,17 +41,18 @@ public class MyText
 	 */
 	public static String ReadFromURL(String LinkURL) throws Exception
 	{
+		InputStreamReader mInput = null;
+		BufferedReader mBuff = null;
 		try
 		{
-			InputStreamReader mInput = new InputStreamReader(new URL(LinkURL).openStream());
-			BufferedReader mBuff = new BufferedReader(mInput);
+			mInput = new InputStreamReader(new URL(LinkURL).openStream());
+			mBuff = new BufferedReader(mInput);
 			String line = mBuff.readLine();
 			String content = "";
 			while (line != null)
 			{
 				content += line;
 				line = mBuff.readLine();
-
 			}
 			return content;
 
@@ -59,6 +60,11 @@ public class MyText
 		catch (Exception ex)
 		{
 			throw ex;
+		}
+		finally
+		{
+			if(mBuff != null)
+				mBuff.close();
 		}
 
 	}

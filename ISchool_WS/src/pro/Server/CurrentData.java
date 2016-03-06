@@ -175,7 +175,7 @@ public class CurrentData
 	}
 
 	/**
-	 * Lấy câu hỏi tiếp theo dữa theo
+	 * Lấy câu hỏi tiếp theo
 	 * 
 	 * @return
 	 */
@@ -193,6 +193,7 @@ public class CurrentData
 		return null;
 	}
 
+	
 	/**
 	 * Kiểm tra sự tồn tại của session và Question.
 	 * 

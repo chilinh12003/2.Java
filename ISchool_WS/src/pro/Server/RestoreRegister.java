@@ -39,6 +39,7 @@ public class RestoreRegister
 
 	Mode mMode = Mode.Nothing;
 	int amount = 0;
+	String LogBeforeSub = "";
 	private void Init(Moqueue moQueueObj) throws Exception
 	{
 		try
@@ -120,39 +121,24 @@ public class RestoreRegister
 				subObj.setStatusId(Subscriber.Status.Active.GetValue());
 
 				subObj.setPartnerId(0);
-
-				// thông tin về điểm, câu hỏi trong ngày sẽ được giữ nguyện nếu
-				// Hủy, DK lại trong ngày
-				if (subObj.CheckLastBuyDate(mCal_Current) || subObj.CheckLastAnswerDate(mCal_Current))
-				{
-					questionObj = CurrentData.getNextQuestion(subObj);
-					if (questionObj != null)
-					{
-						subObj.setLastQuestionId(questionObj.getQuestionId());
-						subObj.setSendCount(subObj.getSendCount() + 1);
-					}
-				}
-				else
-				{
-					subObj.setLastBuyDate(null);
-					subObj.setBuyType(Subscriber.BuyQuestionType.QuestionFree.GetValue());
-					subObj.setQuestionCount(LocalConfig.FreeQuestionCount);
-					subObj.setSendCount(0);
-					subObj.setAnswerCount(0);
-					subObj.setAnswerRight(0);
-					subObj.setLastAnswerDate(null);
-					if(questionObj != null)
+				
+				subObj.setLastBuyDate(null);
+				subObj.setBuyType(Subscriber.BuyQuestionType.QuestionFree.GetValue());
+				subObj.setQuestionCount(LocalConfig.FreeQuestionCount);
+				subObj.setSendCount(1);
+				subObj.setAnswerCount(0);
+				subObj.setAnswerRight(0);
+				subObj.setAnswerRightBuyType(0);
+				subObj.setLastAnswerDate(null);
+				if (questionObj != null)
 					subObj.setLastQuestionId(questionObj.getQuestionId());
-					subObj.setLastAnswer(null);
+				subObj.setLastAnswer(null);
 
-					// các điểm trong ngày sẽ bị xóa
-					subObj.setDayMark(0);
-					// subObj.setAddMark(0);
-					subObj.setChargeMark(LocalConfig.RegMark);
-					subObj.setBuyMark(0);
-					subObj.setAnswerMark(0);
-					subObj.setPromotionMark(0);
-				}
+				subObj.setDayMark(0);
+				subObj.setChargeMark(LocalConfig.RegMark);
+				subObj.setBuyMark(0);
+				subObj.setAnswerMark(0);
+				subObj.setPromotionMark(0);
 
 				// Nếu khác tuần thì các điểm của tuần sẽ bị xóa
 				if (!subObj.CheckIsWeek(mCal_Current))
@@ -191,7 +177,7 @@ public class RestoreRegister
 			chargeObj.setStatusId(ChargeLog.Status.ChargeSuccess.GetValue());
 			chargeObj.setLogDate(MyDate.Date2Timestamp(Calendar.getInstance()));
 			chargeObj.setPartnerId(subObj.getPartnerId());
-			chargeObj.setPirce((float) amount);
+			chargeObj.setPrice((float) amount);
 			
 			if(!chargeObj.Save())
 			{
@@ -223,6 +209,8 @@ public class RestoreRegister
 				return mMTType;
 			}
 
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",subObj);
+			
 			if(subObj.getStatusId()  == Subscriber.Status.Active.GetValue().shortValue())
 			{
 				mMTType = MTType.RestoreWhenActive;
@@ -252,6 +240,8 @@ public class RestoreRegister
 		{
 			InsertChargeLog();
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
+			mLog.log.debug(LogBeforeSub);
+			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",subObj));
 		}
 	}
 }

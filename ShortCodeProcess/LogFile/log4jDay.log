@@ -1,43 +1,24 @@
-2014-10-27 13:53:45,204 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
-2014-10-27 13:53:45,342 | DEBUG | [main] | class MyProcessServer.Program:Init(125) ----> Loaded. 
-2014-10-27 13:53:45,343 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(234) ----> loadSMSDataTable:data.dat 
-2014-10-27 13:53:45,344 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(243) ----> data.dat is empty 
-2014-10-27 13:53:45,345 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(286) ----> Deleting.....: data.dat 
-2014-10-27 13:53:45,345 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(234) ----> loadSMSDataTable:receivelog.dat 
-2014-10-27 13:53:45,346 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(243) ----> receivelog.dat is empty 
-2014-10-27 13:53:45,346 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(286) ----> Deleting.....: receivelog.dat 
-2014-10-27 13:53:45,346 | DEBUG | [main] | class MyProcessServer.Program:Init(132) ----> Start: LoadMO 
-2014-10-27 13:53:45,400 | DEBUG | [main] | class MyProcessServer.Program:Init(145) ----> Start: ExecuteQueue 
-2014-10-27 13:53:45,572 | DEBUG | [main] | class MyProcessServer.Program:Init(153) ----> Start: ExecuteInsertReceiveLog 
-2014-10-27 13:53:45,831 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(379) ----> {runthread}{Start:MyThread.MOForwardThread} 
-2014-10-27 13:53:45,844 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
-2014-10-27 13:53:46,029 |  INFO | [Thread-22] | class MyThread.MOForwardThread:RetryForwardMO(145) ----> Retry MO: ClassName:MyProcess.GoldSwordProcess || RetryCount:2 || Result:-1 || -->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 13:45:42.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 
-2014-10-27 13:55:17,911 |  INFO | [Thread-7] | class MyProcessServer.LoadMO:run(122) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 13:55:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Q:6083[Size:1] 
-2014-10-27 13:55:17,914 |  INFO | [Thread-11] | class MyProcessServer.ExecuteQueue:run(100) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 13:55:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Keyword:ALAO 
-2014-10-27 13:55:17,916 |  INFO | [Thread-11] | class MyProcessServer.ExecuteQueue:processQueueMsg(178) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 13:55:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:ClassName:MyProcess.GoldSwordProcess 
-2014-10-27 13:55:42,326 |  INFO | [Thread-11] | MyCallWebservice.GoldSword:CallWebservice(38) ----> Request GoldSword --> User_ID:84919438389|Service_ID:6083|Command_Code:ALAO|Info:ALAO 123|Request_ID:1|Receive_Date:20141027135517|Operator:GPC|UserName:PartnerFRQWE|Password:977CE426A4FABE0AC6F0FC39044831F3|Result:0 
-2014-10-27 13:55:42,375 |  INFO | [Thread-11] | class MyProcess.GoldSwordProcess:getMessages(86) ----> -->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 13:55:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 
-2014-10-27 13:55:42,376 |  INFO | [Thread-11] | class MyProcessServer.ContentAbstract:start(54) ----> ContentAbstract-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 13:55:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:MT TRA VE LA NULL 
-2014-10-27 13:55:42,464 |  INFO | [Thread-20] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(106) ----> add2SMSReceiveLog:84919438389@ALAO 123 
-2014-10-27 16:47:34,904 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
-2014-10-27 16:47:35,018 | DEBUG | [main] | class MyProcessServer.Program:Init(125) ----> Loaded. 
-2014-10-27 16:47:35,019 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(234) ----> loadSMSDataTable:data.dat 
-2014-10-27 16:47:35,020 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(243) ----> data.dat is empty 
-2014-10-27 16:47:35,021 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(286) ----> Deleting.....: data.dat 
-2014-10-27 16:47:35,021 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(234) ----> loadSMSDataTable:receivelog.dat 
-2014-10-27 16:47:35,022 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(243) ----> receivelog.dat is empty 
-2014-10-27 16:47:35,023 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(286) ----> Deleting.....: receivelog.dat 
-2014-10-27 16:47:35,023 | DEBUG | [main] | class MyProcessServer.Program:Init(132) ----> Start: LoadMO 
-2014-10-27 16:47:35,095 | DEBUG | [main] | class MyProcessServer.Program:Init(145) ----> Start: ExecuteQueue 
-2014-10-27 16:47:35,196 | DEBUG | [main] | class MyProcessServer.Program:Init(153) ----> Start: ExecuteInsertReceiveLog 
-2014-10-27 16:47:35,258 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(379) ----> {runthread}{Start:MyThread.MOForwardThread} 
-2014-10-27 16:47:35,273 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
-2014-10-27 16:47:35,356 |  INFO | [Thread-22] | class MyProcessServer.Common:sendMT1(157) ----> SendMT-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:Yeu cau cua ban tam thoi chua thuc hien duoc.Vui long quay lai vao lan sau. || MessageType:2 || ContentType:21 || RequestID:1 || RequestTime:2014-10-27 13:45:42.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 
-2014-10-27 16:47:35,380 |  INFO | [Thread-22] | class MyProcessServer.Common:sendMT1(157) ----> SendMT-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:Yeu cau cua ban tam thoi chua thuc hien duoc.Vui long quay lai vao lan sau. || MessageType:2 || ContentType:21 || RequestID:1 || RequestTime:2014-10-27 13:55:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 
-2014-10-27 16:50:54,869 |  INFO | [Thread-8] | class MyProcessServer.LoadMO:run(122) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 16:50:54.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Q:6083[Size:1] 
-2014-10-27 16:50:54,869 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(100) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO 123 || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 16:50:54.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:Keyword:ALAO 
-2014-10-27 16:50:54,876 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(178) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 16:50:54.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:ClassName:MyProcess.GoldSwordProcess 
-2014-10-27 16:51:04,373 |  INFO | [Thread-10] | MyCallWebservice.GoldSword:CallWebservice(38) ----> Request GoldSword --> User_ID:84919438389|Service_ID:6083|Command_Code:ALAO|Info:ALAO 123|Request_ID:1|Receive_Date:20141027165054|Operator:GPC|UserName:PartnerFRQWE|Password:977CE426A4FABE0AC6F0FC39044831F3|Result:0 
-2014-10-27 16:51:16,978 |  INFO | [Thread-10] | class MyProcess.GoldSwordProcess:getMessages(86) ----> -->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 16:50:54.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note: 
-2014-10-27 16:51:16,979 |  INFO | [Thread-10] | class MyProcessServer.ContentAbstract:start(54) ----> ContentAbstract-->ServiceID:6083 || MSISDN:84919438389 || Keyword:ALAO || Info:ALAO 123 || MessageType:0 || ContentType:0 || RequestID:1 || RequestTime:2014-10-27 16:50:54.0 || ChannelType:1 || TenDV: || MaDV: || MO:ALAO 123 ||  Note:MT TRA VE LA NULL 
-2014-10-27 16:51:16,981 |  INFO | [Thread-20] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(106) ----> add2SMSReceiveLog:84919438389@ALAO 123 
+2016-01-22 17:15:32,018 | ERROR | [main] | class MyProcessServer.Program:<init>(93) ----> com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server. 
+2016-01-22 17:15:32,028 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(379) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2016-01-22 17:15:32,056 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2016-01-22 17:28:27,335 | ERROR | [main] | class MyProcessServer.Program:<init>(93) ----> com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'dataprocess' 
+2016-01-22 17:28:27,345 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(379) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2016-01-22 17:28:27,366 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2016-01-22 17:28:27,366 | ERROR | [Thread-5] | class MyThread.MOForwardThread:run(252) ----> com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'dataprocess' 
+2016-01-22 17:33:08,122 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-01-22 17:33:08,204 | DEBUG | [main] | class MyProcessServer.Program:Init(125) ----> Loaded. 
+2016-01-22 17:33:08,204 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(234) ----> loadSMSDataTable:data.dat 
+2016-01-22 17:33:08,204 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(243) ----> data.dat is empty 
+2016-01-22 17:33:08,204 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(286) ----> Deleting.....: data.dat 
+2016-01-22 17:33:08,204 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(234) ----> loadSMSDataTable:receivelog.dat 
+2016-01-22 17:33:08,204 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(243) ----> receivelog.dat is empty 
+2016-01-22 17:33:08,204 |  INFO | [main] | class MyProcessServer.Program:loadSMSDataTable(286) ----> Deleting.....: receivelog.dat 
+2016-01-22 17:33:08,204 | DEBUG | [main] | class MyProcessServer.Program:Init(132) ----> Start: LoadMO 
+2016-01-22 17:33:08,247 | DEBUG | [main] | class MyProcessServer.Program:Init(145) ----> Start: ExecuteQueue 
+2016-01-22 17:33:08,336 | DEBUG | [main] | class MyProcessServer.Program:Init(153) ----> Start: ExecuteInsertReceiveLog 
+2016-01-22 17:33:08,356 |  INFO | [Thread-0] | class MyProcessServer.Program:runthread(379) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2016-01-22 17:33:08,366 | DEBUG | [Thread-0] | class MyProcessServer.Program:run(363) ----> Listen MO............................................................... 
+2016-01-22 17:33:08,408 |  INFO | [Thread-22] | class MyProcessServer.Common:sendMT1(157) ----> SendMT-->ServiceID:6083 || MSISDN:84979967755 || Keyword:TPBD || Info:Yeu cau cua ban tam thoi chua thuc hien duoc.Vui long quay lai vao lan sau. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-20 09:40:17.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2016-01-22 17:33:08,418 |  INFO | [Thread-22] | class MyProcessServer.Common:sendMT1(157) ----> SendMT-->ServiceID:6083 || MSISDN:84909967755 || Keyword:TPBD || Info:Yeu cau cua ban tam thoi chua thuc hien duoc.Vui long quay lai vao lan sau. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-20 09:43:15.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 

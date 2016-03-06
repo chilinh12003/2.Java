@@ -40,6 +40,22 @@
   	<load-on-startup>1</load-on-startup>
   </servlet>
   
+  
+  <servlet>
+  	<description>JAX-WS endpoint - apinotifyService</description>
+  	<display-name>apinotifyService</display-name>
+  	<servlet-name>apinotifyService</servlet-name>
+  	<servlet-class>
+  		com.sun.xml.ws.transport.http.servlet.WSServlet
+  	</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>apinotifyService</servlet-name>
+  	<url-pattern>/doNotify</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>receiveresultService</servlet-name>
   	<url-pattern>/resultRequest</url-pattern>
@@ -80,4 +96,18 @@
         <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
     </listener>
     
-  </web-app>
+  <listener>
+  	<listener-class>
+  		com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+  	</listener-class>
+  </listener>
+  <listener>
+  	<listener-class>
+  		com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+  	</listener-class>
+  </listener>
+  <listener>
+  	<listener-class>
+  		com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+  	</listener-class>
+  </listener></web-app>

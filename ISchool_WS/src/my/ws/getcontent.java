@@ -236,11 +236,11 @@ public class getcontent
 			moQueueObj.setChannelId(MyConfig.ChannelType.SMS.GetValue().shortValue());
 			if (amount == 1000)
 			{
-				moQueueObj.setMo("MUA 1");
+				moQueueObj.setMo("MUA1");
 			}
 			else if (amount == 2000)
 			{
-				moQueueObj.setMo("MUA 2");
+				moQueueObj.setMo("MUA2");
 			}
 			else moQueueObj.setMo("MUA");
 			moQueueObj.setMoInsertDate(MyDate.Date2Timestamp(Calendar.getInstance()));
@@ -258,8 +258,8 @@ public class getcontent
 			mMTType = mBuyQuestion.getMessages(moQueueObj, mMode, amount);
 
 			List<Mtqueue> listMTQueue = mBuyQuestion.AddToList();
-			if (mMTType == MTType.BuyQuestionSuccess  || mMTType == MTType.BuyQuestionOneSuccess
-					|| mMTType == MTType.BuyQuestionTwoSuccess)
+			if (mMTType == MTType.BuyOneSuccess
+					|| mMTType == MTType.BuyTwoSuccess)
 			{
 				mResult = Result.Success;
 
