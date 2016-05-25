@@ -135,6 +135,8 @@ public class MyDate
 		}
 	}
 
+	
+	
 	/**
 	 * So sánh 2 ngày với nhau theo Calender.Field
 	 * 

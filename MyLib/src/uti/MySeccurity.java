@@ -23,7 +23,7 @@ import Decoder.BASE64Decoder;
 import Decoder.BASE64Encoder;
 
 /*import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;*/
+ import sun.misc.BASE64Encoder;*/
 
 public class MySeccurity
 {
@@ -129,10 +129,13 @@ public class MySeccurity
 	{
 		byte[] plainTextbytes = plainText.getBytes(characterEncoding);
 		byte[] keyBytes = getKeyBytes(key);
-		//return Base64.encodeToString(encrypt(plainTextbytes, keyBytes, keyBytes), Base64.DEFAULT);
-		
-		//String S = javax.xml.bind.DatatypeConverter.printBase64Binary(encrypt(plainTextbytes, keyBytes, keyBytes));
-		
+		// return Base64.encodeToString(encrypt(plainTextbytes, keyBytes,
+		// keyBytes), Base64.DEFAULT);
+
+		// String S =
+		// javax.xml.bind.DatatypeConverter.printBase64Binary(encrypt(plainTextbytes,
+		// keyBytes, keyBytes));
+
 		BASE64Encoder mEncode = new BASE64Encoder();
 		return mEncode.encode(encrypt(plainTextbytes, keyBytes, keyBytes));
 	}
@@ -148,9 +151,9 @@ public class MySeccurity
 			GeneralSecurityException, InvalidAlgorithmParameterException, IllegalBlockSizeException,
 			BadPaddingException, IOException
 	{
-		//byte[] cipheredBytes = Base64.decode(encryptedText, Base64.DEFAULT);
+		// byte[] cipheredBytes = Base64.decode(encryptedText, Base64.DEFAULT);
 		BASE64Decoder mDecoder = new BASE64Decoder();
-		
+
 		byte[] cipheredBytes = mDecoder.decodeBuffer(encryptedText);
 		byte[] keyBytes = getKeyBytes(key);
 		return new String(decrypt(cipheredBytes, keyBytes, keyBytes), characterEncoding);
@@ -159,10 +162,36 @@ public class MySeccurity
 	public static String GenUniqueueID()
 	{
 		UID userId = new UID();
-		
-		//3179c3:ec6e28a7ef:-8000 
-		String UID = ""+userId;
+
+		// 3179c3:ec6e28a7ef:-8000
+		String UID = "" + userId;
 		UID = UID.replace(":", "").replace("-", "");
 		return UID;
 	}
+
+	private static final char[] symbols;
+
+	static
+	{
+		StringBuilder tmp = new StringBuilder();
+		for (char ch = '0'; ch <= '9'; ++ch)
+			tmp.append(ch);
+		symbols = tmp.toString().toCharArray();
+	}
+
+
+	public static String RandomString(int length)
+	{
+		Random random = new Random();
+		char[] buf;
+		if (length < 1)
+			throw new IllegalArgumentException("length < 1: " + length);
+
+		buf = new char[length];
+
+		for (int idx = 0; idx < buf.length; ++idx)
+			buf[idx] = symbols[random.nextInt(symbols.length)];
+		return new String(buf);
+	}
+
 }

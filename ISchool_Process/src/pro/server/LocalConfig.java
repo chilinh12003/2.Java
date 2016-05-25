@@ -37,7 +37,7 @@ public class LocalConfig
 	public static Integer LOADMT_ROWCOUNT = 10;
 
 	public static String SHORT_CODE = "5138";
-	public static String SERVICE_NAME = "NhanDienNNT";
+	public static String SERVICE_NAME = "ISCHOOL";
 
 	public static String INV_CLASS = "pro.mo.InvalidProcess";
 	public static String INV_KEYWORD = "INV";
@@ -73,6 +73,12 @@ public class LocalConfig
 	public static Integer PUSHMT_TPS = 0;
 
 	public static Integer MAX_PID = 50;
+	
+	/**
+	 * Thời gian push tin thông báo thuê bao đã bị pending (sau thời gian charge gia hạn lần thứ 3)
+	 * Vì thời gian gi hạn lần 3 lá 19h --> sẽ gửi thông báo vào 20h
+	 */
+	public static Integer NOTIFY_PENDING_HOUR = 20;
 
 	/**
 	 * Điểm cho 1 lần trả lời đúng
@@ -169,6 +175,7 @@ public class LocalConfig
 			LOADMT_ROWCOUNT = Integer.parseInt(properties.getProperty("LOADMT_ROWCOUNT", LOADMT_ROWCOUNT.toString()));
 
 			SHORT_CODE = properties.getProperty("SHORT_CODE", SHORT_CODE);
+			SERVICE_NAME = properties.getProperty("SERVICE_NAME", SERVICE_NAME);
 
 			INV_CLASS = properties.getProperty("INV_CLASS", INV_CLASS);
 			INV_KEYWORD = properties.getProperty("INV_KEYWORD", INV_KEYWORD);
@@ -198,6 +205,8 @@ public class LocalConfig
 			PUSHMT_PROCESS_NUMBER = Integer.parseInt(properties.getProperty("PUSHMT_PROCESS_NUMBER",
 					PUSHMT_PROCESS_NUMBER.toString()));
 			PUSHMT_TPS = Integer.parseInt(properties.getProperty("PUSHMT_TPS", Integer.toString(PUSHMT_TPS)));
+			
+			NOTIFY_PENDING_HOUR = Integer.parseInt(properties.getProperty("NOTIFY_PENDING_HOUR", Integer.toString(NOTIFY_PENDING_HOUR)));		
 			return true;
 
 		}

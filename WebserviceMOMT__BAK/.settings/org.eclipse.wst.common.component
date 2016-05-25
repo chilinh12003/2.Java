@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WebserviceMOMT">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="MyDataGateway.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MyDataGateway/MyDataGateway">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MyLibrary.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MyLibrary/MyLibrary">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-rt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/3.lib/jaxws-ri-2.2.10/jaxws-ri/lib/jaxws-rt.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/3.lib/jaxws-ri-2.2.10/jaxws-ri/lib/jaxb-impl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-core.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/3.lib/jaxws-ri-2.2.10/jaxws-ri/lib/jaxb-core.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="/WebserviceMOMT"/>
+        <property name="java-output-path" value="/WebserviceMOMT/WebRoot/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

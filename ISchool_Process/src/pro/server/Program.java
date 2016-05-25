@@ -10,6 +10,7 @@ import pro.check.BeginSession;
 import pro.check.CheckFinishDay;
 import pro.check.CheckFinishSession;
 import pro.check.CheckPushMT;
+import pro.check.NotifyPending;
 import db.DefineMt;
 import db.HibernateSessionFactory;
 import db.Moqueue;
@@ -162,6 +163,10 @@ public class Program extends Thread
 		BeginSession mBeginSession = new BeginSession();
 		mBeginSession.setPriority(Thread.MAX_PRIORITY);
 		mBeginSession.start();
+		
+		NotifyPending mNotifyPeding = new NotifyPending();
+		mNotifyPeding.setPriority(Thread.MAX_PRIORITY);
+		mNotifyPeding.start();
 	}
 
 	public void windowClosing()

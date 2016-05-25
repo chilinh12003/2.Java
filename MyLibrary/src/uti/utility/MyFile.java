@@ -264,4 +264,28 @@ public class MyFile
 		return mList;
 	}
 
+	
+	/**
+	 * Kiểm tra file là lấy đường dẫn chính xác của file đó. tránh trường hợp
+	 * nhầm lần giữa / và \
+	 * 
+	 * @param fullPath
+	 * @return
+	 */
+	public static String ConvertPath(String fullPath)
+	{
+		try
+		{
+			File file = new File(fullPath);
+			if (file.exists())
+				return file.getAbsolutePath();
+			else return null;
+		}
+		catch (Exception ex)
+		{
+			ex.printStackTrace();
+			return null;
+		}
+	}
+
 }

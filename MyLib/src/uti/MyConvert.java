@@ -70,7 +70,7 @@ public class MyConvert
 			// hiệu chỉnh số điện thoại thành dạng 9xxx hoặc 1xxx
 			String MSISDN_Temp = MyCheck.ValidPhoneNumber(MSISDN, "");
 
-			if (MSISDN_Temp.startsWith("9"))
+			if (MSISDN_Temp.startsWith("9") || MSISDN_Temp.startsWith("8"))
 			{
 				PID_Temp = MSISDN_Temp.substring(2, 4);
 			}

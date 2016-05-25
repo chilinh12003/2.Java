@@ -218,4 +218,14 @@ public class News extends DAOBase implements java.io.Serializable
 				+ MyConfig.Get_DateFormat_InsertDB().format(calEndDate.getTime()) + "' ORDER BY PushTime DESC ";
 		return (List<News>) Get(Query, 1);
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<News> GetNews(NewsType newsType, Calendar calBeginDate, Calendar calEndDate)
+			throws Exception
+	{
+		String Query = "FROM News WHERE NewsTypeID = " + newsType.GetValue().toString() + " AND PushTime BETWEEN '"
+				+ MyConfig.Get_DateFormat_InsertDB().format(calBeginDate.getTime()) + "' AND '"
+				+ MyConfig.Get_DateFormat_InsertDB().format(calEndDate.getTime()) + "' ORDER BY PushTime DESC ";
+		return (List<News>) Get(Query, 1);
+	}
 }

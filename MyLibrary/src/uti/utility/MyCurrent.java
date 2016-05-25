@@ -26,4 +26,28 @@ public class MyCurrent
 			return "";
 		}
 	}
+	
+	public static String GetRootPath() 
+	{
+		try
+		{
+			return System.getProperty("catalina.base");
+		}
+		catch(Exception ex)
+		{
+			return "";
+		}
+	}
+	
+	public static String getWebRootPath()
+	{
+		try
+		{
+			return System.getProperty("catalina.base");
+		}
+		catch(Exception ex)
+		{
+			return "";
+		}
+	}
 }

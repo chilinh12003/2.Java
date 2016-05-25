@@ -106,10 +106,11 @@ public class LoadMT extends Thread
 			}
 			else
 			{
-				//nếu MT là loại không gửi đến KH thì mặc định coi là gửi thanh công
+				// nếu MT là loại không gửi đến KH thì mặc định coi là gửi thanh
+				// công
 				mtqueueObj.setStatusId(Mtqueue.Status.SendSuccess.GetValue());
 			}
-				
+
 			mtqueueObj.setDoneDate(MyDate.Date2Timestamp(Calendar.getInstance()));
 
 			// Nếu gửi không thành công và số lần retry còn được phép, thì add
@@ -144,16 +145,19 @@ public class LoadMT extends Thread
 		{
 			if (isFinishSendMT)
 			{
-				mLog.log.info("SEND MT TO TELCO:" + MyLogger.GetLog(mtqueueObj) + "|ResultViettel:" + Result);
+				mLog.log.info("SEND MT TO TELCO: Link:" + LocalConfig.SENDMT_LINK + "|ServiceName:"
+						+ LocalConfig.SERVICE_NAME + "|UserName:" + LocalConfig.SENDMT_USERNAME + "|Pass:"
+						+ LocalConfig.SENDMT_PASSWORK +"|"+ MyLogger.GetLog(mtqueueObj) + "|ResultViettel:" + Result);
 			}
 		}
 	}
 
 	static String SendSMS(String PhoneNumber, String MT)
 	{
-	/*	if(PhoneNumber != "")
-			return "0";*/
-		
+		/*
+		 * if(PhoneNumber != "") return "0";
+		 */
+
 		String Result = "1";
 		try
 		{

@@ -177,7 +177,7 @@ public class BuyQuestion
 			playObj.setSendCount(subObj.getSendCount());
 			playObj.setAnswerCount(subObj.getAnswerCount());
 			playObj.setAnswerRight(subObj.getAnswerRight());
-			playObj.setPlayDate(CurrentData.getCurrentSession().getPlayDate());
+			playObj.setPlayDate(CurrentData.getCurrentSession(false).getPlayDate());
 			playObj.setPlayTypeId(Play.PlayType.BuyQuestion.GetValue());
 			playObj.setReceiveDate(moQueueObj.getReceiveDate());
 			// playObj.setUserAnswer(userAnswer);

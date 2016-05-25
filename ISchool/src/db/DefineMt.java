@@ -18,6 +18,11 @@ public class DefineMt extends DAOBase implements java.io.Serializable {
 		RequestMarkSuccess(110),
 		RequestMarkNotReg(111),
 		RequestMarkFail(112),
+		
+		RequestOTPSuccess(113),
+		RequestOTPNotReg(114),
+		RequestOTPFail(115),
+		
 		// -----ĐĂNG KÝ DỊCH VỤ
 		/**
 		 * Đăng ký mới thành công
@@ -62,6 +67,7 @@ public class DefineMt extends DAOBase implements java.io.Serializable {
 		 * MT chứa thông tin câu hỏi đầu tiền cho lần đăng ký đầu
 		 */
 		RegQuestionMT(208),
+		RegNewsMT(209),
 		
 		
 		/**
@@ -226,6 +232,10 @@ public class DefineMt extends DAOBase implements java.io.Serializable {
 		 * Dự đoán chính xác với kết quả
 		 */
 		AnswerRight(506),
+		/**
+		 * Trả lời khi tài khoản đang trong tình trạng pending
+		 */
+		AnswerPending(507),
 		
 		//----TRẢ LỜI CÂU CUỐI CÙNG CHO 5 CÂU HỎI FREE
 		/**
@@ -324,6 +334,12 @@ public class DefineMt extends DAOBase implements java.io.Serializable {
 		 */
 		NotifyRenewSuccessBeforeFail(604),
 
+		/**
+		 * Thông báo gia han không thành công cho lần gia hạn trong ngày
+		 */
+		NotifyRenewFail(605),
+		 
+		
 		 ;
 		
 		private int value;

@@ -60,7 +60,7 @@ public class RequestMark extends ProcessMOAbstract
 				if (mMTType == MTType.RequestMarkSuccess)
 				{
 					Integer WeekMark = mSubObj.getWeekMark() + mSubObj.getAddMark() + mSubObj.getAnswerMark()
-							+ mSubObj.getChargeMark() + mSubObj.getBuyMark();
+							+ mSubObj.getChargeMark() + mSubObj.getBuyMark() + mSubObj.getPromotionMark();
 					MTContent = MTContent.replace("[WeekMark]", WeekMark.toString());
 				}
 				Mtqueue mtQueueObj = new Mtqueue(moQueueObj, PID, MTContent, mMTType,null);

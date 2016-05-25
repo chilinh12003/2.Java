@@ -2,6 +2,7 @@ package pro.Server;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import my.ws.subscribe;
@@ -20,7 +21,8 @@ public class Register
 	Moqueue moQueueObj = null;
 	Subscriber subObj = new Subscriber();
 	SubLog mSubLog = new SubLog();
-
+	News newsObj = null;
+	
 	Calendar mCal_Current = Calendar.getInstance();
 	Calendar mCal_Expire = Calendar.getInstance();
 
@@ -87,6 +89,18 @@ public class Register
 						MyDate.Date2Timestamp(calPushTime));
 				listMTQueue.add(mtQueueObj);
 			}
+			
+			if(mMTType == MTType.RegNewSuccess && newsObj != null && newsObj.getMt()!= null && !newsObj.getMt().equalsIgnoreCase(""))
+			{
+				String NewsMT = newsObj.getMt();
+				Calendar calPushTime = Calendar.getInstance();
+				
+				Mtqueue mtQueueObj = new Mtqueue(moQueueObj, PID, NewsMT, MTType.RegNewsMT,
+						MyDate.Date2Timestamp(calPushTime));
+				listMTQueue.add(mtQueueObj);
+				
+			}
+			
 
 			return listMTQueue;
 		}
@@ -289,21 +303,32 @@ public class Register
 				if (Insert_Sub())
 				{
 					mMTType = MTType.RegNewSuccess;
+					//Lấy tin tức mới nhất trong ngày gửi cho kh
+					newsObj = CurrentData.getNewsToday();
 				}
 				else
 				{
 					mMTType = MTType.RegFail;
 				}
-
+				
 				return mMTType;
 			}
 			// Đã đăng ký trước đó nhưng đang hủy
 			else if (subObj != null)
 			{
+				Calendar mCal_EffectiveDate = Calendar.getInstance();
+				mCal_EffectiveDate.setTimeInMillis(subObj.getEffectiveDate().getTime());
+				
 				CreateSub(Subscriber.InitType.RegAgain);
+				
 				if (Insert_Sub())
 				{
 					mMTType = MTType.RegNewSuccess;
+					if(!MyDate.Compare(mCal_EffectiveDate, mCal_Current, Calendar.DATE))
+					{
+						//Lấy tin tức mới nhất trong ngày gửi cho kh
+						newsObj = CurrentData.getNewsToday();
+					}
 				}
 				else
 				{

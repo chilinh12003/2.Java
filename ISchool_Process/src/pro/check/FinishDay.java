@@ -19,8 +19,8 @@ import db.Subscriber;
 import db.Play.PlayType;
 
 /**
- * Vào mỗi sáng sớm (khoảng 1h), thread này sẽ chạy để khởi tạo lại các thông số
- * cho các thuê bao, trước khi bắt đầu 1 phiên mới
+ * Vào mỗi sáng sớm (khoảng SAU 22H hang ngay), thread này sẽ chạy để khởi tạo
+ * lại các thông số cho các thuê bao, trước khi bắt đầu 1 phiên mới
  * 
  * @author chili
  * 
@@ -67,6 +67,9 @@ public class FinishDay extends Thread
 	Subscriber subDB = new Subscriber();
 	Play playDB = new Play();
 	PlayLog playLogDB = new PlayLog();
+
+	Question nextQuestionObj = null;
+
 	public FinishDay(Short currentPID, Integer threadNumber, Integer threadIndex, Integer maxOrderID, Integer rowCount,
 			Date startDate)
 	{
@@ -79,13 +82,24 @@ public class FinishDay extends Thread
 		this.StartDate = startDate;
 	}
 
-	PlaySession playSessionYesterday = null; 
+	PlaySession playSessionYesterday = null;
 	public void run()
 	{
 
 		if (Program.processData)
 		{
 			boolean isMonday = false;
+
+			try
+			{
+				//Lấy câu hỏi của ngày kế tiếp
+				nextQuestionObj = CurrentData.getFirstQuestion(CurrentData.getTomorrowSession());
+			}
+			catch (Exception ex)
+			{
+				mLog.log.error(ex);
+
+			}
 
 			if (Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)
 			{
@@ -128,8 +142,8 @@ public class FinishDay extends Thread
 								return;
 							}
 
-							mLog.log.debug(MyLogger.GetLog("BEFORE_SUB",subObj));
-							
+							mLog.log.debug(MyLogger.GetLog("BEFORE_SUB", subObj));
+
 							this.MaxOrderID = subObj.getOrderId();
 							this.PhoneNumber = subObj.getId().getPhoneNumber();
 
@@ -137,16 +151,16 @@ public class FinishDay extends Thread
 
 							// khởi tạo thông tin của thuê bao cho ngày mới
 							resetSub(subObj, isMonday);
-							
-							mLog.log.debug(MyLogger.GetLog("AFTER_SUB",subObj));
+
+							mLog.log.debug(MyLogger.GetLog("AFTER_SUB", subObj));
 						}
 
-						if (listPlay.size() >0 && !playDB.Save(listPlay))
+						if (listPlay.size() > 0 && !playDB.Save(listPlay))
 						{
 							mLog.log.warn("FinishDay Insert xuong Play khong thanh cong.");
 						}
 
-						if (listSub.size() >0 && !subDB.Update(listSub))
+						if (listSub.size() > 0 && !subDB.Update(listSub))
 						{
 							mLog.log.warn("FinishDay Update xuong Subscriber khong thanh cong.");
 						}
@@ -155,11 +169,11 @@ public class FinishDay extends Thread
 								this.ThreadIndex);
 					}
 				}
-				
-				if(isMonday)
+
+				if (isMonday)
 				{
-					//Nếu là thứ 2 thì sẽ chuyển tất cả play sang playlog
-					if(!movePlayLog())
+					// Nếu là thứ 2 thì sẽ chuyển tất cả play sang playlog
+					if (!movePlayLog())
 					{
 						mLog.log.warn("Move Play to PlayLog khong thanh cong");
 					}
@@ -182,6 +196,7 @@ public class FinishDay extends Thread
 
 	/**
 	 * Chuyển dữ liệu từ play sang PlayLog, và xóa từ play đi
+	 * 
 	 * @return
 	 */
 	boolean movePlayLog()
@@ -192,7 +207,7 @@ public class FinishDay extends Thread
 
 			while (Program.processData && mList != null && mList.size() > 0)
 			{
-				List<PlayLog> mListPlayLog =new Vector<PlayLog>();
+				List<PlayLog> mListPlayLog = new Vector<PlayLog>();
 				for (Play item : mList)
 				{
 					PlayLog playLogObj = new PlayLog(item);
@@ -212,7 +227,7 @@ public class FinishDay extends Thread
 		}
 		return false;
 	}
-	
+
 	void addPlay(Subscriber subObj, List<Play> listPlay)
 	{
 		int dayMark = subObj.getChargeMark() + subObj.getAddMark() + subObj.getBuyMark() + subObj.getAnswerMark();
@@ -235,9 +250,7 @@ public class FinishDay extends Thread
 		playObj.setAnswerRight(subObj.getAnswerRight());
 		playObj.setAnswerRightBuyType(subObj.getAnswerRightBuyType());
 
-		
-			playObj.setPlayDate(playSessionYesterday == null ? null : playSessionYesterday.getPlayDate());
-		
+		playObj.setPlayDate(playSessionYesterday == null ? null : playSessionYesterday.getPlayDate());
 
 		playObj.setPlayTypeId(PlayType.Answer.GetValue());
 		playObj.setReceiveDate(MyDate.Date2Timestamp(Calendar.getInstance()));
@@ -257,14 +270,15 @@ public class FinishDay extends Thread
 	void resetSub(Subscriber subObj, boolean isMonday)
 	{
 		subObj.setBuyType(Subscriber.BuyQuestionType.QuestionFree.GetValue());
-		subObj.setQuestionCount(0);
-		subObj.setSendCount(0);
+		subObj.setQuestionCount(5);
+		subObj.setSendCount(1);
 		subObj.setAnswerCount(0);
 		subObj.setAnswerRight(0);
 		subObj.setAnswerRightBuyType(0);
 		subObj.setLastAnswer(null);
 		subObj.setLastAnswerDate(null);
-		subObj.setLastQuestionId(0);
+
+		subObj.setLastQuestionId(nextQuestionObj != null ? nextQuestionObj.getQuestionId() : 0);
 		subObj.setAnswerStatusId(Play.Status.Nothing.GetValue());
 		// Nếu là ngày đầu tuần
 		if (isMonday)
@@ -278,6 +292,9 @@ public class FinishDay extends Thread
 		subObj.setAnswerMark(0);
 		subObj.setPromotionMark(0);
 
-	
+		if (subObj.getStatusId().shortValue() == Subscriber.Status.Active.GetValue().shortValue())
+		{
+			subObj.setStatusId(Subscriber.Status.Pending.GetValue());
+		}
 	}
 }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" 
-	xmlns="http://java.sun.com/xml/ns/javaee" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name></display-name>	
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>WebserviceMOMT</display-name>
+ 
   <servlet>
   	<description>JAX-WS endpoint - ReceiveMTService</description>
   	<display-name>ReceiveMTService</display-name>
@@ -25,4 +22,47 @@
   	<listener-class>
   		com.sun.xml.ws.transport.http.servlet.WSServletContextListener
   	</listener-class>
-  </listener></web-app>
+  </listener>
+  
+   <listener>
+    <listener-class>My.Webservice.InitApp</listener-class>
+  </listener>  
+ 
+  <context-param>
+      <param-name>DBConfigPath</param-name>
+      <param-value>/home/tomcat/ForwardMO/Config/ProxoolConfig.xml</param-value>     
+  </context-param>
+  <context-param>
+      <param-name>LogConfigPath</param-name>
+      <param-value>/home/tomcat/ForwardMO/Config/log4j.properties</param-value>     
+  </context-param>
+  
+  <context-param>
+    <param-name>LogDataFolder</param-name>
+    <param-value>/home/tomcat/ForwardMO/Log/</param-value>
+  </context-param>
+  
+  
+  <context-param>
+    <param-name>MySQLPoolName_Viettel</param-name>
+    <param-value>MySQLPoolName_Viettel</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MySQLPoolName_GPC</param-name>
+    <param-value>MySQLPoolName_GPC</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MySQLPoolName_VMS</param-name>
+    <param-value>MySQLPoolName_VMS</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MySQLPoolName_HTC</param-name>
+    <param-value>MySQLPoolName_HTC</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MSSQLPoolName_HBStore</param-name>
+    <param-value>MSSQLPoolName_HBStore</param-value>
+  </context-param>
+  
+  
+  </web-app>

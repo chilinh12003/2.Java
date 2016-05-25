@@ -3,8 +3,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import org.jgroups.util.GetNetworkInterfaces;
-
 import db.*;
 import db.DefineMt.MTType;
 import db.Play.PlayType;
@@ -36,7 +34,7 @@ public class Answer extends ProcessMOAbstract
 
 	String UserAnswer = "";
 
-	//Trình trạng của Thuê bao khi bắt đầu xử lý.	
+	// Trình trạng của Thuê bao khi bắt đầu xử lý.
 	String LogBeforeSub = "";
 	private void Init(Moqueue moQueueObj, Keyword mKeyword) throws Exception
 	{
@@ -95,8 +93,17 @@ public class Answer extends ProcessMOAbstract
 	{
 		int AnswerMark = 0;
 		int PromotionMark = 0;
+		
+		Question lastQuestion = CurrentData.getQuestionById(subObj.getLastQuestionId());
+		
+		//Nếu như lastquestion == null thì lấy câu hỏi đầu tiên của ngày hôm nay
+		if(lastQuestion == null)
+		{
+			lastQuestion = CurrentData.getQuestionByOrder(1);
+		}
+		
 		// Kiểm tra xem câu trả lời có đúng hay không
-		if (UserAnswer.equalsIgnoreCase(CurrentData.getQuestionById(subObj.getLastQuestionId()).getRightAnswer()))
+		if (UserAnswer.equalsIgnoreCase(lastQuestion.getRightAnswer()))
 		{
 			subObj.setAnswerStatusId(Play.Status.CorrectAnswer.GetValue());
 			AnswerMark = LocalConfig.AnswerMark;
@@ -151,7 +158,7 @@ public class Answer extends ProcessMOAbstract
 		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyOneQuestion.GetValue().shortValue())
 		{
 			// Nếu là câu trả lời cuối của bộ 3 câu hỏi
-			if (subObj.getAnswerCount() == 8 )
+			if (subObj.getAnswerCount() == 8)
 			{
 				// trả lời đúng cả 3 câu
 				if (subObj.getAnswerRightBuyType().intValue() == 3)
@@ -173,10 +180,10 @@ public class Answer extends ProcessMOAbstract
 		}
 		// Nếu đang trả lời bộ 3 câu hỏi đã MUA 2
 		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoOneQuestion.GetValue()
-						.shortValue())
+				.shortValue())
 		{
 			// Nếu là câu trả lời cuối của bộ 3 câu hỏi
-			if ( subObj.getAnswerCount() == 15)
+			if (subObj.getAnswerCount() == 15)
 			{
 				// trả lời đúng cả 3 câu
 				if (subObj.getAnswerRightBuyType().intValue() == 3)
@@ -199,7 +206,7 @@ public class Answer extends ProcessMOAbstract
 		// Nếu đang trả lời bộ 7 câu hỏi chưa MUA 1
 		else if (subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.BuyTwoQuestion.GetValue().shortValue())
 		{
-			if (subObj.getAnswerCount().intValue() == 12 )
+			if (subObj.getAnswerCount().intValue() == 12)
 			{
 				if (subObj.getAnswerRightBuyType().intValue() == 7)
 				{
@@ -218,7 +225,7 @@ public class Answer extends ProcessMOAbstract
 				}
 			}
 		}
-		 //Tra đang trả lời bộ 7 câu hỏi đã MUA 1
+		// Tra đang trả lời bộ 7 câu hỏi đã MUA 1
 		else
 		{
 			if (subObj.getAnswerCount().intValue() == 15)
@@ -274,7 +281,7 @@ public class Answer extends ProcessMOAbstract
 
 			if (CurrentData.checkSessionValid())
 			{
-				playObj.setPlayDate(CurrentData.getCurrentSession().getPlayDate());
+				playObj.setPlayDate(CurrentData.getCurrentSession(false).getPlayDate());
 			}
 
 			playObj.setPlayTypeId(PlayType.Answer.GetValue());
@@ -345,7 +352,7 @@ public class Answer extends ProcessMOAbstract
 				return AddToList();
 			}
 
-			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:",subObj);
+			LogBeforeSub = MyLogger.GetLog("BEFORE_SUB:", subObj);
 			// Phiên chơi chưa bắt đầu
 			if (mCal_Current.before(mCal_Begin) || mCal_Current.after(mCal_End) || !CurrentData.checkSessionValid())
 			{
@@ -353,6 +360,12 @@ public class Answer extends ProcessMOAbstract
 				return AddToList();
 			}
 
+			// Tình trạng không hợp lệ
+			if (subObj.getStatusId().equals(Subscriber.Status.Pending.GetValue()))
+			{
+				mMTType = MTType.AnswerPending;
+				return AddToList();
+			}
 			// Trả lời khi chưa mua hoặc đã trả lời hết 15 câu hỏi
 			if ((subObj.getBuyType().shortValue() == Subscriber.BuyQuestionType.QuestionFree.GetValue().shortValue() && subObj
 					.getAnswerCount().intValue() >= 5)
@@ -393,7 +406,7 @@ public class Answer extends ProcessMOAbstract
 		{
 			mLog.log.debug(MyLogger.GetLog(moQueueObj));
 			mLog.log.debug(LogBeforeSub);
-			mLog.log.debug( MyLogger.GetLog("AFTER_SUB:",subObj));
+			mLog.log.debug(MyLogger.GetLog("AFTER_SUB:", subObj));
 		}
 	}
 }

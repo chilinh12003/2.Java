@@ -12,14 +12,19 @@ import db.News;
 import db.Question;
 import db.DefineMt.MTType;
 
+/**
+ * Tạo tin tức nhắc nhở để 8h push xuống cho khách hàng.
+ * @author Administrator
+ *
+ */
 public class BeginSession extends Thread
 {
 
 	MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath, this.getClass().toString());
 
 	// Cho biết thread đang push tin xuống KH;
-
 	public boolean isPushing = false;
+	
 	public BeginSession()
 	{
 	}

@@ -44,6 +44,7 @@ public class MyCheck
 			MyConfig.Telco mTelco = Telco.NOTHING;
 
 			if (PhoneNumber.equals("")) return mTelco;
+			
 			// Là số test của Vinaphone
 			if (PhoneNumber.startsWith("8484")) return MyConfig.Telco.GPC;
 
@@ -63,7 +64,7 @@ public class MyCheck
 				if (MyConfig.HTCPrefix.indexOf("," + PhoneNumber.substring(0, 3)) >= 0) mTelco = MyConfig.Telco.HTC;
 			}
 
-			if (PhoneNumber.startsWith("9"))
+			if (PhoneNumber.startsWith("9") || PhoneNumber.startsWith("8"))
 			{
 				if (MyConfig.ViettelPrefix.indexOf("," + PhoneNumber.substring(0, 2)) >= 0)
 					mTelco = MyConfig.Telco.VIETTEL;
@@ -129,15 +130,20 @@ public class MyCheck
 			}
 			
 			if (PhoneNumber.equals("")) return "";
+			//Xóa các số 0 ở đầu số
 			if (PhoneNumber.startsWith("0")) PhoneNumber = PhoneNumber.substring(1);
-
+			
+			//Xóa số 84 ở đầu số
 			if (PhoneNumber.startsWith("84")) PhoneNumber = PhoneNumber.substring(2);
 
-			if (!PhoneNumber.startsWith("9") && !PhoneNumber.startsWith("1")) return "";
-
+			//Nếu chữ số bắt đầu không phải là 9,8,1 thì không hợp lệ
+			if (!PhoneNumber.startsWith("9") && !PhoneNumber.startsWith("1") && !PhoneNumber.startsWith("8")) return "";
+			
+			//Nếu đồ dài khác 9 va khác 10 thì không hợp lệ
 			if (PhoneNumber.length() != 9 && PhoneNumber.length() != 10) return "";
 
-			if (PhoneNumber.length() != 9 && PhoneNumber.substring(0, 1) == "9") return "";
+			//nếu đồ dài khác 9 mà với số có đầu số là 9 thì không hợp lệ
+			if (PhoneNumber.length() != 9 && (PhoneNumber.substring(0, 1) == "9" || PhoneNumber.substring(0, 1) == "8")) return "";
 
 			if (PhoneNumber.length() != 10 && PhoneNumber.substring(0, 1) == "1") return "";
 
@@ -153,7 +159,7 @@ public class MyCheck
 				if (MyConfig.HTCPrefix.indexOf("," + PhoneNumber.substring(0, 3)) >= 0) mTelco = MyConfig.Telco.HTC;
 			}
 
-			if (PhoneNumber.startsWith("9"))
+			if (PhoneNumber.startsWith("9") || PhoneNumber.startsWith("8"))
 			{
 				if (MyConfig.ViettelPrefix.indexOf("," + PhoneNumber.substring(0, 2)) >= 0)
 					mTelco = MyConfig.Telco.VIETTEL;

@@ -14,7 +14,7 @@ import uti.*;
 /**
  * Thead được chạy vào khoảng 1h ngày thứ 2 hàng tuần, để tìm ra người chiến
  * thắng tuần
- * 
+ * PHẢI CHẠY TRƯỚC GIỜ CHARGE VÀ CHẠY SAU FISNISH DAY
  * @author chili
  * 
  */

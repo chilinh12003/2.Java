@@ -298,8 +298,13 @@ public class subscribe
 					if (mMode == Mode.Real)
 					{
 						listMTQueue.get(0).Save();
-						if (listMTQueue.size() > 1)
+						if (listMTQueue.size() == 2)
 							listMTQueue.get(1).Save();
+						if (listMTQueue.size() == 3)
+						{
+							listMTQueue.get(1).Save();
+							listMTQueue.get(2).Save();
+						}
 					}
 					return BuildResult(mResult, listMTQueue.get(0).getMt());
 				}

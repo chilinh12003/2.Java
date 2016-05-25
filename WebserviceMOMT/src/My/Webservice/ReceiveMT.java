@@ -1,16 +1,21 @@
 package My.Webservice;
 
-import MyDataSource.MyTableModel;
+import db.define.DBConfig;
+import db.define.MyTableModel;
+import uti.utility.MyCheck;
+import uti.utility.MyConfig;
+import uti.utility.MyConfig.Telco;
+import uti.utility.MyLogger;
+import uti.utility.MySeccurity;
+import uti.utility.MyText;
 import MyGateway.SMSReceiveForward;
 import MyGateway.SMSSendQueue;
-import MyUtility.*;
-import MyUtility.MyConfig.Telco;
 
 public class ReceiveMT
 {
 
-	MyLogger mLog = new MyLogger(ReceiveMT.class.toString());
-
+	static MyLogger mLog =  new MyLogger(LocalConfig.LogConfigPath(), ReceiveMT.class.toString());
+	
 	/**
 	 * @param User_ID
 	 *            So dien thoai khach hang
@@ -38,7 +43,7 @@ public class ReceiveMT
 	 * @throws Exception
 	 */
 	public String SendMT(String User_ID, String Message, String Service_ID, String Command_Code, String Message_Type, String Request_ID, String Total_Message,
-			String Content_Type, String Operator, String UserName, String Password) throws Exception
+			String Content_Type, String Operator, String UserName, String Password)
 	{
 		SMSReceiveForward mForward;
 		/* return User_ID; */
@@ -105,7 +110,7 @@ public class ReceiveMT
 			{
 				ConnentType_Temp = "21"; // là bản tin dài
 			}
-			String Message_RemoveVN = MyUtility.MyText.RemoveSignVietnameseString(Message);
+			String Message_RemoveVN = MyText.RemoveSignVietnameseString(Message);
 
 			mForward = new SMSReceiveForward(GetPoolName(mTelco));
 			SMSSendQueue mSendQueueVT = new SMSSendQueue(GetPoolName(mTelco));
@@ -151,27 +156,27 @@ public class ReceiveMT
 		}
 	}
 
-	private String GetPoolName(Telco mTelco)
+	private DBConfig GetPoolName(Telco mTelco)
 	{
 		if (mTelco == Telco.GPC)
 		{
-			return "gatewayGPC";
+			return LocalConfig.mDBConfig_MySQL_GPC;
 		}
 		else if (mTelco == Telco.VMS)
 		{
-			return "gatewayVMS";
+			return LocalConfig.mDBConfig_MySQL_VMS;
 
 		}
 		else if (mTelco == Telco.VIETTEL)
 		{
-			return "gatewayVT";
+			return LocalConfig.mDBConfig_MySQL_Viettel;
 
 		}
 		else if (mTelco == Telco.HTC)
 		{
-			return "gatewayHTC";
+			return LocalConfig.mDBConfig_MySQL_HTC;
 		}
-		return "";
+		return null;
 	}
 
 	private Boolean CheckPartner(String user, String pass) throws Exception
@@ -201,15 +206,15 @@ public class ReceiveMT
 		}
 	}
 
-	private MyDataSource.MyTableModel CheckRequestID(String ServiceID, String UserID, String RequestID, Telco mTelco) throws Exception
+	private MyTableModel CheckRequestID(String ServiceID, String UserID, String RequestID, Telco mTelco) throws Exception
 	{
 		try
 		{
-			String PoolName = GetPoolName(mTelco);
+			DBConfig PoolName = GetPoolName(mTelco);
 
 			SMSReceiveForward mForward = new SMSReceiveForward(PoolName);
 
-			MyDataSource.MyTableModel mTable = mForward.Select(ServiceID, UserID, RequestID.trim());
+			MyTableModel mTable = mForward.Select(ServiceID, UserID, RequestID.trim());
 			return mTable;
 		}
 		catch (Exception ex)

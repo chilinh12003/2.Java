@@ -8,9 +8,9 @@ public class MyConfig
 {
 	public static String KeyconfigName = "MyConfig.properties";
 
-	public static String ViettelPrefix = ",162,163,164,165,166,167,168,169,97,98,96";
-	public static String VMSPrefix = ",90,93,121,122,126,128,120";
-	public static String VNPPrefix = ",124,123,125,127,129,91,94";
+	public static String ViettelPrefix = ",162,163,164,165,166,167,168,169,97,98,96,86";
+	public static String VMSPrefix = ",90,93,121,122,126,128,120,89";
+	public static String VNPPrefix = ",124,123,125,127,129,91,94,88";
 	public static String HTCPrefix = ",186,188,92";
 	public static String ListOperator = ",VIETTEL,VMS,GPC,HTC";
 	public static String ListServiceID = ",6083,6183,6283,6383,6483,6583,6683,6783";

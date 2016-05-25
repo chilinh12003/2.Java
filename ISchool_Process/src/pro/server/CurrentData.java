@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Vector;
 
 import uti.MyLogger;
+import db.News;
 import db.PlaySession;
 import db.Question;
 import db.Subscriber;
@@ -31,12 +32,14 @@ public class CurrentData
 	 * @return
 	 * @throws Exception
 	 */
-	public static synchronized PlaySession getCurrentSession() throws Exception
+	public static synchronized PlaySession getCurrentSession(boolean isReget) throws Exception
 	{
 		try
 		{
 			Calendar mCal_Current = Calendar.getInstance();
-			if (currentSession != null && currentSession.checkPlayDate(mCal_Current))
+			// isReget == false: nếu không cần lấy lại thì lấy phiên đã lấy
+			// trước đó
+			if (isReget == false && currentSession != null && currentSession.checkPlayDate(mCal_Current))
 				return currentSession;
 
 			Calendar calPlayDate = Calendar.getInstance();
@@ -86,7 +89,54 @@ public class CurrentData
 		}
 		return null;
 	}
+	
+	public static synchronized PlaySession getTomorrowSession() throws Exception
+	{
+		try
+		{
+			Calendar calYesterday = Calendar.getInstance();
+			calYesterday.add(Calendar.DATE, 1);
+			Calendar calPlayDate = Calendar.getInstance();
 
+			calPlayDate.set(Calendar.MILLISECOND, 0);
+			calPlayDate.set(calYesterday.get(Calendar.YEAR), calYesterday.get(Calendar.MONTH),
+					calYesterday.get(Calendar.DATE), 0, 0, 0);
+
+			PlaySession playSessionDB = new PlaySession();
+
+			return playSessionDB.getCurrentSession(calPlayDate);
+		}
+		catch (Exception ex)
+		{
+			mLog.log.error(ex);
+		}
+		return null;
+	}
+
+	/**
+	 * Lấy câu hỏi đâu tiền của 1 phiên
+	 * @param sessionObj
+	 * @return
+	 */
+	public static synchronized Question getFirstQuestion(PlaySession sessionObj)
+	{
+		try
+		{
+			if(sessionObj == null)
+				return null;
+			
+			Question questionDB = new Question();
+			List<Question> listQuestion = questionDB.getBySession(sessionObj.getSessionId());
+			if(listQuestion.size() > 0)
+				return listQuestion.get(0);
+		}
+		catch (Exception ex)
+		{
+			mLog.log.error(ex);
+		}
+		return null;
+	}
+	
 	private static Vector<Question> listCurrentQuestion = new Vector<Question>();
 
 	/**
@@ -100,14 +150,14 @@ public class CurrentData
 		try
 		{
 			if (listCurrentQuestion != null && listCurrentQuestion.size() >= 15
-					&& listCurrentQuestion.get(0).getQuestionId().equals(getCurrentSession().getSessionId()))
+					&& listCurrentQuestion.get(0).getQuestionId().equals(getCurrentSession(false).getSessionId()))
 				return listCurrentQuestion;
 
 			if (listCurrentQuestion != null)
 				listCurrentQuestion.clear();
 
 			Question questionDB = new Question();
-			List<Question> listQuestion = questionDB.getBySession(getCurrentSession().getSessionId());
+			List<Question> listQuestion = questionDB.getBySession(getCurrentSession(true).getSessionId());
 
 			for (Question item : listQuestion)
 				listCurrentQuestion.add(item);
@@ -124,7 +174,7 @@ public class CurrentData
 	{
 		try
 		{
-			if (getListCurrentQuestion().size() < 1)
+			if (getListCurrentQuestion().size() < 15)
 				return null;
 
 			for (Question item : getListCurrentQuestion())
@@ -196,16 +246,17 @@ public class CurrentData
 
 	/**
 	 * Kiểm tra sự tồn tại của session và Question.
+	 * 
 	 * @return
 	 */
 	public static boolean checkSessionValid()
 	{
 		try
 		{
-			if (getCurrentSession() == null)
+			if (getCurrentSession(false) == null)
 				return false;
 
-			if(getListCurrentQuestion() == null || getListCurrentQuestion().size() < 1)
+			if (getListCurrentQuestion() == null || getListCurrentQuestion().size() < 15)
 				return false;
 			return true;
 		}
@@ -214,5 +265,42 @@ public class CurrentData
 			mLog.log.error(ex);
 			return false;
 		}
+	}
+
+	/**
+	 * Lấy 1 tin tức trong ngày
+	 * @return
+	 */
+	public static News getNewsToday()
+	{
+		try
+		{
+			Calendar calBeginDate = Calendar.getInstance();
+			Calendar calEndDate = Calendar.getInstance();
+
+			calBeginDate.set(Calendar.HOUR, 0);
+			calBeginDate.set(Calendar.SECOND, 0);
+			calBeginDate.set(Calendar.MILLISECOND, 0);
+			calBeginDate.set(Calendar.MINUTE, 0);
+
+			calEndDate.add(Calendar.DATE, 1);
+			calEndDate.set(Calendar.HOUR, 0);
+			calEndDate.set(Calendar.MINUTE, 0);
+			calEndDate.set(Calendar.SECOND, 0);
+			calEndDate.set(Calendar.MILLISECOND, 0);
+
+			News newsDB = new News();
+			List<News> mList = newsDB.GetNews(News.NewsType.Push, calBeginDate, calEndDate);
+			if (mList != null && mList.size() > 0)
+			{
+				return mList.get(0);
+			}
+			
+		}
+		catch(Exception ex)
+		{
+			mLog.log.error(ex);
+		}
+		return null;
 	}
 }
