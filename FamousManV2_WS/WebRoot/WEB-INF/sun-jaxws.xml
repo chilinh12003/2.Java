@@ -1,0 +1,15 @@
+<?xml version = "1.0"?>
+<endpoints version="2.0"
+	xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+	<endpoint name="subRequest" implementation="my.ws.subscribeDelegate"
+		url-pattern="/subRequest">
+	</endpoint>
+	<endpoint name="moRequest" implementation="my.ws.molistenerDelegate"
+		url-pattern="/moRequest">
+	</endpoint>
+
+	<endpoint name="resultRequest"
+		implementation="my.ws.receiveresultDelegate"
+		url-pattern="/resultRequest">
+	</endpoint>
+</endpoints>
