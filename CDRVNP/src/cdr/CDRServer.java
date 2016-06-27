@@ -3,12 +3,13 @@ package cdr;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import MyUtility.MyLogger;
+import uti.utility.MyLogger;
+
 
 public class CDRServer extends Thread
 {
 	public static boolean IsRunning = true;
-	public static MyLogger mLog = new MyLogger(CDRServer.class.toString());
+	public static MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath,CDRServer.class.toString());
 	static BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
 	public CDRServer()
 	{

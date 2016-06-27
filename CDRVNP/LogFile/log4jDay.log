@@ -1,0 +1,55 @@
+2016-06-23 16:34:05,469 |  INFO | [Thread-1] | class cdr.DBScanner:run(31) ----> CDRServer: Getting data from queue table 
+2016-06-23 16:34:05,474 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:34:08,856 | ERROR | [Thread-1] | class cdr.DBScanner:run(65) ----> com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server. 
+2016-06-23 16:34:08,856 |  WARN | [Thread-1] | class cdr.DBScanner:run(66) ----> Billing system -> ERROR: Ket noi Database bi loi 
+2016-06-23 16:35:30,840 |  INFO | [Thread-1] | class cdr.DBScanner:run(31) ----> CDRServer: Getting data from queue table 
+2016-06-23 16:35:30,846 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:35:33,313 | ERROR | [Thread-1] | class cdr.DBScanner:run(65) ----> com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'dataprocess.cdr_log201606' doesn't exist 
+2016-06-23 16:35:33,313 |  WARN | [Thread-1] | class cdr.DBScanner:run(66) ----> Billing system -> ERROR: Ket noi Database bi loi 
+2016-06-23 16:36:15,320 |  INFO | [Thread-1] | class cdr.DBScanner:run(31) ----> CDRServer: Getting data from queue table 
+2016-06-23 16:36:15,325 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:36:17,804 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:37:17,806 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:37:17,810 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:38:17,810 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:38:17,816 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:39:17,817 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:39:17,822 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:40:17,822 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:40:17,860 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:41:17,862 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:41:17,866 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:42:17,867 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:42:17,871 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:43:17,872 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:43:17,878 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:44:17,880 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:44:17,884 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:45:17,884 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:45:17,887 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:46:17,888 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:46:17,892 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:47:17,893 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:47:17,899 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:48:17,900 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:48:17,907 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:49:17,907 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:49:17,910 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:50:17,911 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:50:17,917 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:51:17,917 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:51:17,921 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:52:17,922 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:52:17,926 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:53:17,928 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:53:17,932 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:54:17,932 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:54:17,935 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:55:17,937 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:55:17,941 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:56:17,942 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:56:17,946 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2016-06-23 16:57:17,947 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2016-06-23 16:57:17,950 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 

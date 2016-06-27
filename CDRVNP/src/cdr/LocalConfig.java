@@ -6,15 +6,23 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import MyUtility.MyLogger;
+import db.define.DBConfig;
 
 public class LocalConfig
 {
-	public static MyLogger mLog = new MyLogger(LocalConfig.class.toString());
-	public static Properties _prop;
 
-	public static String PoolName_Data_SQL = "HBCharging_Local";
-	public static String PoolName_Data_MySQL = "gateway";
+	public static String LogConfigPath = "log4j.properties";
+	public static String LogDataFolder = ".\\LogFile\\";
+
+	private static String DBConfigPath = "ProxoolConfig.xml";
+	private static String MySQLPoolName = "MySQL";
+	private static String MSSQLPoolName_HBStore = "MSSQL_HBStore";
+
+	public static DBConfig mDBConfig_MSSQL_HBStore = new DBConfig("MSSQL_HBStore");
+	public static DBConfig mDBConfig_MySQL = new DBConfig("MySQL");
+	
+	
+	public static Properties _prop;
 
 	static String FTP_SERVER = "ftp://10.50.9.248"; // "ftp://abc.xyz.com/"; //
 													// port=21 (default)
@@ -59,13 +67,24 @@ public class LocalConfig
 	public static boolean loadProperties(String propFile)
 	{
 		Properties properties = new Properties();
-		mLog.log.debug("Reading configuration file " + propFile);
 		try
 		{
 			FileInputStream fin = new FileInputStream(propFile);
+			System.out.println("Reading configuration file " + propFile);
 			properties.load(fin);
 			_prop = properties;
 			fin.close();
+			
+			LogDataFolder = properties.getProperty("LogDataFolder", LogDataFolder);
+			LogConfigPath = properties.getProperty("LogConfigPath", LogConfigPath);
+			DBConfigPath = properties.getProperty("DBConfigPath", DBConfigPath);
+			MySQLPoolName = properties.getProperty("MySQLPoolName", MySQLPoolName);
+			MSSQLPoolName_HBStore = properties.getProperty("MSSQLPoolName_HBStore", MSSQLPoolName_HBStore);
+
+			mDBConfig_MSSQL_HBStore = new DBConfig(DBConfigPath, MSSQLPoolName_HBStore);
+			mDBConfig_MySQL = new DBConfig(DBConfigPath, MySQLPoolName);
+			
+			
 			INTERVAL_PUSH_CDR = properties.getProperty("INTERVAL_PUSH_CDR", "01:00|05:00");
 			INTERVAL_WRITE_CDR = properties.getProperty("INTERVAL_WRITE_CDR", "06:30|23:59");
 
@@ -82,8 +101,7 @@ public class LocalConfig
 			ROWCOUNT = Integer.parseInt(properties.getProperty("ROWCOUNT", "10"));
 			SCHEDULE_TIME = Integer.parseInt(properties.getProperty("SCHEDULE_TIME", "10"));
 
-			PoolName_Data_SQL = properties.getProperty("PoolName_Data_SQL", "HBCharging_Local");
-			PoolName_Data_SQL = properties.getProperty("PoolName_Data_MySQL", "gateway");
+			
 
 			// Lấy thông tin giờ, phút cho việc Push CDR sang VNP
 			if (!INTERVAL_PUSH_CDR.equals(""))
@@ -136,7 +154,7 @@ public class LocalConfig
 		}
 		catch (Exception e)
 		{
-			mLog.log.error(e);
+			System.out.println(e);
 			return false;
 		}
 

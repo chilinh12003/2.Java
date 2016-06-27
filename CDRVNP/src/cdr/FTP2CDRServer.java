@@ -8,11 +8,11 @@ import java.util.Vector;
 import java.io.File;
 import java.io.IOException;
 
-import MyUtility.*;
+import uti.utility.MyLogger;
 
 public class FTP2CDRServer extends Thread
 {
-	static MyLogger mLog = new MyLogger(FTP2CDRServer.class.toString());
+	static MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath,FTP2CDRServer.class.toString());
 	private Vector<File> vFiles = new Vector<File>(); // of File objects
 	private Ftp ftp = null;
 	private String foldername = "";
@@ -29,7 +29,7 @@ public class FTP2CDRServer extends Thread
 			try
 			{
 				// System.out.println();
-				this.vFiles = MyFile.GetAllFiles(new File(LocalConfig.LOCAL_FOLDER), LocalConfig.FILE_EXTENSION);
+				this.vFiles = uti.utility.MyFile.GetAllFiles(new File(LocalConfig.LOCAL_FOLDER), LocalConfig.FILE_EXTENSION);
 				if (vFiles.size() > 0)
 				{
 					this.makeFtp();				
@@ -62,7 +62,7 @@ public class FTP2CDRServer extends Thread
 			try
 			{
 				System.out.println();
-				this.vFiles = MyFile.GetAllFiles(new File(LocalConfig.LOCAL_FOLDER), LocalConfig.FILE_EXTENSION);
+				this.vFiles = uti.utility.MyFile.GetAllFiles(new File(LocalConfig.LOCAL_FOLDER), LocalConfig.FILE_EXTENSION);
 				if (vFiles.size() > 0)
 				{
 					this.makeFtp();
@@ -158,7 +158,7 @@ public class FTP2CDRServer extends Thread
 			{
 				try
 				{
-					MyFile.Copy(LocalConfig.LOCAL_FOLDER + "/" + file.getName(), LocalConfig.SENT_FOLDER_TELCO + "/" + file.getName());
+					uti.utility.MyFile.Copy(LocalConfig.LOCAL_FOLDER + "/" + file.getName(), LocalConfig.SENT_FOLDER_TELCO + "/" + file.getName());
 					mLog.log.info("backup file: from: " + LocalConfig.LOCAL_FOLDER + "/" + file.getName() + " to: " + LocalConfig.SENT_FOLDER_TELCO + "/"
 							+  "/" + file.getName());
 					file.delete();

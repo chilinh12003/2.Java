@@ -3,7 +3,7 @@
 	Anything outside the "proxool" tag is ignored. -->
 <something-else-entirely>	
 <proxool>
-		<alias>gateway</alias>
+		<alias>MySQL</alias>
 		<driver-url>jdbc:mysql://localhost/dataprocess</driver-url>
 		<driver-class>com.mysql.jdbc.Driver</driver-class>
 		<driver-properties>

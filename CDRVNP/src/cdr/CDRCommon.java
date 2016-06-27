@@ -5,12 +5,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
+import uti.utility.MyLogger;
 import dbcdr.CDRObject;
-import MyUtility.MyLogger;
 
 public class CDRCommon
 {
-	public static MyLogger mLog = new MyLogger(CDRCommon.class.toString());
+	public static MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath,CDRCommon.class.toString());
 
 	public synchronized static String GetNewFilenameFTPforVNP()
 	{

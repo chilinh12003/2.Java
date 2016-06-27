@@ -2,18 +2,15 @@ package dbcdr;
 
 import java.sql.SQLException;
 import java.sql.Timestamp;
-import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Vector;
 
-import cdr.LocalConfig;
-
-import MyConnection.MyExecuteData;
-import MyConnection.MyGetData;
-import MyDataSource.MyTableModel;
-import MyUtility.MyConfig;
-import MyUtility.MyText;
+import uti.utility.MyConvert;
+import db.connect.MyExecuteData;
+import db.connect.MyGetData;
+import db.define.DBConfig;
+import db.define.MyTableModel;
 
 public class cdr_queue
 {
@@ -21,25 +18,12 @@ public class cdr_queue
 	public MyExecuteData mExec;
 	public MyGetData mGet;
 
-	public cdr_queue() throws Exception
+	public cdr_queue(DBConfig mDBConfig) throws Exception
 	{
 		try
 		{
-			mExec = new MyExecuteData();
-			mGet = new MyGetData();
-		}
-		catch (Exception ex)
-		{
-			throw ex;
-		}
-	}
-
-	public cdr_queue(String PoolName) throws Exception
-	{
-		try
-		{
-			mExec = new MyExecuteData(PoolName);
-			mGet = new MyGetData(PoolName);
+			mExec = new MyExecuteData(mDBConfig);
+			mGet = new MyGetData(mDBConfig);
 		}
 		catch (Exception ex)
 		{
@@ -230,7 +214,7 @@ public class cdr_queue
 				mObject.PushDate = DateFormat_Detail.format((Timestamp) mTable.GetValueAt(i, "DONE_DATE"));
 				mObject.Keyword = mTable.GetValueAt(i, "COMMAND_CODE").toString();
 				mObject.CreateDate = DateFormat_Day.format((Timestamp) mTable.GetValueAt(i, "DONE_DATE"));
-				mObject.Price = MyUtility.MyConvert.ShortCodeToPrice_String(mObject.ShortCode);
+				mObject.Price =  MyConvert.ShortCodeToPrice_String(mObject.ShortCode);
 				
 				String messageType = mTable.GetValueAt(i, "MESSAGE_TYPE").toString();
 				String ProcessResult = mTable.GetValueAt(i, "PROCESS_RESULT").toString();

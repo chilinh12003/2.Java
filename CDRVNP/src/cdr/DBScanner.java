@@ -5,12 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Vector;
 
-import MyUtility.MyLogger;
+import uti.utility.MyLogger;
 import dbcdr.*;
 
 public class DBScanner extends Thread
 {
-	static MyLogger mLog = new MyLogger(DBScanner.class.toString());
+	static MyLogger mLog = new MyLogger(LocalConfig.LogConfigPath,DBScanner.class.toString());
 
 	cdr_queue mCDRQueue;
 
@@ -18,7 +18,7 @@ public class DBScanner extends Thread
 	{
 		try
 		{
-			mCDRQueue = new cdr_queue(LocalConfig.PoolName_Data_MySQL);
+			mCDRQueue = new cdr_queue(LocalConfig.mDBConfig_MySQL);
 		}
 		catch (Exception ex)
 		{
