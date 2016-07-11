@@ -104,7 +104,6 @@ public class FinishDay extends Thread
 			if (Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)
 			{
 				isMonday = true;
-
 			}
 
 			List<Subscriber> listSub = new Vector<Subscriber>();
@@ -170,9 +169,9 @@ public class FinishDay extends Thread
 					}
 				}
 
-				if (isMonday)
+				if (Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY)
 				{
-					// Nếu là thứ 2 thì sẽ chuyển tất cả play sang playlog
+					// Nếu là tối Chủ Nhật thì sẽ chuyển tất cả play sang playlog
 					if (!movePlayLog())
 					{
 						mLog.log.warn("Move Play to PlayLog khong thanh cong");

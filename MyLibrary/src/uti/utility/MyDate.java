@@ -1,5 +1,6 @@
 package uti.utility;
 
+import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -314,5 +315,13 @@ public class MyDate
 		{
 			throw ex;
 		}
+	}
+	
+	public static Timestamp Date2Timestamp(Calendar mCal_Current)
+	{
+		if(mCal_Current == null)
+			return null;
+		Timestamp mTime = new Timestamp(mCal_Current.getTime().getTime());
+		return mTime;
 	}
 }

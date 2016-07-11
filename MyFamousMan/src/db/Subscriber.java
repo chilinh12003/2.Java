@@ -96,8 +96,6 @@ public class Subscriber extends DAOBase implements java.io.Serializable
 
 	// Fields
 
-	// Fields
-
 	private SubscriberId id;
 	private Timestamp firstDate;
 	private Timestamp resetDate;

@@ -1,0 +1,11 @@
+2016-03-08 17:35:22,491 | ERROR | [main] | class pro.server.Program:<init>(88) ----> org.logicalcobwebs.proxool.ProxoolException: java.io.FileNotFoundException: ProxoolConfig.xml (The system cannot find the file specified) 
+2016-03-08 17:35:22,498 | DEBUG | [Thread-0] | class pro.server.Program:run(363) ----> Listen MO............................................................... 
+2016-03-08 17:35:22,503 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(179) ----> 
+Waiting ..... 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(206) ----> saveSMSDataTable(data.dat 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(302) ----> Saving data.dat . . . 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(319) ----> complete:0 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(210) ----> saveSMSDataTable(receivelog.dat 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(302) ----> Saving receivelog.dat . . . 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(319) ----> complete:0 
+2016-03-08 17:35:23,007 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(214) ----> Shutdown 

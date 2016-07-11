@@ -102,10 +102,10 @@ public class MoveAnswer extends Thread
 
 						mMoveObj.MaxOrderID = mSubObj.OrderID;
 
-						//Nếu là thứ 2 và khoảng thời gian là từ 0h-3h sáng thì reset lại điểm trong tuần
-						Integer DayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
+						//Nếu là ngày 2 của thang và khoảng thời gian là từ 0h-3h sáng thì reset lại điểm trong tuần
+						int DayOfWeek = Calendar.getInstance().get(Calendar.DATE);
 						
-						if(DayOfWeek == Calendar.TUESDAY)
+						if(DayOfWeek == 2)
 						{
 							mSubObj.WeekMark = 0;
 						}

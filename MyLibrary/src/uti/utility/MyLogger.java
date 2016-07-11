@@ -1,5 +1,6 @@
 package uti.utility;
 
+import java.lang.reflect.Field;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -82,4 +83,49 @@ public class MyLogger
 		}
 	}
 
+	
+	public static String GetLog(Object obj)
+	{
+
+		if (obj == null)
+			return "";
+
+		StringBuilder mBuilder = new StringBuilder(obj.getClass().toString() + " --> ");
+
+		try
+		{
+			for (Field field : obj.getClass().getDeclaredFields())
+			{
+				field.setAccessible(true);
+				Object objChild = field.get(obj);
+
+				if (objChild != null)
+				{
+					mBuilder.append(field.getName() + ":" + objChild + "|");
+				}
+				else
+				{
+					mBuilder.append(field.getName() + ":" + " null " + "|");
+				}
+			}
+
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return mBuilder.toString();
+
+	}
+	public static String GetLog(String Prefix, Object obj)
+	{
+
+		return Prefix + "|--> " + GetLog(obj);
+	}
+
+	public static String GetLog(Object obj, String Suffixes)
+	{
+
+		return GetLog(obj) + "|Note:" + Suffixes;
+	}
 }

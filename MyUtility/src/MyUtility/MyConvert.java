@@ -6,12 +6,12 @@ import java.util.Date;
 public class MyConvert
 {
 
-	public static double ShortCodeToPrice(String ShortCode)
+	public static double ShortCodeToPrice_VNP(String ShortCode)
 	{
 		if(ShortCode.equals("6083"))
-			return 500;
-		else if(ShortCode.equals("6183"))
 			return 1000;
+		else if(ShortCode.equals("6183"))
+			return 1500;
 		else if(ShortCode.equals("6283"))
 			return 2000;
 		else if(ShortCode.equals("6383"))
@@ -24,17 +24,19 @@ public class MyConvert
 			return 10000;
 		else if(ShortCode.equals("6783"))
 			return 15000;
+		else if(ShortCode.equals("6883"))
+			return 20000;
 		else
 			return 0;
 		
 	}
 	
-	public static String ShortCodeToPrice_String(String ShortCode)
+	public static String ShortCodeToPrice_VNP_String(String ShortCode)
 	{
 		if(ShortCode.equals("6083"))
-			return "500";
-		else if(ShortCode.equals("6183"))
 			return "1000";
+		else if(ShortCode.equals("6183"))
+			return "1500";
 		else if(ShortCode.equals("6283"))
 			return "2000";
 		else if(ShortCode.equals("6383"))
@@ -47,6 +49,8 @@ public class MyConvert
 			return "10000";
 		else if(ShortCode.equals("6783"))
 			return "15000";
+		else if(ShortCode.equals("6883"))
+				return "20000";
 		else
 			return "0";
 		

@@ -44,7 +44,7 @@ public class NotifyPending extends Thread
 				Calendar calCurrent = Calendar.getInstance();
 				// Vì lần charge thứ 3 của dịch vụ là 19h nên thread sẽ chạy vào
 				// 20h hàng ngày
-				if (calCurrent.get(Calendar.HOUR_OF_DAY) == LocalConfig.NOTIFY_PENDING_HOUR && calCurrent.get(Calendar.MINUTE) == 00 && !isPushing)
+				if (calCurrent.get(Calendar.HOUR_OF_DAY) == LocalConfig.NOTIFY_PENDING_HOUR && calCurrent.get(Calendar.MINUTE) == 17 && !isPushing)
 				{
 					isPushing = true;
 

@@ -9,9 +9,9 @@ public class MyConvert
 	public static double ShortCodeToPrice(String ShortCode)
 	{
 		if(ShortCode.equals("6083"))
-			return 500;
-		else if(ShortCode.equals("6183"))
 			return 1000;
+		else if(ShortCode.equals("6183"))
+			return 1500;
 		else if(ShortCode.equals("6283"))
 			return 2000;
 		else if(ShortCode.equals("6383"))
@@ -24,6 +24,8 @@ public class MyConvert
 			return 10000;
 		else if(ShortCode.equals("6783"))
 			return 15000;
+		else if(ShortCode.equals("6883"))
+			return 20000;
 		else
 			return 0;
 		
@@ -32,9 +34,9 @@ public class MyConvert
 	public static String ShortCodeToPrice_String(String ShortCode)
 	{
 		if(ShortCode.equals("6083"))
-			return "500";
-		else if(ShortCode.equals("6183"))
 			return "1000";
+		else if(ShortCode.equals("6183"))
+			return "1500";
 		else if(ShortCode.equals("6283"))
 			return "2000";
 		else if(ShortCode.equals("6383"))
@@ -47,10 +49,14 @@ public class MyConvert
 			return "10000";
 		else if(ShortCode.equals("6783"))
 			return "15000";
+		else if(ShortCode.equals("6883"))
+				return "20000";
 		else
 			return "0";
 		
 	}
+	
+	
 	
 	/**
 	 * Lấy PID theo số điện thoại VD: 097(99)67755 thì (99%20+1) là số được lấy
