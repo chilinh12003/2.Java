@@ -1,0 +1,20 @@
+2016-07-06 16:29:02,783 | ERROR | [main] | org.logicalcobwebs.proxool.ProxoolDriver:connect(108) ----> Problem 
+org.logicalcobwebs.proxool.ProxoolException: Attempt to refer to a unregistered pool by its alias 'MSSQL'
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.doChange(ConnectionPoolDefinition.java:246)
+	at org.logicalcobwebs.proxool.ConnectionPoolDefinition.<init>(ConnectionPoolDefinition.java:143)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:96)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:77)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:233)
+	at db.connect.MyConnection.getConnection(MyConnection.java:42)
+	at db.connect.MyGetData.getConnection(MyGetData.java:36)
+	at db.connect.MyGetData.GetData_Pro(MyGetData.java:124)
+	at dat.content.DefineMT.Select(DefineMT.java:300)
+	at dat.content.DefineMT.GetAllMT(DefineMT.java:323)
+	at pro.server.Program.<init>(Program.java:79)
+	at pro.server.Program.main(Program.java:338)
+2016-07-06 16:29:49,741 |  WARN | [Shutdown Hook] | org.logicalcobwebs.proxool.ConnectionPool:shutdown(528) ----> Shutdown waited for 5 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway. 
+2016-07-06 16:35:46,349 |  WARN | [Shutdown Hook] | org.logicalcobwebs.proxool.ConnectionPool:shutdown(528) ----> Shutdown waited for 7 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway. 
+2016-07-06 16:44:04,345 |  WARN | [Shutdown Hook] | org.logicalcobwebs.proxool.ConnectionPool:shutdown(528) ----> Shutdown waited for 11 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway. 
+2016-07-06 16:50:07,062 |  WARN | [Shutdown Hook] | org.logicalcobwebs.proxool.ConnectionPool:shutdown(528) ----> Shutdown waited for 5 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway. 
+2016-07-06 16:52:37,046 |  WARN | [Shutdown Hook] | org.logicalcobwebs.proxool.ConnectionPool:shutdown(528) ----> Shutdown waited for 6 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway. 

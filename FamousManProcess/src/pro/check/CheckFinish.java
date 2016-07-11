@@ -416,7 +416,6 @@ public class CheckFinish extends Thread
 
 			if (mList.size() < 1)
 				return;
-
 			
 			int Max_WinnerCount = 0;
 			for (WinnerWeekObject mObj : mList)

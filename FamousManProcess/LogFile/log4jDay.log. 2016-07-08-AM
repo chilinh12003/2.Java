@@ -1,0 +1,63 @@
+2016-07-08 08:39:46,358 | ERROR | [main] | class pro.server.Program:<init>(86) ----> com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server. 
+2016-07-08 08:39:46,406 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
+2016-07-08 08:39:46,418 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(174) ----> 
+Waiting ..... 
+2016-07-08 08:39:46,921 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(201) ----> saveSMSDataTable(data.dat 
+2016-07-08 08:39:46,922 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(297) ----> Saving data.dat . . . 
+2016-07-08 08:39:46,933 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(314) ----> complete:0 
+2016-07-08 08:39:46,935 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(receivelog.dat 
+2016-07-08 08:39:46,935 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(297) ----> Saving receivelog.dat . . . 
+2016-07-08 08:39:46,935 |  INFO | [Thread-4] | class pro.server.Program:saveSMSDataTable(314) ----> complete:0 
+2016-07-08 08:39:46,936 |  INFO | [Thread-4] | class pro.server.Program:windowClosing(209) ----> Shutdown 
+2016-07-08 08:40:23,842 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-07-08 08:40:23,891 | DEBUG | [main] | class pro.server.Program:Init(114) ----> Loaded. 
+2016-07-08 08:40:23,891 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:data.dat 
+2016-07-08 08:40:23,894 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(258) ----> data.dat is empty 
+2016-07-08 08:40:23,895 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: data.dat 
+2016-07-08 08:40:23,895 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:receivelog.dat 
+2016-07-08 08:40:23,896 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(258) ----> receivelog.dat is empty 
+2016-07-08 08:40:23,896 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: receivelog.dat 
+2016-07-08 08:40:23,896 | DEBUG | [main] | class pro.server.Program:Init(121) ----> Start: LoadMO 
+2016-07-08 08:40:23,936 | DEBUG | [main] | class pro.server.Program:Init(136) ----> Start: ExecuteQueue 
+2016-07-08 08:40:24,001 | DEBUG | [main] | class pro.server.Program:Init(144) ----> Start: ExecuteInsertReceiveLog 
+2016-07-08 08:40:24,020 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2016-07-08 08:40:24,020 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2016-07-08 08:40:24,021 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2016-07-08 08:40:24,094 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(22) ----> ---------------BAT DAU CHECK FINISH DAY -------------------- 
+2016-07-08 08:40:24,101 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 08:40:24,104 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
+2016-07-08 08:40:24,167 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 08:40:24,167 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 08:40:48,079 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:RunThread(53) ----> ------------------------- 
+2016-07-08 08:40:48,079 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:RunThread(54) ----> Bat dau FinishSession 
+2016-07-08 08:41:00,128 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(38) ----> CHECK FINISH DAY SE DELAY 60 PHUT. 
+2016-07-08 08:41:00,498 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(39) ----> ---------------KET THUC CHECK FINISH DAY-------------------- 
+2016-07-08 08:50:24,167 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 08:50:24,187 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 08:50:24,187 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 08:55:01,373 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-07-08 08:55:01,422 | DEBUG | [main] | class pro.server.Program:Init(114) ----> Loaded. 
+2016-07-08 08:55:01,422 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:data.dat 
+2016-07-08 08:55:01,422 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> data.dat is empty 
+2016-07-08 08:55:01,423 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: data.dat 
+2016-07-08 08:55:01,424 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(228) ----> loadSMSDataTable:receivelog.dat 
+2016-07-08 08:55:01,424 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> receivelog.dat is empty 
+2016-07-08 08:55:01,424 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(279) ----> Deleting.....: receivelog.dat 
+2016-07-08 08:55:01,424 | DEBUG | [main] | class pro.server.Program:Init(121) ----> Start: LoadMO 
+2016-07-08 08:55:01,470 | DEBUG | [main] | class pro.server.Program:Init(136) ----> Start: ExecuteQueue 
+2016-07-08 08:55:01,591 | DEBUG | [main] | class pro.server.Program:Init(144) ----> Start: ExecuteInsertReceiveLog 
+2016-07-08 08:55:01,615 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2016-07-08 08:55:01,615 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2016-07-08 08:55:01,616 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2016-07-08 08:55:01,641 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 08:55:01,672 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 08:55:01,674 | DEBUG | [Thread-22] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 08:55:01,675 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(22) ----> ---------------BAT DAU CHECK FINISH DAY -------------------- 
+2016-07-08 08:55:01,678 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
+2016-07-08 08:55:08,564 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:RunThread(53) ----> ------------------------- 
+2016-07-08 08:55:08,564 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:RunThread(54) ----> Bat dau FinishSession 
+2016-07-08 08:55:12,782 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(38) ----> CHECK FINISH DAY SE DELAY 60 PHUT. 
+2016-07-08 08:55:12,783 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(39) ----> ---------------KET THUC CHECK FINISH DAY-------------------- 
+2016-07-08 08:57:37,377 | DEBUG | [Thread-24] | class pro.check.FinishDay:run(190) ----> KET THUC FinisDay:class pro.check.FinishDay --> mLog:uti.utility.MyLogger@3a68690b|CurrentPID:50|PhoneNumber:841239979904|ThreadNumber:1|ThreadIndex:0|MaxOrderID:88841|MaxOrderID_Play:0|RowCount:10|StartDate:Fri Jul 08 08:55:08 ICT 2016|FinishDate:Fri Jul 08 08:57:37 ICT 2016|subDB:dat.sub.Subscriber@6bdc1ea2|playDB:dat.history.Play@405f5500|playLogDB:dat.history.PlayLog@32c59404|mTable_SubUpdate:db.define.MyTableModel@4355812|mTable_Play:db.define.MyTableModel@4978aca6|questionId:0| 

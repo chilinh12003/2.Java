@@ -34,18 +34,24 @@ public class LocalConfig
 	 */
 	public static Integer MaxAnswerByDay = 10;
 
-	/**
-	 * Số điểm quy ra 1 MDT
-	 */
-	public static Integer MarkPerCode = 50;
-	public static Integer RegMark = 1000;
 
-	// Các keyword dành để dự đoán
-	public static String KeywordKQ = "KQ";
-	public static String KeywordBT = "BT";
-	public static String KeywordGB = "GB";
-	public static String KeywordTS = "TS";
-	public static String KeywordTV = "TV";
+	/**
+	 * Điểm cho 1 lần trả lời đúng
+	 */
+	public static Integer AnswerMark = 20;
+	/**
+	 * Điểm thưởng khi đăng ký thành công
+	 */
+	public static Integer RegMark = 10;
+	/**
+	 * Điểm thưởng khi gia hạn thành công
+	 */
+	public static Integer RenewMark = 10;
+	/**
+	 * Điểm thưởng khi mua dữ kiện thành công
+	 */
+	public static Integer BuyMark = 5;
+	
 
 	public static Integer DELAY_SENT_MT = 0;
 	

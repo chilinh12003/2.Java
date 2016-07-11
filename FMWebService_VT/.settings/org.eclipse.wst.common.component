@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FMWebService_VT_V1">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="MyLib.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MyLib/MyLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MyFamousMan.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MyFamousMan/MyFamousMan">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/FMWebService_VT_V1/WebRoot/WEB-INF/classes"/>
+        <property name="me-merge-deployed-modules" value="+MyFamousMan.jar;+MyLib.jar;"/>
+        <property name="context-root" value="FMWebService_VT_V1"/>
+    </wb-module>
+</project-modules>

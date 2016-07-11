@@ -16,7 +16,10 @@ public class SubscriberObject
 {
 	/**
 	 * Kiểu khởi tạo 1 đối tượng Sub hoặc Unsub
-	 * <p>VD: Tạo đăng ký mới, tạo đăng ký đã hủy</p>
+	 * <p>
+	 * VD: Tạo đăng ký mới, tạo đăng ký đã hủy
+	 * </p>
+	 * 
 	 * @author Administrator
 	 *
 	 */
@@ -34,8 +37,7 @@ public class SubscriberObject
 		/**
 		 * Đăng ký cho số thuê bao đã bị Hủy từ Vinaphone
 		 */
-		UndoReg(3)
-		;			
+		UndoReg(3);
 
 		private int value;
 
@@ -59,14 +61,13 @@ public class SubscriberObject
 			return Nothing;
 		}
 	}
-	
-	
+
 	public String MSISDN = "";
 	public Date FirstDate = null;
 	public Date ResetDate = null;
 	public Date EffectiveDate = null;
 	public Date ExpiryDate = null;
-	
+
 	public Date RenewChargeDate = null;
 	public Date RetryChargeDate = null;
 
@@ -97,6 +98,16 @@ public class SubscriberObject
 	public String IP = "";
 	public int PartnerID = 0;
 
+	public int WeekMark = 0;
+	public int DayMark = 0;
+	public int AddMark = 0;
+	public int ChargeMark = 0;
+	public int BuyMark = 0;
+	public int AnswerMark = 0;
+	public int AnswerRightCount = 0;
+	public int BuySuggestCount = 0;
+	
+	
 	public Date DeregDate = null;
 
 	/**
@@ -106,39 +117,64 @@ public class SubscriberObject
 
 	public boolean IsNull()
 	{
-		if (MSISDN == null || MSISDN.equalsIgnoreCase("")) return true;
+		if (MSISDN == null || MSISDN.equalsIgnoreCase(""))
+			return true;
 		else return false;
 	}
 
 	public boolean CheckLastSuggestDate(Calendar mCal_Current) throws Exception
 	{
-		if (LastSuggestDate == null) return false;
+		if (LastSuggestDate == null)
+			return false;
 		Calendar mCal_CheckDate = Calendar.getInstance();
 
 		mCal_CheckDate.setTime(LastSuggestDate);
 		if (mCal_Current.get(Calendar.YEAR) == mCal_CheckDate.get(Calendar.YEAR)
 				&& mCal_Current.get(Calendar.MONTH) == mCal_CheckDate.get(Calendar.MONTH)
-				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE)) return true;
+				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE))
+			return true;
 		else return false;
 	}
-	
+
 	public boolean CheckLastAnswerDate(Calendar mCal_Current) throws Exception
 	{
-		if (LastAnswerDate == null) return false;
+		if (LastAnswerDate == null)
+			return false;
 		Calendar mCal_CheckDate = Calendar.getInstance();
 
 		mCal_CheckDate.setTime(LastAnswerDate);
 		if (mCal_Current.get(Calendar.YEAR) == mCal_CheckDate.get(Calendar.YEAR)
 				&& mCal_Current.get(Calendar.MONTH) == mCal_CheckDate.get(Calendar.MONTH)
-				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE)) return true;
+				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE))
+			return true;
 		else return false;
 	}
 	
+	/**
+	 * Kiểm tra xem khách hàng Hủy trong ngày hay không
+	 * @param mCal_Current
+	 * @return
+	 */
+	public boolean IsDeregDateSameDay(Calendar mCal_Current)
+	{
+		if (DeregDate == null)
+			return false;
+		Calendar mCal_CheckDate = Calendar.getInstance();
+
+		mCal_CheckDate.setTime(DeregDate);
+		if (mCal_Current.get(Calendar.YEAR) == mCal_CheckDate.get(Calendar.YEAR)
+				&& mCal_Current.get(Calendar.MONTH) == mCal_CheckDate.get(Calendar.MONTH)
+				&& mCal_Current.get(Calendar.DATE) == mCal_CheckDate.get(Calendar.DATE))
+			return true;
+		else return false;
+	}
+
 	public static SubscriberObject Convert(MyTableModel mTable, boolean IsDereg) throws Exception
 	{
 		try
 		{
-			if (mTable.GetRowCount() < 1) return new SubscriberObject();
+			if (mTable.GetRowCount() < 1)
+				return new SubscriberObject();
 
 			SubscriberObject mObject = new SubscriberObject();
 
@@ -151,7 +187,7 @@ public class SubscriberObject
 					mTable.GetValueAt(0, "EffectiveDate").toString());
 			mObject.ExpiryDate = MyConfig.Get_DateFormat_InsertDB()
 					.parse(mTable.GetValueAt(0, "ExpiryDate").toString());
-			
+
 			if (mTable.GetValueAt(0, "RenewChargeDate") != null)
 				mObject.RenewChargeDate = MyConfig.Get_DateFormat_InsertDB().parse(
 						mTable.GetValueAt(0, "RenewChargeDate").toString());
@@ -197,7 +233,8 @@ public class SubscriberObject
 			if (mTable.GetValueAt(0, "UserName") != null)
 				mObject.UserName = mTable.GetValueAt(0, "UserName").toString();
 
-			if (mTable.GetValueAt(0, "IP") != null) mObject.IP = mTable.GetValueAt(0, "IP").toString();
+			if (mTable.GetValueAt(0, "IP") != null)
+				mObject.IP = mTable.GetValueAt(0, "IP").toString();
 
 			mObject.OrderID = Integer.parseInt(mTable.GetValueAt(0, "OrderID").toString());
 
@@ -206,6 +243,15 @@ public class SubscriberObject
 			if (mTable.GetValueAt(0, "DeregDate") != null)
 				mObject.DeregDate = MyConfig.Get_DateFormat_InsertDB().parse(
 						mTable.GetValueAt(0, "DeregDate").toString());
+
+			mObject.WeekMark = Integer.parseInt(mTable.GetValueAt(0, "WeekMark").toString());
+			mObject.DayMark = Integer.parseInt(mTable.GetValueAt(0, "DayMark").toString());
+			mObject.AddMark = Integer.parseInt(mTable.GetValueAt(0, "AddMark").toString());
+			mObject.ChargeMark = Integer.parseInt(mTable.GetValueAt(0, "ChargeMark").toString());
+			mObject.BuyMark = Integer.parseInt(mTable.GetValueAt(0, "BuyMark").toString());
+			mObject.AnswerMark = Integer.parseInt(mTable.GetValueAt(0, "AnswerMark").toString());
+			mObject.AnswerRightCount = Integer.parseInt(mTable.GetValueAt(0, "AnswerRightCount").toString());
+			mObject.BuySuggestCount = Integer.parseInt(mTable.GetValueAt(0, "BuySuggestCount").toString());
 
 			return mObject;
 		}
@@ -220,7 +266,8 @@ public class SubscriberObject
 		try
 		{
 			Vector<SubscriberObject> mList = new Vector<SubscriberObject>();
-			if (mTable.GetRowCount() < 1) return mList;
+			if (mTable.GetRowCount() < 1)
+				return mList;
 
 			for (int i = 0; i < mTable.GetRowCount(); i++)
 			{
@@ -287,7 +334,8 @@ public class SubscriberObject
 				if (mTable.GetValueAt(i, "UserName") != null)
 					mObject.UserName = mTable.GetValueAt(i, "UserName").toString();
 
-				if (mTable.GetValueAt(i, "IP") != null) mObject.IP = mTable.GetValueAt(i, "IP").toString();
+				if (mTable.GetValueAt(i, "IP") != null)
+					mObject.IP = mTable.GetValueAt(i, "IP").toString();
 
 				mObject.OrderID = Integer.parseInt(mTable.GetValueAt(i, "OrderID").toString());
 
@@ -296,6 +344,15 @@ public class SubscriberObject
 				if (mTable.GetValueAt(i, "DeregDate") != null)
 					mObject.DeregDate = MyConfig.Get_DateFormat_InsertDB().parse(
 							mTable.GetValueAt(i, "DeregDate").toString());
+
+				mObject.WeekMark = Integer.parseInt(mTable.GetValueAt(i, "WeekMark").toString());
+				mObject.DayMark = Integer.parseInt(mTable.GetValueAt(i, "DayMark").toString());
+				mObject.AddMark = Integer.parseInt(mTable.GetValueAt(i, "AddMark").toString());
+				mObject.ChargeMark = Integer.parseInt(mTable.GetValueAt(i, "ChargeMark").toString());
+				mObject.BuyMark = Integer.parseInt(mTable.GetValueAt(i, "BuyMark").toString());
+				mObject.AnswerMark = Integer.parseInt(mTable.GetValueAt(i, "AnswerMark").toString());
+				mObject.AnswerRightCount = Integer.parseInt(mTable.GetValueAt(i, "AnswerRightCount").toString());
+				mObject.BuySuggestCount = Integer.parseInt(mTable.GetValueAt(i, "BuySuggestCount").toString());
 
 				mList.add(mObject);
 			}
@@ -318,7 +375,10 @@ public class SubscriberObject
 	{
 		try
 		{
-			if (ResetDate == null) { return true; }
+			if (ResetDate == null)
+			{
+				return true;
+			}
 
 			Calendar cal_Current = Calendar.getInstance();
 			Calendar cal_ResetDate = Calendar.getInstance();
@@ -326,10 +386,11 @@ public class SubscriberObject
 			cal_ResetDate.setTime(ResetDate);
 			cal_ResetDate.set(cal_ResetDate.get(Calendar.YEAR), cal_ResetDate.get(Calendar.MONTH),
 					cal_ResetDate.get(Calendar.DATE), 0, 0, 0);
-			
+
 			cal_ResetDate.add(Calendar.DATE, FreeDayCount);
 
-			if (cal_ResetDate.after(cal_Current)) return true;
+			if (cal_ResetDate.after(cal_Current))
+				return true;
 			else return false;
 		}
 		catch (Exception ex)
@@ -337,12 +398,14 @@ public class SubscriberObject
 			throw ex;
 		}
 	}
-	
+
 	public MyTableModel AddNewRow(MyTableModel mTable) throws Exception
 	{
-		if (mTable == null) return null;
+		if (mTable == null)
+			return null;
 
-		if (IsNull()) return mTable;
+		if (IsNull())
+			return mTable;
 
 		MyDataRow mRow = mTable.CreateNewRow();
 
@@ -354,7 +417,7 @@ public class SubscriberObject
 
 		if (RetryChargeDate != null)
 			mRow.SetValueCell("RetryChargeDate", MyConfig.Get_DateFormat_InsertDB().format(RetryChargeDate.getTime()));
-		mRow.SetValueCell("RetryChargeCount", RetryChargeCount);	
+		mRow.SetValueCell("RetryChargeCount", RetryChargeCount);
 
 		if (RenewChargeDate != null)
 			mRow.SetValueCell("RenewChargeDate", MyConfig.Get_DateFormat_InsertDB().format(RenewChargeDate.getTime()));
@@ -366,21 +429,22 @@ public class SubscriberObject
 		mRow.SetValueCell("LastSuggestrID", LastSuggestrID);
 		mRow.SetValueCell("SuggestByDay", SuggestByDay);
 		mRow.SetValueCell("TotalSuggest", TotalSuggest);
-		
+
 		if (LastSuggestDate != null)
 			mRow.SetValueCell("LastSuggestDate", MyConfig.Get_DateFormat_InsertDB().format(LastSuggestDate.getTime()));
 		mRow.SetValueCell("AnswerForSuggestID", AnswerForSuggestID);
-		
-		if (LastAnswer != null && !LastAnswer.equalsIgnoreCase("")) mRow.SetValueCell("LastAnswer", LastAnswer);
+
+		if (LastAnswer != null && !LastAnswer.equalsIgnoreCase(""))
+			mRow.SetValueCell("LastAnswer", LastAnswer);
 		mRow.SetValueCell("AnswerStatusID", mLastAnswerStatus.GetValue());
 		mRow.SetValueCell("AnswerByDay", AnswerByDay);
-		
+
 		if (LastAnswerDate != null)
 			mRow.SetValueCell("LastAnswerDate", MyConfig.Get_DateFormat_InsertDB().format(LastAnswerDate.getTime()));
 
 		if (DeregDate != null)
 			mRow.SetValueCell("DeregDate", MyConfig.Get_DateFormat_InsertDB().format(DeregDate.getTime()));
-		
+
 		mRow.SetValueCell("PartnerID", PartnerID);
 		mRow.SetValueCell("AppID", mVNPApp.GetValue());
 		mRow.SetValueCell("AppName", mVNPApp.toString());
@@ -395,12 +459,20 @@ public class SubscriberObject
 			mRow.SetValueCell("UserName", UserName);
 			mRow.SetValueCell("IP", IP);
 		}
-		
+
 		mRow.SetValueCell("PartnerID", PartnerID);
+
+		mRow.SetValueCell("WeekMark", WeekMark);
+		mRow.SetValueCell("DayMark", DayMark);
+		mRow.SetValueCell("AddMark", AddMark);
+		mRow.SetValueCell("ChargeMark", ChargeMark);
+		mRow.SetValueCell("BuyMark", BuyMark);
+		mRow.SetValueCell("AnswerMark", AnswerMark);
+		mRow.SetValueCell("AnswerRightCount", AnswerRightCount);
+		mRow.SetValueCell("BuySuggestCount", BuySuggestCount);
 
 		mTable.AddNewRow(mRow);
 		return mTable;
 	}
 
-	
 }

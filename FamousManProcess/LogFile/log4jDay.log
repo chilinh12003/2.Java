@@ -1,11 +1,85 @@
-2016-03-09 09:10:07,167 | ERROR | [main] | class pro.server.Program:<init>(86) ----> org.logicalcobwebs.proxool.ProxoolException: java.io.FileNotFoundException: ProxoolConfig.xml (The system cannot find the file specified) 
-2016-03-09 09:10:07,175 | DEBUG | [Thread-0] | class pro.server.Program:run(358) ----> Listen MO............................................................... 
-2016-03-09 09:10:07,180 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(174) ----> 
-Waiting ..... 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(201) ----> saveSMSDataTable(data.dat 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(297) ----> Saving data.dat . . . 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(314) ----> complete:0 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(205) ----> saveSMSDataTable(receivelog.dat 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(297) ----> Saving receivelog.dat . . . 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:saveSMSDataTable(314) ----> complete:0 
-2016-03-09 09:10:07,680 |  INFO | [Thread-1] | class pro.server.Program:windowClosing(209) ----> Shutdown 
+2016-07-08 15:14:33,353 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-07-08 15:14:33,456 | DEBUG | [main] | class pro.server.Program:Init(115) ----> Loaded. 
+2016-07-08 15:14:33,457 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:data.dat 
+2016-07-08 15:14:33,458 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> data.dat is empty 
+2016-07-08 15:14:33,459 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: data.dat 
+2016-07-08 15:14:33,459 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:receivelog.dat 
+2016-07-08 15:14:33,459 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> receivelog.dat is empty 
+2016-07-08 15:14:33,463 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: receivelog.dat 
+2016-07-08 15:14:33,463 | DEBUG | [main] | class pro.server.Program:Init(122) ----> Start: LoadMO 
+2016-07-08 15:14:33,528 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2016-07-08 15:14:33,657 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2016-07-08 15:14:33,678 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2016-07-08 15:14:33,680 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2016-07-08 15:14:33,680 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2016-07-08 15:14:33,690 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(22) ----> ---------------BAT DAU CHECK FINISH DAY -------------------- 
+2016-07-08 15:14:33,691 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(38) ----> CHECK FINISH DAY SE DELAY 60 PHUT. 
+2016-07-08 15:14:33,692 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(39) ----> ---------------KET THUC CHECK FINISH DAY-------------------- 
+2016-07-08 15:14:33,779 | DEBUG | [Thread-0] | class pro.server.Program:run(366) ----> Listen MO............................................................... 
+2016-07-08 15:14:33,783 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 15:14:33,791 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 15:14:33,791 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 15:16:18,870 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-07-08 15:16:18,920 | DEBUG | [main] | class pro.server.Program:Init(115) ----> Loaded. 
+2016-07-08 15:16:18,921 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:data.dat 
+2016-07-08 15:16:18,921 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> data.dat is empty 
+2016-07-08 15:16:18,922 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: data.dat 
+2016-07-08 15:16:18,922 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:receivelog.dat 
+2016-07-08 15:16:18,923 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> receivelog.dat is empty 
+2016-07-08 15:16:18,923 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: receivelog.dat 
+2016-07-08 15:16:18,923 | DEBUG | [main] | class pro.server.Program:Init(122) ----> Start: LoadMO 
+2016-07-08 15:16:18,964 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2016-07-08 15:16:19,068 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2016-07-08 15:16:19,116 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2016-07-08 15:16:19,134 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2016-07-08 15:16:19,134 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2016-07-08 15:16:19,161 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(22) ----> ---------------BAT DAU CHECK FINISH DAY -------------------- 
+2016-07-08 15:16:19,163 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(38) ----> CHECK FINISH DAY SE DELAY 60 PHUT. 
+2016-07-08 15:16:19,165 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(39) ----> ---------------KET THUC CHECK FINISH DAY-------------------- 
+2016-07-08 15:16:19,199 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 15:16:19,200 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 15:16:19,200 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 15:16:19,224 | DEBUG | [Thread-0] | class pro.server.Program:run(366) ----> Listen MO............................................................... 
+2016-07-08 15:17:57,588 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-07-08 15:17:57,685 | DEBUG | [main] | class pro.server.Program:Init(115) ----> Loaded. 
+2016-07-08 15:17:57,696 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:data.dat 
+2016-07-08 15:17:57,704 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> data.dat is empty 
+2016-07-08 15:17:57,705 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: data.dat 
+2016-07-08 15:17:57,705 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:receivelog.dat 
+2016-07-08 15:17:57,705 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> receivelog.dat is empty 
+2016-07-08 15:17:57,706 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: receivelog.dat 
+2016-07-08 15:17:57,706 | DEBUG | [main] | class pro.server.Program:Init(122) ----> Start: LoadMO 
+2016-07-08 15:17:57,791 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2016-07-08 15:17:57,896 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2016-07-08 15:17:57,962 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2016-07-08 15:17:57,964 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2016-07-08 15:17:57,964 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2016-07-08 15:17:57,978 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(22) ----> ---------------BAT DAU CHECK FINISH DAY -------------------- 
+2016-07-08 15:17:57,978 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(38) ----> CHECK FINISH DAY SE DELAY 60 PHUT. 
+2016-07-08 15:17:57,980 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(39) ----> ---------------KET THUC CHECK FINISH DAY-------------------- 
+2016-07-08 15:17:58,013 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 15:17:58,016 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 15:17:58,016 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 15:17:58,018 | DEBUG | [Thread-0] | class pro.server.Program:run(366) ----> Listen MO............................................................... 
+2016-07-08 15:18:19,566 |  INFO | [Thread-4] | class pro.server.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2016-07-08 15:18:19,616 | DEBUG | [main] | class pro.server.Program:Init(115) ----> Loaded. 
+2016-07-08 15:18:19,617 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:data.dat 
+2016-07-08 15:18:19,617 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> data.dat is empty 
+2016-07-08 15:18:19,618 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: data.dat 
+2016-07-08 15:18:19,619 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(236) ----> loadSMSDataTable:receivelog.dat 
+2016-07-08 15:18:19,619 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(244) ----> receivelog.dat is empty 
+2016-07-08 15:18:19,619 |  INFO | [main] | class pro.server.Program:loadSMSDataTable(287) ----> Deleting.....: receivelog.dat 
+2016-07-08 15:18:19,619 | DEBUG | [main] | class pro.server.Program:Init(122) ----> Start: LoadMO 
+2016-07-08 15:18:19,661 | DEBUG | [main] | class pro.server.Program:Init(137) ----> Start: ExecuteQueue 
+2016-07-08 15:18:19,810 | DEBUG | [main] | class pro.server.Program:Init(145) ----> Start: ExecuteInsertReceiveLog 
+2016-07-08 15:18:19,860 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(30) ----> ---------------BAT DAU CHECK CHARGING -------------------- 
+2016-07-08 15:18:19,861 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(55) ----> CHECK CHARGING SE DELAY 60 PHUT. 
+2016-07-08 15:18:19,861 | DEBUG | [Thread-20] | class pro.check.CheckCharge:run(56) ----> ---------------KET THUC CHECK CHARGING -------------------- 
+2016-07-08 15:18:19,874 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(22) ----> ---------------BAT DAU CHECK FINISH DAY -------------------- 
+2016-07-08 15:18:19,875 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(38) ----> CHECK FINISH DAY SE DELAY 60 PHUT. 
+2016-07-08 15:18:19,877 | DEBUG | [Thread-21] | class pro.check.CheckFinishDay:run(39) ----> ---------------KET THUC CHECK FINISH DAY-------------------- 
+2016-07-08 15:18:19,908 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(27) ----> ---------------BAT DAU CHECK PUSH MT -------------------- 
+2016-07-08 15:18:19,908 | DEBUG | [Thread-0] | class pro.server.Program:run(366) ----> Listen MO............................................................... 
+2016-07-08 15:18:19,909 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(90) ----> CHECK PUSHMT SE Delay 10 Phut. 
+2016-07-08 15:18:19,910 | DEBUG | [Thread-23] | class pro.check.CheckPushMT:run(91) ----> ---------------KET THUC CHECK PUSH MT-------------------- 
+2016-07-08 15:18:43,302 |  INFO | [Thread-22] | class pro.check.BeginSession:run(80) ----> Luu tin thanh cong cho push tin hang ngay luc 8h:class dat.content.NewsObject --> serialVersionUID:1|NewsID:0|NewsName:Push Tin hàng ngày: 2016-07-08 15:18:30:364|MT:Tang Quy khach 10 diem. Soan DD [tennguoinoitieng] gui 1566 de du doan thong tin ngay hom nay. De mua thong tin du doan, soan MUA gui 1566 (1000d/lan). So lan mua: 10lan/ngay. Chuc Quy khach may man. Ong sinh ngay 15 thang 02 nam 1564.|mStatus:New|mNewsType:Reminder|PushTime:Fri Jul 08 08:00:32 ICT 2016|CreateDate:Fri Jul 08 15:18:33 ICT 2016|QuestionID:0|Priority:0| 

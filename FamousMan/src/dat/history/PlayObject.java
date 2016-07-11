@@ -23,6 +23,16 @@ public class PlayObject implements Cloneable
 	public String UserAnswer = "";
 	public Play.Status mStatus = Status.Nothing;
 	public int PID = 0;
+	
+	public int WeekMark = 0;
+	public int DayMark = 0;
+	public int AddMark = 0;
+	public int ChargeMark = 0;
+	public int BuyMark = 0;
+	public int AnswerMark = 0;
+	public int AnswerRightCount =0;
+	public int BuySuggestCount =0;
+	
 
 	public boolean IsNull()
 	{
@@ -87,6 +97,16 @@ public class PlayObject implements Cloneable
 			mObject.mStatus = Play.Status.FromInt(Integer.parseInt(mTable.GetValueAt(0, "StatusID").toString()));
 
 			mObject.PID = Integer.parseInt(mTable.GetValueAt(0, "PID").toString());
+			
+			mObject.WeekMark = Integer.parseInt(mTable.GetValueAt(0, "WeekMark").toString());
+			mObject.DayMark = Integer.parseInt(mTable.GetValueAt(0, "DayMark").toString());
+			mObject.AddMark = Integer.parseInt(mTable.GetValueAt(0, "AddMark").toString());
+			mObject.ChargeMark = Integer.parseInt(mTable.GetValueAt(0, "ChargeMark").toString());
+			mObject.BuyMark = Integer.parseInt(mTable.GetValueAt(0, "BuyMark").toString());
+			mObject.AnswerMark = Integer.parseInt(mTable.GetValueAt(0, "AnswerMark").toString());
+			mObject.AnswerRightCount = Integer.parseInt(mTable.GetValueAt(0, "AnswerRightCount").toString());
+			mObject.BuySuggestCount = Integer.parseInt(mTable.GetValueAt(0, "BuySuggestCount").toString());
+			
 			return mObject;
 		}
 		catch (Exception ex)
@@ -127,6 +147,16 @@ public class PlayObject implements Cloneable
 
 				mObject.mStatus = Play.Status.FromInt(Integer.parseInt(mTable.GetValueAt(i, "StatusID").toString()));
 
+				mObject.WeekMark = Integer.parseInt(mTable.GetValueAt(i, "WeekMark").toString());
+				mObject.DayMark = Integer.parseInt(mTable.GetValueAt(i, "DayMark").toString());
+				mObject.AddMark = Integer.parseInt(mTable.GetValueAt(i, "AddMark").toString());
+				mObject.ChargeMark = Integer.parseInt(mTable.GetValueAt(i, "ChargeMark").toString());
+				mObject.BuyMark = Integer.parseInt(mTable.GetValueAt(i, "BuyMark").toString());
+				mObject.AnswerMark = Integer.parseInt(mTable.GetValueAt(i, "AnswerMark").toString());
+				mObject.AnswerRightCount = Integer.parseInt(mTable.GetValueAt(i, "AnswerRightCount").toString());
+				mObject.BuySuggestCount = Integer.parseInt(mTable.GetValueAt(i, "BuySuggestCount").toString());
+				
+				
 				mList.add(mObject);
 
 			}
@@ -160,6 +190,16 @@ public class PlayObject implements Cloneable
 		mRow.SetValueCell("StatusID", mStatus.GetValue());
 		mRow.SetValueCell("PID", PID);
 
+		mRow.SetValueCell("WeekMark", WeekMark);
+		mRow.SetValueCell("DayMark", DayMark);
+		mRow.SetValueCell("AddMark", AddMark);
+		mRow.SetValueCell("ChargeMark", ChargeMark);
+		mRow.SetValueCell("BuyMark", BuyMark);
+		mRow.SetValueCell("AnswerMark", AnswerMark);
+		mRow.SetValueCell("AnswerRightCount", AnswerRightCount);
+		mRow.SetValueCell("BuySuggestCount", BuySuggestCount);	
+
+		
 		mTable.AddNewRow(mRow);
 		return mTable;
 	}

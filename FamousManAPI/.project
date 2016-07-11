@@ -3,9 +3,9 @@
 	<name>TPTTAPI</name>
 	<comment></comment>
 	<projects>
-		<project>MyLibrary</project>
 		<project>FamousMan</project>
 		<project>MyDataProcess</project>
+		<project>MyLibrary</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

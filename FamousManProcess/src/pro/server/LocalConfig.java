@@ -12,17 +12,17 @@ import db.define.DBConfig;
 public class LocalConfig
 {
 	public static String ProcessConfigFile = "config.properties";
-	
+
 	public static String LogConfigPath = "log4j.properties";
 	public static String LogDataFolder = ".\\LogFile\\";
 
-	private static String  DBConfigPath = "ProxoolConfig.xml";
-	private static String  MySQLPoolName = "MySQL";
-	private static String  MSSQLPoolName = "MSSQL";
-	
-	public static DBConfig mDBConfig_MSSQL = new DBConfig("MySQL");	
+	private static String DBConfigPath = "ProxoolConfig.xml";
+	private static String MySQLPoolName = "MySQL";
+	private static String MSSQLPoolName = "MSSQL";
+
+	public static DBConfig mDBConfig_MSSQL = new DBConfig("MySQL");
 	public static DBConfig mDBConfig_MySQL = new DBConfig("MSSQL");
-	
+
 	/**
 	 * Ten cua dich vu
 	 */
@@ -76,10 +76,12 @@ public class LocalConfig
 	 */
 	public static String IS_PUSH_MT = "1";
 
-	/*public static String[] LIST_DB_RECEIVELOG = {PoolName_Gateway};
-	public static String[] LIST_DB_RECEIVEQUEUE = {PoolName_Gateway};
-	public static String[] LIST_DB_SENDQUEUE = {PoolName_Gateway};
-	public static String[] LIST_TABLE_SENDQUEUE = {"0"};*/
+	/*
+	 * public static String[] LIST_DB_RECEIVELOG = {PoolName_Gateway}; public
+	 * static String[] LIST_DB_RECEIVEQUEUE = {PoolName_Gateway}; public static
+	 * String[] LIST_DB_SENDQUEUE = {PoolName_Gateway}; public static String[]
+	 * LIST_TABLE_SENDQUEUE = {"0"};
+	 */
 
 	// ----------------cau hinh Charging-----------------------------
 	public static String VNPURLCharging = "http://115.146.122.173:8092/SetRingBack.asmx";
@@ -112,14 +114,19 @@ public class LocalConfig
 	public static Integer CHARGE_ROWCOUNT = 10;
 	public static Integer CHARGE_MAX_ERROR_RETRY = 1;
 
-	// Cấu hình thread Kết thúc trận đấu
-	public static String[] FINISH_LIST_TIME = {"07"};
-	public static Integer FINISH_TIME_DELAY = 60;
+	// Cấu hình thread Kết thúc tuần
+	/**
+	 * Ngày kết thúc phiên sunday = 1, monday = 2,...saturday= 7
+	 */
+	public static Integer FINISH_SESSION_DAY_OF_MONTH = 1;
+	public static String[] FINISH_SESSION_LIST_TIME = {"07"};
+	public static Integer FINISH_SESSION_TIME_DELAY = 60;
 
-	public static Integer FINISH_PROCESS_NUMBER = 1;
-
-	public static Integer FINISH_ROWCOUNT = 10;
-
+	// Cấu hình thread Kết thúc ngày
+	public static String[] FINISH_DAY_LIST_TIME = {"07"};
+	public static Integer FINISH_DAY_TIME_DELAY = 60;
+	public static Integer FINISH_DAY_PROCESS_NUMBER = 1;
+	public static Integer FINISH_DAY_ROWCOUNT = 10;
 
 	/**
 	 * Khung giờ Push tin thức thể thao
@@ -137,22 +144,45 @@ public class LocalConfig
 	 * Số lượng MT ngắn được push sang VInaphone trong vòng 1 giây
 	 */
 	public static int PUSHMT_TPS = 30;
-	
-	
+
 	public static Integer MAX_PID = 50;
 
-	
+	/**
+	 * Số lần được phép trả lời nhiều nhất trong ngày
+	 */
+	public static Integer MaxAnswerByDay = 10;
+	/**
+	 * Số lần được phép Mua nhiều nhất trong ngày
+	 */
+	public static Integer MaxBuyByDay = 10;
+	/**
+	 * Điểm cho 1 lần trả lời đúng
+	 */
+	public static Integer AnswerMark = 20;
+	/**
+	 * Điểm thưởng khi đăng ký thành công
+	 */
+	public static Integer RegMark = 10;
+	/**
+	 * Điểm thưởng khi gia hạn thành công
+	 */
+	public static Integer RenewMark = 10;
+	/**
+	 * Điểm thưởng khi mua dữ kiện thành công
+	 */
+	public static Integer BuyMark = 5;
+
 	public static boolean loadProperties(String propFile)
 	{
 		Properties properties = new Properties();
-		System.out.println( "Reading configuration file " + propFile);
+		System.out.println("Reading configuration file " + propFile);
 		try
 		{
 			FileInputStream fin = new FileInputStream(propFile);
 			properties.load(fin);
 			_prop = properties;
 			fin.close();
-			
+
 			LogDataFolder = properties.getProperty("LogDataFolder", LogDataFolder);
 			LogConfigPath = properties.getProperty("LogConfigPath", LogConfigPath);
 			DBConfigPath = properties.getProperty("DBConfigPath", DBConfigPath);
@@ -161,7 +191,7 @@ public class LocalConfig
 
 			mDBConfig_MSSQL = new DBConfig(DBConfigPath, MSSQLPoolName);
 			mDBConfig_MySQL = new DBConfig(DBConfigPath, MySQLPoolName);
-			
+
 			NUM_THREAD = Integer.parseInt(properties.getProperty("NUM_THREAD", "10"));
 			NUM_THREAD_LOAD_MO = Integer.parseInt(properties.getProperty("NUM_THREAD_LOAD_MO", "2"));
 			LOAD_MO_MODE = properties.getProperty("LOAD_MO_MODE", "DB");
@@ -233,25 +263,31 @@ public class LocalConfig
 
 			CHARGE_LIST_TIME_NOT_DEREG = properties.getProperty("CHARGE_LIST_TIME_NOT_DEREG", "").split("\\|");
 
-			FINISH_TIME_DELAY = Integer.parseInt(properties.getProperty("FINISH_TIME_DELAY",
-					FINISH_TIME_DELAY.toString()));
-			FINISH_ROWCOUNT = Integer
-					.parseInt(properties.getProperty("FINISH_ROWCOUNT", FINISH_ROWCOUNT.toString()));
-			FINISH_PROCESS_NUMBER = Integer.parseInt(properties.getProperty("FINISH_PROCESS_NUMBER",
-					FINISH_PROCESS_NUMBER.toString()));
+			FINISH_SESSION_LIST_TIME = properties.getProperty("FINISH_SESSION_LIST_TIME", "1").split("\\|");
+			FINISH_SESSION_DAY_OF_MONTH = Integer.parseInt(properties.getProperty("FINISH_SESSION_DAY_OF_MONTH",
+					FINISH_SESSION_DAY_OF_MONTH.toString()));
+			FINISH_SESSION_TIME_DELAY = Integer.parseInt(properties.getProperty("FINISH_SESSION_TIME_DELAY",
+					FINISH_SESSION_TIME_DELAY.toString()));
 
-			FINISH_LIST_TIME = properties.getProperty("FINISH_LIST_TIME", "10").split("\\|");
+			FINISH_DAY_LIST_TIME = properties.getProperty("FINISH_DAY_LIST_TIME", "0").split("\\|");
+			FINISH_DAY_TIME_DELAY = Integer.parseInt(properties.getProperty("FINISH_DAY_TIME_DELAY",
+					FINISH_DAY_TIME_DELAY.toString()));
+			FINISH_DAY_ROWCOUNT = Integer.parseInt(properties.getProperty("FINISH_DAY_ROWCOUNT",
+					FINISH_DAY_ROWCOUNT.toString()));
+			FINISH_DAY_PROCESS_NUMBER = Integer.parseInt(properties.getProperty("FINISH_DAY_PROCESS_NUMBER",
+					FINISH_DAY_PROCESS_NUMBER.toString()));
 			
+
 			PUSHMT_LIST_TIME_NEWS = properties.getProperty("PUSHMT_LIST_TIME_NEWS", PUSHMT_LIST_TIME_NEWS.toString())
 					.split("\\|");
-			
+
 			PUSHMT_LIST_TIME_REMINDER = properties.getProperty("PUSHMT_LIST_TIME_REMINDER",
 					PUSHMT_LIST_TIME_REMINDER.toString()).split("\\|");
 			PUSHMT_TIME_DELAY = Integer.parseInt(properties.getProperty("PUSHMT_TIME_DELAY",
 					PUSHMT_TIME_DELAY.toString()));
 			PUSHMT_ROWCOUNT = Integer.parseInt(properties.getProperty("PUSHMT_ROWCOUNT", PUSHMT_ROWCOUNT.toString()));
 			PUSHMT_PROCESS_NUMBER = Integer.parseInt(properties.getProperty("PUSHMT_PROCESS_NUMBER",
-					PUSHMT_PROCESS_NUMBER.toString()));		
+					PUSHMT_PROCESS_NUMBER.toString()));
 			PUSHMT_TPS = Integer.parseInt(properties.getProperty("PUSHMT_TPS", Integer.toString(PUSHMT_TPS)));
 			return true;
 
@@ -294,7 +330,10 @@ public class LocalConfig
 	public static String[] parseString(String text, String seperator)
 	{
 		Vector<String> vResult = new Vector<String>();
-		if (text == null || "".equals(text)) { return null; }
+		if (text == null || "".equals(text))
+		{
+			return null;
+		}
 		String tempStr = text.trim();
 		String currentLabel = null;
 		int index = tempStr.indexOf(seperator);

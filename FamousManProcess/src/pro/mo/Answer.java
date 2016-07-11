@@ -22,6 +22,7 @@ import dat.content.SuggestObject;
 import dat.history.MOLog;
 import dat.history.MOObject;
 import dat.history.Play;
+import dat.history.SubOTP;
 import dat.history.Play.PlayType;
 import dat.history.PlayObject;
 import dat.history.SuggestCount;
@@ -96,7 +97,7 @@ public class Answer extends ContentAbstract
 			MTContent = MTContent.replace("[Prize]", CurrentData.Get_Current_QuestionObj().Prize);
 			MTContent = MTContent.replace("[PlayDate]", CurrentData.Get_Current_QuestionObj().Get_PlayDate());
 			MTContent = MTContent.replace("[NextDate]", CurrentData.Get_Current_QuestionObj().Get_NextDate());
-			
+
 			if (!MTContent.equalsIgnoreCase(""))
 			{
 				mMsgObject.setUsertext(MTContent);
@@ -151,6 +152,8 @@ public class Answer extends ContentAbstract
 	 */
 	private void CreateUpdateSub() throws Exception
 	{
+		int AnswerMark = 0;
+
 		if (mSubObj.CheckLastAnswerDate(mCal_Current))
 		{
 			mSubObj.AnswerByDay++;
@@ -163,16 +166,18 @@ public class Answer extends ContentAbstract
 		if (UserAnswer.equalsIgnoreCase(CurrentData.Get_Current_QuestionObj().RightAnswer))
 		{
 			mSubObj.mLastAnswerStatus = Play.Status.CorrectAnswer;
+			AnswerMark = LocalConfig.AnswerMark;
+			mSubObj.AnswerRightCount +=1;
 		}
 		else
 		{
 			mSubObj.mLastAnswerStatus = Play.Status.IncorrectAnswer;
 		}
-		
 
 		mSubObj.LastAnswerDate = mCal_Current.getTime();
 		mSubObj.AnswerForSuggestID = mSubObj.LastSuggestrID;
 		mSubObj.LastAnswer = UserAnswer;
+		mSubObj.AnswerMark += AnswerMark;
 	}
 
 	/**
@@ -195,6 +200,16 @@ public class Answer extends ContentAbstract
 			mObject.SuggestID = mSuggestObj.SuggestID;
 			mObject.UserAnswer = UserAnswer;
 
+			mObject.WeekMark = mSubObj.WeekMark;
+			mObject.DayMark = mSubObj.DayMark;
+			mObject.AddMark = mSubObj.AddMark;
+			mObject.ChargeMark = mSubObj.ChargeMark;
+			mObject.BuyMark = mSubObj.BuyMark;
+			mObject.AnswerMark = mSubObj.AnswerMark;
+			mObject.AnswerRightCount = mSubObj.AnswerRightCount;
+			mObject.BuySuggestCount = mSubObj.BuySuggestCount;
+			
+			
 			MyTableModel mTable = CurrentData.GetTable_Play();
 
 			mTable = mObject.AddNewRow(mTable);
@@ -227,7 +242,7 @@ public class Answer extends ContentAbstract
 			{
 				mObject.IncorrectCount++;
 			}
-			
+
 			mObject.LastUpdate = mCal_Current.getTime();
 
 			MyTableModel mTable = CurrentData.GetTable_SuggestCount();
@@ -312,38 +327,51 @@ public class Answer extends ContentAbstract
 				return AddToList();
 			}
 
-			// Chưa mua mà đã trả lời.
-			if (!mSubObj.CheckLastSuggestDate(mCal_Current) || mSubObj.LastSuggestrID == 0)
-			{
-				mMTType = MTType.AnswerNotBuy;
-				return AddToList();
-			}
-
-			// Mỗi 1 lần mua chỉ được trả lời 1 lần
-			if (mSubObj.CheckLastSuggestDate(mCal_Current) && mSubObj.CheckLastAnswerDate(mCal_Current)
-					&& mSubObj.AnswerForSuggestID == mSubObj.LastSuggestrID)
-			{
-				mMTType = MTType.AnswerLimit;
-				return AddToList();
-			}
-
+			/*
+			 * // Chưa mua mà đã trả lời. if
+			 * (!mSubObj.CheckLastSuggestDate(mCal_Current) ||
+			 * mSubObj.LastSuggestrID == 0) { mMTType = MTType.AnswerNotBuy;
+			 * return AddToList(); }
+			 * 
+			 * // Mỗi 1 lần mua chỉ được trả lời 1 lần if
+			 * (mSubObj.CheckLastSuggestDate(mCal_Current) &&
+			 * mSubObj.CheckLastAnswerDate(mCal_Current) &&
+			 * mSubObj.AnswerForSuggestID == mSubObj.LastSuggestrID) { mMTType =
+			 * MTType.AnswerLimit; return AddToList(); }
+			 */
 			// Kiểm tra mua vượt quá giới hạn
-			if (mSubObj.CheckLastAnswerDate(mCal_Current) && mSubObj.AnswerByDay >= 20)
+			if (mSubObj.CheckLastAnswerDate(mCal_Current)
+					&& mSubObj.AnswerByDay.intValue() >= LocalConfig.MaxAnswerByDay.intValue())
 			{
 				mMTType = MTType.AnswerLimit;
 				return AddToList();
 			}
+			
+			if (mSubObj.CheckLastAnswerDate(mCal_Current))
+			{
+				if (mSubObj.AnswerByDay.intValue() >= LocalConfig.MaxAnswerByDay.intValue())
+				{
+					mMTType = MTType.AnswerLimit;
+					return AddToList();
+				}
+				if (mSubObj.mLastAnswerStatus == Play.Status.CorrectAnswer)
+				{
+					mMTType = MTType.AnswerWhenAnswerRight;
+					return AddToList();
+				}
+			}
+			
 
 			mSuggestObj = CurrentData.Get_SuggestObj_BuyID(mSubObj.LastSuggestrID);
-			
-			if(mSuggestObj.IsNull())
+
+			if (mSuggestObj.IsNull())
 			{
 				mMTType = MTType.AnswerExpire;
 				return AddToList();
 			}
-			
+
 			UserAnswer = Get_UserAnswer();
-			
+
 			CreateUpdateSub();
 
 			// Cập nhật thông tin vào DB

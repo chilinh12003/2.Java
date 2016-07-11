@@ -93,35 +93,50 @@ public class BuySuggest extends ContentAbstract
 			ListMessOject.clear();
 			if (mMTType == MTType.BuySugSuccess)
 			{
-				if (mSuggestObj.MT != null && !mSuggestObj.MT.equalsIgnoreCase(""))
+				String MTContent = Common.GetDefineMT_Message(mMTType);
+
+				if (MTContent != null && !MTContent.equalsIgnoreCase(""))
 				{
-					mMsgObject.setUsertext(mSuggestObj.MT);
-					mMsgObject.setContenttype(LocalConfig.LONG_MESSAGE_CONTENT_TYPE);
-					mMsgObject.setMsgtype(1);
-					ListMessOject.add(new MsgObject((MsgObject) mMsgObject.clone()));
-					AddToMOLog(mMTType, mSuggestObj.MT);
-				}
-				if (mSuggestObj.NotifyMT != null && !mSuggestObj.NotifyMT.equalsIgnoreCase(""))
-				{
-					Integer TotalAnswer = mSuggestCountObj.CorrectCount + mSuggestCountObj.IncorrectCount;
-					
-					String MTContent = mSuggestObj.NotifyMT;
-					
-					MTContent = MTContent.replace("[BuyCount]", Integer.toString(mSuggestCountObj.BuyCount));
-					MTContent = MTContent.replace("[AnswerCount]", TotalAnswer.toString());
 					mMsgObject.setUsertext(MTContent);
 					mMsgObject.setContenttype(LocalConfig.LONG_MESSAGE_CONTENT_TYPE);
 					mMsgObject.setMsgtype(1);
 					ListMessOject.add(new MsgObject((MsgObject) mMsgObject.clone()));
-					AddToMOLog(MTType.BuySugNotify , MTContent);
+					AddToMOLog(mMTType, MTContent);
+				}
+
+				String BuySuggestMT = Common.GetDefineMT_Message(MTType.BuySuggestMT);
+				BuySuggestMT = BuySuggestMT.replace("[SuggestMT]", mSuggestObj.MT);
+
+				if (BuySuggestMT != null && !BuySuggestMT.equalsIgnoreCase(""))
+				{
+					mMsgObject.setUsertext(BuySuggestMT);
+					mMsgObject.setContenttype(LocalConfig.LONG_MESSAGE_CONTENT_TYPE);
+					mMsgObject.setMsgtype(1);
+					ListMessOject.add(new MsgObject((MsgObject) mMsgObject.clone()));
+					AddToMOLog(MTType.BuySuggestMT, BuySuggestMT);
+				}
+
+				if (mSuggestObj.NotifyMT != null && !mSuggestObj.NotifyMT.equalsIgnoreCase(""))
+				{
+					Integer TotalAnswer = mSuggestCountObj.CorrectCount + mSuggestCountObj.IncorrectCount;
+
+					String MTNotify = mSuggestObj.NotifyMT;
+
+					MTNotify = MTNotify.replace("[BuyCount]", Integer.toString(mSuggestCountObj.BuyCount));
+					MTNotify = MTNotify.replace("[AnswerCount]", TotalAnswer.toString());
+					mMsgObject.setUsertext(MTNotify);
+					mMsgObject.setContenttype(LocalConfig.LONG_MESSAGE_CONTENT_TYPE);
+					mMsgObject.setMsgtype(1);
+					ListMessOject.add(new MsgObject((MsgObject) mMsgObject.clone()));
+					AddToMOLog(MTType.BuySugNotify, MTNotify);
 				}
 			}
 			else
 			{
 				String MTContent = Common.GetDefineMT_Message(mMTType);
-				MTContent = MTContent.replace("[PlayDate]",CurrentData.Get_Current_QuestionObj().Get_PlayDate());
-				MTContent = MTContent.replace("[NextDate]",CurrentData.Get_Current_QuestionObj().Get_NextDate());
-				
+				MTContent = MTContent.replace("[PlayDate]", CurrentData.Get_Current_QuestionObj().Get_PlayDate());
+				MTContent = MTContent.replace("[NextDate]", CurrentData.Get_Current_QuestionObj().Get_NextDate());
+
 				if (!MTContent.equalsIgnoreCase(""))
 				{
 					mMsgObject.setUsertext(MTContent);
@@ -176,10 +191,13 @@ public class BuySuggest extends ContentAbstract
 	 * @throws Exception
 	 */
 	private void CreateUpdateSub() throws Exception
-	{		
+	{
 		mSubObj.LastSuggestDate = mCal_Current.getTime();
 		mSubObj.LastSuggestrID = mSuggestObj.SuggestID;
 		mSubObj.TotalSuggest++;
+
+		mSubObj.BuyMark += LocalConfig.BuyMark;
+		mSubObj.BuySuggestCount += 1;
 	}
 
 	/**
@@ -200,6 +218,13 @@ public class BuySuggest extends ContentAbstract
 			mObject.QuestionID = mSuggestObj.QuestionID;
 			mObject.ReceiveDate = mMsgObject.getReceiveDate();
 			mObject.SuggestID = mSuggestObj.SuggestID;
+
+			mObject.WeekMark = mSubObj.WeekMark;
+			mObject.DayMark = mSubObj.DayMark;
+			mObject.AddMark = mSubObj.AddMark;
+			mObject.ChargeMark = mSubObj.ChargeMark;
+			mObject.BuyMark = mSubObj.BuyMark;
+			mObject.AnswerMark = mSubObj.AnswerMark;
 
 			MyTableModel mTable = CurrentData.GetTable_Play();
 
@@ -312,7 +337,8 @@ public class BuySuggest extends ContentAbstract
 			}
 
 			// Kiểm tra mua vượt quá giới hạn
-			if (mSubObj.CheckLastSuggestDate(mCal_Current) && mSubObj.SuggestByDay >= 20)
+			if (mSubObj.CheckLastSuggestDate(mCal_Current)
+					&& mSubObj.SuggestByDay >= LocalConfig.MaxBuyByDay.intValue())
 			{
 				mMTType = MTType.BuySugLimit;
 				return AddToList();
@@ -324,7 +350,7 @@ public class BuySuggest extends ContentAbstract
 				mMTType = MTType.BuySugAnswerRight;
 				return AddToList();
 			}
-			
+
 			if (mSubObj.CheckLastSuggestDate(mCal_Current))
 			{
 				mSubObj.SuggestByDay++;
@@ -333,7 +359,7 @@ public class BuySuggest extends ContentAbstract
 			{
 				mSubObj.SuggestByDay = 1;
 			}
-			
+
 			mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.SuggestByDay);
 			if (mSuggestObj.IsNull())
 			{
@@ -341,7 +367,7 @@ public class BuySuggest extends ContentAbstract
 				mMTType = MTType.BuySugFail;
 				return AddToList();
 			}
-			
+
 			ErrorCode mResult = mCharge.ChargeBuyContent(mSubObj, ChannelType.FromInt(mMsgObject.getChannelType()),
 					"CONTENT");
 

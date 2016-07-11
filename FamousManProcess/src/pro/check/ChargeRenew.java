@@ -190,6 +190,8 @@ public class ChargeRenew extends Thread
 							mSubObj.RenewChargeDate = mCal_Current.getTime();
 							mSubObj.RetryChargeCount = 0;
 							mSubObj.mStatus = Status.Active;
+							mSubObj.ChargeMark += LocalConfig.RenewMark;
+							
 							// Tăng số MT bắn thành công
 							mCTObject.SuccessNumber++;
 						}

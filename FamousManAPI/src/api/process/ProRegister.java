@@ -2,7 +2,7 @@ package api.process;
 
 import java.util.Calendar;
 
-import uti.utility.MyConfig;
+import uti.utility.*;
 import uti.utility.MyConfig.ChannelType;
 import uti.utility.VNPApplication;
 import uti.utility.MyConvert;
@@ -16,6 +16,7 @@ import dat.content.DefineMT;
 import dat.content.DefineMT.MTType;
 import dat.content.Keyword;
 import dat.content.Partner;
+import dat.content.SuggestObject;
 import dat.history.MOLog;
 import dat.history.MOObject;
 import dat.history.WapRegLog;
@@ -110,6 +111,8 @@ public class ProRegister
 
 	Charge mCharge = new Charge();
 	DefineMT.MTType mMTType = MTType.RegFail;
+
+	SuggestObject mSuggestObj = null;
 
 	String MTContent = "";
 
@@ -306,6 +309,20 @@ public class ProRegister
 				if (Common.SendMT(MSISDN, Keyword, MTContent, RequestID))
 					AddToMOLog(mMTType, MTContent);
 			}
+			
+			if(mMTType == MTType.RegAgainSuccessFree || mMTType == MTType.RegAgainSuccessNotFree
+					|| mMTType == MTType.RegCCOSSuccessFree || mMTType == MTType.RegCCOSSuccessNotFree
+					|| mMTType == MTType.RegMOBILEADSSuccessFree || mMTType == MTType.RegMOBILEADSSuccessNotFree
+					|| mMTType == MTType.RegNewSuccess 
+					|| mMTType == MTType.RegVASDealerSuccessFree || mMTType == MTType.RegVASDealerSuccessNotFree
+					|| mMTType == MTType.RegVASVoucherSuccessFree || mMTType == MTType.RegVASVoucherSuccessNotFree)
+			{
+				String MTSuggest = Common.GetDefineMT_Message(MTType.RegSuggestMT);
+
+				MTSuggest = MTSuggest.replace("[SuggestMT]", mSuggestObj.MT);
+				if (Common.SendMT(MSISDN, Keyword, MTSuggest, RequestID))
+					AddToMOLog(MTType.RegSuggestMT, MTSuggest);
+			}
 
 		}
 		catch (Exception ex)
@@ -327,7 +344,7 @@ public class ProRegister
 			{
 				if (this.mChannel == ChannelType.SMS)
 					Keyword = arr[1];
-				
+
 				if (Common.GetApplication(AppName).mApp == VNPApplication.TelcoApplication.MOBILE_ADS
 						|| Common.GetApplication(AppName).mApp == VNPApplication.TelcoApplication.MOBILEADS)
 					PartnerKey = arr[0];
@@ -410,19 +427,29 @@ public class ProRegister
 				mSubObj.mChannelType = mChannel;
 				mSubObj.mStatus = Status.ActiveFree;
 				mSubObj.PID = PID;
-				// mSubObj.LastSuggestrID=
-				// mSubObj.SuggestByDay=
-				// mSubObj.TotalSuggest=
-				/*
-				 * mSubObj.LastSuggestDate= mSubObj.AnswerForSuggestID=
-				 * mSubObj.LastAnswer= mSubObj.AnswerStatusID=
-				 * mSubObj.AnswerByDay= mSubObj.LastAnswerDate=
-				 * mSubObj.DeregDate=
-				 */
+
+				mSubObj.SuggestByDay = 1;
+				mSubObj.TotalSuggest = mSubObj.TotalSuggest + 1;
+				mSubObj.LastSuggestDate = MyDate.Date2Timestamp(mCal_Current);
+				// Lấy dữ kiện cho thuê bao
+				mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.SuggestByDay);
+				if (!mSuggestObj.IsNull())
+					mSubObj.LastSuggestrID = mSuggestObj.SuggestID;
+
 				mSubObj.PartnerID = mSubObj.PartnerID = GetPartnerID();
 				mSubObj.mVNPApp = mVNPApp;
 				mSubObj.UserName = UserName;
 				mSubObj.IP = IP;
+				
+
+				mSubObj.WeekMark = 0;
+				mSubObj.DayMark = 0;
+				mSubObj.AddMark = 0;
+				mSubObj.ChargeMark = LocalConfig.RegMark;
+				mSubObj.BuyMark = 0;
+				mSubObj.AnswerMark = 0;
+				mSubObj.AnswerRightCount = 0;
+				mSubObj.BuySuggestCount = 0;
 
 				break;
 			case RegAgain :
@@ -442,21 +469,37 @@ public class ProRegister
 				mSubObj.mChannelType = mChannel;
 				mSubObj.mStatus = Status.Active;
 				mSubObj.PID = PID;
-				mSubObj.LastSuggestrID = 0;
-				mSubObj.SuggestByDay = 0;
+				
 				mSubObj.TotalSuggest = 0;
-				mSubObj.LastSuggestDate = null;
+				
 				mSubObj.AnswerForSuggestID = 0;
 				mSubObj.LastAnswer = "";
 				mSubObj.mLastAnswerStatus = dat.history.Play.Status.Nothing;
 				mSubObj.AnswerByDay = 0;
 				mSubObj.LastAnswerDate = null;
-				// mSubObj.DeregDate=
+				
+				mSubObj.SuggestByDay = 1;
+				mSubObj.TotalSuggest = mSubObj.TotalSuggest + 1;
+				mSubObj.LastSuggestDate = MyDate.Date2Timestamp(mCal_Current);
+				// Lấy dữ kiện cho thuê bao
+				mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.SuggestByDay);
+				if (!mSuggestObj.IsNull())
+					mSubObj.LastSuggestrID = mSuggestObj.SuggestID;
 
 				mSubObj.PartnerID = mSubObj.PartnerID = GetPartnerID();
 				mSubObj.mVNPApp = mVNPApp;
 				mSubObj.UserName = UserName;
 				mSubObj.IP = IP;
+
+				mSubObj.WeekMark = 0;
+				mSubObj.DayMark = 0;
+				mSubObj.AddMark = 0;
+				mSubObj.ChargeMark = LocalConfig.RegMark;
+				mSubObj.BuyMark = 0;
+				mSubObj.AnswerMark = 0;
+				mSubObj.AnswerRightCount = 0;
+				mSubObj.BuySuggestCount = 0;
+
 				break;
 			case UndoReg :
 				// mSubObj = new SubscriberObject();
@@ -471,21 +514,37 @@ public class ProRegister
 				// mSubObj.RenewChargeDate=
 				mSubObj.mChannelType = mChannel;
 				mSubObj.mStatus = Status.ActiveFree;
-				mSubObj.LastSuggestrID = 0;
-				mSubObj.SuggestByDay = 0;
+				
 				mSubObj.TotalSuggest = 0;
-				mSubObj.LastSuggestDate = null;
+				
 				mSubObj.AnswerForSuggestID = 0;
 				mSubObj.LastAnswer = "";
 				mSubObj.mLastAnswerStatus = dat.history.Play.Status.Nothing;
 				mSubObj.AnswerByDay = 0;
 				mSubObj.LastAnswerDate = null;
-				// mSubObj.DeregDate=
+				
+				mSubObj.SuggestByDay = 1;
+				mSubObj.TotalSuggest = mSubObj.TotalSuggest + 1;
+				mSubObj.LastSuggestDate = MyDate.Date2Timestamp(mCal_Current);
+				// Lấy dữ kiện cho thuê bao
+				mSuggestObj = CurrentData.Get_SuggestObj(mSubObj.SuggestByDay);
+				if (!mSuggestObj.IsNull())
+					mSubObj.LastSuggestrID = mSuggestObj.SuggestID;
 
 				mSubObj.PartnerID = mSubObj.PartnerID = GetPartnerID();
 				mSubObj.mVNPApp = mVNPApp;
 				mSubObj.UserName = UserName;
 				mSubObj.IP = IP;
+
+				mSubObj.WeekMark = 0;
+				mSubObj.DayMark = 0;
+				mSubObj.AddMark = 0;
+				mSubObj.ChargeMark = LocalConfig.RegMark;
+				mSubObj.BuyMark = 0;
+				mSubObj.AnswerMark = 0;
+				mSubObj.AnswerRightCount = 0;
+				mSubObj.BuySuggestCount = 0;
+				
 				break;
 			default :
 				break;
@@ -704,9 +763,10 @@ public class ProRegister
 				if (mSubObj.IsNull())
 				{
 					CreateSub(InitType.NewReg);
+					
 					SetPromotionToSub();
 
-					ErrorCode mResult = mCharge.ChargeRegFree(mSubObj, mChannel, "DK Free");
+					ErrorCode mResult = mCharge.ChargeReg(mSubObj, mChannel, "DK Pay");
 
 					if (mResult != ErrorCode.ChargeSuccess)
 					{
@@ -716,6 +776,7 @@ public class ProRegister
 
 					if (Insert_Sub())
 					{
+						// Region Ins
 						if (mSubObj.mVNPApp.mApp == VNPApplication.TelcoApplication.CCOS)
 						{
 							mMTType = MTType.RegCCOSSuccessFree;
@@ -737,6 +798,7 @@ public class ProRegister
 						{
 							mMTType = MTType.RegNewSuccess;
 						}
+						// EndRegion
 					}
 					else
 					{
@@ -750,7 +812,7 @@ public class ProRegister
 					CreateSub(InitType.UndoReg);
 					SetPromotionToSub();
 
-					ErrorCode mResult = mCharge.ChargeRegFree(mSubObj, mChannel, "DK Free");
+					ErrorCode mResult = mCharge.ChargeReg(mSubObj, mChannel, "DK Pay");
 
 					if (mResult != ErrorCode.ChargeSuccess)
 					{
@@ -796,7 +858,7 @@ public class ProRegister
 
 					SetPromotionToSub();
 
-					ErrorCode mResult = mCharge.ChargeRegFree(mSubObj, mChannel, "DK Free");
+					ErrorCode mResult = mCharge.ChargeReg(mSubObj, mChannel, "DK Pay");
 
 					if (mResult != ErrorCode.ChargeSuccess)
 					{
@@ -843,7 +905,7 @@ public class ProRegister
 				// Tạo dữ liệu cho đăng ký mới
 				CreateSub(InitType.NewReg);
 
-				ErrorCode mResult = mCharge.ChargeRegFree(mSubObj, mChannel, "DK Free");
+				ErrorCode mResult = mCharge.ChargeReg(mSubObj, mChannel, "DK Pay");
 
 				if (mResult != ErrorCode.ChargeSuccess)
 				{
@@ -890,7 +952,7 @@ public class ProRegister
 			{
 				CreateSub(InitType.UndoReg);
 
-				ErrorCode mResult = mCharge.ChargeRegFree(mSubObj, mChannel, "DK Free");
+				ErrorCode mResult = mCharge.ChargeReg(mSubObj, mChannel, "DK Pay");
 
 				if (mResult != ErrorCode.ChargeSuccess)
 				{

@@ -18,7 +18,11 @@ public class DefineMT
 	{
 		Default(100), Invalid(101), Help(102), SystemError(103), Fail(104), GetOTPSuccess(105), GetOTPNotReg(106), 
 		PushMT(107),Reminder(108),
-				
+		
+		RequestMarkSuccess(110),
+		RequestMarkNotReg(111),
+		RequestMarkFail(112),
+		
 		// -----ĐĂNG KÝ DỊCH VỤ
 		/**
 		 * Đăng ký mới thành công
@@ -54,6 +58,7 @@ public class DefineMT
 		 */
 		RegFail(206),	
 		
+	
 
 		/**
 		 * DK nhưng hệ thống bị lỗi
@@ -74,6 +79,13 @@ public class DefineMT
 		RegMOBILEADSSuccessFree(212),
 		
 		RegMOBILEADSSuccessNotFree(213),
+		
+		RegSuggestMT(215),
+		
+		/**
+		 * Đăng ký lại trong ngày thành công
+		 */
+		RegAgainSuccessOnDay(216),
 
 		// -----HỦY DỊCH VỤ
 		/**
@@ -155,6 +167,11 @@ public class DefineMT
 		 * Mua dữ kiện khi thuê bao gia hạn không thành công
 		 */
 		BuySugNotExtend(408),
+		
+		/**
+		 * MT chứa nội dung của dữ kiện
+		 */
+		BuySuggestMT(409),
 
 		// -----TRẢ LỜI
 		/**
@@ -192,6 +209,11 @@ public class DefineMT
 		 * Dự đoán chính xác với kết quả
 		 */
 		AnswerSuccess(506),
+		
+		/**
+		 * trả lời khi đã trả lời đúng trức đó
+		 */
+		AnswerWhenAnswerRight(507),
 
 		/**
 		 * Thông báo về phiên chơi mới

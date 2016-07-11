@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="MyProcessMO/DeregisterHelp.java|MyProcessMO/RegisterHelp.java|MyDefine/FinishMatchObject.java|MyDefine/MoveAnswerObject.java" kind="src" path="src"/>
+	<classpathentry excluding="MyProcessMO/DeregisterHelp.java|MyProcessMO/RegisterHelp.java|MyDefine/FinishMatchObject.java|MyDefine/MoveAnswerObject.java|pro/check/CheckFinish.java|pro/check/CheckFinishSession.java|pro/check/FinishSession.java" kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/MyDataProcess"/>
 	<classpathentry exported="true" kind="lib" path="D:/MyEclipse/JavaLib/HttpClient/lib/httpclient-4.2.3.jar"/>

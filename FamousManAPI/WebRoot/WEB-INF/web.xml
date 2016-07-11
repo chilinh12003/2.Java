@@ -49,15 +49,15 @@
 
 	<context-param>
 		<param-name>DBConfigPath</param-name>
-		<param-value>D:\2.Java\.metadata\.me_tcat7\webapps\MTrafficAPI\ProxoolConfig.xml</param-value>
+		<param-value>C:\apache-tomcat-8.0.28\FamousMan\Config\ProxoolConfig.xml</param-value>
 	</context-param>
 	<context-param>
 		<param-name>LogConfigPath</param-name>
-		<param-value>D:\2.Java\.metadata\.me_tcat7\webapps\MTrafficAPI\log4j.properties</param-value>
+		<param-value>C:\apache-tomcat-8.0.28\FamousMan\Config\log4j.properties</param-value>
 	</context-param>
 	<context-param>
 		<param-name>LogDataFolder</param-name>
-		<param-value>D:\2.Java\.metadata\.me_tcat7\webapps\MTrafficAPI\LogFile\</param-value>
+		<param-value>C:\apache-tomcat-8.0.28\FamousMan\Log\</param-value>
 	</context-param>
 
 	<context-param>

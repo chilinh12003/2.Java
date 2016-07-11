@@ -24,7 +24,10 @@ public class Play
 	 */
 	public enum PlayType
 	{
-		Nothing(0), BuySuggest(1), Answer(2), ;
+		Nothing(0), BuySuggest(1), Answer(2), /**
+		 * Khi kết thúc 1 ngày thì lưu thông tin của Sub vào play
+		 */
+		FinishDay(3);
 
 		private int value;
 

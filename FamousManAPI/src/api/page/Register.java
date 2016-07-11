@@ -258,8 +258,7 @@ public class Register extends HttpServlet
 				break;
 			case RegAgainSuccessNotFree:
 				mRegResult = RegResult.SucessPay;
-				break;
-				
+				break;				
 			case RegFail:
 				mRegResult = RegResult.Fail;
 				break;

@@ -11,8 +11,9 @@ import java.util.Enumeration;
 import java.util.Vector;
 import java.util.concurrent.atomic.AtomicLong;
 
+import pro.check.BeginSession;
 import pro.check.CheckCharge;
-import pro.check.CheckFinish;
+import pro.check.CheckFinishDay;
 import pro.check.CheckPushMT;
 import uti.utility.MyLogger;
 import dat.content.DefineMT;
@@ -154,14 +155,21 @@ public class Program extends Thread
 		CheckCharge mCheckCharge = new CheckCharge();
 		mCheckCharge.setPriority(MAX_PRIORITY);
 		mCheckCharge.start();
-
-		CheckFinish mCheckFinish = new CheckFinish();
-		mCheckFinish.setPriority(MAX_PRIORITY);
-		mCheckFinish.start();
-
+		
+		CheckFinishDay mCheckFinishDay = new CheckFinishDay();
+		mCheckFinishDay.setPriority(MAX_PRIORITY);
+		mCheckFinishDay.start();
+		
+		
+		BeginSession mBeginSession = new BeginSession();
+		mBeginSession.setPriority(Thread.MAX_PRIORITY);
+		mBeginSession.start();
+		
 		CheckPushMT mCheckPushMT = new CheckPushMT();
 		mCheckPushMT.setPriority(MAX_PRIORITY);
 		mCheckPushMT.start();
+		
+		
 	}
 
 	public void windowClosing()
