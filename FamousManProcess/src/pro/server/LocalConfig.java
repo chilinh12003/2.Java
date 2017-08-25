@@ -288,7 +288,12 @@ public class LocalConfig
 			PUSHMT_ROWCOUNT = Integer.parseInt(properties.getProperty("PUSHMT_ROWCOUNT", PUSHMT_ROWCOUNT.toString()));
 			PUSHMT_PROCESS_NUMBER = Integer.parseInt(properties.getProperty("PUSHMT_PROCESS_NUMBER",
 					PUSHMT_PROCESS_NUMBER.toString()));
+			
 			PUSHMT_TPS = Integer.parseInt(properties.getProperty("PUSHMT_TPS", Integer.toString(PUSHMT_TPS)));
+			
+			MaxBuyByDay = Integer.parseInt(properties.getProperty("MaxBuyByDay", Integer.toString(MaxBuyByDay)));
+
+			MaxAnswerByDay = Integer.parseInt(properties.getProperty("MaxAnswerByDay", Integer.toString(MaxAnswerByDay)));
 			return true;
 
 		}

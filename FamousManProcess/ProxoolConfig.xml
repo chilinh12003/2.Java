@@ -4,7 +4,7 @@
 <something-else-entirely>
 	<proxool>
 		<alias>MySQL</alias>
-		<driver-url>jdbc:mysql://localhost/DataProcess</driver-url>
+		<driver-url>jdbc:mysql://localhost/shortcode</driver-url>
 		<driver-class>com.mysql.jdbc.Driver</driver-class>
 		<driver-properties>
 			<property name="user" value="root" />

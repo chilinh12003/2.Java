@@ -14,6 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import pro.check.BeginSession;
 import pro.check.CheckCharge;
 import pro.check.CheckFinishDay;
+import pro.check.CheckFinishSession;
 import pro.check.CheckPushMT;
 import uti.utility.MyLogger;
 import dat.content.DefineMT;
@@ -155,6 +156,10 @@ public class Program extends Thread
 		CheckCharge mCheckCharge = new CheckCharge();
 		mCheckCharge.setPriority(MAX_PRIORITY);
 		mCheckCharge.start();
+		
+		CheckFinishSession mCheckFinishSession = new CheckFinishSession();
+		mCheckFinishSession.setPriority(MAX_PRIORITY);
+		mCheckFinishSession.start();
 		
 		CheckFinishDay mCheckFinishDay = new CheckFinishDay();
 		mCheckFinishDay.setPriority(MAX_PRIORITY);

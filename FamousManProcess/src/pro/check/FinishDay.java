@@ -108,11 +108,11 @@ public class FinishDay extends Thread
 
 		if (Program.processData)
 		{
-			boolean isFirstDayOfMonth = false;
+			boolean isFinishSession = false;
 
-			if (Calendar.getInstance().get(Calendar.DATE) == 1)
+			if (Calendar.getInstance().get(Calendar.DATE) == LocalConfig.FINISH_SESSION_DAY_OF_MONTH)
 			{
-				isFirstDayOfMonth = true;
+				isFinishSession = true;
 			}
 
 			Vector<SubscriberObject> listSub = new Vector<SubscriberObject>();
@@ -155,11 +155,11 @@ public class FinishDay extends Thread
 
 							this.MaxOrderID = subObj.OrderID;
 							this.PhoneNumber = subObj.MSISDN;
-
+							
 							addPlay(subObj);
 
 							// khởi tạo thông tin của thuê bao cho ngày mới
-							resetSub(subObj, isFirstDayOfMonth);
+							resetSub(subObj, isFinishSession);
 							mTable_SubUpdate = subObj.AddNewRow(mTable_SubUpdate);
 						}
 
@@ -170,9 +170,9 @@ public class FinishDay extends Thread
 					}
 				}
 
-				if (isFirstDayOfMonth)
+				if (isFinishSession)
 				{
-					// Nếu là thứ 2 thì sẽ chuyển tất cả play sang playlog
+					// Nếu là ngày đầu tháng thì sẽ chuyển tất cả play sang playlog
 					movePlayLog();
 					
 				}
@@ -330,10 +330,10 @@ public class FinishDay extends Thread
 			throw ex;
 		}
 	}
-	void resetSub(SubscriberObject subObj, boolean isFirstDayOfMonth) throws Exception
+	void resetSub(SubscriberObject subObj, boolean isFinishSession) throws Exception
 	{
-		// Nếu là ngày đầu tuần
-		if (isFirstDayOfMonth)
+		// Nếu là ngày đầu tiên bắt đầu phiên mới
+		if (isFinishSession)
 		{
 			subObj.WeekMark = 0;
 		}
